@@ -17,6 +17,7 @@
 #include "tsk_system.h"
 #include "pwm.h"
 #include "joystick.h"
+#include "watchdog.h"
 
 //ISR which will increment the systick counter every ms
 ISR(systick_handler)
@@ -86,6 +87,7 @@ TASK(tsk_background)
     {
         //do something with low prioroty
         __asm("nop");
+        //WD_Trigger();
     }
 }
 
@@ -93,9 +95,15 @@ TASK(tsk_background)
 /********************************************************************************
  * ISR Definitions
  ********************************************************************************/
-
-ISR2(isr_Button)
+/*
+ISR2(isr_button_reset)
 {
-    //SetEvent(tsk_sevenSet,ev_reset);   
+    
+    if(WD_Button_Reset() == 1)
+    {
+        ShutdownOS(0);
+    }
+    
 }
+*/
 /* [] END OF FILE */

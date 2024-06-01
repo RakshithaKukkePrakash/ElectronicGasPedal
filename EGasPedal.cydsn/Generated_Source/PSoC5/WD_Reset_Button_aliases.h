@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: RGB_R.h  
+* File Name: WD_Reset_Button.h  
 * Version 2.20
 *
 * Description:
@@ -15,8 +15,8 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#if !defined(CY_PINS_RGB_R_ALIASES_H) /* Pins RGB_R_ALIASES_H */
-#define CY_PINS_RGB_R_ALIASES_H
+#if !defined(CY_PINS_WD_Reset_Button_ALIASES_H) /* Pins WD_Reset_Button_ALIASES_H */
+#define CY_PINS_WD_Reset_Button_ALIASES_H
 
 #include "cytypes.h"
 #include "cyfitter.h"
@@ -25,12 +25,12 @@
 /***************************************
 *              Constants        
 ***************************************/
-#define RGB_R_0			(RGB_R__0__PC)
-#define RGB_R_0_INTR	((uint16)((uint16)0x0001u << RGB_R__0__SHIFT))
+#define WD_Reset_Button_0			(WD_Reset_Button__0__PC)
+#define WD_Reset_Button_0_INTR	((uint16)((uint16)0x0001u << WD_Reset_Button__0__SHIFT))
 
-#define RGB_R_INTR_ALL	 ((uint16)(RGB_R_0_INTR))
+#define WD_Reset_Button_INTR_ALL	 ((uint16)(WD_Reset_Button_0_INTR))
 
-#endif /* End Pins RGB_R_ALIASES_H */
+#endif /* End Pins WD_Reset_Button_ALIASES_H */
 
 
 /* [] END OF FILE */

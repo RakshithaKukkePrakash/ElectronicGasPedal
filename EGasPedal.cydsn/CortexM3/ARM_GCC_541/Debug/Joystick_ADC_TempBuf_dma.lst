@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 1
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccuOpStc.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 1
   28:Generated_Source\PSoC5/Joystick_ADC_TempBuf_dma.c **** * The following defines are available in Cyfitter.h
   29:Generated_Source\PSoC5/Joystick_ADC_TempBuf_dma.c **** * 
   30:Generated_Source\PSoC5/Joystick_ADC_TempBuf_dma.c **** * 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 2
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccuOpStc.s 			page 2
 
 
   31:Generated_Source\PSoC5/Joystick_ADC_TempBuf_dma.c **** * 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 1
   85:Generated_Source\PSoC5/Joystick_ADC_TempBuf_dma.c **** *   UpperSrcAddress.
   86:Generated_Source\PSoC5/Joystick_ADC_TempBuf_dma.c **** *       
   87:Generated_Source\PSoC5/Joystick_ADC_TempBuf_dma.c **** *       
-ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 3
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccuOpStc.s 			page 3
 
 
   88:Generated_Source\PSoC5/Joystick_ADC_TempBuf_dma.c **** *   UpperDestAddress.
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 1
  108:Generated_Source\PSoC5/Joystick_ADC_TempBuf_dma.c ****                                   (uint8)Joystick_ADC_TempBuf__TERMOUT1_SEL,
  109:Generated_Source\PSoC5/Joystick_ADC_TempBuf_dma.c ****                                   (uint8)Joystick_ADC_TempBuf__TERMIN_SEL);
  110:Generated_Source\PSoC5/Joystick_ADC_TempBuf_dma.c **** 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 4
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccuOpStc.s 			page 4
 
 
  111:Generated_Source\PSoC5/Joystick_ADC_TempBuf_dma.c ****     /* Set the extended address for the transfers */
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 1
  133:Generated_Source\PSoC5/Joystick_ADC_TempBuf_dma.c **** *   void.
  134:Generated_Source\PSoC5/Joystick_ADC_TempBuf_dma.c **** *
  135:Generated_Source\PSoC5/Joystick_ADC_TempBuf_dma.c **** *******************************************************************/
-ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 5
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccuOpStc.s 			page 5
 
 
  136:Generated_Source\PSoC5/Joystick_ADC_TempBuf_dma.c **** void Joystick_ADC_TempBuf_DmaRelease(void) 
@@ -286,8 +286,8 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 1
  132 000b 01       		.uleb128 0x1
  133 000c 56000000 		.4byte	.LASF24
  134 0010 0C       		.byte	0xc
- 135 0011 D2010000 		.4byte	.LASF25
- 136 0015 4E020000 		.4byte	.LASF26
+ 135 0011 13020000 		.4byte	.LASF25
+ 136 0015 59010000 		.4byte	.LASF26
  137 0019 00000000 		.4byte	.Ldebug_ranges0+0
  138 001d 00000000 		.4byte	0
  139 0021 00000000 		.4byte	.Ldebug_line0
@@ -298,22 +298,22 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 1
  144 002c 03       		.uleb128 0x3
  145 002d 04       		.byte	0x4
  146 002e 07       		.byte	0x7
-ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 6
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccuOpStc.s 			page 6
 
 
  147 002f 35010000 		.4byte	.LASF0
  148 0033 03       		.uleb128 0x3
  149 0034 08       		.byte	0x8
  150 0035 05       		.byte	0x5
- 151 0036 73010000 		.4byte	.LASF1
+ 151 0036 B4010000 		.4byte	.LASF1
  152 003a 03       		.uleb128 0x3
  153 003b 08       		.byte	0x8
  154 003c 04       		.byte	0x4
- 155 003d 04020000 		.4byte	.LASF2
+ 155 003d 45020000 		.4byte	.LASF2
  156 0041 03       		.uleb128 0x3
  157 0042 01       		.byte	0x1
  158 0043 06       		.byte	0x6
- 159 0044 10020000 		.4byte	.LASF3
+ 159 0044 51020000 		.4byte	.LASF3
  160 0048 03       		.uleb128 0x3
  161 0049 01       		.byte	0x1
  162 004a 08       		.byte	0x8
@@ -321,7 +321,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 1
  164 004f 03       		.uleb128 0x3
  165 0050 02       		.byte	0x2
  166 0051 05       		.byte	0x5
- 167 0052 BF010000 		.4byte	.LASF5
+ 167 0052 00020000 		.4byte	.LASF5
  168 0056 03       		.uleb128 0x3
  169 0057 02       		.byte	0x2
  170 0058 07       		.byte	0x7
@@ -329,7 +329,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 1
  172 005d 03       		.uleb128 0x3
  173 005e 04       		.byte	0x4
  174 005f 05       		.byte	0x5
- 175 0060 C9010000 		.4byte	.LASF7
+ 175 0060 0A020000 		.4byte	.LASF7
  176 0064 03       		.uleb128 0x3
  177 0065 04       		.byte	0x4
  178 0066 07       		.byte	0x7
@@ -341,11 +341,11 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 1
  184 0072 03       		.uleb128 0x3
  185 0073 04       		.byte	0x4
  186 0074 07       		.byte	0x7
- 187 0075 6A010000 		.4byte	.LASF10
+ 187 0075 AB010000 		.4byte	.LASF10
  188 0079 03       		.uleb128 0x3
  189 007a 01       		.byte	0x1
  190 007b 08       		.byte	0x8
- 191 007c 9B010000 		.4byte	.LASF11
+ 191 007c DC010000 		.4byte	.LASF11
  192 0080 04       		.uleb128 0x4
  193 0081 01010000 		.4byte	.LASF12
  194 0085 02       		.byte	0x2
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 1
  201 0094 56000000 		.4byte	0x56
  202 0098 03       		.uleb128 0x3
  203 0099 04       		.byte	0x4
-ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 7
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccuOpStc.s 			page 7
 
 
  204 009a 04       		.byte	0x4
@@ -368,7 +368,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 1
  208 00a1 04       		.byte	0x4
  209 00a2 07010000 		.4byte	.LASF15
  210 00a6 05       		.uleb128 0x5
- 211 00a7 1C020000 		.4byte	.LASF27
+ 211 00a7 5D020000 		.4byte	.LASF27
  212 00ab 01       		.byte	0x1
  213 00ac 61       		.byte	0x61
  214 00ad 80000000 		.4byte	0x80
@@ -396,7 +396,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 1
  236 00e4 8C000000 		.4byte	0x8c
  237 00e8 42000000 		.4byte	.LLST2
  238 00ec 06       		.uleb128 0x6
- 239 00ed 59010000 		.4byte	.LASF19
+ 239 00ed 9A010000 		.4byte	.LASF19
  240 00f1 01       		.byte	0x1
  241 00f2 61       		.byte	0x61
  242 00f3 8C000000 		.4byte	0x8c
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 1
  258 0112 75       		.byte	0x75
  259 0113 00       		.sleb128 0
  260 0114 08       		.uleb128 0x8
-ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 8
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccuOpStc.s 			page 8
 
 
  261 0115 02       		.uleb128 0x2
@@ -474,24 +474,24 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 1
  311 0165 9C010000 		.4byte	0x19c
  312 0169 00       		.byte	0
  313 016a 0C       		.uleb128 0xc
- 314 016b A0010000 		.4byte	.LASF29
+ 314 016b E1010000 		.4byte	.LASF29
  315 016f 01       		.byte	0x1
  316 0170 45       		.byte	0x45
  317 0171 80000000 		.4byte	0x80
-ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 9
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccuOpStc.s 			page 9
 
 
  318 0175 05       		.uleb128 0x5
  319 0176 03       		.byte	0x3
  320 0177 00000000 		.4byte	Joystick_ADC_TempBuf_DmaHandle
  321 017b 0D       		.uleb128 0xd
- 322 017c 85020000 		.4byte	.LASF20
- 323 0180 85020000 		.4byte	.LASF20
+ 322 017c 8F020000 		.4byte	.LASF20
+ 323 0180 8F020000 		.4byte	.LASF20
  324 0184 03       		.byte	0x3
  325 0185 33       		.byte	0x33
  326 0186 0D       		.uleb128 0xd
- 327 0187 81010000 		.4byte	.LASF21
- 328 018b 81010000 		.4byte	.LASF21
+ 327 0187 C2010000 		.4byte	.LASF21
+ 328 018b C2010000 		.4byte	.LASF21
  329 018f 03       		.byte	0x3
  330 0190 2D       		.byte	0x2d
  331 0191 0D       		.uleb128 0xd
@@ -500,8 +500,8 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 1
  334 019a 03       		.byte	0x3
  335 019b 2C       		.byte	0x2c
  336 019c 0D       		.uleb128 0xd
- 337 019d 3F020000 		.4byte	.LASF23
- 338 01a1 3F020000 		.4byte	.LASF23
+ 337 019d 80020000 		.4byte	.LASF23
+ 338 01a1 80020000 		.4byte	.LASF23
  339 01a5 03       		.byte	0x3
  340 01a6 2A       		.byte	0x2a
  341 01a7 00       		.byte	0
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 1
  372 001c 00       		.byte	0
  373 001d 00       		.byte	0
  374 001e 03       		.uleb128 0x3
-ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 10
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccuOpStc.s 			page 10
 
 
  375 001f 24       		.uleb128 0x24
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 1
  429 0056 0E       		.uleb128 0xe
  430 0057 3A       		.uleb128 0x3a
  431 0058 0B       		.uleb128 0xb
-ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 11
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccuOpStc.s 			page 11
 
 
  432 0059 3B       		.uleb128 0x3b
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 1
  486 0096 40       		.uleb128 0x40
  487 0097 18       		.uleb128 0x18
  488 0098 9742     		.uleb128 0x2117
-ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 12
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccuOpStc.s 			page 12
 
 
  489 009a 19       		.uleb128 0x19
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 1
  543 0008 0100     		.2byte	0x1
  544 000a 50       		.byte	0x50
  545 000b 1C000000 		.4byte	.LVL4
-ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 13
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccuOpStc.s 			page 13
 
 
  546 000f 3C000000 		.4byte	.LFE0
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 1
  600 000a 04       		.byte	0x4
  601 000b 00       		.byte	0
  602 000c 0000     		.2byte	0
-ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 14
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccuOpStc.s 			page 14
 
 
  603 000e 0000     		.2byte	0
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 1
  634      352E342E 
  634      31203230 
  634      31363036 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 15
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccuOpStc.s 			page 15
 
 
  635 0089 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
@@ -887,87 +887,89 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 1
  652      6720756E 
  652      7369676E 
  652      65642069 
- 653              	.LASF19:
- 654 0159 55707065 		.ascii	"UpperDestAddress\000"
- 654      72446573 
- 654      74416464 
- 654      72657373 
- 654      00
- 655              	.LASF10:
- 656 016a 73697A65 		.ascii	"sizetype\000"
- 656      74797065 
- 656      00
- 657              	.LASF1:
-ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 16
+ 653              	.LASF26:
+ 654 0159 433A5C53 		.ascii	"C:\\Sandbox\\Sem2\\EAA\\Lab\\Lab01\\Lab01EAA\\EGasP"
+ 654      616E6462 
+ 654      6F785C53 
+ 654      656D325C 
+ 654      4541415C 
+ 655 0185 6564616C 		.ascii	"edal\\EGasPedal.cydsn\000"
+ 655      5C454761 
+ 655      73506564 
+ 655      616C2E63 
+ 655      7964736E 
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccuOpStc.s 			page 16
 
 
- 658 0173 6C6F6E67 		.ascii	"long long int\000"
- 658      206C6F6E 
- 658      6720696E 
- 658      7400
- 659              	.LASF21:
- 660 0181 4379446D 		.ascii	"CyDmaChSetExtendedAddress\000"
- 660      61436853 
- 660      65744578 
- 660      74656E64 
- 660      65644164 
- 661              	.LASF11:
- 662 019b 63686172 		.ascii	"char\000"
- 662      00
- 663              	.LASF29:
- 664 01a0 4A6F7973 		.ascii	"Joystick_ADC_TempBuf_DmaHandle\000"
- 664      7469636B 
- 664      5F414443 
- 664      5F54656D 
- 664      70427566 
- 665              	.LASF5:
- 666 01bf 73686F72 		.ascii	"short int\000"
- 666      7420696E 
- 666      7400
- 667              	.LASF7:
- 668 01c9 6C6F6E67 		.ascii	"long int\000"
- 668      20696E74 
- 668      00
- 669              	.LASF25:
- 670 01d2 47656E65 		.ascii	"Generated_Source\\PSoC5\\Joystick_ADC_TempBuf_dma.c"
- 670      72617465 
- 670      645F536F 
- 670      75726365 
- 670      5C50536F 
- 671 0203 00       		.ascii	"\000"
- 672              	.LASF2:
- 673 0204 6C6F6E67 		.ascii	"long double\000"
- 673      20646F75 
- 673      626C6500 
- 674              	.LASF3:
- 675 0210 7369676E 		.ascii	"signed char\000"
- 675      65642063 
- 675      68617200 
- 676              	.LASF27:
- 677 021c 4A6F7973 		.ascii	"Joystick_ADC_TempBuf_DmaInitialize\000"
- 677      7469636B 
- 677      5F414443 
- 677      5F54656D 
- 677      70427566 
- 678              	.LASF23:
- 679 023f 4379446D 		.ascii	"CyDmaChDisable\000"
- 679      61436844 
- 679      69736162 
- 679      6C6500
- 680              	.LASF26:
- 681 024e 433A5C53 		.ascii	"C:\\Sandbox\\Sem2\\EAA\\Lab\\Lab01\\Lab01EAA\\EGasP"
- 681      616E6462 
- 681      6F785C53 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\cc0b2ujQ.s 			page 17
+ 656              	.LASF19:
+ 657 019a 55707065 		.ascii	"UpperDestAddress\000"
+ 657      72446573 
+ 657      74416464 
+ 657      72657373 
+ 657      00
+ 658              	.LASF10:
+ 659 01ab 73697A65 		.ascii	"sizetype\000"
+ 659      74797065 
+ 659      00
+ 660              	.LASF1:
+ 661 01b4 6C6F6E67 		.ascii	"long long int\000"
+ 661      206C6F6E 
+ 661      6720696E 
+ 661      7400
+ 662              	.LASF21:
+ 663 01c2 4379446D 		.ascii	"CyDmaChSetExtendedAddress\000"
+ 663      61436853 
+ 663      65744578 
+ 663      74656E64 
+ 663      65644164 
+ 664              	.LASF11:
+ 665 01dc 63686172 		.ascii	"char\000"
+ 665      00
+ 666              	.LASF29:
+ 667 01e1 4A6F7973 		.ascii	"Joystick_ADC_TempBuf_DmaHandle\000"
+ 667      7469636B 
+ 667      5F414443 
+ 667      5F54656D 
+ 667      70427566 
+ 668              	.LASF5:
+ 669 0200 73686F72 		.ascii	"short int\000"
+ 669      7420696E 
+ 669      7400
+ 670              	.LASF7:
+ 671 020a 6C6F6E67 		.ascii	"long int\000"
+ 671      20696E74 
+ 671      00
+ 672              	.LASF25:
+ 673 0213 47656E65 		.ascii	"Generated_Source\\PSoC5\\Joystick_ADC_TempBuf_dma.c"
+ 673      72617465 
+ 673      645F536F 
+ 673      75726365 
+ 673      5C50536F 
+ 674 0244 00       		.ascii	"\000"
+ 675              	.LASF2:
+ 676 0245 6C6F6E67 		.ascii	"long double\000"
+ 676      20646F75 
+ 676      626C6500 
+ 677              	.LASF3:
+ 678 0251 7369676E 		.ascii	"signed char\000"
+ 678      65642063 
+ 678      68617200 
+ 679              	.LASF27:
+ 680 025d 4A6F7973 		.ascii	"Joystick_ADC_TempBuf_DmaInitialize\000"
+ 680      7469636B 
+ 680      5F414443 
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccuOpStc.s 			page 17
 
 
- 681      656D325C 
- 681      4541415C 
- 682 027a 6564616C 		.ascii	"edal.cydsn\000"
- 682      2E637964 
- 682      736E00
+ 680      5F54656D 
+ 680      70427566 
+ 681              	.LASF23:
+ 682 0280 4379446D 		.ascii	"CyDmaChDisable\000"
+ 682      61436844 
+ 682      69736162 
+ 682      6C6500
  683              	.LASF20:
- 684 0285 4379446D 		.ascii	"CyDmaChSetConfiguration\000"
+ 684 028f 4379446D 		.ascii	"CyDmaChSetConfiguration\000"
  684      61436853 
  684      6574436F 
  684      6E666967 

@@ -59,13 +59,8 @@
  */
 RC_t PWM_Init()
 {
-    RGB_PWM_red_Start();
     RGB_PWM_green_Start();
-    RGB_PWM_blue_Start();
-    
-    RGB_PWM_red_WriteCompare(0);
     RGB_PWM_green_WriteCompare(0);
-    RGB_PWM_blue_WriteCompare(0);
     
     return RC_SUCCESS;
 }

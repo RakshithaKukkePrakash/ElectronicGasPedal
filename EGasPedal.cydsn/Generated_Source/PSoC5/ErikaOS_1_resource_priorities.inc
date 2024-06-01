@@ -346,12 +346,12 @@
     #endif
     #if 0 > 0
         //Ceiling from ISR 1
-        #if 0 && (0 == 1)
-        #if RESPRI_1 < ((1 << 7) << 0)
+        #if 1 && (0 == 1)
+        #if RESPRI_1 < ((1 << 7) << 1)
             #undef RESPRI_1
             #undef RESPRI_1_ISR
-            #define RESPRI_1    ((1 << 7) << 0)
-            #define RESPRI_1_ISR 0
+            #define RESPRI_1    ((1 << 7) << 1)
+            #define RESPRI_1_ISR 1
         #endif
         #endif
     #endif
@@ -856,12 +856,12 @@
     #endif    
     #if 0 > 0
         //Ceiling from ISR 1
-        #if 0 && (0 == 2)
-        #if RESPRI_2 < ((1 << 7) << 0)
+        #if 1 && (0 == 2)
+        #if RESPRI_2 < ((1 << 7) << 1)
             #undef RESPRI_2
             #undef RESPRI_2_ISR
-            #define RESPRI_2    ((1 << 7) << 0)
-            #define RESPRI_2_ISR 0
+            #define RESPRI_2    ((1 << 7) << 1)
+            #define RESPRI_2_ISR 1
         #endif
         #endif
     #endif
@@ -1366,12 +1366,12 @@
     #endif
     #if 0 > 0
         //Ceiling from ISR 1
-        #if 0 && (0 == 3)
-        #if RESPRI_3 < ((1 << 7) << 0)
+        #if 1 && (0 == 3)
+        #if RESPRI_3 < ((1 << 7) << 1)
             #undef RESPRI_3
             #undef RESPRI_3_ISR
-            #define RESPRI_3    ((1 << 7) << 0)
-            #define RESPRI_3_ISR 0
+            #define RESPRI_3    ((1 << 7) << 1)
+            #define RESPRI_3_ISR 1
         #endif
         #endif
     #endif
@@ -1876,12 +1876,12 @@
     #endif
     #if 0 > 0
         //Ceiling from ISR 1
-        #if 0 && (0 == 4)
-        #if RESPRI_4 < ((1 << 7) << 0)
+        #if 1 && (0 == 4)
+        #if RESPRI_4 < ((1 << 7) << 1)
             #undef RESPRI_4
             #undef RESPRI_4_ISR
-            #define RESPRI_4    ((1 << 7) << 0)
-            #define RESPRI_4_ISR 0
+            #define RESPRI_4    ((1 << 7) << 1)
+            #define RESPRI_4_ISR 1
         #endif
         #endif
     #endif
@@ -2386,12 +2386,12 @@
     #endif
     #if 0 > 0
         //Ceiling from ISR 1
-        #if 0 && (0 == 5)
-        #if RESPRI_5 < ((1 << 7) << 0)
+        #if 1 && (0 == 5)
+        #if RESPRI_5 < ((1 << 7) << 1)
             #undef RESPRI_5
             #undef RESPRI_5_ISR
-            #define RESPRI_5    ((1 << 7) << 0)
-            #define RESPRI_5_ISR 0
+            #define RESPRI_5    ((1 << 7) << 1)
+            #define RESPRI_5_ISR 1
         #endif
         #endif
     #endif
@@ -2896,12 +2896,12 @@
     #endif
     #if 0 > 0
         //Ceiling from ISR 1
-        #if 0 && (0 == 6)
-        #if RESPRI_6 < ((1 << 7) << 0)
+        #if 1 && (0 == 6)
+        #if RESPRI_6 < ((1 << 7) << 1)
             #undef RESPRI_6
             #undef RESPRI_6_ISR
-            #define RESPRI_6    ((1 << 7) << 0)
-            #define RESPRI_6_ISR 0
+            #define RESPRI_6    ((1 << 7) << 1)
+            #define RESPRI_6_ISR 1
         #endif
         #endif
     #endif
@@ -3406,12 +3406,12 @@
     #endif
     #if 0 > 0
         //Ceiling from ISR 1
-        #if 0 && (0 == 7)
-        #if RESPRI_7 < ((1 << 7) << 0)
+        #if 1 && (0 == 7)
+        #if RESPRI_7 < ((1 << 7) << 1)
             #undef RESPRI_7
             #undef RESPRI_7_ISR
-            #define RESPRI_7    ((1 << 7) << 0)
-            #define RESPRI_7_ISR 0
+            #define RESPRI_7    ((1 << 7) << 1)
+            #define RESPRI_7_ISR 1
         #endif
         #endif
     #endif
@@ -3916,12 +3916,12 @@
     #endif
     #if 0 > 0
         //Ceiling from ISR 1
-        #if 0 && (0 == 8)
-        #if RESPRI_8 < ((1 << 7) << 0)
+        #if 1 && (0 == 8)
+        #if RESPRI_8 < ((1 << 7) << 1)
             #undef RESPRI_8
             #undef RESPRI_8_ISR
-            #define RESPRI_8    ((1 << 7) << 0)
-            #define RESPRI_8_ISR 0
+            #define RESPRI_8    ((1 << 7) << 1)
+            #define RESPRI_8_ISR 1
         #endif
         #endif
     #endif

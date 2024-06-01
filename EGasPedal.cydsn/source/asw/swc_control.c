@@ -46,29 +46,26 @@ void CONTROL_calcControl_run(RTE_event ev){
 	/* USER CODE START CONTROL_calcControl_run */
     SC_SPEED_data_t engineSpeed;
 
-    SC_JOYSTICK_data_t joystickData = RTE_SC_JOYSTICK_get(&SO_JOYSTICK_signal);
-    sint8_t joystickPosX = joystickData.x_dir;
-    sint8_t joystickPosY = joystickData.y_dir;
-    
-    //if(RTE_SC_JOYSTICK_getAge(&SO_JOYSTICK_signal) < 100)
-    //{
-        if (joystickPosX <= 0) {
+    sint8_t joystickValue = 0;
+    //Error handling
+    if(RTE_SC_JOYSTICK_getStatus(&SO_JOYSTICK_signal) == RTE_SIGNALSTATUS_VALID)
+    {
+        SC_JOYSTICK_data_t joystickData = RTE_SC_JOYSTICK_get(&SO_JOYSTICK_signal);
+        joystickValue = joystickData.x_dir;
+        if (joystickValue <= 0) {
             engineSpeed.speed_val = 0;
         }
         else
         {
-            engineSpeed.speed_val = 2 * (joystickPosX);   
+            engineSpeed.speed_val = 2 * (joystickValue);   
         }
          RTE_SC_SPEED_set(&SO_SPEED_signal, engineSpeed);
-    
-/*
+    }
     else
     {
-        engineSpeed.speed_val = 0;   
+        engineSpeed.speed_val = joystickValue;
     }
-*/
-   
-    
+    //WD_Alive(1);
     /* USER CODE END CONTROL_calcControl_run */
 }
 

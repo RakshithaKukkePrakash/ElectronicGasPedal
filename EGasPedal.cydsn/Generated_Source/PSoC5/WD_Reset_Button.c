@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: RGB_R.c  
+* File Name: WD_Reset_Button.c  
 * Version 2.20
 *
 * Description:
@@ -15,15 +15,15 @@
 *******************************************************************************/
 
 #include "cytypes.h"
-#include "RGB_R.h"
+#include "WD_Reset_Button.h"
 
 /* APIs are not generated for P15[7:6] on PSoC 5 */
 #if !(CY_PSOC5A &&\
-	 RGB_R__PORT == 15 && ((RGB_R__MASK & 0xC0) != 0))
+	 WD_Reset_Button__PORT == 15 && ((WD_Reset_Button__MASK & 0xC0) != 0))
 
 
 /*******************************************************************************
-* Function Name: RGB_R_Write
+* Function Name: WD_Reset_Button_Write
 ****************************************************************************//**
 *
 * \brief Writes the value to the physical port (data output register), masking
@@ -52,17 +52,17 @@
 *  this function.
 *
 * \funcusage
-*  \snippet RGB_R_SUT.c usage_RGB_R_Write
+*  \snippet WD_Reset_Button_SUT.c usage_WD_Reset_Button_Write
 *******************************************************************************/
-void RGB_R_Write(uint8 value)
+void WD_Reset_Button_Write(uint8 value)
 {
-    uint8 staticBits = (RGB_R_DR & (uint8)(~RGB_R_MASK));
-    RGB_R_DR = staticBits | ((uint8)(value << RGB_R_SHIFT) & RGB_R_MASK);
+    uint8 staticBits = (WD_Reset_Button_DR & (uint8)(~WD_Reset_Button_MASK));
+    WD_Reset_Button_DR = staticBits | ((uint8)(value << WD_Reset_Button_SHIFT) & WD_Reset_Button_MASK);
 }
 
 
 /*******************************************************************************
-* Function Name: RGB_R_SetDriveMode
+* Function Name: WD_Reset_Button_SetDriveMode
 ****************************************************************************//**
 *
 * \brief Sets the drive mode for each of the Pins component's pins.
@@ -85,16 +85,16 @@ void RGB_R_Write(uint8 value)
 *  APIs (primary method) or disable interrupts around this function.
 *
 * \funcusage
-*  \snippet RGB_R_SUT.c usage_RGB_R_SetDriveMode
+*  \snippet WD_Reset_Button_SUT.c usage_WD_Reset_Button_SetDriveMode
 *******************************************************************************/
-void RGB_R_SetDriveMode(uint8 mode)
+void WD_Reset_Button_SetDriveMode(uint8 mode)
 {
-	CyPins_SetPinDriveMode(RGB_R_0, mode);
+	CyPins_SetPinDriveMode(WD_Reset_Button_0, mode);
 }
 
 
 /*******************************************************************************
-* Function Name: RGB_R_Read
+* Function Name: WD_Reset_Button_Read
 ****************************************************************************//**
 *
 * \brief Reads the associated physical port (pin status register) and masks 
@@ -108,16 +108,16 @@ void RGB_R_SetDriveMode(uint8 mode)
 *  The current value for the pins in the component as a right justified number.
 *
 * \funcusage
-*  \snippet RGB_R_SUT.c usage_RGB_R_Read  
+*  \snippet WD_Reset_Button_SUT.c usage_WD_Reset_Button_Read  
 *******************************************************************************/
-uint8 RGB_R_Read(void)
+uint8 WD_Reset_Button_Read(void)
 {
-    return (RGB_R_PS & RGB_R_MASK) >> RGB_R_SHIFT;
+    return (WD_Reset_Button_PS & WD_Reset_Button_MASK) >> WD_Reset_Button_SHIFT;
 }
 
 
 /*******************************************************************************
-* Function Name: RGB_R_ReadDataReg
+* Function Name: WD_Reset_Button_ReadDataReg
 ****************************************************************************//**
 *
 * \brief Reads the associated physical port's data output register and masks 
@@ -126,8 +126,8 @@ uint8 RGB_R_Read(void)
 *
 * The data output register controls the signal applied to the physical pin in 
 * conjunction with the drive mode parameter. This is not the same as the 
-* preferred RGB_R_Read() API because the 
-* RGB_R_ReadDataReg() reads the data register instead of the status 
+* preferred WD_Reset_Button_Read() API because the 
+* WD_Reset_Button_ReadDataReg() reads the data register instead of the status 
 * register. For output pins this is a useful function to determine the value 
 * just written to the pin.
 *
@@ -136,19 +136,19 @@ uint8 RGB_R_Read(void)
 *  justified number for the component instance.
 *
 * \funcusage
-*  \snippet RGB_R_SUT.c usage_RGB_R_ReadDataReg 
+*  \snippet WD_Reset_Button_SUT.c usage_WD_Reset_Button_ReadDataReg 
 *******************************************************************************/
-uint8 RGB_R_ReadDataReg(void)
+uint8 WD_Reset_Button_ReadDataReg(void)
 {
-    return (RGB_R_DR & RGB_R_MASK) >> RGB_R_SHIFT;
+    return (WD_Reset_Button_DR & WD_Reset_Button_MASK) >> WD_Reset_Button_SHIFT;
 }
 
 
 /* If interrupt is connected for this Pins component */ 
-#if defined(RGB_R_INTSTAT) 
+#if defined(WD_Reset_Button_INTSTAT) 
 
     /*******************************************************************************
-    * Function Name: RGB_R_SetInterruptMode
+    * Function Name: WD_Reset_Button_SetInterruptMode
     ****************************************************************************//**
     *
     * \brief Configures the interrupt mode for each of the Pins component's
@@ -161,12 +161,12 @@ uint8 RGB_R_ReadDataReg(void)
     * \param position
     *  The pin position as listed in the Pins component. You may OR these to be 
     *  able to configure the interrupt mode of multiple pins within a Pins 
-    *  component. Or you may use RGB_R_INTR_ALL to configure the
+    *  component. Or you may use WD_Reset_Button_INTR_ALL to configure the
     *  interrupt mode of all the pins in the Pins component.       
-    *  - RGB_R_0_INTR       (First pin in the list)
-    *  - RGB_R_1_INTR       (Second pin in the list)
+    *  - WD_Reset_Button_0_INTR       (First pin in the list)
+    *  - WD_Reset_Button_1_INTR       (Second pin in the list)
     *  - ...
-    *  - RGB_R_INTR_ALL     (All pins in Pins component)
+    *  - WD_Reset_Button_INTR_ALL     (All pins in Pins component)
     *
     * \param mode
     *  Interrupt mode for the selected pins. Valid options are documented in
@@ -182,19 +182,19 @@ uint8 RGB_R_ReadDataReg(void)
     *  port.
     *
     * \funcusage
-    *  \snippet RGB_R_SUT.c usage_RGB_R_SetInterruptMode
+    *  \snippet WD_Reset_Button_SUT.c usage_WD_Reset_Button_SetInterruptMode
     *******************************************************************************/
-    void RGB_R_SetInterruptMode(uint16 position, uint16 mode)
+    void WD_Reset_Button_SetInterruptMode(uint16 position, uint16 mode)
     {
-		if((position & RGB_R_0_INTR) != 0u) 
+		if((position & WD_Reset_Button_0_INTR) != 0u) 
 		{ 
-			 RGB_R_0_INTTYPE_REG = (uint8)mode; 
+			 WD_Reset_Button_0_INTTYPE_REG = (uint8)mode; 
 		}
     }
     
     
     /*******************************************************************************
-    * Function Name: RGB_R_ClearInterrupt
+    * Function Name: WD_Reset_Button_ClearInterrupt
     ****************************************************************************//**
     *
     * \brief Clears any active interrupts attached with the component and returns 
@@ -211,11 +211,11 @@ uint8 RGB_R_ReadDataReg(void)
     *  those associated with the Pins component.
     *
     * \funcusage
-    *  \snippet RGB_R_SUT.c usage_RGB_R_ClearInterrupt
+    *  \snippet WD_Reset_Button_SUT.c usage_WD_Reset_Button_ClearInterrupt
     *******************************************************************************/
-    uint8 RGB_R_ClearInterrupt(void)
+    uint8 WD_Reset_Button_ClearInterrupt(void)
     {
-        return (RGB_R_INTSTAT & RGB_R_MASK) >> RGB_R_SHIFT;
+        return (WD_Reset_Button_INTSTAT & WD_Reset_Button_MASK) >> WD_Reset_Button_SHIFT;
     }
 
 #endif /* If Interrupts Are Enabled for this Pins component */ 

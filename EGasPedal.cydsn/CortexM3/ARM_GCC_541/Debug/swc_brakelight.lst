@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 1
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 1
   28:source\asw/swc_brakelight.c **** 
   29:source\asw/swc_brakelight.c **** /* USER CODE END SWC_BRAKELIGHT_USERDEFINITIONS */
   30:source\asw/swc_brakelight.c **** 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 2
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 2
 
 
   31:source\asw/swc_brakelight.c **** 
@@ -93,17 +93,34 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 1
   48:source\asw/swc_brakelight.c ****     SC_BRAKELIGHT_data_t brakeSig;
   49:source\asw/swc_brakelight.c ****     if(spd.speed_val == 0)
   40              		.loc 1 49 0
-  41 0002 244B     		ldr	r3, .L15
+  41 0002 154B     		ldr	r3, .L10
   42 0004 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
-  43 0006 13BB     		cbnz	r3, .L2
-  44              	.LVL2:
-  45              	.LBB14:
-  46              	.LBB15:
-  47              		.file 2 ".\\source\\rte/sc_brakelight.h"
+  43 0006 13B9     		cbnz	r3, .L2
+  50:source\asw/swc_brakelight.c ****     {
+  51:source\asw/swc_brakelight.c ****         brakeSig.brakeLight = TRUE;
+  44              		.loc 1 51 0
+  45 0008 4FF00101 		mov	r1, #1
+  46              	.LVL2:
+  47 000c 01E0     		b	.L3
+  48              	.L2:
+  52:source\asw/swc_brakelight.c ****     }
+  53:source\asw/swc_brakelight.c ****     else
+  54:source\asw/swc_brakelight.c ****     {
+  55:source\asw/swc_brakelight.c ****         brakeSig.brakeLight = FALSE;
+  49              		.loc 1 55 0
+  50 000e 4FF00001 		mov	r1, #0
+  51              	.L3:
+  52              	.LVL3:
+  53              	.LBB9:
+  54              	.LBB10:
+  55              		.file 2 ".\\source\\rte/sc_brakelight.h"
    1:.\source\rte/sc_brakelight.h **** 
    2:.\source\rte/sc_brakelight.h **** 
    3:.\source\rte/sc_brakelight.h **** /**
    4:.\source\rte/sc_brakelight.h ****  *  file    SC_BRAKELIGHT_signal.h
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 3
+
+
    5:.\source\rte/sc_brakelight.h ****  *
    6:.\source\rte/sc_brakelight.h ****  *  brief   signal base class for signal sc_brakelight
    7:.\source\rte/sc_brakelight.h ****  *
@@ -118,9 +135,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 1
   16:.\source\rte/sc_brakelight.h **** 
   17:.\source\rte/sc_brakelight.h **** 
   18:.\source\rte/sc_brakelight.h **** #ifndef SC_BRAKELIGHT_SIGNAL_H_INCLUDED
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 3
-
-
   19:.\source\rte/sc_brakelight.h **** #define SC_BRAKELIGHT_SIGNAL_H_INCLUDED
   20:.\source\rte/sc_brakelight.h **** 
   21:.\source\rte/sc_brakelight.h **** /*================================================[ public includes  ]=============================
@@ -164,6 +178,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 1
   59:.\source\rte/sc_brakelight.h ****     SC_BRAKELIGHT_driverIn_t const inDriver;
   60:.\source\rte/sc_brakelight.h **** 
   61:.\source\rte/sc_brakelight.h ****     /**
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 4
+
+
   62:.\source\rte/sc_brakelight.h ****      * Function pointer to the output driver table
   63:.\source\rte/sc_brakelight.h ****      */
   64:.\source\rte/sc_brakelight.h ****    SC_BRAKELIGHT_driverOut_t const outDriver;
@@ -178,9 +195,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 1
   73:.\source\rte/sc_brakelight.h ****      * Event onError
   74:.\source\rte/sc_brakelight.h ****      */
   75:.\source\rte/sc_brakelight.h ****     EventMaskType const evOnError;
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 4
-
-
   76:.\source\rte/sc_brakelight.h ****     
   77:.\source\rte/sc_brakelight.h ****     /**
   78:.\source\rte/sc_brakelight.h ****      * Task Count onUpdate
@@ -224,6 +238,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 1
  116:.\source\rte/sc_brakelight.h **** 							  
  117:.\source\rte/sc_brakelight.h **** /**
  118:.\source\rte/sc_brakelight.h ****  * Instances of the struct SC_BRAKELIGHT_t represent the signal objects.
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 5
+
+
  119:.\source\rte/sc_brakelight.h ****  * A signal object contains the current application value 'value' as well as relevant meta data.
  120:.\source\rte/sc_brakelight.h ****  */
  121:.\source\rte/sc_brakelight.h **** struct SC_BRAKELIGHT_s
@@ -238,9 +255,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 1
  130:.\source\rte/sc_brakelight.h ****      * Current signal status
  131:.\source\rte/sc_brakelight.h ****      */
  132:.\source\rte/sc_brakelight.h ****     RTE_signalStatus_t status;
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 5
-
-
  133:.\source\rte/sc_brakelight.h **** 
  134:.\source\rte/sc_brakelight.h ****     /**
  135:.\source\rte/sc_brakelight.h ****      * Current age of the signal (in calling cycles)
@@ -284,6 +298,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 1
  173:.\source\rte/sc_brakelight.h **** /**************************************************************************************************
  174:.\source\rte/sc_brakelight.h **** /* Status and timeout control																						*/
  175:.\source\rte/sc_brakelight.h **** /**************************************************************************************************
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 6
+
+
  176:.\source\rte/sc_brakelight.h **** 
  177:.\source\rte/sc_brakelight.h **** /**
  178:.\source\rte/sc_brakelight.h ****  *  Returns the current signal status of the passed signal instance.
@@ -298,9 +315,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 1
  187:.\source\rte/sc_brakelight.h **** }
  188:.\source\rte/sc_brakelight.h **** 
  189:.\source\rte/sc_brakelight.h **** 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 6
-
-
  190:.\source\rte/sc_brakelight.h **** /**
  191:.\source\rte/sc_brakelight.h ****  *  Sets a new signal status of the passed signal instance by passing the new status.
  192:.\source\rte/sc_brakelight.h ****  *
@@ -344,6 +358,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 1
  230:.\source\rte/sc_brakelight.h ****    return signal->age;
  231:.\source\rte/sc_brakelight.h **** }
  232:.\source\rte/sc_brakelight.h **** 
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 7
+
+
  233:.\source\rte/sc_brakelight.h **** /**
  234:.\source\rte/sc_brakelight.h ****  * Should be called by application or driver if no new value can be provided.
  235:.\source\rte/sc_brakelight.h ****  * @param  SC_BRAKELIGHT_t * const signal: Pointer to the signal object
@@ -358,9 +375,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 1
  244:.\source\rte/sc_brakelight.h **** 	      signal->age += increment;
  245:.\source\rte/sc_brakelight.h **** 	   }
  246:.\source\rte/sc_brakelight.h **** }
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 7
-
-
  247:.\source\rte/sc_brakelight.h **** 
  248:.\source\rte/sc_brakelight.h **** 
  249:.\source\rte/sc_brakelight.h **** /**************************************************************************************************
@@ -404,6 +418,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 1
  287:.\source\rte/sc_brakelight.h ****  **/
  288:.\source\rte/sc_brakelight.h **** inline RC_t RTE_SC_BRAKELIGHT_getThreadSafe( const SC_BRAKELIGHT_t * const signal, SC_BRAKELIGHT_da
  289:.\source\rte/sc_brakelight.h **** {    
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 8
+
+
  290:.\source\rte/sc_brakelight.h ****    if (TRUE == signal->pSigCfg->resourceActive) GetResource(signal->pSigCfg->resource);
  291:.\source\rte/sc_brakelight.h ****    *data = signal->value;
  292:.\source\rte/sc_brakelight.h ****    if (TRUE == signal->pSigCfg->resourceActive) ReleaseResource(signal->pSigCfg->resource);        
@@ -418,9 +435,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 1
  301:.\source\rte/sc_brakelight.h ****  * signal specific scaling function.
  302:.\source\rte/sc_brakelight.h ****  * The signal age will be set to 0 and the new status will be 'RTE_SIGNALSTATUS_VALID'.
  303:.\source\rte/sc_brakelight.h ****  *
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 8
-
-
  304:.\source\rte/sc_brakelight.h ****  * @param  SC_BRAKELIGHT_t * const signal: Pointer to the signal object
  305:.\source\rte/sc_brakelight.h ****  * @param  sc_brakelight_data_t const value: value for the application data buffer
  306:.\source\rte/sc_brakelight.h ****  * @return RC_t: standard return code, currently only RC_SUCCESS
@@ -434,76 +448,77 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 1
  314:.\source\rte/sc_brakelight.h **** 
  315:.\source\rte/sc_brakelight.h **** 
  316:.\source\rte/sc_brakelight.h ****    if (TRUE == signal->pSigCfg->resourceActive) GetResource(signal->pSigCfg->resource);
-  48              		.loc 2 316 0
-  49 0008 234B     		ldr	r3, .L15+4
-  50 000a 9A68     		ldr	r2, [r3, #8]
+  56              		.loc 2 316 0
+  57 0012 124B     		ldr	r3, .L10+4
+  58 0014 9A68     		ldr	r2, [r3, #8]
+  59              	.LVL4:
  317:.\source\rte/sc_brakelight.h ****    signal->value  = value;
-  51              		.loc 2 317 0
-  52 000c 0121     		movs	r1, #1
-  53 000e 1970     		strb	r1, [r3]
+  60              		.loc 2 317 0
+  61 0016 1970     		strb	r1, [r3]
  318:.\source\rte/sc_brakelight.h ****    signal->age    = 0;
-  54              		.loc 2 318 0
-  55 0010 0021     		movs	r1, #0
-  56 0012 5960     		str	r1, [r3, #4]
+  62              		.loc 2 318 0
+  63 0018 0021     		movs	r1, #0
+  64              	.LVL5:
+  65 001a 5960     		str	r1, [r3, #4]
  319:.\source\rte/sc_brakelight.h ****    signal->status = RTE_SIGNALSTATUS_VALID;
-  57              		.loc 2 319 0
-  58 0014 0221     		movs	r1, #2
-  59 0016 5970     		strb	r1, [r3, #1]
+  66              		.loc 2 319 0
+  67 001c 0221     		movs	r1, #2
+  68 001e 5970     		strb	r1, [r3, #1]
  320:.\source\rte/sc_brakelight.h ****    if (TRUE == signal->pSigCfg->resourceActive) ReleaseResource(signal->pSigCfg->resource);
  321:.\source\rte/sc_brakelight.h **** 
  322:.\source\rte/sc_brakelight.h ****    //Pointer to the Taskarray, containing the tasks receiving the onUpdate events
  323:.\source\rte/sc_brakelight.h ****    TaskTypeArray* pTaskArray = signal->pSigCfg->onUpdateTasks;
-  60              		.loc 2 323 0
-  61 0018 5569     		ldr	r5, [r2, #20]
-  62              	.LVL3:
+  69              		.loc 2 323 0
+  70 0020 5569     		ldr	r5, [r2, #20]
+  71              	.LVL6:
  324:.\source\rte/sc_brakelight.h **** 
  325:.\source\rte/sc_brakelight.h ****    if (0 != signal->pSigCfg->evOnUpdate && NULL != pTaskArray){
-  63              		.loc 2 325 0
-  64 001a 9368     		ldr	r3, [r2, #8]
-  65 001c 73B1     		cbz	r3, .L3
-  66 001e 3DB9     		cbnz	r5, .L12
-  67 0020 0CE0     		b	.L3
-  68              	.LVL4:
-  69              	.L5:
-  70              	.LBB16:
+  72              		.loc 2 325 0
+  73 0022 9368     		ldr	r3, [r2, #8]
+  74 0024 73B1     		cbz	r3, .L4
+  75 0026 3DB9     		cbnz	r5, .L8
+  76 0028 0CE0     		b	.L4
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 9
+
+
+  77              	.LVL7:
+  78              	.L6:
+  79              	.LBB11:
  326:.\source\rte/sc_brakelight.h ****       for( taskNum=0 ; taskNum < signal->pSigCfg->onUpdateTaskCount ;taskNum++){
  327:.\source\rte/sc_brakelight.h **** 		  
  328:.\source\rte/sc_brakelight.h ****           TaskType task = (*pTaskArray)[taskNum];
  329:.\source\rte/sc_brakelight.h **** 	      SetEvent( task, signal->pSigCfg->evOnUpdate);
-  71              		.loc 2 329 0
-  72 0022 9968     		ldr	r1, [r3, #8]
-  73 0024 55F82400 		ldr	r0, [r5, r4, lsl #2]
-  74 0028 FFF7FEFF 		bl	EE_oo_SetEvent
-  75              	.LVL5:
-  76              	.LBE16:
+  80              		.loc 2 329 0
+  81 002a 9968     		ldr	r1, [r3, #8]
+  82 002c 55F82400 		ldr	r0, [r5, r4, lsl #2]
+  83 0030 FFF7FEFF 		bl	EE_oo_SetEvent
+  84              	.LVL8:
+  85              	.LBE11:
  326:.\source\rte/sc_brakelight.h ****       for( taskNum=0 ; taskNum < signal->pSigCfg->onUpdateTaskCount ;taskNum++){
-  77              		.loc 2 326 0
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 9
-
-
-  78 002c 0134     		adds	r4, r4, #1
-  79              	.LVL6:
-  80 002e 00E0     		b	.L4
-  81              	.LVL7:
-  82              	.L12:
+  86              		.loc 2 326 0
+  87 0034 0134     		adds	r4, r4, #1
+  88              	.LVL9:
+  89 0036 00E0     		b	.L5
+  90              	.LVL10:
+  91              	.L8:
  325:.\source\rte/sc_brakelight.h ****       for( taskNum=0 ; taskNum < signal->pSigCfg->onUpdateTaskCount ;taskNum++){
-  83              		.loc 2 325 0
-  84 0030 0024     		movs	r4, #0
-  85              	.LVL8:
-  86              	.L4:
+  92              		.loc 2 325 0
+  93 0038 0024     		movs	r4, #0
+  94              	.LVL11:
+  95              	.L5:
  326:.\source\rte/sc_brakelight.h ****       for( taskNum=0 ; taskNum < signal->pSigCfg->onUpdateTaskCount ;taskNum++){
-  87              		.loc 2 326 0
-  88 0032 194B     		ldr	r3, .L15+4
-  89 0034 9B68     		ldr	r3, [r3, #8]
-  90 0036 1A69     		ldr	r2, [r3, #16]
-  91 0038 9442     		cmp	r4, r2
-  92 003a F2D3     		bcc	.L5
-  93              	.LVL9:
-  94              	.L3:
-  95              	.LBE15:
-  96              	.LBE14:
-  97              	.LBB17:
-  98              	.LBB18:
+  96              		.loc 2 326 0
+  97 003a 084B     		ldr	r3, .L10+4
+  98 003c 9B68     		ldr	r3, [r3, #8]
+  99 003e 1A69     		ldr	r2, [r3, #16]
+ 100 0040 9442     		cmp	r4, r2
+ 101 0042 F2D3     		bcc	.L6
+ 102              	.LVL12:
+ 103              	.L4:
+ 104              	.LBE10:
+ 105              	.LBE9:
+ 106              	.LBB12:
+ 107              	.LBB13:
  330:.\source\rte/sc_brakelight.h ****       }
  331:.\source\rte/sc_brakelight.h ****    }
  332:.\source\rte/sc_brakelight.h **** 
@@ -523,6 +538,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 1
  346:.\source\rte/sc_brakelight.h ****  * @return  RC_t: Return value of the driver call
  347:.\source\rte/sc_brakelight.h ****  *
  348:.\source\rte/sc_brakelight.h ****  */
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 10
+
+
  349:.\source\rte/sc_brakelight.h **** inline RC_t RTE_SC_BRAKELIGHT_pullPort( SC_BRAKELIGHT_t * const signal )
  350:.\source\rte/sc_brakelight.h **** {                                                                                                  
  351:.\source\rte/sc_brakelight.h ****    RC_t ret = RC_SUCCESS;
@@ -538,9 +556,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 1
  361:.\source\rte/sc_brakelight.h ****     	  //Critical Section
  362:.\source\rte/sc_brakelight.h ****     	  RTE_SC_BRAKELIGHT_set(signal, value);
  363:.\source\rte/sc_brakelight.h ****       }
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 10
-
-
  364:.\source\rte/sc_brakelight.h ****       else
  365:.\source\rte/sc_brakelight.h ****       {
  366:.\source\rte/sc_brakelight.h **** 		  //Signal is invalid. Error event (if present) will be fired
@@ -564,2400 +579,2178 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 1
  384:.\source\rte/sc_brakelight.h ****    RC_t ret = RC_ERROR;
  385:.\source\rte/sc_brakelight.h **** 
  386:.\source\rte/sc_brakelight.h ****    if (RTE_SIGNALSTATUS_VALID == signal->status)
-  99              		.loc 2 386 0
- 100 003c 164B     		ldr	r3, .L15+4
- 101 003e 5B78     		ldrb	r3, [r3, #1]	@ zero_extendqisi2
- 102 0040 022B     		cmp	r3, #2
- 103 0042 25D1     		bne	.L1
+ 108              		.loc 2 386 0
+ 109 0044 054B     		ldr	r3, .L10+4
+ 110 0046 5B78     		ldrb	r3, [r3, #1]	@ zero_extendqisi2
+ 111 0048 022B     		cmp	r3, #2
+ 112 004a 03D1     		bne	.L1
  387:.\source\rte/sc_brakelight.h ****    {
  388:.\source\rte/sc_brakelight.h **** 	   ret = signal->pSigCfg->outDriver(&(signal->value));
- 104              		.loc 2 388 0
- 105 0044 1448     		ldr	r0, .L15+4
- 106 0046 8368     		ldr	r3, [r0, #8]
- 107 0048 5B68     		ldr	r3, [r3, #4]
- 108 004a 9847     		blx	r3
- 109              	.LVL10:
- 110 004c 38BD     		pop	{r3, r4, r5, pc}
- 111              	.LVL11:
- 112              	.L2:
- 113              	.LBE18:
- 114              	.LBE17:
-  50:source\asw/swc_brakelight.c ****     {
-  51:source\asw/swc_brakelight.c ****         brakeSig.brakeLight = TRUE;
-  52:source\asw/swc_brakelight.c ****         RTE_SC_BRAKELIGHT_set(&SO_BRAKE_signal, brakeSig);
-  53:source\asw/swc_brakelight.c ****         RTE_SC_BRAKELIGHT_pushPort(&SO_BRAKE_signal);
-  54:source\asw/swc_brakelight.c ****     }
-  55:source\asw/swc_brakelight.c ****     else
-  56:source\asw/swc_brakelight.c ****     {
-  57:source\asw/swc_brakelight.c ****         brakeSig.brakeLight = FALSE;
- 115              		.loc 1 57 0
- 116 004e 0021     		movs	r1, #0
- 117              	.LVL12:
- 118              	.LBB19:
- 119              	.LBB20:
- 316:.\source\rte/sc_brakelight.h ****    signal->value  = value;
- 120              		.loc 2 316 0
- 121 0050 114B     		ldr	r3, .L15+4
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 11
+ 113              		.loc 2 388 0
+ 114 004c 0348     		ldr	r0, .L10+4
+ 115 004e 8368     		ldr	r3, [r0, #8]
+ 116 0050 5B68     		ldr	r3, [r3, #4]
+ 117 0052 9847     		blx	r3
+ 118              	.LVL13:
+ 119              	.L1:
+ 120 0054 38BD     		pop	{r3, r4, r5, pc}
+ 121              	.L11:
+ 122 0056 00BF     		.align	2
+ 123              	.L10:
+ 124 0058 00000000 		.word	SO_SPEED_signal
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 11
 
 
- 122 0052 9A68     		ldr	r2, [r3, #8]
- 317:.\source\rte/sc_brakelight.h ****    signal->age    = 0;
- 123              		.loc 2 317 0
- 124 0054 1970     		strb	r1, [r3]
- 318:.\source\rte/sc_brakelight.h ****    signal->status = RTE_SIGNALSTATUS_VALID;
- 125              		.loc 2 318 0
- 126 0056 5960     		str	r1, [r3, #4]
- 319:.\source\rte/sc_brakelight.h ****    if (TRUE == signal->pSigCfg->resourceActive) ReleaseResource(signal->pSigCfg->resource);
- 127              		.loc 2 319 0
- 128 0058 0221     		movs	r1, #2
- 129 005a 5970     		strb	r1, [r3, #1]
- 323:.\source\rte/sc_brakelight.h **** 
- 130              		.loc 2 323 0
- 131 005c 5569     		ldr	r5, [r2, #20]
- 132              	.LVL13:
- 325:.\source\rte/sc_brakelight.h ****       for( taskNum=0 ; taskNum < signal->pSigCfg->onUpdateTaskCount ;taskNum++){
- 133              		.loc 2 325 0
- 134 005e 9368     		ldr	r3, [r2, #8]
- 135 0060 73B1     		cbz	r3, .L8
- 136 0062 3DB9     		cbnz	r5, .L13
- 137 0064 0CE0     		b	.L8
- 138              	.LVL14:
- 139              	.L10:
- 140              	.LBB21:
- 329:.\source\rte/sc_brakelight.h ****       }
- 141              		.loc 2 329 0
- 142 0066 9968     		ldr	r1, [r3, #8]
- 143 0068 55F82400 		ldr	r0, [r5, r4, lsl #2]
- 144 006c FFF7FEFF 		bl	EE_oo_SetEvent
- 145              	.LVL15:
- 146              	.LBE21:
- 326:.\source\rte/sc_brakelight.h **** 		  
- 147              		.loc 2 326 0
- 148 0070 0134     		adds	r4, r4, #1
- 149              	.LVL16:
- 150 0072 00E0     		b	.L9
- 151              	.LVL17:
- 152              	.L13:
- 325:.\source\rte/sc_brakelight.h ****       for( taskNum=0 ; taskNum < signal->pSigCfg->onUpdateTaskCount ;taskNum++){
- 153              		.loc 2 325 0
- 154 0074 0024     		movs	r4, #0
- 155              	.LVL18:
- 156              	.L9:
- 326:.\source\rte/sc_brakelight.h **** 		  
- 157              		.loc 2 326 0
- 158 0076 084B     		ldr	r3, .L15+4
- 159 0078 9B68     		ldr	r3, [r3, #8]
- 160 007a 1A69     		ldr	r2, [r3, #16]
- 161 007c 9442     		cmp	r4, r2
- 162 007e F2D3     		bcc	.L10
- 163              	.LVL19:
- 164              	.L8:
- 165              	.LBE20:
- 166              	.LBE19:
- 167              	.LBB22:
- 168              	.LBB23:
- 386:.\source\rte/sc_brakelight.h ****    {
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 12
+ 125 005c 00000000 		.word	SO_BRAKE_signal
+ 126              	.LBE13:
+ 127              	.LBE12:
+ 128              		.cfi_endproc
+ 129              	.LFE154:
+ 130              		.size	BRAKELIGHT_setBrakeLight_run, .-BRAKELIGHT_setBrakeLight_run
+ 131              		.text
+ 132              	.Letext0:
+ 133              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 134              		.file 4 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 135              		.file 5 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 136              		.file 6 "Generated_Source\\PSoC5/ErikaOS_1_common_ee_types.inc"
+ 137              		.file 7 "Generated_Source\\PSoC5/ErikaOS_1_cortex_mx_ee_cpu.inc"
+ 138              		.file 8 "Generated_Source\\PSoC5/ErikaOS_1_ee_oo_common.inc"
+ 139              		.file 9 ".\\source\\bsw/global.h"
+ 140              		.file 10 ".\\source\\rte/rte_types.h"
+ 141              		.file 11 ".\\source\\rte/rte.h"
+ 142              		.file 12 ".\\source\\rte/sc_speed_type.h"
+ 143              		.file 13 ".\\source\\rte/sc_speed.h"
+ 144              		.file 14 ".\\source\\rte/sc_brakelight_type.h"
+ 145              		.file 15 "Generated_Source\\PSoC5/ErikaOS_1_ee_oo_intfunc.inc"
+ 146              		.file 16 "Generated_Source\\PSoC5/ErikaOS_1_cortex_mx_ee_context.inc"
+ 147              		.file 17 "Generated_Source\\PSoC5/ErikaOS_1_common_ee_primitives.inc"
+ 148              		.file 18 "Generated_Source\\PSoC5/core_cm3.h"
+ 149              		.file 19 ".\\source\\rte/sp_common.h"
+ 150              		.file 20 "Generated_Source\\PSoC5/ErikaOS_1_ee_oo_kernel.inc"
+ 151              		.section	.debug_info,"",%progbits
+ 152              	.Ldebug_info0:
+ 153 0000 36070000 		.4byte	0x736
+ 154 0004 0400     		.2byte	0x4
+ 155 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 156 000a 04       		.byte	0x4
+ 157 000b 01       		.uleb128 0x1
+ 158 000c 00000000 		.4byte	.LASF108
+ 159 0010 0C       		.byte	0xc
+ 160 0011 C4010000 		.4byte	.LASF109
+ 161 0015 62060000 		.4byte	.LASF110
+ 162 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 163 001d 00000000 		.4byte	0
+ 164 0021 00000000 		.4byte	.Ldebug_line0
+ 165 0025 02       		.uleb128 0x2
+ 166 0026 01       		.byte	0x1
+ 167 0027 06       		.byte	0x6
+ 168 0028 52040000 		.4byte	.LASF0
+ 169 002c 03       		.uleb128 0x3
+ 170 002d 9A030000 		.4byte	.LASF4
+ 171 0031 03       		.byte	0x3
+ 172 0032 1D       		.byte	0x1d
+ 173 0033 37000000 		.4byte	0x37
+ 174 0037 02       		.uleb128 0x2
+ 175 0038 01       		.byte	0x1
+ 176 0039 08       		.byte	0x8
+ 177 003a 1C040000 		.4byte	.LASF1
+ 178 003e 02       		.uleb128 0x2
+ 179 003f 02       		.byte	0x2
+ 180 0040 05       		.byte	0x5
+ 181 0041 37010000 		.4byte	.LASF2
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 12
 
 
- 169              		.loc 2 386 0
- 170 0080 054B     		ldr	r3, .L15+4
- 171 0082 5B78     		ldrb	r3, [r3, #1]	@ zero_extendqisi2
- 172 0084 022B     		cmp	r3, #2
- 173 0086 03D1     		bne	.L1
- 174              		.loc 2 388 0
- 175 0088 0348     		ldr	r0, .L15+4
- 176 008a 8368     		ldr	r3, [r0, #8]
- 177 008c 5B68     		ldr	r3, [r3, #4]
- 178 008e 9847     		blx	r3
- 179              	.LVL20:
- 180              	.L1:
- 181 0090 38BD     		pop	{r3, r4, r5, pc}
- 182              	.L16:
- 183 0092 00BF     		.align	2
- 184              	.L15:
- 185 0094 00000000 		.word	SO_SPEED_signal
- 186 0098 00000000 		.word	SO_BRAKE_signal
- 187              	.LBE23:
- 188              	.LBE22:
- 189              		.cfi_endproc
- 190              	.LFE154:
- 191              		.size	BRAKELIGHT_setBrakeLight_run, .-BRAKELIGHT_setBrakeLight_run
- 192              		.text
- 193              	.Letext0:
- 194              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
- 195              		.file 4 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
- 196              		.file 5 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
- 197              		.file 6 "Generated_Source\\PSoC5/ErikaOS_1_common_ee_types.inc"
- 198              		.file 7 "Generated_Source\\PSoC5/ErikaOS_1_cortex_mx_ee_cpu.inc"
- 199              		.file 8 "Generated_Source\\PSoC5/ErikaOS_1_ee_oo_common.inc"
- 200              		.file 9 ".\\source\\bsw/global.h"
- 201              		.file 10 ".\\source\\rte/rte_types.h"
- 202              		.file 11 ".\\source\\rte/rte.h"
- 203              		.file 12 ".\\source\\rte/sc_speed_type.h"
- 204              		.file 13 ".\\source\\rte/sc_speed.h"
- 205              		.file 14 ".\\source\\rte/sc_brakelight_type.h"
- 206              		.file 15 "Generated_Source\\PSoC5/ErikaOS_1_ee_oo_intfunc.inc"
- 207              		.file 16 "Generated_Source\\PSoC5/ErikaOS_1_cortex_mx_ee_context.inc"
- 208              		.file 17 "Generated_Source\\PSoC5/ErikaOS_1_common_ee_primitives.inc"
- 209              		.file 18 "Generated_Source\\PSoC5/core_cm3.h"
- 210              		.file 19 ".\\source\\rte/sp_common.h"
- 211              		.file 20 "Generated_Source\\PSoC5/ErikaOS_1_ee_oo_kernel.inc"
- 212              		.section	.debug_info,"",%progbits
- 213              	.Ldebug_info0:
- 214 0000 C0070000 		.4byte	0x7c0
- 215 0004 0400     		.2byte	0x4
- 216 0006 00000000 		.4byte	.Ldebug_abbrev0
- 217 000a 04       		.byte	0x4
- 218 000b 01       		.uleb128 0x1
- 219 000c 00000000 		.4byte	.LASF109
- 220 0010 0C       		.byte	0xc
- 221 0011 C4010000 		.4byte	.LASF110
- 222 0015 62060000 		.4byte	.LASF111
- 223 0019 00000000 		.4byte	.Ldebug_ranges0+0
- 224 001d 00000000 		.4byte	0
- 225 0021 00000000 		.4byte	.Ldebug_line0
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 13
+ 182 0045 02       		.uleb128 0x2
+ 183 0046 02       		.byte	0x2
+ 184 0047 07       		.byte	0x7
+ 185 0048 57050000 		.4byte	.LASF3
+ 186 004c 03       		.uleb128 0x3
+ 187 004d 15060000 		.4byte	.LASF5
+ 188 0051 03       		.byte	0x3
+ 189 0052 3F       		.byte	0x3f
+ 190 0053 57000000 		.4byte	0x57
+ 191 0057 02       		.uleb128 0x2
+ 192 0058 04       		.byte	0x4
+ 193 0059 05       		.byte	0x5
+ 194 005a 58030000 		.4byte	.LASF6
+ 195 005e 03       		.uleb128 0x3
+ 196 005f 0F010000 		.4byte	.LASF7
+ 197 0063 03       		.byte	0x3
+ 198 0064 41       		.byte	0x41
+ 199 0065 69000000 		.4byte	0x69
+ 200 0069 02       		.uleb128 0x2
+ 201 006a 04       		.byte	0x4
+ 202 006b 07       		.byte	0x7
+ 203 006c CA050000 		.4byte	.LASF8
+ 204 0070 02       		.uleb128 0x2
+ 205 0071 08       		.byte	0x8
+ 206 0072 05       		.byte	0x5
+ 207 0073 FA020000 		.4byte	.LASF9
+ 208 0077 02       		.uleb128 0x2
+ 209 0078 08       		.byte	0x8
+ 210 0079 07       		.byte	0x7
+ 211 007a 5E040000 		.4byte	.LASF10
+ 212 007e 04       		.uleb128 0x4
+ 213 007f 04       		.byte	0x4
+ 214 0080 05       		.byte	0x5
+ 215 0081 696E7400 		.ascii	"int\000"
+ 216 0085 02       		.uleb128 0x2
+ 217 0086 04       		.byte	0x4
+ 218 0087 07       		.byte	0x7
+ 219 0088 7E040000 		.4byte	.LASF11
+ 220 008c 03       		.uleb128 0x3
+ 221 008d 1F060000 		.4byte	.LASF12
+ 222 0091 04       		.byte	0x4
+ 223 0092 18       		.byte	0x18
+ 224 0093 2C000000 		.4byte	0x2c
+ 225 0097 03       		.uleb128 0x3
+ 226 0098 4F050000 		.4byte	.LASF13
+ 227 009c 04       		.byte	0x4
+ 228 009d 2C       		.byte	0x2c
+ 229 009e 4C000000 		.4byte	0x4c
+ 230 00a2 03       		.uleb128 0x3
+ 231 00a3 75040000 		.4byte	.LASF14
+ 232 00a7 04       		.byte	0x4
+ 233 00a8 30       		.byte	0x30
+ 234 00a9 5E000000 		.4byte	0x5e
+ 235 00ad 02       		.uleb128 0x2
+ 236 00ae 04       		.byte	0x4
+ 237 00af 04       		.byte	0x4
+ 238 00b0 B1020000 		.4byte	.LASF15
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 13
 
 
- 226 0025 02       		.uleb128 0x2
- 227 0026 01       		.byte	0x1
- 228 0027 06       		.byte	0x6
- 229 0028 52040000 		.4byte	.LASF0
- 230 002c 03       		.uleb128 0x3
- 231 002d 9A030000 		.4byte	.LASF4
- 232 0031 03       		.byte	0x3
- 233 0032 1D       		.byte	0x1d
- 234 0033 37000000 		.4byte	0x37
- 235 0037 02       		.uleb128 0x2
- 236 0038 01       		.byte	0x1
- 237 0039 08       		.byte	0x8
- 238 003a 1C040000 		.4byte	.LASF1
- 239 003e 02       		.uleb128 0x2
- 240 003f 02       		.byte	0x2
- 241 0040 05       		.byte	0x5
- 242 0041 37010000 		.4byte	.LASF2
- 243 0045 02       		.uleb128 0x2
- 244 0046 02       		.byte	0x2
- 245 0047 07       		.byte	0x7
- 246 0048 57050000 		.4byte	.LASF3
- 247 004c 03       		.uleb128 0x3
- 248 004d 15060000 		.4byte	.LASF5
- 249 0051 03       		.byte	0x3
- 250 0052 3F       		.byte	0x3f
- 251 0053 57000000 		.4byte	0x57
- 252 0057 02       		.uleb128 0x2
- 253 0058 04       		.byte	0x4
- 254 0059 05       		.byte	0x5
- 255 005a 58030000 		.4byte	.LASF6
- 256 005e 03       		.uleb128 0x3
- 257 005f 0F010000 		.4byte	.LASF7
- 258 0063 03       		.byte	0x3
- 259 0064 41       		.byte	0x41
- 260 0065 69000000 		.4byte	0x69
- 261 0069 02       		.uleb128 0x2
- 262 006a 04       		.byte	0x4
- 263 006b 07       		.byte	0x7
- 264 006c CA050000 		.4byte	.LASF8
- 265 0070 02       		.uleb128 0x2
- 266 0071 08       		.byte	0x8
- 267 0072 05       		.byte	0x5
- 268 0073 FA020000 		.4byte	.LASF9
- 269 0077 02       		.uleb128 0x2
- 270 0078 08       		.byte	0x8
- 271 0079 07       		.byte	0x7
- 272 007a 5E040000 		.4byte	.LASF10
- 273 007e 04       		.uleb128 0x4
- 274 007f 04       		.byte	0x4
- 275 0080 05       		.byte	0x5
- 276 0081 696E7400 		.ascii	"int\000"
- 277 0085 02       		.uleb128 0x2
- 278 0086 04       		.byte	0x4
- 279 0087 07       		.byte	0x7
- 280 0088 7E040000 		.4byte	.LASF11
- 281 008c 03       		.uleb128 0x3
- 282 008d 1F060000 		.4byte	.LASF12
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 14
+ 239 00b4 02       		.uleb128 0x2
+ 240 00b5 08       		.byte	0x8
+ 241 00b6 04       		.byte	0x4
+ 242 00b7 B0060000 		.4byte	.LASF16
+ 243 00bb 02       		.uleb128 0x2
+ 244 00bc 01       		.byte	0x1
+ 245 00bd 08       		.byte	0x8
+ 246 00be 4D040000 		.4byte	.LASF17
+ 247 00c2 03       		.uleb128 0x3
+ 248 00c3 41010000 		.4byte	.LASF18
+ 249 00c7 05       		.byte	0x5
+ 250 00c8 D8       		.byte	0xd8
+ 251 00c9 85000000 		.4byte	0x85
+ 252 00cd 02       		.uleb128 0x2
+ 253 00ce 08       		.byte	0x8
+ 254 00cf 04       		.byte	0x4
+ 255 00d0 FF030000 		.4byte	.LASF19
+ 256 00d4 03       		.uleb128 0x3
+ 257 00d5 C8040000 		.4byte	.LASF20
+ 258 00d9 06       		.byte	0x6
+ 259 00da 53       		.byte	0x53
+ 260 00db 7E000000 		.4byte	0x7e
+ 261 00df 03       		.uleb128 0x3
+ 262 00e0 F4010000 		.4byte	.LASF21
+ 263 00e4 06       		.byte	0x6
+ 264 00e5 54       		.byte	0x54
+ 265 00e6 85000000 		.4byte	0x85
+ 266 00ea 03       		.uleb128 0x3
+ 267 00eb FC050000 		.4byte	.LASF22
+ 268 00ef 07       		.byte	0x7
+ 269 00f0 4D       		.byte	0x4d
+ 270 00f1 DF000000 		.4byte	0xdf
+ 271 00f5 03       		.uleb128 0x3
+ 272 00f6 A8010000 		.4byte	.LASF23
+ 273 00fa 07       		.byte	0x7
+ 274 00fb 4F       		.byte	0x4f
+ 275 00fc DF000000 		.4byte	0xdf
+ 276 0100 03       		.uleb128 0x3
+ 277 0101 12020000 		.4byte	.LASF24
+ 278 0105 07       		.byte	0x7
+ 279 0106 78       		.byte	0x78
+ 280 0107 D4000000 		.4byte	0xd4
+ 281 010b 05       		.uleb128 0x5
+ 282 010c 13040000 		.4byte	.LASF25
+ 283 0110 08       		.byte	0x8
+ 284 0111 F701     		.2byte	0x1f7
+ 285 0113 00010000 		.4byte	0x100
+ 286 0117 05       		.uleb128 0x5
+ 287 0118 9E000000 		.4byte	.LASF26
+ 288 011c 08       		.byte	0x8
+ 289 011d 2C02     		.2byte	0x22c
+ 290 011f EA000000 		.4byte	0xea
+ 291 0123 02       		.uleb128 0x2
+ 292 0124 04       		.byte	0x4
+ 293 0125 07       		.byte	0x7
+ 294 0126 5E010000 		.4byte	.LASF27
+ 295 012a 03       		.uleb128 0x3
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 14
 
 
- 283 0091 04       		.byte	0x4
- 284 0092 18       		.byte	0x18
- 285 0093 2C000000 		.4byte	0x2c
- 286 0097 03       		.uleb128 0x3
- 287 0098 4F050000 		.4byte	.LASF13
- 288 009c 04       		.byte	0x4
- 289 009d 2C       		.byte	0x2c
- 290 009e 4C000000 		.4byte	0x4c
- 291 00a2 03       		.uleb128 0x3
- 292 00a3 75040000 		.4byte	.LASF14
- 293 00a7 04       		.byte	0x4
- 294 00a8 30       		.byte	0x30
- 295 00a9 5E000000 		.4byte	0x5e
- 296 00ad 02       		.uleb128 0x2
- 297 00ae 04       		.byte	0x4
- 298 00af 04       		.byte	0x4
- 299 00b0 B1020000 		.4byte	.LASF15
- 300 00b4 02       		.uleb128 0x2
- 301 00b5 08       		.byte	0x8
- 302 00b6 04       		.byte	0x4
- 303 00b7 B0060000 		.4byte	.LASF16
- 304 00bb 02       		.uleb128 0x2
- 305 00bc 01       		.byte	0x1
- 306 00bd 08       		.byte	0x8
- 307 00be 4D040000 		.4byte	.LASF17
- 308 00c2 03       		.uleb128 0x3
- 309 00c3 41010000 		.4byte	.LASF18
- 310 00c7 05       		.byte	0x5
- 311 00c8 D8       		.byte	0xd8
- 312 00c9 85000000 		.4byte	0x85
- 313 00cd 02       		.uleb128 0x2
- 314 00ce 08       		.byte	0x8
- 315 00cf 04       		.byte	0x4
- 316 00d0 FF030000 		.4byte	.LASF19
- 317 00d4 03       		.uleb128 0x3
- 318 00d5 C8040000 		.4byte	.LASF20
- 319 00d9 06       		.byte	0x6
- 320 00da 53       		.byte	0x53
- 321 00db 7E000000 		.4byte	0x7e
- 322 00df 03       		.uleb128 0x3
- 323 00e0 F4010000 		.4byte	.LASF21
- 324 00e4 06       		.byte	0x6
- 325 00e5 54       		.byte	0x54
- 326 00e6 85000000 		.4byte	0x85
- 327 00ea 03       		.uleb128 0x3
- 328 00eb FC050000 		.4byte	.LASF22
- 329 00ef 07       		.byte	0x7
- 330 00f0 4D       		.byte	0x4d
- 331 00f1 DF000000 		.4byte	0xdf
- 332 00f5 03       		.uleb128 0x3
- 333 00f6 A8010000 		.4byte	.LASF23
- 334 00fa 07       		.byte	0x7
- 335 00fb 4F       		.byte	0x4f
- 336 00fc DF000000 		.4byte	0xdf
- 337 0100 03       		.uleb128 0x3
- 338 0101 12020000 		.4byte	.LASF24
- 339 0105 07       		.byte	0x7
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 15
+ 296 012b E0030000 		.4byte	.LASF28
+ 297 012f 09       		.byte	0x9
+ 298 0130 9C       		.byte	0x9c
+ 299 0131 37000000 		.4byte	0x37
+ 300 0135 06       		.uleb128 0x6
+ 301 0136 01       		.byte	0x1
+ 302 0137 25000000 		.4byte	0x25
+ 303 013b 09       		.byte	0x9
+ 304 013c CF       		.byte	0xcf
+ 305 013d DE010000 		.4byte	0x1de
+ 306 0141 07       		.uleb128 0x7
+ 307 0142 E5000000 		.4byte	.LASF29
+ 308 0146 00       		.byte	0
+ 309 0147 08       		.uleb128 0x8
+ 310 0148 F3060000 		.4byte	.LASF30
+ 311 014c 7F       		.sleb128 -1
+ 312 014d 08       		.uleb128 0x8
+ 313 014e A4040000 		.4byte	.LASF31
+ 314 0152 7E       		.sleb128 -2
+ 315 0153 08       		.uleb128 0x8
+ 316 0154 9A010000 		.4byte	.LASF32
+ 317 0158 7D       		.sleb128 -3
+ 318 0159 08       		.uleb128 0x8
+ 319 015a FC060000 		.4byte	.LASF33
+ 320 015e 7C       		.sleb128 -4
+ 321 015f 08       		.uleb128 0x8
+ 322 0160 A2020000 		.4byte	.LASF34
+ 323 0164 7B       		.sleb128 -5
+ 324 0165 08       		.uleb128 0x8
+ 325 0166 04060000 		.4byte	.LASF35
+ 326 016a 7A       		.sleb128 -6
+ 327 016b 08       		.uleb128 0x8
+ 328 016c 61030000 		.4byte	.LASF36
+ 329 0170 79       		.sleb128 -7
+ 330 0171 08       		.uleb128 0x8
+ 331 0172 AC000000 		.4byte	.LASF37
+ 332 0176 78       		.sleb128 -8
+ 333 0177 08       		.uleb128 0x8
+ 334 0178 B2040000 		.4byte	.LASF38
+ 335 017c 77       		.sleb128 -9
+ 336 017d 08       		.uleb128 0x8
+ 337 017e 73030000 		.4byte	.LASF39
+ 338 0182 76       		.sleb128 -10
+ 339 0183 08       		.uleb128 0x8
+ 340 0184 54070000 		.4byte	.LASF40
+ 341 0188 75       		.sleb128 -11
+ 342 0189 08       		.uleb128 0x8
+ 343 018a 8B040000 		.4byte	.LASF41
+ 344 018e 74       		.sleb128 -12
+ 345 018f 08       		.uleb128 0x8
+ 346 0190 EA050000 		.4byte	.LASF42
+ 347 0194 73       		.sleb128 -13
+ 348 0195 08       		.uleb128 0x8
+ 349 0196 D2000000 		.4byte	.LASF43
+ 350 019a 72       		.sleb128 -14
+ 351 019b 08       		.uleb128 0x8
+ 352 019c 23010000 		.4byte	.LASF44
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 15
 
 
- 340 0106 78       		.byte	0x78
- 341 0107 D4000000 		.4byte	0xd4
- 342 010b 05       		.uleb128 0x5
- 343 010c 13040000 		.4byte	.LASF25
- 344 0110 08       		.byte	0x8
- 345 0111 F701     		.2byte	0x1f7
- 346 0113 00010000 		.4byte	0x100
- 347 0117 05       		.uleb128 0x5
- 348 0118 9E000000 		.4byte	.LASF26
- 349 011c 08       		.byte	0x8
- 350 011d 2C02     		.2byte	0x22c
- 351 011f EA000000 		.4byte	0xea
- 352 0123 02       		.uleb128 0x2
- 353 0124 04       		.byte	0x4
- 354 0125 07       		.byte	0x7
- 355 0126 5E010000 		.4byte	.LASF27
- 356 012a 03       		.uleb128 0x3
- 357 012b E0030000 		.4byte	.LASF28
- 358 012f 09       		.byte	0x9
- 359 0130 9C       		.byte	0x9c
- 360 0131 37000000 		.4byte	0x37
- 361 0135 06       		.uleb128 0x6
- 362 0136 01       		.byte	0x1
- 363 0137 25000000 		.4byte	0x25
- 364 013b 09       		.byte	0x9
- 365 013c CF       		.byte	0xcf
- 366 013d DE010000 		.4byte	0x1de
- 367 0141 07       		.uleb128 0x7
- 368 0142 E5000000 		.4byte	.LASF29
- 369 0146 00       		.byte	0
- 370 0147 08       		.uleb128 0x8
- 371 0148 F3060000 		.4byte	.LASF30
- 372 014c 7F       		.sleb128 -1
- 373 014d 08       		.uleb128 0x8
- 374 014e A4040000 		.4byte	.LASF31
- 375 0152 7E       		.sleb128 -2
- 376 0153 08       		.uleb128 0x8
- 377 0154 9A010000 		.4byte	.LASF32
- 378 0158 7D       		.sleb128 -3
- 379 0159 08       		.uleb128 0x8
- 380 015a FC060000 		.4byte	.LASF33
- 381 015e 7C       		.sleb128 -4
- 382 015f 08       		.uleb128 0x8
- 383 0160 A2020000 		.4byte	.LASF34
- 384 0164 7B       		.sleb128 -5
- 385 0165 08       		.uleb128 0x8
- 386 0166 04060000 		.4byte	.LASF35
- 387 016a 7A       		.sleb128 -6
- 388 016b 08       		.uleb128 0x8
- 389 016c 61030000 		.4byte	.LASF36
- 390 0170 79       		.sleb128 -7
- 391 0171 08       		.uleb128 0x8
- 392 0172 AC000000 		.4byte	.LASF37
- 393 0176 78       		.sleb128 -8
- 394 0177 08       		.uleb128 0x8
- 395 0178 B2040000 		.4byte	.LASF38
- 396 017c 77       		.sleb128 -9
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 16
+ 353 01a0 71       		.sleb128 -15
+ 354 01a1 08       		.uleb128 0x8
+ 355 01a2 A4030000 		.4byte	.LASF45
+ 356 01a6 70       		.sleb128 -16
+ 357 01a7 08       		.uleb128 0x8
+ 358 01a8 B0010000 		.4byte	.LASF46
+ 359 01ac 6F       		.sleb128 -17
+ 360 01ad 08       		.uleb128 0x8
+ 361 01ae 3A050000 		.4byte	.LASF47
+ 362 01b2 6E       		.sleb128 -18
+ 363 01b3 08       		.uleb128 0x8
+ 364 01b4 21030000 		.4byte	.LASF48
+ 365 01b8 6D       		.sleb128 -19
+ 366 01b9 08       		.uleb128 0x8
+ 367 01ba 6A050000 		.4byte	.LASF49
+ 368 01be 6C       		.sleb128 -20
+ 369 01bf 08       		.uleb128 0x8
+ 370 01c0 CE030000 		.4byte	.LASF50
+ 371 01c4 6B       		.sleb128 -21
+ 372 01c5 08       		.uleb128 0x8
+ 373 01c6 50060000 		.4byte	.LASF51
+ 374 01ca 6A       		.sleb128 -22
+ 375 01cb 08       		.uleb128 0x8
+ 376 01cc 2F020000 		.4byte	.LASF52
+ 377 01d0 69       		.sleb128 -23
+ 378 01d1 08       		.uleb128 0x8
+ 379 01d2 34030000 		.4byte	.LASF53
+ 380 01d6 68       		.sleb128 -24
+ 381 01d7 08       		.uleb128 0x8
+ 382 01d8 E1020000 		.4byte	.LASF54
+ 383 01dc 67       		.sleb128 -25
+ 384 01dd 00       		.byte	0
+ 385 01de 03       		.uleb128 0x3
+ 386 01df 32070000 		.4byte	.LASF55
+ 387 01e3 09       		.byte	0x9
+ 388 01e4 EA       		.byte	0xea
+ 389 01e5 35010000 		.4byte	0x135
+ 390 01e9 03       		.uleb128 0x3
+ 391 01ea 24070000 		.4byte	.LASF56
+ 392 01ee 0A       		.byte	0xa
+ 393 01ef 19       		.byte	0x19
+ 394 01f0 F4010000 		.4byte	0x1f4
+ 395 01f4 09       		.uleb128 0x9
+ 396 01f5 0B010000 		.4byte	0x10b
+ 397 01f9 FF010000 		.4byte	0x1ff
+ 398 01fd 0A       		.uleb128 0xa
+ 399 01fe 00       		.byte	0
+ 400 01ff 03       		.uleb128 0x3
+ 401 0200 27060000 		.4byte	.LASF57
+ 402 0204 0A       		.byte	0xa
+ 403 0205 21       		.byte	0x21
+ 404 0206 17010000 		.4byte	0x117
+ 405 020a 03       		.uleb128 0x3
+ 406 020b A3060000 		.4byte	.LASF58
+ 407 020f 0A       		.byte	0xa
+ 408 0210 2D       		.byte	0x2d
+ 409 0211 A2000000 		.4byte	0xa2
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 16
 
 
- 397 017d 08       		.uleb128 0x8
- 398 017e 73030000 		.4byte	.LASF39
- 399 0182 76       		.sleb128 -10
- 400 0183 08       		.uleb128 0x8
- 401 0184 54070000 		.4byte	.LASF40
- 402 0188 75       		.sleb128 -11
- 403 0189 08       		.uleb128 0x8
- 404 018a 8B040000 		.4byte	.LASF41
- 405 018e 74       		.sleb128 -12
- 406 018f 08       		.uleb128 0x8
- 407 0190 EA050000 		.4byte	.LASF42
- 408 0194 73       		.sleb128 -13
- 409 0195 08       		.uleb128 0x8
- 410 0196 D2000000 		.4byte	.LASF43
- 411 019a 72       		.sleb128 -14
- 412 019b 08       		.uleb128 0x8
- 413 019c 23010000 		.4byte	.LASF44
- 414 01a0 71       		.sleb128 -15
- 415 01a1 08       		.uleb128 0x8
- 416 01a2 A4030000 		.4byte	.LASF45
- 417 01a6 70       		.sleb128 -16
- 418 01a7 08       		.uleb128 0x8
- 419 01a8 B0010000 		.4byte	.LASF46
- 420 01ac 6F       		.sleb128 -17
- 421 01ad 08       		.uleb128 0x8
- 422 01ae 3A050000 		.4byte	.LASF47
- 423 01b2 6E       		.sleb128 -18
- 424 01b3 08       		.uleb128 0x8
- 425 01b4 21030000 		.4byte	.LASF48
- 426 01b8 6D       		.sleb128 -19
- 427 01b9 08       		.uleb128 0x8
- 428 01ba 6A050000 		.4byte	.LASF49
- 429 01be 6C       		.sleb128 -20
- 430 01bf 08       		.uleb128 0x8
- 431 01c0 CE030000 		.4byte	.LASF50
- 432 01c4 6B       		.sleb128 -21
- 433 01c5 08       		.uleb128 0x8
- 434 01c6 50060000 		.4byte	.LASF51
- 435 01ca 6A       		.sleb128 -22
- 436 01cb 08       		.uleb128 0x8
- 437 01cc 2F020000 		.4byte	.LASF52
- 438 01d0 69       		.sleb128 -23
- 439 01d1 08       		.uleb128 0x8
- 440 01d2 34030000 		.4byte	.LASF53
- 441 01d6 68       		.sleb128 -24
- 442 01d7 08       		.uleb128 0x8
- 443 01d8 E1020000 		.4byte	.LASF54
- 444 01dc 67       		.sleb128 -25
- 445 01dd 00       		.byte	0
- 446 01de 03       		.uleb128 0x3
- 447 01df 32070000 		.4byte	.LASF55
- 448 01e3 09       		.byte	0x9
- 449 01e4 EA       		.byte	0xea
- 450 01e5 35010000 		.4byte	0x135
- 451 01e9 03       		.uleb128 0x3
- 452 01ea 24070000 		.4byte	.LASF56
- 453 01ee 0A       		.byte	0xa
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 17
+ 410 0215 06       		.uleb128 0x6
+ 411 0216 01       		.byte	0x1
+ 412 0217 37000000 		.4byte	0x37
+ 413 021b 0B       		.byte	0xb
+ 414 021c 59       		.byte	0x59
+ 415 021d 3A020000 		.4byte	0x23a
+ 416 0221 07       		.uleb128 0x7
+ 417 0222 81030000 		.4byte	.LASF59
+ 418 0226 00       		.byte	0
+ 419 0227 07       		.uleb128 0x7
+ 420 0228 37070000 		.4byte	.LASF60
+ 421 022c 01       		.byte	0x1
+ 422 022d 07       		.uleb128 0x7
+ 423 022e B7060000 		.4byte	.LASF61
+ 424 0232 02       		.byte	0x2
+ 425 0233 07       		.uleb128 0x7
+ 426 0234 21050000 		.4byte	.LASF62
+ 427 0238 03       		.byte	0x3
+ 428 0239 00       		.byte	0
+ 429 023a 03       		.uleb128 0x3
+ 430 023b 45030000 		.4byte	.LASF63
+ 431 023f 0B       		.byte	0xb
+ 432 0240 5E       		.byte	0x5e
+ 433 0241 15020000 		.4byte	0x215
+ 434 0245 0B       		.uleb128 0xb
+ 435 0246 17010000 		.4byte	0x117
+ 436 024a 0B       		.uleb128 0xb
+ 437 024b C2000000 		.4byte	0xc2
+ 438 024f 0C       		.uleb128 0xc
+ 439 0250 04       		.byte	0x4
+ 440 0251 E9010000 		.4byte	0x1e9
+ 441 0255 0B       		.uleb128 0xb
+ 442 0256 4F020000 		.4byte	0x24f
+ 443 025a 0B       		.uleb128 0xb
+ 444 025b 2A010000 		.4byte	0x12a
+ 445 025f 0B       		.uleb128 0xb
+ 446 0260 0A020000 		.4byte	0x20a
+ 447 0264 0D       		.uleb128 0xd
+ 448 0265 01       		.byte	0x1
+ 449 0266 0C       		.byte	0xc
+ 450 0267 21       		.byte	0x21
+ 451 0268 79020000 		.4byte	0x279
+ 452 026c 0E       		.uleb128 0xe
+ 453 026d 43040000 		.4byte	.LASF67
+ 454 0271 0C       		.byte	0xc
+ 455 0272 23       		.byte	0x23
+ 456 0273 8C000000 		.4byte	0x8c
+ 457 0277 00       		.byte	0
+ 458 0278 00       		.byte	0
+ 459 0279 03       		.uleb128 0x3
+ 460 027a 1F020000 		.4byte	.LASF64
+ 461 027e 0C       		.byte	0xc
+ 462 027f 26       		.byte	0x26
+ 463 0280 64020000 		.4byte	0x264
+ 464 0284 03       		.uleb128 0x3
+ 465 0285 31060000 		.4byte	.LASF65
+ 466 0289 0D       		.byte	0xd
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 17
 
 
- 454 01ef 19       		.byte	0x19
- 455 01f0 F4010000 		.4byte	0x1f4
- 456 01f4 09       		.uleb128 0x9
- 457 01f5 0B010000 		.4byte	0x10b
- 458 01f9 FF010000 		.4byte	0x1ff
- 459 01fd 0A       		.uleb128 0xa
- 460 01fe 00       		.byte	0
- 461 01ff 03       		.uleb128 0x3
- 462 0200 27060000 		.4byte	.LASF57
- 463 0204 0A       		.byte	0xa
- 464 0205 21       		.byte	0x21
- 465 0206 17010000 		.4byte	0x117
- 466 020a 03       		.uleb128 0x3
- 467 020b A3060000 		.4byte	.LASF58
- 468 020f 0A       		.byte	0xa
- 469 0210 2D       		.byte	0x2d
- 470 0211 A2000000 		.4byte	0xa2
- 471 0215 06       		.uleb128 0x6
- 472 0216 01       		.byte	0x1
- 473 0217 37000000 		.4byte	0x37
- 474 021b 0B       		.byte	0xb
- 475 021c 59       		.byte	0x59
- 476 021d 3A020000 		.4byte	0x23a
- 477 0221 07       		.uleb128 0x7
- 478 0222 81030000 		.4byte	.LASF59
- 479 0226 00       		.byte	0
- 480 0227 07       		.uleb128 0x7
- 481 0228 37070000 		.4byte	.LASF60
- 482 022c 01       		.byte	0x1
- 483 022d 07       		.uleb128 0x7
- 484 022e B7060000 		.4byte	.LASF61
- 485 0232 02       		.byte	0x2
- 486 0233 07       		.uleb128 0x7
- 487 0234 21050000 		.4byte	.LASF62
- 488 0238 03       		.byte	0x3
- 489 0239 00       		.byte	0
- 490 023a 03       		.uleb128 0x3
- 491 023b 45030000 		.4byte	.LASF63
- 492 023f 0B       		.byte	0xb
- 493 0240 5E       		.byte	0x5e
- 494 0241 15020000 		.4byte	0x215
- 495 0245 0B       		.uleb128 0xb
- 496 0246 17010000 		.4byte	0x117
- 497 024a 0B       		.uleb128 0xb
- 498 024b C2000000 		.4byte	0xc2
- 499 024f 0C       		.uleb128 0xc
- 500 0250 04       		.byte	0x4
- 501 0251 E9010000 		.4byte	0x1e9
- 502 0255 0B       		.uleb128 0xb
- 503 0256 4F020000 		.4byte	0x24f
- 504 025a 0B       		.uleb128 0xb
- 505 025b 2A010000 		.4byte	0x12a
- 506 025f 0B       		.uleb128 0xb
- 507 0260 0A020000 		.4byte	0x20a
- 508 0264 0D       		.uleb128 0xd
- 509 0265 01       		.byte	0x1
- 510 0266 0C       		.byte	0xc
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 18
+ 467 028a 26       		.byte	0x26
+ 468 028b 8F020000 		.4byte	0x28f
+ 469 028f 0C       		.uleb128 0xc
+ 470 0290 04       		.byte	0x4
+ 471 0291 95020000 		.4byte	0x295
+ 472 0295 0F       		.uleb128 0xf
+ 473 0296 DE010000 		.4byte	0x1de
+ 474 029a A4020000 		.4byte	0x2a4
+ 475 029e 10       		.uleb128 0x10
+ 476 029f AA020000 		.4byte	0x2aa
+ 477 02a3 00       		.byte	0
+ 478 02a4 0C       		.uleb128 0xc
+ 479 02a5 04       		.byte	0x4
+ 480 02a6 79020000 		.4byte	0x279
+ 481 02aa 0B       		.uleb128 0xb
+ 482 02ab A4020000 		.4byte	0x2a4
+ 483 02af 03       		.uleb128 0x3
+ 484 02b0 F0000000 		.4byte	.LASF66
+ 485 02b4 0D       		.byte	0xd
+ 486 02b5 2C       		.byte	0x2c
+ 487 02b6 BA020000 		.4byte	0x2ba
+ 488 02ba 0C       		.uleb128 0xc
+ 489 02bb 04       		.byte	0x4
+ 490 02bc C0020000 		.4byte	0x2c0
+ 491 02c0 0F       		.uleb128 0xf
+ 492 02c1 DE010000 		.4byte	0x1de
+ 493 02c5 CF020000 		.4byte	0x2cf
+ 494 02c9 10       		.uleb128 0x10
+ 495 02ca DA020000 		.4byte	0x2da
+ 496 02ce 00       		.byte	0
+ 497 02cf 0C       		.uleb128 0xc
+ 498 02d0 04       		.byte	0x4
+ 499 02d1 D5020000 		.4byte	0x2d5
+ 500 02d5 0B       		.uleb128 0xb
+ 501 02d6 79020000 		.4byte	0x279
+ 502 02da 0B       		.uleb128 0xb
+ 503 02db CF020000 		.4byte	0x2cf
+ 504 02df 11       		.uleb128 0x11
+ 505 02e0 46020000 		.4byte	.LASF79
+ 506 02e4 28       		.byte	0x28
+ 507 02e5 0D       		.byte	0xd
+ 508 02e6 36       		.byte	0x36
+ 509 02e7 64030000 		.4byte	0x364
+ 510 02eb 0E       		.uleb128 0xe
+ 511 02ec DD060000 		.4byte	.LASF68
+ 512 02f0 0D       		.byte	0xd
+ 513 02f1 3B       		.byte	0x3b
+ 514 02f2 64030000 		.4byte	0x364
+ 515 02f6 00       		.byte	0
+ 516 02f7 0E       		.uleb128 0xe
+ 517 02f8 EA030000 		.4byte	.LASF69
+ 518 02fc 0D       		.byte	0xd
+ 519 02fd 40       		.byte	0x40
+ 520 02fe 69030000 		.4byte	0x369
+ 521 0302 04       		.byte	0x4
+ 522 0303 0E       		.uleb128 0xe
+ 523 0304 EE040000 		.4byte	.LASF70
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 18
 
 
- 511 0267 21       		.byte	0x21
- 512 0268 79020000 		.4byte	0x279
- 513 026c 0E       		.uleb128 0xe
- 514 026d 43040000 		.4byte	.LASF67
- 515 0271 0C       		.byte	0xc
- 516 0272 23       		.byte	0x23
- 517 0273 8C000000 		.4byte	0x8c
- 518 0277 00       		.byte	0
- 519 0278 00       		.byte	0
- 520 0279 03       		.uleb128 0x3
- 521 027a 1F020000 		.4byte	.LASF64
- 522 027e 0C       		.byte	0xc
- 523 027f 26       		.byte	0x26
- 524 0280 64020000 		.4byte	0x264
- 525 0284 03       		.uleb128 0x3
- 526 0285 31060000 		.4byte	.LASF65
- 527 0289 0D       		.byte	0xd
- 528 028a 26       		.byte	0x26
- 529 028b 8F020000 		.4byte	0x28f
- 530 028f 0C       		.uleb128 0xc
- 531 0290 04       		.byte	0x4
- 532 0291 95020000 		.4byte	0x295
- 533 0295 0F       		.uleb128 0xf
- 534 0296 DE010000 		.4byte	0x1de
- 535 029a A4020000 		.4byte	0x2a4
- 536 029e 10       		.uleb128 0x10
- 537 029f AA020000 		.4byte	0x2aa
- 538 02a3 00       		.byte	0
- 539 02a4 0C       		.uleb128 0xc
- 540 02a5 04       		.byte	0x4
- 541 02a6 79020000 		.4byte	0x279
- 542 02aa 0B       		.uleb128 0xb
- 543 02ab A4020000 		.4byte	0x2a4
- 544 02af 03       		.uleb128 0x3
- 545 02b0 F0000000 		.4byte	.LASF66
- 546 02b4 0D       		.byte	0xd
- 547 02b5 2C       		.byte	0x2c
- 548 02b6 BA020000 		.4byte	0x2ba
- 549 02ba 0C       		.uleb128 0xc
- 550 02bb 04       		.byte	0x4
- 551 02bc C0020000 		.4byte	0x2c0
- 552 02c0 0F       		.uleb128 0xf
- 553 02c1 DE010000 		.4byte	0x1de
- 554 02c5 CF020000 		.4byte	0x2cf
- 555 02c9 10       		.uleb128 0x10
- 556 02ca DA020000 		.4byte	0x2da
- 557 02ce 00       		.byte	0
- 558 02cf 0C       		.uleb128 0xc
- 559 02d0 04       		.byte	0x4
- 560 02d1 D5020000 		.4byte	0x2d5
- 561 02d5 0B       		.uleb128 0xb
- 562 02d6 79020000 		.4byte	0x279
- 563 02da 0B       		.uleb128 0xb
- 564 02db CF020000 		.4byte	0x2cf
- 565 02df 11       		.uleb128 0x11
- 566 02e0 46020000 		.4byte	.LASF79
- 567 02e4 28       		.byte	0x28
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 19
+ 524 0308 0D       		.byte	0xd
+ 525 0309 45       		.byte	0x45
+ 526 030a 45020000 		.4byte	0x245
+ 527 030e 08       		.byte	0x8
+ 528 030f 0E       		.uleb128 0xe
+ 529 0310 05010000 		.4byte	.LASF71
+ 530 0314 0D       		.byte	0xd
+ 531 0315 4B       		.byte	0x4b
+ 532 0316 45020000 		.4byte	0x245
+ 533 031a 0C       		.byte	0xc
+ 534 031b 0E       		.uleb128 0xe
+ 535 031c 8A050000 		.4byte	.LASF72
+ 536 0320 0D       		.byte	0xd
+ 537 0321 50       		.byte	0x50
+ 538 0322 4A020000 		.4byte	0x24a
+ 539 0326 10       		.byte	0x10
+ 540 0327 0E       		.uleb128 0xe
+ 541 0328 DC050000 		.4byte	.LASF73
+ 542 032c 0D       		.byte	0xd
+ 543 032d 55       		.byte	0x55
+ 544 032e 55020000 		.4byte	0x255
+ 545 0332 14       		.byte	0x14
+ 546 0333 0E       		.uleb128 0xe
+ 547 0334 C1000000 		.4byte	.LASF74
+ 548 0338 0D       		.byte	0xd
+ 549 0339 5A       		.byte	0x5a
+ 550 033a 4A020000 		.4byte	0x24a
+ 551 033e 18       		.byte	0x18
+ 552 033f 0E       		.uleb128 0xe
+ 553 0340 7D050000 		.4byte	.LASF75
+ 554 0344 0D       		.byte	0xd
+ 555 0345 5F       		.byte	0x5f
+ 556 0346 55020000 		.4byte	0x255
+ 557 034a 1C       		.byte	0x1c
+ 558 034b 0E       		.uleb128 0xe
+ 559 034c 0B050000 		.4byte	.LASF76
+ 560 0350 0D       		.byte	0xd
+ 561 0351 65       		.byte	0x65
+ 562 0352 5A020000 		.4byte	0x25a
+ 563 0356 20       		.byte	0x20
+ 564 0357 0E       		.uleb128 0xe
+ 565 0358 64020000 		.4byte	.LASF77
+ 566 035c 0D       		.byte	0xd
+ 567 035d 6A       		.byte	0x6a
+ 568 035e 5F020000 		.4byte	0x25f
+ 569 0362 24       		.byte	0x24
+ 570 0363 00       		.byte	0
+ 571 0364 0B       		.uleb128 0xb
+ 572 0365 84020000 		.4byte	0x284
+ 573 0369 0B       		.uleb128 0xb
+ 574 036a AF020000 		.4byte	0x2af
+ 575 036e 03       		.uleb128 0x3
+ 576 036f 55020000 		.4byte	.LASF78
+ 577 0373 0D       		.byte	0xd
+ 578 0374 6D       		.byte	0x6d
+ 579 0375 79030000 		.4byte	0x379
+ 580 0379 0B       		.uleb128 0xb
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 19
 
 
- 568 02e5 0D       		.byte	0xd
- 569 02e6 36       		.byte	0x36
- 570 02e7 64030000 		.4byte	0x364
- 571 02eb 0E       		.uleb128 0xe
- 572 02ec DD060000 		.4byte	.LASF68
- 573 02f0 0D       		.byte	0xd
- 574 02f1 3B       		.byte	0x3b
- 575 02f2 64030000 		.4byte	0x364
- 576 02f6 00       		.byte	0
- 577 02f7 0E       		.uleb128 0xe
- 578 02f8 EA030000 		.4byte	.LASF69
- 579 02fc 0D       		.byte	0xd
- 580 02fd 40       		.byte	0x40
- 581 02fe 69030000 		.4byte	0x369
- 582 0302 04       		.byte	0x4
- 583 0303 0E       		.uleb128 0xe
- 584 0304 EE040000 		.4byte	.LASF70
- 585 0308 0D       		.byte	0xd
- 586 0309 45       		.byte	0x45
- 587 030a 45020000 		.4byte	0x245
- 588 030e 08       		.byte	0x8
- 589 030f 0E       		.uleb128 0xe
- 590 0310 05010000 		.4byte	.LASF71
- 591 0314 0D       		.byte	0xd
- 592 0315 4B       		.byte	0x4b
- 593 0316 45020000 		.4byte	0x245
- 594 031a 0C       		.byte	0xc
- 595 031b 0E       		.uleb128 0xe
- 596 031c 8A050000 		.4byte	.LASF72
- 597 0320 0D       		.byte	0xd
- 598 0321 50       		.byte	0x50
- 599 0322 4A020000 		.4byte	0x24a
- 600 0326 10       		.byte	0x10
- 601 0327 0E       		.uleb128 0xe
- 602 0328 DC050000 		.4byte	.LASF73
- 603 032c 0D       		.byte	0xd
- 604 032d 55       		.byte	0x55
- 605 032e 55020000 		.4byte	0x255
- 606 0332 14       		.byte	0x14
- 607 0333 0E       		.uleb128 0xe
- 608 0334 C1000000 		.4byte	.LASF74
- 609 0338 0D       		.byte	0xd
- 610 0339 5A       		.byte	0x5a
- 611 033a 4A020000 		.4byte	0x24a
- 612 033e 18       		.byte	0x18
- 613 033f 0E       		.uleb128 0xe
- 614 0340 7D050000 		.4byte	.LASF75
- 615 0344 0D       		.byte	0xd
- 616 0345 5F       		.byte	0x5f
- 617 0346 55020000 		.4byte	0x255
- 618 034a 1C       		.byte	0x1c
- 619 034b 0E       		.uleb128 0xe
- 620 034c 0B050000 		.4byte	.LASF76
- 621 0350 0D       		.byte	0xd
- 622 0351 65       		.byte	0x65
- 623 0352 5A020000 		.4byte	0x25a
- 624 0356 20       		.byte	0x20
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 20
+ 581 037a DF020000 		.4byte	0x2df
+ 582 037e 11       		.uleb128 0x11
+ 583 037f 45060000 		.4byte	.LASF80
+ 584 0383 0C       		.byte	0xc
+ 585 0384 0D       		.byte	0xd
+ 586 0385 79       		.byte	0x79
+ 587 0386 BB030000 		.4byte	0x3bb
+ 588 038a 0E       		.uleb128 0xe
+ 589 038b 19020000 		.4byte	.LASF81
+ 590 038f 0D       		.byte	0xd
+ 591 0390 7F       		.byte	0x7f
+ 592 0391 79020000 		.4byte	0x279
+ 593 0395 00       		.byte	0
+ 594 0396 0E       		.uleb128 0xe
+ 595 0397 F9040000 		.4byte	.LASF82
+ 596 039b 0D       		.byte	0xd
+ 597 039c 84       		.byte	0x84
+ 598 039d 3A020000 		.4byte	0x23a
+ 599 03a1 01       		.byte	0x1
+ 600 03a2 12       		.uleb128 0x12
+ 601 03a3 61676500 		.ascii	"age\000"
+ 602 03a7 0D       		.byte	0xd
+ 603 03a8 89       		.byte	0x89
+ 604 03a9 A2000000 		.4byte	0xa2
+ 605 03ad 04       		.byte	0x4
+ 606 03ae 0E       		.uleb128 0xe
+ 607 03af D1040000 		.4byte	.LASF83
+ 608 03b3 0D       		.byte	0xd
+ 609 03b4 8E       		.byte	0x8e
+ 610 03b5 C1030000 		.4byte	0x3c1
+ 611 03b9 08       		.byte	0x8
+ 612 03ba 00       		.byte	0
+ 613 03bb 0C       		.uleb128 0xc
+ 614 03bc 04       		.byte	0x4
+ 615 03bd 6E030000 		.4byte	0x36e
+ 616 03c1 0B       		.uleb128 0xb
+ 617 03c2 BB030000 		.4byte	0x3bb
+ 618 03c6 03       		.uleb128 0x3
+ 619 03c7 00050000 		.4byte	.LASF84
+ 620 03cb 0D       		.byte	0xd
+ 621 03cc 91       		.byte	0x91
+ 622 03cd 7E030000 		.4byte	0x37e
+ 623 03d1 0D       		.uleb128 0xd
+ 624 03d2 01       		.byte	0x1
+ 625 03d3 0E       		.byte	0xe
+ 626 03d4 21       		.byte	0x21
+ 627 03d5 E6030000 		.4byte	0x3e6
+ 628 03d9 0E       		.uleb128 0xe
+ 629 03da 99040000 		.4byte	.LASF85
+ 630 03de 0E       		.byte	0xe
+ 631 03df 23       		.byte	0x23
+ 632 03e0 8C000000 		.4byte	0x8c
+ 633 03e4 00       		.byte	0
+ 634 03e5 00       		.byte	0
+ 635 03e6 03       		.uleb128 0x3
+ 636 03e7 D9040000 		.4byte	.LASF86
+ 637 03eb 0E       		.byte	0xe
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 20
 
 
- 625 0357 0E       		.uleb128 0xe
- 626 0358 64020000 		.4byte	.LASF77
- 627 035c 0D       		.byte	0xd
- 628 035d 6A       		.byte	0x6a
- 629 035e 5F020000 		.4byte	0x25f
- 630 0362 24       		.byte	0x24
- 631 0363 00       		.byte	0
- 632 0364 0B       		.uleb128 0xb
- 633 0365 84020000 		.4byte	0x284
- 634 0369 0B       		.uleb128 0xb
- 635 036a AF020000 		.4byte	0x2af
- 636 036e 03       		.uleb128 0x3
- 637 036f 55020000 		.4byte	.LASF78
- 638 0373 0D       		.byte	0xd
- 639 0374 6D       		.byte	0x6d
- 640 0375 79030000 		.4byte	0x379
- 641 0379 0B       		.uleb128 0xb
- 642 037a DF020000 		.4byte	0x2df
- 643 037e 11       		.uleb128 0x11
- 644 037f 45060000 		.4byte	.LASF80
- 645 0383 0C       		.byte	0xc
- 646 0384 0D       		.byte	0xd
- 647 0385 79       		.byte	0x79
- 648 0386 BB030000 		.4byte	0x3bb
- 649 038a 0E       		.uleb128 0xe
- 650 038b 19020000 		.4byte	.LASF81
- 651 038f 0D       		.byte	0xd
- 652 0390 7F       		.byte	0x7f
- 653 0391 79020000 		.4byte	0x279
- 654 0395 00       		.byte	0
- 655 0396 0E       		.uleb128 0xe
- 656 0397 F9040000 		.4byte	.LASF82
- 657 039b 0D       		.byte	0xd
- 658 039c 84       		.byte	0x84
- 659 039d 3A020000 		.4byte	0x23a
- 660 03a1 01       		.byte	0x1
- 661 03a2 12       		.uleb128 0x12
- 662 03a3 61676500 		.ascii	"age\000"
- 663 03a7 0D       		.byte	0xd
- 664 03a8 89       		.byte	0x89
- 665 03a9 A2000000 		.4byte	0xa2
- 666 03ad 04       		.byte	0x4
- 667 03ae 0E       		.uleb128 0xe
- 668 03af D1040000 		.4byte	.LASF83
- 669 03b3 0D       		.byte	0xd
- 670 03b4 8E       		.byte	0x8e
- 671 03b5 C1030000 		.4byte	0x3c1
- 672 03b9 08       		.byte	0x8
- 673 03ba 00       		.byte	0
- 674 03bb 0C       		.uleb128 0xc
- 675 03bc 04       		.byte	0x4
- 676 03bd 6E030000 		.4byte	0x36e
- 677 03c1 0B       		.uleb128 0xb
- 678 03c2 BB030000 		.4byte	0x3bb
- 679 03c6 03       		.uleb128 0x3
- 680 03c7 00050000 		.4byte	.LASF84
- 681 03cb 0D       		.byte	0xd
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 21
+ 638 03ec 26       		.byte	0x26
+ 639 03ed D1030000 		.4byte	0x3d1
+ 640 03f1 03       		.uleb128 0x3
+ 641 03f2 2A040000 		.4byte	.LASF87
+ 642 03f6 02       		.byte	0x2
+ 643 03f7 26       		.byte	0x26
+ 644 03f8 FC030000 		.4byte	0x3fc
+ 645 03fc 0C       		.uleb128 0xc
+ 646 03fd 04       		.byte	0x4
+ 647 03fe 02040000 		.4byte	0x402
+ 648 0402 0F       		.uleb128 0xf
+ 649 0403 DE010000 		.4byte	0x1de
+ 650 0407 11040000 		.4byte	0x411
+ 651 040b 10       		.uleb128 0x10
+ 652 040c 17040000 		.4byte	0x417
+ 653 0410 00       		.byte	0
+ 654 0411 0C       		.uleb128 0xc
+ 655 0412 04       		.byte	0x4
+ 656 0413 E6030000 		.4byte	0x3e6
+ 657 0417 0B       		.uleb128 0xb
+ 658 0418 11040000 		.4byte	0x411
+ 659 041c 03       		.uleb128 0x3
+ 660 041d B7020000 		.4byte	.LASF88
+ 661 0421 02       		.byte	0x2
+ 662 0422 2C       		.byte	0x2c
+ 663 0423 27040000 		.4byte	0x427
+ 664 0427 0C       		.uleb128 0xc
+ 665 0428 04       		.byte	0x4
+ 666 0429 2D040000 		.4byte	0x42d
+ 667 042d 0F       		.uleb128 0xf
+ 668 042e DE010000 		.4byte	0x1de
+ 669 0432 3C040000 		.4byte	0x43c
+ 670 0436 10       		.uleb128 0x10
+ 671 0437 47040000 		.4byte	0x447
+ 672 043b 00       		.byte	0
+ 673 043c 0C       		.uleb128 0xc
+ 674 043d 04       		.byte	0x4
+ 675 043e 42040000 		.4byte	0x442
+ 676 0442 0B       		.uleb128 0xb
+ 677 0443 E6030000 		.4byte	0x3e6
+ 678 0447 0B       		.uleb128 0xb
+ 679 0448 3C040000 		.4byte	0x43c
+ 680 044c 11       		.uleb128 0x11
+ 681 044d E0010000 		.4byte	.LASF89
+ 682 0451 28       		.byte	0x28
+ 683 0452 02       		.byte	0x2
+ 684 0453 36       		.byte	0x36
+ 685 0454 D1040000 		.4byte	0x4d1
+ 686 0458 0E       		.uleb128 0xe
+ 687 0459 DD060000 		.4byte	.LASF68
+ 688 045d 02       		.byte	0x2
+ 689 045e 3B       		.byte	0x3b
+ 690 045f D1040000 		.4byte	0x4d1
+ 691 0463 00       		.byte	0
+ 692 0464 0E       		.uleb128 0xe
+ 693 0465 EA030000 		.4byte	.LASF69
+ 694 0469 02       		.byte	0x2
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 21
 
 
- 682 03cc 91       		.byte	0x91
- 683 03cd 7E030000 		.4byte	0x37e
- 684 03d1 0D       		.uleb128 0xd
- 685 03d2 01       		.byte	0x1
- 686 03d3 0E       		.byte	0xe
- 687 03d4 21       		.byte	0x21
- 688 03d5 E6030000 		.4byte	0x3e6
- 689 03d9 0E       		.uleb128 0xe
- 690 03da 99040000 		.4byte	.LASF85
- 691 03de 0E       		.byte	0xe
- 692 03df 23       		.byte	0x23
- 693 03e0 8C000000 		.4byte	0x8c
- 694 03e4 00       		.byte	0
- 695 03e5 00       		.byte	0
- 696 03e6 03       		.uleb128 0x3
- 697 03e7 D9040000 		.4byte	.LASF86
- 698 03eb 0E       		.byte	0xe
- 699 03ec 26       		.byte	0x26
- 700 03ed D1030000 		.4byte	0x3d1
- 701 03f1 03       		.uleb128 0x3
- 702 03f2 2A040000 		.4byte	.LASF87
- 703 03f6 02       		.byte	0x2
- 704 03f7 26       		.byte	0x26
- 705 03f8 FC030000 		.4byte	0x3fc
- 706 03fc 0C       		.uleb128 0xc
- 707 03fd 04       		.byte	0x4
- 708 03fe 02040000 		.4byte	0x402
- 709 0402 0F       		.uleb128 0xf
- 710 0403 DE010000 		.4byte	0x1de
- 711 0407 11040000 		.4byte	0x411
- 712 040b 10       		.uleb128 0x10
- 713 040c 17040000 		.4byte	0x417
- 714 0410 00       		.byte	0
- 715 0411 0C       		.uleb128 0xc
- 716 0412 04       		.byte	0x4
- 717 0413 E6030000 		.4byte	0x3e6
- 718 0417 0B       		.uleb128 0xb
- 719 0418 11040000 		.4byte	0x411
- 720 041c 03       		.uleb128 0x3
- 721 041d B7020000 		.4byte	.LASF88
- 722 0421 02       		.byte	0x2
- 723 0422 2C       		.byte	0x2c
- 724 0423 27040000 		.4byte	0x427
- 725 0427 0C       		.uleb128 0xc
- 726 0428 04       		.byte	0x4
- 727 0429 2D040000 		.4byte	0x42d
- 728 042d 0F       		.uleb128 0xf
- 729 042e DE010000 		.4byte	0x1de
- 730 0432 3C040000 		.4byte	0x43c
- 731 0436 10       		.uleb128 0x10
- 732 0437 47040000 		.4byte	0x447
- 733 043b 00       		.byte	0
- 734 043c 0C       		.uleb128 0xc
- 735 043d 04       		.byte	0x4
- 736 043e 42040000 		.4byte	0x442
- 737 0442 0B       		.uleb128 0xb
- 738 0443 E6030000 		.4byte	0x3e6
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 22
+ 695 046a 40       		.byte	0x40
+ 696 046b D6040000 		.4byte	0x4d6
+ 697 046f 04       		.byte	0x4
+ 698 0470 0E       		.uleb128 0xe
+ 699 0471 EE040000 		.4byte	.LASF70
+ 700 0475 02       		.byte	0x2
+ 701 0476 45       		.byte	0x45
+ 702 0477 45020000 		.4byte	0x245
+ 703 047b 08       		.byte	0x8
+ 704 047c 0E       		.uleb128 0xe
+ 705 047d 05010000 		.4byte	.LASF71
+ 706 0481 02       		.byte	0x2
+ 707 0482 4B       		.byte	0x4b
+ 708 0483 45020000 		.4byte	0x245
+ 709 0487 0C       		.byte	0xc
+ 710 0488 0E       		.uleb128 0xe
+ 711 0489 8A050000 		.4byte	.LASF72
+ 712 048d 02       		.byte	0x2
+ 713 048e 50       		.byte	0x50
+ 714 048f 4A020000 		.4byte	0x24a
+ 715 0493 10       		.byte	0x10
+ 716 0494 0E       		.uleb128 0xe
+ 717 0495 DC050000 		.4byte	.LASF73
+ 718 0499 02       		.byte	0x2
+ 719 049a 55       		.byte	0x55
+ 720 049b 55020000 		.4byte	0x255
+ 721 049f 14       		.byte	0x14
+ 722 04a0 0E       		.uleb128 0xe
+ 723 04a1 C1000000 		.4byte	.LASF74
+ 724 04a5 02       		.byte	0x2
+ 725 04a6 5A       		.byte	0x5a
+ 726 04a7 4A020000 		.4byte	0x24a
+ 727 04ab 18       		.byte	0x18
+ 728 04ac 0E       		.uleb128 0xe
+ 729 04ad 7D050000 		.4byte	.LASF75
+ 730 04b1 02       		.byte	0x2
+ 731 04b2 5F       		.byte	0x5f
+ 732 04b3 55020000 		.4byte	0x255
+ 733 04b7 1C       		.byte	0x1c
+ 734 04b8 0E       		.uleb128 0xe
+ 735 04b9 0B050000 		.4byte	.LASF76
+ 736 04bd 02       		.byte	0x2
+ 737 04be 65       		.byte	0x65
+ 738 04bf 5A020000 		.4byte	0x25a
+ 739 04c3 20       		.byte	0x20
+ 740 04c4 0E       		.uleb128 0xe
+ 741 04c5 64020000 		.4byte	.LASF77
+ 742 04c9 02       		.byte	0x2
+ 743 04ca 6A       		.byte	0x6a
+ 744 04cb 5F020000 		.4byte	0x25f
+ 745 04cf 24       		.byte	0x24
+ 746 04d0 00       		.byte	0
+ 747 04d1 0B       		.uleb128 0xb
+ 748 04d2 F1030000 		.4byte	0x3f1
+ 749 04d6 0B       		.uleb128 0xb
+ 750 04d7 1C040000 		.4byte	0x41c
+ 751 04db 03       		.uleb128 0x3
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 22
 
 
- 739 0447 0B       		.uleb128 0xb
- 740 0448 3C040000 		.4byte	0x43c
- 741 044c 11       		.uleb128 0x11
- 742 044d E0010000 		.4byte	.LASF89
- 743 0451 28       		.byte	0x28
- 744 0452 02       		.byte	0x2
- 745 0453 36       		.byte	0x36
- 746 0454 D1040000 		.4byte	0x4d1
- 747 0458 0E       		.uleb128 0xe
- 748 0459 DD060000 		.4byte	.LASF68
- 749 045d 02       		.byte	0x2
- 750 045e 3B       		.byte	0x3b
- 751 045f D1040000 		.4byte	0x4d1
- 752 0463 00       		.byte	0
- 753 0464 0E       		.uleb128 0xe
- 754 0465 EA030000 		.4byte	.LASF69
- 755 0469 02       		.byte	0x2
- 756 046a 40       		.byte	0x40
- 757 046b D6040000 		.4byte	0x4d6
- 758 046f 04       		.byte	0x4
- 759 0470 0E       		.uleb128 0xe
- 760 0471 EE040000 		.4byte	.LASF70
- 761 0475 02       		.byte	0x2
- 762 0476 45       		.byte	0x45
- 763 0477 45020000 		.4byte	0x245
- 764 047b 08       		.byte	0x8
- 765 047c 0E       		.uleb128 0xe
- 766 047d 05010000 		.4byte	.LASF71
- 767 0481 02       		.byte	0x2
- 768 0482 4B       		.byte	0x4b
- 769 0483 45020000 		.4byte	0x245
- 770 0487 0C       		.byte	0xc
- 771 0488 0E       		.uleb128 0xe
- 772 0489 8A050000 		.4byte	.LASF72
- 773 048d 02       		.byte	0x2
- 774 048e 50       		.byte	0x50
- 775 048f 4A020000 		.4byte	0x24a
- 776 0493 10       		.byte	0x10
- 777 0494 0E       		.uleb128 0xe
- 778 0495 DC050000 		.4byte	.LASF73
- 779 0499 02       		.byte	0x2
- 780 049a 55       		.byte	0x55
- 781 049b 55020000 		.4byte	0x255
- 782 049f 14       		.byte	0x14
- 783 04a0 0E       		.uleb128 0xe
- 784 04a1 C1000000 		.4byte	.LASF74
- 785 04a5 02       		.byte	0x2
- 786 04a6 5A       		.byte	0x5a
- 787 04a7 4A020000 		.4byte	0x24a
- 788 04ab 18       		.byte	0x18
- 789 04ac 0E       		.uleb128 0xe
- 790 04ad 7D050000 		.4byte	.LASF75
- 791 04b1 02       		.byte	0x2
- 792 04b2 5F       		.byte	0x5f
- 793 04b3 55020000 		.4byte	0x255
- 794 04b7 1C       		.byte	0x1c
- 795 04b8 0E       		.uleb128 0xe
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 23
+ 752 04dc FE010000 		.4byte	.LASF90
+ 753 04e0 02       		.byte	0x2
+ 754 04e1 6D       		.byte	0x6d
+ 755 04e2 E6040000 		.4byte	0x4e6
+ 756 04e6 0B       		.uleb128 0xb
+ 757 04e7 4C040000 		.4byte	0x44c
+ 758 04eb 11       		.uleb128 0x11
+ 759 04ec 82020000 		.4byte	.LASF91
+ 760 04f0 0C       		.byte	0xc
+ 761 04f1 02       		.byte	0x2
+ 762 04f2 79       		.byte	0x79
+ 763 04f3 28050000 		.4byte	0x528
+ 764 04f7 0E       		.uleb128 0xe
+ 765 04f8 19020000 		.4byte	.LASF81
+ 766 04fc 02       		.byte	0x2
+ 767 04fd 7F       		.byte	0x7f
+ 768 04fe E6030000 		.4byte	0x3e6
+ 769 0502 00       		.byte	0
+ 770 0503 0E       		.uleb128 0xe
+ 771 0504 F9040000 		.4byte	.LASF82
+ 772 0508 02       		.byte	0x2
+ 773 0509 84       		.byte	0x84
+ 774 050a 3A020000 		.4byte	0x23a
+ 775 050e 01       		.byte	0x1
+ 776 050f 12       		.uleb128 0x12
+ 777 0510 61676500 		.ascii	"age\000"
+ 778 0514 02       		.byte	0x2
+ 779 0515 89       		.byte	0x89
+ 780 0516 A2000000 		.4byte	0xa2
+ 781 051a 04       		.byte	0x4
+ 782 051b 0E       		.uleb128 0xe
+ 783 051c D1040000 		.4byte	.LASF83
+ 784 0520 02       		.byte	0x2
+ 785 0521 8E       		.byte	0x8e
+ 786 0522 2E050000 		.4byte	0x52e
+ 787 0526 08       		.byte	0x8
+ 788 0527 00       		.byte	0
+ 789 0528 0C       		.uleb128 0xc
+ 790 0529 04       		.byte	0x4
+ 791 052a DB040000 		.4byte	0x4db
+ 792 052e 0B       		.uleb128 0xb
+ 793 052f 28050000 		.4byte	0x528
+ 794 0533 03       		.uleb128 0x3
+ 795 0534 92020000 		.4byte	.LASF92
+ 796 0538 02       		.byte	0x2
+ 797 0539 91       		.byte	0x91
+ 798 053a EB040000 		.4byte	0x4eb
+ 799 053e 13       		.uleb128 0x13
+ 800 053f 89010000 		.4byte	.LASF93
+ 801 0543 0D       		.byte	0xd
+ 802 0544 1201     		.2byte	0x112
+ 803 0546 79020000 		.4byte	0x279
+ 804 054a 03       		.byte	0x3
+ 805 054b 5C050000 		.4byte	0x55c
+ 806 054f 14       		.uleb128 0x14
+ 807 0550 1A050000 		.4byte	.LASF95
+ 808 0554 0D       		.byte	0xd
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 23
 
 
- 796 04b9 0B050000 		.4byte	.LASF76
- 797 04bd 02       		.byte	0x2
- 798 04be 65       		.byte	0x65
- 799 04bf 5A020000 		.4byte	0x25a
- 800 04c3 20       		.byte	0x20
- 801 04c4 0E       		.uleb128 0xe
- 802 04c5 64020000 		.4byte	.LASF77
- 803 04c9 02       		.byte	0x2
- 804 04ca 6A       		.byte	0x6a
- 805 04cb 5F020000 		.4byte	0x25f
- 806 04cf 24       		.byte	0x24
- 807 04d0 00       		.byte	0
- 808 04d1 0B       		.uleb128 0xb
- 809 04d2 F1030000 		.4byte	0x3f1
- 810 04d6 0B       		.uleb128 0xb
- 811 04d7 1C040000 		.4byte	0x41c
- 812 04db 03       		.uleb128 0x3
- 813 04dc FE010000 		.4byte	.LASF90
- 814 04e0 02       		.byte	0x2
- 815 04e1 6D       		.byte	0x6d
- 816 04e2 E6040000 		.4byte	0x4e6
- 817 04e6 0B       		.uleb128 0xb
- 818 04e7 4C040000 		.4byte	0x44c
- 819 04eb 11       		.uleb128 0x11
- 820 04ec 82020000 		.4byte	.LASF91
- 821 04f0 0C       		.byte	0xc
- 822 04f1 02       		.byte	0x2
- 823 04f2 79       		.byte	0x79
- 824 04f3 28050000 		.4byte	0x528
- 825 04f7 0E       		.uleb128 0xe
- 826 04f8 19020000 		.4byte	.LASF81
- 827 04fc 02       		.byte	0x2
- 828 04fd 7F       		.byte	0x7f
- 829 04fe E6030000 		.4byte	0x3e6
- 830 0502 00       		.byte	0
- 831 0503 0E       		.uleb128 0xe
- 832 0504 F9040000 		.4byte	.LASF82
- 833 0508 02       		.byte	0x2
- 834 0509 84       		.byte	0x84
- 835 050a 3A020000 		.4byte	0x23a
- 836 050e 01       		.byte	0x1
- 837 050f 12       		.uleb128 0x12
- 838 0510 61676500 		.ascii	"age\000"
- 839 0514 02       		.byte	0x2
- 840 0515 89       		.byte	0x89
- 841 0516 A2000000 		.4byte	0xa2
- 842 051a 04       		.byte	0x4
- 843 051b 0E       		.uleb128 0xe
- 844 051c D1040000 		.4byte	.LASF83
- 845 0520 02       		.byte	0x2
- 846 0521 8E       		.byte	0x8e
- 847 0522 2E050000 		.4byte	0x52e
- 848 0526 08       		.byte	0x8
- 849 0527 00       		.byte	0
- 850 0528 0C       		.uleb128 0xc
- 851 0529 04       		.byte	0x4
- 852 052a DB040000 		.4byte	0x4db
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 24
+ 809 0555 1201     		.2byte	0x112
+ 810 0557 67050000 		.4byte	0x567
+ 811 055b 00       		.byte	0
+ 812 055c 0C       		.uleb128 0xc
+ 813 055d 04       		.byte	0x4
+ 814 055e 62050000 		.4byte	0x562
+ 815 0562 0B       		.uleb128 0xb
+ 816 0563 C6030000 		.4byte	0x3c6
+ 817 0567 0B       		.uleb128 0xb
+ 818 0568 5C050000 		.4byte	0x55c
+ 819 056c 13       		.uleb128 0x13
+ 820 056d 9C050000 		.4byte	.LASF94
+ 821 0571 02       		.byte	0x2
+ 822 0572 7E01     		.2byte	0x17e
+ 823 0574 DE010000 		.4byte	0x1de
+ 824 0578 03       		.byte	0x3
+ 825 0579 96050000 		.4byte	0x596
+ 826 057d 14       		.uleb128 0x14
+ 827 057e 1A050000 		.4byte	.LASF95
+ 828 0582 02       		.byte	0x2
+ 829 0583 7E01     		.2byte	0x17e
+ 830 0585 A1050000 		.4byte	0x5a1
+ 831 0589 15       		.uleb128 0x15
+ 832 058a 72657400 		.ascii	"ret\000"
+ 833 058e 02       		.byte	0x2
+ 834 058f 8001     		.2byte	0x180
+ 835 0591 DE010000 		.4byte	0x1de
+ 836 0595 00       		.byte	0
+ 837 0596 0C       		.uleb128 0xc
+ 838 0597 04       		.byte	0x4
+ 839 0598 9C050000 		.4byte	0x59c
+ 840 059c 0B       		.uleb128 0xb
+ 841 059d 33050000 		.4byte	0x533
+ 842 05a1 0B       		.uleb128 0xb
+ 843 05a2 96050000 		.4byte	0x596
+ 844 05a6 13       		.uleb128 0x13
+ 845 05a7 48010000 		.4byte	.LASF96
+ 846 05ab 02       		.byte	0x2
+ 847 05ac 3501     		.2byte	0x135
+ 848 05ae DE010000 		.4byte	0x1de
+ 849 05b2 03       		.byte	0x3
+ 850 05b3 02060000 		.4byte	0x602
+ 851 05b7 14       		.uleb128 0x14
+ 852 05b8 1A050000 		.4byte	.LASF95
+ 853 05bc 02       		.byte	0x2
+ 854 05bd 3501     		.2byte	0x135
+ 855 05bf 08060000 		.4byte	0x608
+ 856 05c3 14       		.uleb128 0x14
+ 857 05c4 19020000 		.4byte	.LASF81
+ 858 05c8 02       		.byte	0x2
+ 859 05c9 3501     		.2byte	0x135
+ 860 05cb 42040000 		.4byte	0x442
+ 861 05cf 15       		.uleb128 0x15
+ 862 05d0 72657400 		.ascii	"ret\000"
+ 863 05d4 02       		.byte	0x2
+ 864 05d5 3801     		.2byte	0x138
+ 865 05d7 DE010000 		.4byte	0x1de
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 24
 
 
- 853 052e 0B       		.uleb128 0xb
- 854 052f 28050000 		.4byte	0x528
- 855 0533 03       		.uleb128 0x3
- 856 0534 92020000 		.4byte	.LASF92
- 857 0538 02       		.byte	0x2
- 858 0539 91       		.byte	0x91
- 859 053a EB040000 		.4byte	0x4eb
- 860 053e 13       		.uleb128 0x13
- 861 053f 89010000 		.4byte	.LASF93
- 862 0543 0D       		.byte	0xd
- 863 0544 1201     		.2byte	0x112
- 864 0546 79020000 		.4byte	0x279
- 865 054a 03       		.byte	0x3
- 866 054b 5C050000 		.4byte	0x55c
- 867 054f 14       		.uleb128 0x14
- 868 0550 1A050000 		.4byte	.LASF95
- 869 0554 0D       		.byte	0xd
- 870 0555 1201     		.2byte	0x112
- 871 0557 67050000 		.4byte	0x567
- 872 055b 00       		.byte	0
- 873 055c 0C       		.uleb128 0xc
- 874 055d 04       		.byte	0x4
- 875 055e 62050000 		.4byte	0x562
- 876 0562 0B       		.uleb128 0xb
- 877 0563 C6030000 		.4byte	0x3c6
- 878 0567 0B       		.uleb128 0xb
- 879 0568 5C050000 		.4byte	0x55c
- 880 056c 13       		.uleb128 0x13
- 881 056d 9C050000 		.4byte	.LASF94
- 882 0571 02       		.byte	0x2
- 883 0572 7E01     		.2byte	0x17e
- 884 0574 DE010000 		.4byte	0x1de
- 885 0578 03       		.byte	0x3
- 886 0579 96050000 		.4byte	0x596
- 887 057d 14       		.uleb128 0x14
- 888 057e 1A050000 		.4byte	.LASF95
- 889 0582 02       		.byte	0x2
- 890 0583 7E01     		.2byte	0x17e
- 891 0585 A1050000 		.4byte	0x5a1
- 892 0589 15       		.uleb128 0x15
- 893 058a 72657400 		.ascii	"ret\000"
- 894 058e 02       		.byte	0x2
- 895 058f 8001     		.2byte	0x180
- 896 0591 DE010000 		.4byte	0x1de
- 897 0595 00       		.byte	0
- 898 0596 0C       		.uleb128 0xc
- 899 0597 04       		.byte	0x4
- 900 0598 9C050000 		.4byte	0x59c
- 901 059c 0B       		.uleb128 0xb
- 902 059d 33050000 		.4byte	0x533
- 903 05a1 0B       		.uleb128 0xb
- 904 05a2 96050000 		.4byte	0x596
- 905 05a6 13       		.uleb128 0x13
- 906 05a7 48010000 		.4byte	.LASF96
- 907 05ab 02       		.byte	0x2
- 908 05ac 3501     		.2byte	0x135
- 909 05ae DE010000 		.4byte	0x1de
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 25
+ 866 05db 16       		.uleb128 0x16
+ 867 05dc 0B040000 		.4byte	.LASF97
+ 868 05e0 02       		.byte	0x2
+ 869 05e1 3901     		.2byte	0x139
+ 870 05e3 C2000000 		.4byte	0xc2
+ 871 05e7 16       		.uleb128 0x16
+ 872 05e8 F4030000 		.4byte	.LASF98
+ 873 05ec 02       		.byte	0x2
+ 874 05ed 4301     		.2byte	0x143
+ 875 05ef 4F020000 		.4byte	0x24f
+ 876 05f3 17       		.uleb128 0x17
+ 877 05f4 16       		.uleb128 0x16
+ 878 05f5 84010000 		.4byte	.LASF99
+ 879 05f9 02       		.byte	0x2
+ 880 05fa 4801     		.2byte	0x148
+ 881 05fc 0B010000 		.4byte	0x10b
+ 882 0600 00       		.byte	0
+ 883 0601 00       		.byte	0
+ 884 0602 0C       		.uleb128 0xc
+ 885 0603 04       		.byte	0x4
+ 886 0604 33050000 		.4byte	0x533
+ 887 0608 0B       		.uleb128 0xb
+ 888 0609 02060000 		.4byte	0x602
+ 889 060d 18       		.uleb128 0x18
+ 890 060e 67010000 		.4byte	.LASF111
+ 891 0612 01       		.byte	0x1
+ 892 0613 2C       		.byte	0x2c
+ 893 0614 00000000 		.4byte	.LFB154
+ 894 0618 60000000 		.4byte	.LFE154-.LFB154
+ 895 061c 01       		.uleb128 0x1
+ 896 061d 9C       		.byte	0x9c
+ 897 061e CF060000 		.4byte	0x6cf
+ 898 0622 19       		.uleb128 0x19
+ 899 0623 657600   		.ascii	"ev\000"
+ 900 0626 01       		.byte	0x1
+ 901 0627 2C       		.byte	0x2c
+ 902 0628 FF010000 		.4byte	0x1ff
+ 903 062c 00000000 		.4byte	.LLST0
+ 904 0630 1A       		.uleb128 0x1a
+ 905 0631 73706400 		.ascii	"spd\000"
+ 906 0635 01       		.byte	0x1
+ 907 0636 2F       		.byte	0x2f
+ 908 0637 79020000 		.4byte	0x279
+ 909 063b 1B       		.uleb128 0x1b
+ 910 063c 1A010000 		.4byte	.LASF112
+ 911 0640 01       		.byte	0x1
+ 912 0641 30       		.byte	0x30
+ 913 0642 E6030000 		.4byte	0x3e6
+ 914 0646 3A000000 		.4byte	.LLST1
+ 915 064a 1C       		.uleb128 0x1c
+ 916 064b A6050000 		.4byte	0x5a6
+ 917 064f 12000000 		.4byte	.LBB9
+ 918 0653 32000000 		.4byte	.LBE9-.LBB9
+ 919 0657 01       		.byte	0x1
+ 920 0658 3A       		.byte	0x3a
+ 921 0659 A6060000 		.4byte	0x6a6
+ 922 065d 1D       		.uleb128 0x1d
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 25
 
 
- 910 05b2 03       		.byte	0x3
- 911 05b3 02060000 		.4byte	0x602
- 912 05b7 14       		.uleb128 0x14
- 913 05b8 1A050000 		.4byte	.LASF95
- 914 05bc 02       		.byte	0x2
- 915 05bd 3501     		.2byte	0x135
- 916 05bf 08060000 		.4byte	0x608
- 917 05c3 14       		.uleb128 0x14
- 918 05c4 19020000 		.4byte	.LASF81
- 919 05c8 02       		.byte	0x2
- 920 05c9 3501     		.2byte	0x135
- 921 05cb 42040000 		.4byte	0x442
- 922 05cf 15       		.uleb128 0x15
- 923 05d0 72657400 		.ascii	"ret\000"
- 924 05d4 02       		.byte	0x2
- 925 05d5 3801     		.2byte	0x138
- 926 05d7 DE010000 		.4byte	0x1de
- 927 05db 16       		.uleb128 0x16
- 928 05dc 0B040000 		.4byte	.LASF97
- 929 05e0 02       		.byte	0x2
- 930 05e1 3901     		.2byte	0x139
- 931 05e3 C2000000 		.4byte	0xc2
- 932 05e7 16       		.uleb128 0x16
- 933 05e8 F4030000 		.4byte	.LASF98
- 934 05ec 02       		.byte	0x2
- 935 05ed 4301     		.2byte	0x143
- 936 05ef 4F020000 		.4byte	0x24f
- 937 05f3 17       		.uleb128 0x17
- 938 05f4 16       		.uleb128 0x16
- 939 05f5 84010000 		.4byte	.LASF99
- 940 05f9 02       		.byte	0x2
- 941 05fa 4801     		.2byte	0x148
- 942 05fc 0B010000 		.4byte	0x10b
- 943 0600 00       		.byte	0
- 944 0601 00       		.byte	0
- 945 0602 0C       		.uleb128 0xc
- 946 0603 04       		.byte	0x4
- 947 0604 33050000 		.4byte	0x533
- 948 0608 0B       		.uleb128 0xb
- 949 0609 02060000 		.4byte	0x602
- 950 060d 18       		.uleb128 0x18
- 951 060e 67010000 		.4byte	.LASF112
- 952 0612 01       		.byte	0x1
- 953 0613 2C       		.byte	0x2c
- 954 0614 00000000 		.4byte	.LFB154
- 955 0618 9C000000 		.4byte	.LFE154-.LFB154
- 956 061c 01       		.uleb128 0x1
- 957 061d 9C       		.byte	0x9c
- 958 061e 59070000 		.4byte	0x759
- 959 0622 19       		.uleb128 0x19
- 960 0623 657600   		.ascii	"ev\000"
- 961 0626 01       		.byte	0x1
- 962 0627 2C       		.byte	0x2c
- 963 0628 FF010000 		.4byte	0x1ff
- 964 062c 00000000 		.4byte	.LLST0
- 965 0630 1A       		.uleb128 0x1a
- 966 0631 73706400 		.ascii	"spd\000"
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 26
+ 923 065e C3050000 		.4byte	0x5c3
+ 924 0662 1D       		.uleb128 0x1d
+ 925 0663 B7050000 		.4byte	0x5b7
+ 926 0667 1E       		.uleb128 0x1e
+ 927 0668 12000000 		.4byte	.LBB10
+ 928 066c 32000000 		.4byte	.LBE10-.LBB10
+ 929 0670 1F       		.uleb128 0x1f
+ 930 0671 CF050000 		.4byte	0x5cf
+ 931 0675 00       		.byte	0
+ 932 0676 20       		.uleb128 0x20
+ 933 0677 DB050000 		.4byte	0x5db
+ 934 067b 4D000000 		.4byte	.LLST2
+ 935 067f 20       		.uleb128 0x20
+ 936 0680 E7050000 		.4byte	0x5e7
+ 937 0684 83000000 		.4byte	.LLST3
+ 938 0688 1E       		.uleb128 0x1e
+ 939 0689 2A000000 		.4byte	.LBB11
+ 940 068d 0A000000 		.4byte	.LBE11-.LBB11
+ 941 0691 20       		.uleb128 0x20
+ 942 0692 F4050000 		.4byte	0x5f4
+ 943 0696 96000000 		.4byte	.LLST4
+ 944 069a 21       		.uleb128 0x21
+ 945 069b 34000000 		.4byte	.LVL8
+ 946 069f 2D070000 		.4byte	0x72d
+ 947 06a3 00       		.byte	0
+ 948 06a4 00       		.byte	0
+ 949 06a5 00       		.byte	0
+ 950 06a6 22       		.uleb128 0x22
+ 951 06a7 6C050000 		.4byte	0x56c
+ 952 06ab 44000000 		.4byte	.LBB12
+ 953 06af 1C000000 		.4byte	.LBE12-.LBB12
+ 954 06b3 01       		.byte	0x1
+ 955 06b4 3B       		.byte	0x3b
+ 956 06b5 1D       		.uleb128 0x1d
+ 957 06b6 7D050000 		.4byte	0x57d
+ 958 06ba 1E       		.uleb128 0x1e
+ 959 06bb 44000000 		.4byte	.LBB13
+ 960 06bf 1C000000 		.4byte	.LBE13-.LBB13
+ 961 06c3 20       		.uleb128 0x20
+ 962 06c4 89050000 		.4byte	0x589
+ 963 06c8 AF000000 		.4byte	.LLST5
+ 964 06cc 00       		.byte	0
+ 965 06cd 00       		.byte	0
+ 966 06ce 00       		.byte	0
+ 967 06cf 23       		.uleb128 0x23
+ 968 06d0 0C070000 		.4byte	.LASF100
+ 969 06d4 0F       		.byte	0xf
+ 970 06d5 40       		.byte	0x40
+ 971 06d6 EA000000 		.4byte	0xea
+ 972 06da 23       		.uleb128 0x23
+ 973 06db 08030000 		.4byte	.LASF101
+ 974 06df 0F       		.byte	0xf
+ 975 06e0 47       		.byte	0x47
+ 976 06e1 F5000000 		.4byte	0xf5
+ 977 06e5 23       		.uleb128 0x23
+ 978 06e6 B7050000 		.4byte	.LASF102
+ 979 06ea 0F       		.byte	0xf
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 26
 
 
- 967 0635 01       		.byte	0x1
- 968 0636 2F       		.byte	0x2f
- 969 0637 79020000 		.4byte	0x279
- 970 063b 1B       		.uleb128 0x1b
- 971 063c 1A010000 		.4byte	.LASF100
- 972 0640 01       		.byte	0x1
- 973 0641 30       		.byte	0x30
- 974 0642 E6030000 		.4byte	0x3e6
- 975 0646 1C       		.uleb128 0x1c
- 976 0647 A6050000 		.4byte	0x5a6
- 977 064b 08000000 		.4byte	.LBB14
- 978 064f 34000000 		.4byte	.LBE14-.LBB14
- 979 0653 01       		.byte	0x1
- 980 0654 34       		.byte	0x34
- 981 0655 A5060000 		.4byte	0x6a5
- 982 0659 1D       		.uleb128 0x1d
- 983 065a C3050000 		.4byte	0x5c3
- 984 065e 1D       		.uleb128 0x1d
- 985 065f B7050000 		.4byte	0x5b7
- 986 0663 1E       		.uleb128 0x1e
- 987 0664 08000000 		.4byte	.LBB15
- 988 0668 34000000 		.4byte	.LBE15-.LBB15
- 989 066c 1F       		.uleb128 0x1f
- 990 066d CF050000 		.4byte	0x5cf
- 991 0671 6C000000 		.4byte	.LLST1
- 992 0675 1F       		.uleb128 0x1f
- 993 0676 DB050000 		.4byte	0x5db
- 994 067a 80000000 		.4byte	.LLST2
- 995 067e 1F       		.uleb128 0x1f
- 996 067f E7050000 		.4byte	0x5e7
- 997 0683 B6000000 		.4byte	.LLST3
- 998 0687 1E       		.uleb128 0x1e
- 999 0688 22000000 		.4byte	.LBB16
- 1000 068c 0A000000 		.4byte	.LBE16-.LBB16
- 1001 0690 1F       		.uleb128 0x1f
- 1002 0691 F4050000 		.4byte	0x5f4
- 1003 0695 C9000000 		.4byte	.LLST4
- 1004 0699 20       		.uleb128 0x20
- 1005 069a 2C000000 		.4byte	.LVL5
- 1006 069e B7070000 		.4byte	0x7b7
- 1007 06a2 00       		.byte	0
- 1008 06a3 00       		.byte	0
- 1009 06a4 00       		.byte	0
- 1010 06a5 1C       		.uleb128 0x1c
- 1011 06a6 6C050000 		.4byte	0x56c
- 1012 06aa 3C000000 		.4byte	.LBB17
- 1013 06ae 12000000 		.4byte	.LBE17-.LBB17
- 1014 06b2 01       		.byte	0x1
- 1015 06b3 35       		.byte	0x35
- 1016 06b4 D1060000 		.4byte	0x6d1
- 1017 06b8 1D       		.uleb128 0x1d
- 1018 06b9 7D050000 		.4byte	0x57d
- 1019 06bd 1E       		.uleb128 0x1e
- 1020 06be 3C000000 		.4byte	.LBB18
- 1021 06c2 12000000 		.4byte	.LBE18-.LBB18
- 1022 06c6 1F       		.uleb128 0x1f
- 1023 06c7 89050000 		.4byte	0x589
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 27
+ 980 06eb 4A       		.byte	0x4a
+ 981 06ec EA000000 		.4byte	0xea
+ 982 06f0 23       		.uleb128 0x23
+ 983 06f1 B5030000 		.4byte	.LASF103
+ 984 06f5 10       		.byte	0x10
+ 985 06f6 48       		.byte	0x48
+ 986 06f7 00010000 		.4byte	0x100
+ 987 06fb 23       		.uleb128 0x23
+ 988 06fc 6D020000 		.4byte	.LASF104
+ 989 0700 11       		.byte	0x11
+ 990 0701 44       		.byte	0x44
+ 991 0702 EA000000 		.4byte	0xea
+ 992 0706 24       		.uleb128 0x24
+ 993 0707 E6060000 		.4byte	.LASF105
+ 994 070b 12       		.byte	0x12
+ 995 070c 1207     		.2byte	0x712
+ 996 070e 12070000 		.4byte	0x712
+ 997 0712 25       		.uleb128 0x25
+ 998 0713 97000000 		.4byte	0x97
+ 999 0717 23       		.uleb128 0x23
+ 1000 0718 D1020000 		.4byte	.LASF106
+ 1001 071c 13       		.byte	0x13
+ 1002 071d 39       		.byte	0x39
+ 1003 071e C6030000 		.4byte	0x3c6
+ 1004 0722 23       		.uleb128 0x23
+ 1005 0723 8E000000 		.4byte	.LASF107
+ 1006 0727 13       		.byte	0x13
+ 1007 0728 57       		.byte	0x57
+ 1008 0729 33050000 		.4byte	0x533
+ 1009 072d 26       		.uleb128 0x26
+ 1010 072e CE060000 		.4byte	.LASF113
+ 1011 0732 CE060000 		.4byte	.LASF113
+ 1012 0736 14       		.byte	0x14
+ 1013 0737 4A01     		.2byte	0x14a
+ 1014 0739 00       		.byte	0
+ 1015              		.section	.debug_abbrev,"",%progbits
+ 1016              	.Ldebug_abbrev0:
+ 1017 0000 01       		.uleb128 0x1
+ 1018 0001 11       		.uleb128 0x11
+ 1019 0002 01       		.byte	0x1
+ 1020 0003 25       		.uleb128 0x25
+ 1021 0004 0E       		.uleb128 0xe
+ 1022 0005 13       		.uleb128 0x13
+ 1023 0006 0B       		.uleb128 0xb
+ 1024 0007 03       		.uleb128 0x3
+ 1025 0008 0E       		.uleb128 0xe
+ 1026 0009 1B       		.uleb128 0x1b
+ 1027 000a 0E       		.uleb128 0xe
+ 1028 000b 55       		.uleb128 0x55
+ 1029 000c 17       		.uleb128 0x17
+ 1030 000d 11       		.uleb128 0x11
+ 1031 000e 01       		.uleb128 0x1
+ 1032 000f 10       		.uleb128 0x10
+ 1033 0010 17       		.uleb128 0x17
+ 1034 0011 00       		.byte	0
+ 1035 0012 00       		.byte	0
+ 1036 0013 02       		.uleb128 0x2
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 27
 
 
- 1024 06cb E2000000 		.4byte	.LLST5
- 1025 06cf 00       		.byte	0
- 1026 06d0 00       		.byte	0
- 1027 06d1 1C       		.uleb128 0x1c
- 1028 06d2 A6050000 		.4byte	0x5a6
- 1029 06d6 50000000 		.4byte	.LBB19
- 1030 06da 30000000 		.4byte	.LBE19-.LBB19
- 1031 06de 01       		.byte	0x1
- 1032 06df 3A       		.byte	0x3a
- 1033 06e0 30070000 		.4byte	0x730
- 1034 06e4 1D       		.uleb128 0x1d
- 1035 06e5 C3050000 		.4byte	0x5c3
- 1036 06e9 1D       		.uleb128 0x1d
- 1037 06ea B7050000 		.4byte	0x5b7
- 1038 06ee 1E       		.uleb128 0x1e
- 1039 06ef 50000000 		.4byte	.LBB20
- 1040 06f3 30000000 		.4byte	.LBE20-.LBB20
- 1041 06f7 1F       		.uleb128 0x1f
- 1042 06f8 CF050000 		.4byte	0x5cf
- 1043 06fc F7000000 		.4byte	.LLST6
- 1044 0700 1F       		.uleb128 0x1f
- 1045 0701 DB050000 		.4byte	0x5db
- 1046 0705 0B010000 		.4byte	.LLST7
- 1047 0709 1F       		.uleb128 0x1f
- 1048 070a E7050000 		.4byte	0x5e7
- 1049 070e 41010000 		.4byte	.LLST8
- 1050 0712 1E       		.uleb128 0x1e
- 1051 0713 66000000 		.4byte	.LBB21
- 1052 0717 0A000000 		.4byte	.LBE21-.LBB21
- 1053 071b 1F       		.uleb128 0x1f
- 1054 071c F4050000 		.4byte	0x5f4
- 1055 0720 54010000 		.4byte	.LLST9
- 1056 0724 20       		.uleb128 0x20
- 1057 0725 70000000 		.4byte	.LVL15
- 1058 0729 B7070000 		.4byte	0x7b7
- 1059 072d 00       		.byte	0
- 1060 072e 00       		.byte	0
- 1061 072f 00       		.byte	0
- 1062 0730 21       		.uleb128 0x21
- 1063 0731 6C050000 		.4byte	0x56c
- 1064 0735 80000000 		.4byte	.LBB22
- 1065 0739 1C000000 		.4byte	.LBE22-.LBB22
- 1066 073d 01       		.byte	0x1
- 1067 073e 3B       		.byte	0x3b
- 1068 073f 1D       		.uleb128 0x1d
- 1069 0740 7D050000 		.4byte	0x57d
- 1070 0744 1E       		.uleb128 0x1e
- 1071 0745 80000000 		.4byte	.LBB23
- 1072 0749 1C000000 		.4byte	.LBE23-.LBB23
- 1073 074d 1F       		.uleb128 0x1f
- 1074 074e 89050000 		.4byte	0x589
- 1075 0752 6D010000 		.4byte	.LLST10
- 1076 0756 00       		.byte	0
- 1077 0757 00       		.byte	0
- 1078 0758 00       		.byte	0
- 1079 0759 22       		.uleb128 0x22
- 1080 075a 0C070000 		.4byte	.LASF101
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 28
+ 1037 0014 24       		.uleb128 0x24
+ 1038 0015 00       		.byte	0
+ 1039 0016 0B       		.uleb128 0xb
+ 1040 0017 0B       		.uleb128 0xb
+ 1041 0018 3E       		.uleb128 0x3e
+ 1042 0019 0B       		.uleb128 0xb
+ 1043 001a 03       		.uleb128 0x3
+ 1044 001b 0E       		.uleb128 0xe
+ 1045 001c 00       		.byte	0
+ 1046 001d 00       		.byte	0
+ 1047 001e 03       		.uleb128 0x3
+ 1048 001f 16       		.uleb128 0x16
+ 1049 0020 00       		.byte	0
+ 1050 0021 03       		.uleb128 0x3
+ 1051 0022 0E       		.uleb128 0xe
+ 1052 0023 3A       		.uleb128 0x3a
+ 1053 0024 0B       		.uleb128 0xb
+ 1054 0025 3B       		.uleb128 0x3b
+ 1055 0026 0B       		.uleb128 0xb
+ 1056 0027 49       		.uleb128 0x49
+ 1057 0028 13       		.uleb128 0x13
+ 1058 0029 00       		.byte	0
+ 1059 002a 00       		.byte	0
+ 1060 002b 04       		.uleb128 0x4
+ 1061 002c 24       		.uleb128 0x24
+ 1062 002d 00       		.byte	0
+ 1063 002e 0B       		.uleb128 0xb
+ 1064 002f 0B       		.uleb128 0xb
+ 1065 0030 3E       		.uleb128 0x3e
+ 1066 0031 0B       		.uleb128 0xb
+ 1067 0032 03       		.uleb128 0x3
+ 1068 0033 08       		.uleb128 0x8
+ 1069 0034 00       		.byte	0
+ 1070 0035 00       		.byte	0
+ 1071 0036 05       		.uleb128 0x5
+ 1072 0037 16       		.uleb128 0x16
+ 1073 0038 00       		.byte	0
+ 1074 0039 03       		.uleb128 0x3
+ 1075 003a 0E       		.uleb128 0xe
+ 1076 003b 3A       		.uleb128 0x3a
+ 1077 003c 0B       		.uleb128 0xb
+ 1078 003d 3B       		.uleb128 0x3b
+ 1079 003e 05       		.uleb128 0x5
+ 1080 003f 49       		.uleb128 0x49
+ 1081 0040 13       		.uleb128 0x13
+ 1082 0041 00       		.byte	0
+ 1083 0042 00       		.byte	0
+ 1084 0043 06       		.uleb128 0x6
+ 1085 0044 04       		.uleb128 0x4
+ 1086 0045 01       		.byte	0x1
+ 1087 0046 0B       		.uleb128 0xb
+ 1088 0047 0B       		.uleb128 0xb
+ 1089 0048 49       		.uleb128 0x49
+ 1090 0049 13       		.uleb128 0x13
+ 1091 004a 3A       		.uleb128 0x3a
+ 1092 004b 0B       		.uleb128 0xb
+ 1093 004c 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 28
 
 
- 1081 075e 0F       		.byte	0xf
- 1082 075f 40       		.byte	0x40
- 1083 0760 EA000000 		.4byte	0xea
- 1084 0764 22       		.uleb128 0x22
- 1085 0765 08030000 		.4byte	.LASF102
- 1086 0769 0F       		.byte	0xf
- 1087 076a 47       		.byte	0x47
- 1088 076b F5000000 		.4byte	0xf5
- 1089 076f 22       		.uleb128 0x22
- 1090 0770 B7050000 		.4byte	.LASF103
- 1091 0774 0F       		.byte	0xf
- 1092 0775 4A       		.byte	0x4a
- 1093 0776 EA000000 		.4byte	0xea
- 1094 077a 22       		.uleb128 0x22
- 1095 077b B5030000 		.4byte	.LASF104
- 1096 077f 10       		.byte	0x10
- 1097 0780 48       		.byte	0x48
- 1098 0781 00010000 		.4byte	0x100
- 1099 0785 22       		.uleb128 0x22
- 1100 0786 6D020000 		.4byte	.LASF105
- 1101 078a 11       		.byte	0x11
- 1102 078b 44       		.byte	0x44
- 1103 078c EA000000 		.4byte	0xea
- 1104 0790 23       		.uleb128 0x23
- 1105 0791 E6060000 		.4byte	.LASF106
- 1106 0795 12       		.byte	0x12
- 1107 0796 1207     		.2byte	0x712
- 1108 0798 9C070000 		.4byte	0x79c
- 1109 079c 24       		.uleb128 0x24
- 1110 079d 97000000 		.4byte	0x97
- 1111 07a1 22       		.uleb128 0x22
- 1112 07a2 D1020000 		.4byte	.LASF107
- 1113 07a6 13       		.byte	0x13
- 1114 07a7 39       		.byte	0x39
- 1115 07a8 C6030000 		.4byte	0x3c6
- 1116 07ac 22       		.uleb128 0x22
- 1117 07ad 8E000000 		.4byte	.LASF108
- 1118 07b1 13       		.byte	0x13
- 1119 07b2 57       		.byte	0x57
- 1120 07b3 33050000 		.4byte	0x533
- 1121 07b7 25       		.uleb128 0x25
- 1122 07b8 CE060000 		.4byte	.LASF113
- 1123 07bc CE060000 		.4byte	.LASF113
- 1124 07c0 14       		.byte	0x14
- 1125 07c1 4A01     		.2byte	0x14a
- 1126 07c3 00       		.byte	0
- 1127              		.section	.debug_abbrev,"",%progbits
- 1128              	.Ldebug_abbrev0:
- 1129 0000 01       		.uleb128 0x1
- 1130 0001 11       		.uleb128 0x11
- 1131 0002 01       		.byte	0x1
- 1132 0003 25       		.uleb128 0x25
- 1133 0004 0E       		.uleb128 0xe
- 1134 0005 13       		.uleb128 0x13
- 1135 0006 0B       		.uleb128 0xb
- 1136 0007 03       		.uleb128 0x3
- 1137 0008 0E       		.uleb128 0xe
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 29
+ 1094 004d 0B       		.uleb128 0xb
+ 1095 004e 01       		.uleb128 0x1
+ 1096 004f 13       		.uleb128 0x13
+ 1097 0050 00       		.byte	0
+ 1098 0051 00       		.byte	0
+ 1099 0052 07       		.uleb128 0x7
+ 1100 0053 28       		.uleb128 0x28
+ 1101 0054 00       		.byte	0
+ 1102 0055 03       		.uleb128 0x3
+ 1103 0056 0E       		.uleb128 0xe
+ 1104 0057 1C       		.uleb128 0x1c
+ 1105 0058 0B       		.uleb128 0xb
+ 1106 0059 00       		.byte	0
+ 1107 005a 00       		.byte	0
+ 1108 005b 08       		.uleb128 0x8
+ 1109 005c 28       		.uleb128 0x28
+ 1110 005d 00       		.byte	0
+ 1111 005e 03       		.uleb128 0x3
+ 1112 005f 0E       		.uleb128 0xe
+ 1113 0060 1C       		.uleb128 0x1c
+ 1114 0061 0D       		.uleb128 0xd
+ 1115 0062 00       		.byte	0
+ 1116 0063 00       		.byte	0
+ 1117 0064 09       		.uleb128 0x9
+ 1118 0065 01       		.uleb128 0x1
+ 1119 0066 01       		.byte	0x1
+ 1120 0067 49       		.uleb128 0x49
+ 1121 0068 13       		.uleb128 0x13
+ 1122 0069 01       		.uleb128 0x1
+ 1123 006a 13       		.uleb128 0x13
+ 1124 006b 00       		.byte	0
+ 1125 006c 00       		.byte	0
+ 1126 006d 0A       		.uleb128 0xa
+ 1127 006e 21       		.uleb128 0x21
+ 1128 006f 00       		.byte	0
+ 1129 0070 00       		.byte	0
+ 1130 0071 00       		.byte	0
+ 1131 0072 0B       		.uleb128 0xb
+ 1132 0073 26       		.uleb128 0x26
+ 1133 0074 00       		.byte	0
+ 1134 0075 49       		.uleb128 0x49
+ 1135 0076 13       		.uleb128 0x13
+ 1136 0077 00       		.byte	0
+ 1137 0078 00       		.byte	0
+ 1138 0079 0C       		.uleb128 0xc
+ 1139 007a 0F       		.uleb128 0xf
+ 1140 007b 00       		.byte	0
+ 1141 007c 0B       		.uleb128 0xb
+ 1142 007d 0B       		.uleb128 0xb
+ 1143 007e 49       		.uleb128 0x49
+ 1144 007f 13       		.uleb128 0x13
+ 1145 0080 00       		.byte	0
+ 1146 0081 00       		.byte	0
+ 1147 0082 0D       		.uleb128 0xd
+ 1148 0083 13       		.uleb128 0x13
+ 1149 0084 01       		.byte	0x1
+ 1150 0085 0B       		.uleb128 0xb
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 29
 
 
- 1138 0009 1B       		.uleb128 0x1b
- 1139 000a 0E       		.uleb128 0xe
- 1140 000b 55       		.uleb128 0x55
- 1141 000c 17       		.uleb128 0x17
- 1142 000d 11       		.uleb128 0x11
- 1143 000e 01       		.uleb128 0x1
- 1144 000f 10       		.uleb128 0x10
- 1145 0010 17       		.uleb128 0x17
- 1146 0011 00       		.byte	0
- 1147 0012 00       		.byte	0
- 1148 0013 02       		.uleb128 0x2
- 1149 0014 24       		.uleb128 0x24
- 1150 0015 00       		.byte	0
- 1151 0016 0B       		.uleb128 0xb
- 1152 0017 0B       		.uleb128 0xb
- 1153 0018 3E       		.uleb128 0x3e
- 1154 0019 0B       		.uleb128 0xb
- 1155 001a 03       		.uleb128 0x3
- 1156 001b 0E       		.uleb128 0xe
- 1157 001c 00       		.byte	0
- 1158 001d 00       		.byte	0
- 1159 001e 03       		.uleb128 0x3
- 1160 001f 16       		.uleb128 0x16
- 1161 0020 00       		.byte	0
- 1162 0021 03       		.uleb128 0x3
- 1163 0022 0E       		.uleb128 0xe
- 1164 0023 3A       		.uleb128 0x3a
- 1165 0024 0B       		.uleb128 0xb
- 1166 0025 3B       		.uleb128 0x3b
- 1167 0026 0B       		.uleb128 0xb
- 1168 0027 49       		.uleb128 0x49
- 1169 0028 13       		.uleb128 0x13
- 1170 0029 00       		.byte	0
- 1171 002a 00       		.byte	0
- 1172 002b 04       		.uleb128 0x4
- 1173 002c 24       		.uleb128 0x24
- 1174 002d 00       		.byte	0
- 1175 002e 0B       		.uleb128 0xb
- 1176 002f 0B       		.uleb128 0xb
- 1177 0030 3E       		.uleb128 0x3e
- 1178 0031 0B       		.uleb128 0xb
- 1179 0032 03       		.uleb128 0x3
- 1180 0033 08       		.uleb128 0x8
- 1181 0034 00       		.byte	0
- 1182 0035 00       		.byte	0
- 1183 0036 05       		.uleb128 0x5
- 1184 0037 16       		.uleb128 0x16
- 1185 0038 00       		.byte	0
- 1186 0039 03       		.uleb128 0x3
- 1187 003a 0E       		.uleb128 0xe
- 1188 003b 3A       		.uleb128 0x3a
- 1189 003c 0B       		.uleb128 0xb
- 1190 003d 3B       		.uleb128 0x3b
- 1191 003e 05       		.uleb128 0x5
- 1192 003f 49       		.uleb128 0x49
- 1193 0040 13       		.uleb128 0x13
- 1194 0041 00       		.byte	0
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 30
+ 1151 0086 0B       		.uleb128 0xb
+ 1152 0087 3A       		.uleb128 0x3a
+ 1153 0088 0B       		.uleb128 0xb
+ 1154 0089 3B       		.uleb128 0x3b
+ 1155 008a 0B       		.uleb128 0xb
+ 1156 008b 01       		.uleb128 0x1
+ 1157 008c 13       		.uleb128 0x13
+ 1158 008d 00       		.byte	0
+ 1159 008e 00       		.byte	0
+ 1160 008f 0E       		.uleb128 0xe
+ 1161 0090 0D       		.uleb128 0xd
+ 1162 0091 00       		.byte	0
+ 1163 0092 03       		.uleb128 0x3
+ 1164 0093 0E       		.uleb128 0xe
+ 1165 0094 3A       		.uleb128 0x3a
+ 1166 0095 0B       		.uleb128 0xb
+ 1167 0096 3B       		.uleb128 0x3b
+ 1168 0097 0B       		.uleb128 0xb
+ 1169 0098 49       		.uleb128 0x49
+ 1170 0099 13       		.uleb128 0x13
+ 1171 009a 38       		.uleb128 0x38
+ 1172 009b 0B       		.uleb128 0xb
+ 1173 009c 00       		.byte	0
+ 1174 009d 00       		.byte	0
+ 1175 009e 0F       		.uleb128 0xf
+ 1176 009f 15       		.uleb128 0x15
+ 1177 00a0 01       		.byte	0x1
+ 1178 00a1 27       		.uleb128 0x27
+ 1179 00a2 19       		.uleb128 0x19
+ 1180 00a3 49       		.uleb128 0x49
+ 1181 00a4 13       		.uleb128 0x13
+ 1182 00a5 01       		.uleb128 0x1
+ 1183 00a6 13       		.uleb128 0x13
+ 1184 00a7 00       		.byte	0
+ 1185 00a8 00       		.byte	0
+ 1186 00a9 10       		.uleb128 0x10
+ 1187 00aa 05       		.uleb128 0x5
+ 1188 00ab 00       		.byte	0
+ 1189 00ac 49       		.uleb128 0x49
+ 1190 00ad 13       		.uleb128 0x13
+ 1191 00ae 00       		.byte	0
+ 1192 00af 00       		.byte	0
+ 1193 00b0 11       		.uleb128 0x11
+ 1194 00b1 13       		.uleb128 0x13
+ 1195 00b2 01       		.byte	0x1
+ 1196 00b3 03       		.uleb128 0x3
+ 1197 00b4 0E       		.uleb128 0xe
+ 1198 00b5 0B       		.uleb128 0xb
+ 1199 00b6 0B       		.uleb128 0xb
+ 1200 00b7 3A       		.uleb128 0x3a
+ 1201 00b8 0B       		.uleb128 0xb
+ 1202 00b9 3B       		.uleb128 0x3b
+ 1203 00ba 0B       		.uleb128 0xb
+ 1204 00bb 01       		.uleb128 0x1
+ 1205 00bc 13       		.uleb128 0x13
+ 1206 00bd 00       		.byte	0
+ 1207 00be 00       		.byte	0
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 30
 
 
- 1195 0042 00       		.byte	0
- 1196 0043 06       		.uleb128 0x6
- 1197 0044 04       		.uleb128 0x4
- 1198 0045 01       		.byte	0x1
- 1199 0046 0B       		.uleb128 0xb
- 1200 0047 0B       		.uleb128 0xb
- 1201 0048 49       		.uleb128 0x49
- 1202 0049 13       		.uleb128 0x13
- 1203 004a 3A       		.uleb128 0x3a
- 1204 004b 0B       		.uleb128 0xb
- 1205 004c 3B       		.uleb128 0x3b
- 1206 004d 0B       		.uleb128 0xb
- 1207 004e 01       		.uleb128 0x1
- 1208 004f 13       		.uleb128 0x13
- 1209 0050 00       		.byte	0
- 1210 0051 00       		.byte	0
- 1211 0052 07       		.uleb128 0x7
- 1212 0053 28       		.uleb128 0x28
- 1213 0054 00       		.byte	0
- 1214 0055 03       		.uleb128 0x3
- 1215 0056 0E       		.uleb128 0xe
- 1216 0057 1C       		.uleb128 0x1c
- 1217 0058 0B       		.uleb128 0xb
- 1218 0059 00       		.byte	0
- 1219 005a 00       		.byte	0
- 1220 005b 08       		.uleb128 0x8
- 1221 005c 28       		.uleb128 0x28
- 1222 005d 00       		.byte	0
- 1223 005e 03       		.uleb128 0x3
- 1224 005f 0E       		.uleb128 0xe
- 1225 0060 1C       		.uleb128 0x1c
- 1226 0061 0D       		.uleb128 0xd
- 1227 0062 00       		.byte	0
- 1228 0063 00       		.byte	0
- 1229 0064 09       		.uleb128 0x9
- 1230 0065 01       		.uleb128 0x1
- 1231 0066 01       		.byte	0x1
- 1232 0067 49       		.uleb128 0x49
- 1233 0068 13       		.uleb128 0x13
- 1234 0069 01       		.uleb128 0x1
- 1235 006a 13       		.uleb128 0x13
- 1236 006b 00       		.byte	0
- 1237 006c 00       		.byte	0
- 1238 006d 0A       		.uleb128 0xa
- 1239 006e 21       		.uleb128 0x21
- 1240 006f 00       		.byte	0
- 1241 0070 00       		.byte	0
- 1242 0071 00       		.byte	0
- 1243 0072 0B       		.uleb128 0xb
- 1244 0073 26       		.uleb128 0x26
- 1245 0074 00       		.byte	0
- 1246 0075 49       		.uleb128 0x49
- 1247 0076 13       		.uleb128 0x13
- 1248 0077 00       		.byte	0
- 1249 0078 00       		.byte	0
- 1250 0079 0C       		.uleb128 0xc
- 1251 007a 0F       		.uleb128 0xf
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 31
+ 1208 00bf 12       		.uleb128 0x12
+ 1209 00c0 0D       		.uleb128 0xd
+ 1210 00c1 00       		.byte	0
+ 1211 00c2 03       		.uleb128 0x3
+ 1212 00c3 08       		.uleb128 0x8
+ 1213 00c4 3A       		.uleb128 0x3a
+ 1214 00c5 0B       		.uleb128 0xb
+ 1215 00c6 3B       		.uleb128 0x3b
+ 1216 00c7 0B       		.uleb128 0xb
+ 1217 00c8 49       		.uleb128 0x49
+ 1218 00c9 13       		.uleb128 0x13
+ 1219 00ca 38       		.uleb128 0x38
+ 1220 00cb 0B       		.uleb128 0xb
+ 1221 00cc 00       		.byte	0
+ 1222 00cd 00       		.byte	0
+ 1223 00ce 13       		.uleb128 0x13
+ 1224 00cf 2E       		.uleb128 0x2e
+ 1225 00d0 01       		.byte	0x1
+ 1226 00d1 3F       		.uleb128 0x3f
+ 1227 00d2 19       		.uleb128 0x19
+ 1228 00d3 03       		.uleb128 0x3
+ 1229 00d4 0E       		.uleb128 0xe
+ 1230 00d5 3A       		.uleb128 0x3a
+ 1231 00d6 0B       		.uleb128 0xb
+ 1232 00d7 3B       		.uleb128 0x3b
+ 1233 00d8 05       		.uleb128 0x5
+ 1234 00d9 27       		.uleb128 0x27
+ 1235 00da 19       		.uleb128 0x19
+ 1236 00db 49       		.uleb128 0x49
+ 1237 00dc 13       		.uleb128 0x13
+ 1238 00dd 20       		.uleb128 0x20
+ 1239 00de 0B       		.uleb128 0xb
+ 1240 00df 01       		.uleb128 0x1
+ 1241 00e0 13       		.uleb128 0x13
+ 1242 00e1 00       		.byte	0
+ 1243 00e2 00       		.byte	0
+ 1244 00e3 14       		.uleb128 0x14
+ 1245 00e4 05       		.uleb128 0x5
+ 1246 00e5 00       		.byte	0
+ 1247 00e6 03       		.uleb128 0x3
+ 1248 00e7 0E       		.uleb128 0xe
+ 1249 00e8 3A       		.uleb128 0x3a
+ 1250 00e9 0B       		.uleb128 0xb
+ 1251 00ea 3B       		.uleb128 0x3b
+ 1252 00eb 05       		.uleb128 0x5
+ 1253 00ec 49       		.uleb128 0x49
+ 1254 00ed 13       		.uleb128 0x13
+ 1255 00ee 00       		.byte	0
+ 1256 00ef 00       		.byte	0
+ 1257 00f0 15       		.uleb128 0x15
+ 1258 00f1 34       		.uleb128 0x34
+ 1259 00f2 00       		.byte	0
+ 1260 00f3 03       		.uleb128 0x3
+ 1261 00f4 08       		.uleb128 0x8
+ 1262 00f5 3A       		.uleb128 0x3a
+ 1263 00f6 0B       		.uleb128 0xb
+ 1264 00f7 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 31
 
 
- 1252 007b 00       		.byte	0
- 1253 007c 0B       		.uleb128 0xb
- 1254 007d 0B       		.uleb128 0xb
- 1255 007e 49       		.uleb128 0x49
- 1256 007f 13       		.uleb128 0x13
- 1257 0080 00       		.byte	0
- 1258 0081 00       		.byte	0
- 1259 0082 0D       		.uleb128 0xd
- 1260 0083 13       		.uleb128 0x13
- 1261 0084 01       		.byte	0x1
- 1262 0085 0B       		.uleb128 0xb
- 1263 0086 0B       		.uleb128 0xb
- 1264 0087 3A       		.uleb128 0x3a
- 1265 0088 0B       		.uleb128 0xb
- 1266 0089 3B       		.uleb128 0x3b
- 1267 008a 0B       		.uleb128 0xb
- 1268 008b 01       		.uleb128 0x1
- 1269 008c 13       		.uleb128 0x13
- 1270 008d 00       		.byte	0
- 1271 008e 00       		.byte	0
- 1272 008f 0E       		.uleb128 0xe
- 1273 0090 0D       		.uleb128 0xd
- 1274 0091 00       		.byte	0
- 1275 0092 03       		.uleb128 0x3
- 1276 0093 0E       		.uleb128 0xe
- 1277 0094 3A       		.uleb128 0x3a
- 1278 0095 0B       		.uleb128 0xb
- 1279 0096 3B       		.uleb128 0x3b
- 1280 0097 0B       		.uleb128 0xb
- 1281 0098 49       		.uleb128 0x49
- 1282 0099 13       		.uleb128 0x13
- 1283 009a 38       		.uleb128 0x38
- 1284 009b 0B       		.uleb128 0xb
- 1285 009c 00       		.byte	0
- 1286 009d 00       		.byte	0
- 1287 009e 0F       		.uleb128 0xf
- 1288 009f 15       		.uleb128 0x15
- 1289 00a0 01       		.byte	0x1
- 1290 00a1 27       		.uleb128 0x27
- 1291 00a2 19       		.uleb128 0x19
- 1292 00a3 49       		.uleb128 0x49
- 1293 00a4 13       		.uleb128 0x13
- 1294 00a5 01       		.uleb128 0x1
- 1295 00a6 13       		.uleb128 0x13
- 1296 00a7 00       		.byte	0
- 1297 00a8 00       		.byte	0
- 1298 00a9 10       		.uleb128 0x10
- 1299 00aa 05       		.uleb128 0x5
- 1300 00ab 00       		.byte	0
- 1301 00ac 49       		.uleb128 0x49
- 1302 00ad 13       		.uleb128 0x13
- 1303 00ae 00       		.byte	0
- 1304 00af 00       		.byte	0
- 1305 00b0 11       		.uleb128 0x11
- 1306 00b1 13       		.uleb128 0x13
- 1307 00b2 01       		.byte	0x1
- 1308 00b3 03       		.uleb128 0x3
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 32
+ 1265 00f8 05       		.uleb128 0x5
+ 1266 00f9 49       		.uleb128 0x49
+ 1267 00fa 13       		.uleb128 0x13
+ 1268 00fb 00       		.byte	0
+ 1269 00fc 00       		.byte	0
+ 1270 00fd 16       		.uleb128 0x16
+ 1271 00fe 34       		.uleb128 0x34
+ 1272 00ff 00       		.byte	0
+ 1273 0100 03       		.uleb128 0x3
+ 1274 0101 0E       		.uleb128 0xe
+ 1275 0102 3A       		.uleb128 0x3a
+ 1276 0103 0B       		.uleb128 0xb
+ 1277 0104 3B       		.uleb128 0x3b
+ 1278 0105 05       		.uleb128 0x5
+ 1279 0106 49       		.uleb128 0x49
+ 1280 0107 13       		.uleb128 0x13
+ 1281 0108 00       		.byte	0
+ 1282 0109 00       		.byte	0
+ 1283 010a 17       		.uleb128 0x17
+ 1284 010b 0B       		.uleb128 0xb
+ 1285 010c 01       		.byte	0x1
+ 1286 010d 00       		.byte	0
+ 1287 010e 00       		.byte	0
+ 1288 010f 18       		.uleb128 0x18
+ 1289 0110 2E       		.uleb128 0x2e
+ 1290 0111 01       		.byte	0x1
+ 1291 0112 3F       		.uleb128 0x3f
+ 1292 0113 19       		.uleb128 0x19
+ 1293 0114 03       		.uleb128 0x3
+ 1294 0115 0E       		.uleb128 0xe
+ 1295 0116 3A       		.uleb128 0x3a
+ 1296 0117 0B       		.uleb128 0xb
+ 1297 0118 3B       		.uleb128 0x3b
+ 1298 0119 0B       		.uleb128 0xb
+ 1299 011a 27       		.uleb128 0x27
+ 1300 011b 19       		.uleb128 0x19
+ 1301 011c 11       		.uleb128 0x11
+ 1302 011d 01       		.uleb128 0x1
+ 1303 011e 12       		.uleb128 0x12
+ 1304 011f 06       		.uleb128 0x6
+ 1305 0120 40       		.uleb128 0x40
+ 1306 0121 18       		.uleb128 0x18
+ 1307 0122 9642     		.uleb128 0x2116
+ 1308 0124 19       		.uleb128 0x19
+ 1309 0125 01       		.uleb128 0x1
+ 1310 0126 13       		.uleb128 0x13
+ 1311 0127 00       		.byte	0
+ 1312 0128 00       		.byte	0
+ 1313 0129 19       		.uleb128 0x19
+ 1314 012a 05       		.uleb128 0x5
+ 1315 012b 00       		.byte	0
+ 1316 012c 03       		.uleb128 0x3
+ 1317 012d 08       		.uleb128 0x8
+ 1318 012e 3A       		.uleb128 0x3a
+ 1319 012f 0B       		.uleb128 0xb
+ 1320 0130 3B       		.uleb128 0x3b
+ 1321 0131 0B       		.uleb128 0xb
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 32
 
 
- 1309 00b4 0E       		.uleb128 0xe
- 1310 00b5 0B       		.uleb128 0xb
- 1311 00b6 0B       		.uleb128 0xb
- 1312 00b7 3A       		.uleb128 0x3a
- 1313 00b8 0B       		.uleb128 0xb
- 1314 00b9 3B       		.uleb128 0x3b
- 1315 00ba 0B       		.uleb128 0xb
- 1316 00bb 01       		.uleb128 0x1
- 1317 00bc 13       		.uleb128 0x13
- 1318 00bd 00       		.byte	0
- 1319 00be 00       		.byte	0
- 1320 00bf 12       		.uleb128 0x12
- 1321 00c0 0D       		.uleb128 0xd
- 1322 00c1 00       		.byte	0
- 1323 00c2 03       		.uleb128 0x3
- 1324 00c3 08       		.uleb128 0x8
- 1325 00c4 3A       		.uleb128 0x3a
- 1326 00c5 0B       		.uleb128 0xb
- 1327 00c6 3B       		.uleb128 0x3b
- 1328 00c7 0B       		.uleb128 0xb
- 1329 00c8 49       		.uleb128 0x49
- 1330 00c9 13       		.uleb128 0x13
- 1331 00ca 38       		.uleb128 0x38
- 1332 00cb 0B       		.uleb128 0xb
- 1333 00cc 00       		.byte	0
- 1334 00cd 00       		.byte	0
- 1335 00ce 13       		.uleb128 0x13
- 1336 00cf 2E       		.uleb128 0x2e
- 1337 00d0 01       		.byte	0x1
- 1338 00d1 3F       		.uleb128 0x3f
- 1339 00d2 19       		.uleb128 0x19
- 1340 00d3 03       		.uleb128 0x3
- 1341 00d4 0E       		.uleb128 0xe
- 1342 00d5 3A       		.uleb128 0x3a
- 1343 00d6 0B       		.uleb128 0xb
- 1344 00d7 3B       		.uleb128 0x3b
- 1345 00d8 05       		.uleb128 0x5
- 1346 00d9 27       		.uleb128 0x27
- 1347 00da 19       		.uleb128 0x19
- 1348 00db 49       		.uleb128 0x49
- 1349 00dc 13       		.uleb128 0x13
- 1350 00dd 20       		.uleb128 0x20
- 1351 00de 0B       		.uleb128 0xb
- 1352 00df 01       		.uleb128 0x1
- 1353 00e0 13       		.uleb128 0x13
- 1354 00e1 00       		.byte	0
- 1355 00e2 00       		.byte	0
- 1356 00e3 14       		.uleb128 0x14
- 1357 00e4 05       		.uleb128 0x5
- 1358 00e5 00       		.byte	0
- 1359 00e6 03       		.uleb128 0x3
- 1360 00e7 0E       		.uleb128 0xe
- 1361 00e8 3A       		.uleb128 0x3a
- 1362 00e9 0B       		.uleb128 0xb
- 1363 00ea 3B       		.uleb128 0x3b
- 1364 00eb 05       		.uleb128 0x5
- 1365 00ec 49       		.uleb128 0x49
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 33
+ 1322 0132 49       		.uleb128 0x49
+ 1323 0133 13       		.uleb128 0x13
+ 1324 0134 02       		.uleb128 0x2
+ 1325 0135 17       		.uleb128 0x17
+ 1326 0136 00       		.byte	0
+ 1327 0137 00       		.byte	0
+ 1328 0138 1A       		.uleb128 0x1a
+ 1329 0139 34       		.uleb128 0x34
+ 1330 013a 00       		.byte	0
+ 1331 013b 03       		.uleb128 0x3
+ 1332 013c 08       		.uleb128 0x8
+ 1333 013d 3A       		.uleb128 0x3a
+ 1334 013e 0B       		.uleb128 0xb
+ 1335 013f 3B       		.uleb128 0x3b
+ 1336 0140 0B       		.uleb128 0xb
+ 1337 0141 49       		.uleb128 0x49
+ 1338 0142 13       		.uleb128 0x13
+ 1339 0143 00       		.byte	0
+ 1340 0144 00       		.byte	0
+ 1341 0145 1B       		.uleb128 0x1b
+ 1342 0146 34       		.uleb128 0x34
+ 1343 0147 00       		.byte	0
+ 1344 0148 03       		.uleb128 0x3
+ 1345 0149 0E       		.uleb128 0xe
+ 1346 014a 3A       		.uleb128 0x3a
+ 1347 014b 0B       		.uleb128 0xb
+ 1348 014c 3B       		.uleb128 0x3b
+ 1349 014d 0B       		.uleb128 0xb
+ 1350 014e 49       		.uleb128 0x49
+ 1351 014f 13       		.uleb128 0x13
+ 1352 0150 02       		.uleb128 0x2
+ 1353 0151 17       		.uleb128 0x17
+ 1354 0152 00       		.byte	0
+ 1355 0153 00       		.byte	0
+ 1356 0154 1C       		.uleb128 0x1c
+ 1357 0155 1D       		.uleb128 0x1d
+ 1358 0156 01       		.byte	0x1
+ 1359 0157 31       		.uleb128 0x31
+ 1360 0158 13       		.uleb128 0x13
+ 1361 0159 11       		.uleb128 0x11
+ 1362 015a 01       		.uleb128 0x1
+ 1363 015b 12       		.uleb128 0x12
+ 1364 015c 06       		.uleb128 0x6
+ 1365 015d 58       		.uleb128 0x58
+ 1366 015e 0B       		.uleb128 0xb
+ 1367 015f 59       		.uleb128 0x59
+ 1368 0160 0B       		.uleb128 0xb
+ 1369 0161 01       		.uleb128 0x1
+ 1370 0162 13       		.uleb128 0x13
+ 1371 0163 00       		.byte	0
+ 1372 0164 00       		.byte	0
+ 1373 0165 1D       		.uleb128 0x1d
+ 1374 0166 05       		.uleb128 0x5
+ 1375 0167 00       		.byte	0
+ 1376 0168 31       		.uleb128 0x31
+ 1377 0169 13       		.uleb128 0x13
+ 1378 016a 00       		.byte	0
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 33
 
 
- 1366 00ed 13       		.uleb128 0x13
- 1367 00ee 00       		.byte	0
- 1368 00ef 00       		.byte	0
- 1369 00f0 15       		.uleb128 0x15
- 1370 00f1 34       		.uleb128 0x34
- 1371 00f2 00       		.byte	0
- 1372 00f3 03       		.uleb128 0x3
- 1373 00f4 08       		.uleb128 0x8
- 1374 00f5 3A       		.uleb128 0x3a
- 1375 00f6 0B       		.uleb128 0xb
- 1376 00f7 3B       		.uleb128 0x3b
- 1377 00f8 05       		.uleb128 0x5
- 1378 00f9 49       		.uleb128 0x49
- 1379 00fa 13       		.uleb128 0x13
- 1380 00fb 00       		.byte	0
- 1381 00fc 00       		.byte	0
- 1382 00fd 16       		.uleb128 0x16
- 1383 00fe 34       		.uleb128 0x34
- 1384 00ff 00       		.byte	0
- 1385 0100 03       		.uleb128 0x3
- 1386 0101 0E       		.uleb128 0xe
- 1387 0102 3A       		.uleb128 0x3a
- 1388 0103 0B       		.uleb128 0xb
- 1389 0104 3B       		.uleb128 0x3b
- 1390 0105 05       		.uleb128 0x5
- 1391 0106 49       		.uleb128 0x49
- 1392 0107 13       		.uleb128 0x13
- 1393 0108 00       		.byte	0
- 1394 0109 00       		.byte	0
- 1395 010a 17       		.uleb128 0x17
- 1396 010b 0B       		.uleb128 0xb
- 1397 010c 01       		.byte	0x1
- 1398 010d 00       		.byte	0
- 1399 010e 00       		.byte	0
- 1400 010f 18       		.uleb128 0x18
- 1401 0110 2E       		.uleb128 0x2e
- 1402 0111 01       		.byte	0x1
- 1403 0112 3F       		.uleb128 0x3f
- 1404 0113 19       		.uleb128 0x19
- 1405 0114 03       		.uleb128 0x3
- 1406 0115 0E       		.uleb128 0xe
- 1407 0116 3A       		.uleb128 0x3a
- 1408 0117 0B       		.uleb128 0xb
- 1409 0118 3B       		.uleb128 0x3b
- 1410 0119 0B       		.uleb128 0xb
- 1411 011a 27       		.uleb128 0x27
- 1412 011b 19       		.uleb128 0x19
- 1413 011c 11       		.uleb128 0x11
- 1414 011d 01       		.uleb128 0x1
- 1415 011e 12       		.uleb128 0x12
- 1416 011f 06       		.uleb128 0x6
- 1417 0120 40       		.uleb128 0x40
- 1418 0121 18       		.uleb128 0x18
- 1419 0122 9642     		.uleb128 0x2116
- 1420 0124 19       		.uleb128 0x19
- 1421 0125 01       		.uleb128 0x1
- 1422 0126 13       		.uleb128 0x13
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 34
+ 1379 016b 00       		.byte	0
+ 1380 016c 1E       		.uleb128 0x1e
+ 1381 016d 0B       		.uleb128 0xb
+ 1382 016e 01       		.byte	0x1
+ 1383 016f 11       		.uleb128 0x11
+ 1384 0170 01       		.uleb128 0x1
+ 1385 0171 12       		.uleb128 0x12
+ 1386 0172 06       		.uleb128 0x6
+ 1387 0173 00       		.byte	0
+ 1388 0174 00       		.byte	0
+ 1389 0175 1F       		.uleb128 0x1f
+ 1390 0176 34       		.uleb128 0x34
+ 1391 0177 00       		.byte	0
+ 1392 0178 31       		.uleb128 0x31
+ 1393 0179 13       		.uleb128 0x13
+ 1394 017a 1C       		.uleb128 0x1c
+ 1395 017b 0B       		.uleb128 0xb
+ 1396 017c 00       		.byte	0
+ 1397 017d 00       		.byte	0
+ 1398 017e 20       		.uleb128 0x20
+ 1399 017f 34       		.uleb128 0x34
+ 1400 0180 00       		.byte	0
+ 1401 0181 31       		.uleb128 0x31
+ 1402 0182 13       		.uleb128 0x13
+ 1403 0183 02       		.uleb128 0x2
+ 1404 0184 17       		.uleb128 0x17
+ 1405 0185 00       		.byte	0
+ 1406 0186 00       		.byte	0
+ 1407 0187 21       		.uleb128 0x21
+ 1408 0188 898201   		.uleb128 0x4109
+ 1409 018b 00       		.byte	0
+ 1410 018c 11       		.uleb128 0x11
+ 1411 018d 01       		.uleb128 0x1
+ 1412 018e 31       		.uleb128 0x31
+ 1413 018f 13       		.uleb128 0x13
+ 1414 0190 00       		.byte	0
+ 1415 0191 00       		.byte	0
+ 1416 0192 22       		.uleb128 0x22
+ 1417 0193 1D       		.uleb128 0x1d
+ 1418 0194 01       		.byte	0x1
+ 1419 0195 31       		.uleb128 0x31
+ 1420 0196 13       		.uleb128 0x13
+ 1421 0197 11       		.uleb128 0x11
+ 1422 0198 01       		.uleb128 0x1
+ 1423 0199 12       		.uleb128 0x12
+ 1424 019a 06       		.uleb128 0x6
+ 1425 019b 58       		.uleb128 0x58
+ 1426 019c 0B       		.uleb128 0xb
+ 1427 019d 59       		.uleb128 0x59
+ 1428 019e 0B       		.uleb128 0xb
+ 1429 019f 00       		.byte	0
+ 1430 01a0 00       		.byte	0
+ 1431 01a1 23       		.uleb128 0x23
+ 1432 01a2 34       		.uleb128 0x34
+ 1433 01a3 00       		.byte	0
+ 1434 01a4 03       		.uleb128 0x3
+ 1435 01a5 0E       		.uleb128 0xe
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 34
 
 
- 1423 0127 00       		.byte	0
- 1424 0128 00       		.byte	0
- 1425 0129 19       		.uleb128 0x19
- 1426 012a 05       		.uleb128 0x5
- 1427 012b 00       		.byte	0
- 1428 012c 03       		.uleb128 0x3
- 1429 012d 08       		.uleb128 0x8
- 1430 012e 3A       		.uleb128 0x3a
- 1431 012f 0B       		.uleb128 0xb
- 1432 0130 3B       		.uleb128 0x3b
- 1433 0131 0B       		.uleb128 0xb
- 1434 0132 49       		.uleb128 0x49
- 1435 0133 13       		.uleb128 0x13
- 1436 0134 02       		.uleb128 0x2
- 1437 0135 17       		.uleb128 0x17
- 1438 0136 00       		.byte	0
- 1439 0137 00       		.byte	0
- 1440 0138 1A       		.uleb128 0x1a
- 1441 0139 34       		.uleb128 0x34
- 1442 013a 00       		.byte	0
- 1443 013b 03       		.uleb128 0x3
- 1444 013c 08       		.uleb128 0x8
- 1445 013d 3A       		.uleb128 0x3a
- 1446 013e 0B       		.uleb128 0xb
- 1447 013f 3B       		.uleb128 0x3b
- 1448 0140 0B       		.uleb128 0xb
- 1449 0141 49       		.uleb128 0x49
- 1450 0142 13       		.uleb128 0x13
- 1451 0143 00       		.byte	0
- 1452 0144 00       		.byte	0
- 1453 0145 1B       		.uleb128 0x1b
- 1454 0146 34       		.uleb128 0x34
- 1455 0147 00       		.byte	0
- 1456 0148 03       		.uleb128 0x3
- 1457 0149 0E       		.uleb128 0xe
- 1458 014a 3A       		.uleb128 0x3a
- 1459 014b 0B       		.uleb128 0xb
- 1460 014c 3B       		.uleb128 0x3b
- 1461 014d 0B       		.uleb128 0xb
- 1462 014e 49       		.uleb128 0x49
- 1463 014f 13       		.uleb128 0x13
- 1464 0150 00       		.byte	0
- 1465 0151 00       		.byte	0
- 1466 0152 1C       		.uleb128 0x1c
- 1467 0153 1D       		.uleb128 0x1d
- 1468 0154 01       		.byte	0x1
- 1469 0155 31       		.uleb128 0x31
- 1470 0156 13       		.uleb128 0x13
- 1471 0157 11       		.uleb128 0x11
- 1472 0158 01       		.uleb128 0x1
- 1473 0159 12       		.uleb128 0x12
- 1474 015a 06       		.uleb128 0x6
- 1475 015b 58       		.uleb128 0x58
- 1476 015c 0B       		.uleb128 0xb
- 1477 015d 59       		.uleb128 0x59
- 1478 015e 0B       		.uleb128 0xb
- 1479 015f 01       		.uleb128 0x1
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 35
+ 1436 01a6 3A       		.uleb128 0x3a
+ 1437 01a7 0B       		.uleb128 0xb
+ 1438 01a8 3B       		.uleb128 0x3b
+ 1439 01a9 0B       		.uleb128 0xb
+ 1440 01aa 49       		.uleb128 0x49
+ 1441 01ab 13       		.uleb128 0x13
+ 1442 01ac 3F       		.uleb128 0x3f
+ 1443 01ad 19       		.uleb128 0x19
+ 1444 01ae 3C       		.uleb128 0x3c
+ 1445 01af 19       		.uleb128 0x19
+ 1446 01b0 00       		.byte	0
+ 1447 01b1 00       		.byte	0
+ 1448 01b2 24       		.uleb128 0x24
+ 1449 01b3 34       		.uleb128 0x34
+ 1450 01b4 00       		.byte	0
+ 1451 01b5 03       		.uleb128 0x3
+ 1452 01b6 0E       		.uleb128 0xe
+ 1453 01b7 3A       		.uleb128 0x3a
+ 1454 01b8 0B       		.uleb128 0xb
+ 1455 01b9 3B       		.uleb128 0x3b
+ 1456 01ba 05       		.uleb128 0x5
+ 1457 01bb 49       		.uleb128 0x49
+ 1458 01bc 13       		.uleb128 0x13
+ 1459 01bd 3F       		.uleb128 0x3f
+ 1460 01be 19       		.uleb128 0x19
+ 1461 01bf 3C       		.uleb128 0x3c
+ 1462 01c0 19       		.uleb128 0x19
+ 1463 01c1 00       		.byte	0
+ 1464 01c2 00       		.byte	0
+ 1465 01c3 25       		.uleb128 0x25
+ 1466 01c4 35       		.uleb128 0x35
+ 1467 01c5 00       		.byte	0
+ 1468 01c6 49       		.uleb128 0x49
+ 1469 01c7 13       		.uleb128 0x13
+ 1470 01c8 00       		.byte	0
+ 1471 01c9 00       		.byte	0
+ 1472 01ca 26       		.uleb128 0x26
+ 1473 01cb 2E       		.uleb128 0x2e
+ 1474 01cc 00       		.byte	0
+ 1475 01cd 3F       		.uleb128 0x3f
+ 1476 01ce 19       		.uleb128 0x19
+ 1477 01cf 3C       		.uleb128 0x3c
+ 1478 01d0 19       		.uleb128 0x19
+ 1479 01d1 6E       		.uleb128 0x6e
+ 1480 01d2 0E       		.uleb128 0xe
+ 1481 01d3 03       		.uleb128 0x3
+ 1482 01d4 0E       		.uleb128 0xe
+ 1483 01d5 3A       		.uleb128 0x3a
+ 1484 01d6 0B       		.uleb128 0xb
+ 1485 01d7 3B       		.uleb128 0x3b
+ 1486 01d8 05       		.uleb128 0x5
+ 1487 01d9 00       		.byte	0
+ 1488 01da 00       		.byte	0
+ 1489 01db 00       		.byte	0
+ 1490              		.section	.debug_loc,"",%progbits
+ 1491              	.Ldebug_loc0:
+ 1492              	.LLST0:
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 35
 
 
- 1480 0160 13       		.uleb128 0x13
- 1481 0161 00       		.byte	0
- 1482 0162 00       		.byte	0
- 1483 0163 1D       		.uleb128 0x1d
- 1484 0164 05       		.uleb128 0x5
- 1485 0165 00       		.byte	0
- 1486 0166 31       		.uleb128 0x31
- 1487 0167 13       		.uleb128 0x13
- 1488 0168 00       		.byte	0
- 1489 0169 00       		.byte	0
- 1490 016a 1E       		.uleb128 0x1e
- 1491 016b 0B       		.uleb128 0xb
- 1492 016c 01       		.byte	0x1
- 1493 016d 11       		.uleb128 0x11
- 1494 016e 01       		.uleb128 0x1
- 1495 016f 12       		.uleb128 0x12
- 1496 0170 06       		.uleb128 0x6
- 1497 0171 00       		.byte	0
- 1498 0172 00       		.byte	0
- 1499 0173 1F       		.uleb128 0x1f
- 1500 0174 34       		.uleb128 0x34
- 1501 0175 00       		.byte	0
- 1502 0176 31       		.uleb128 0x31
- 1503 0177 13       		.uleb128 0x13
- 1504 0178 02       		.uleb128 0x2
- 1505 0179 17       		.uleb128 0x17
- 1506 017a 00       		.byte	0
- 1507 017b 00       		.byte	0
- 1508 017c 20       		.uleb128 0x20
- 1509 017d 898201   		.uleb128 0x4109
- 1510 0180 00       		.byte	0
- 1511 0181 11       		.uleb128 0x11
- 1512 0182 01       		.uleb128 0x1
- 1513 0183 31       		.uleb128 0x31
- 1514 0184 13       		.uleb128 0x13
- 1515 0185 00       		.byte	0
- 1516 0186 00       		.byte	0
- 1517 0187 21       		.uleb128 0x21
- 1518 0188 1D       		.uleb128 0x1d
- 1519 0189 01       		.byte	0x1
- 1520 018a 31       		.uleb128 0x31
- 1521 018b 13       		.uleb128 0x13
- 1522 018c 11       		.uleb128 0x11
- 1523 018d 01       		.uleb128 0x1
- 1524 018e 12       		.uleb128 0x12
- 1525 018f 06       		.uleb128 0x6
- 1526 0190 58       		.uleb128 0x58
- 1527 0191 0B       		.uleb128 0xb
- 1528 0192 59       		.uleb128 0x59
- 1529 0193 0B       		.uleb128 0xb
- 1530 0194 00       		.byte	0
- 1531 0195 00       		.byte	0
- 1532 0196 22       		.uleb128 0x22
- 1533 0197 34       		.uleb128 0x34
- 1534 0198 00       		.byte	0
- 1535 0199 03       		.uleb128 0x3
- 1536 019a 0E       		.uleb128 0xe
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 36
+ 1493 0000 00000000 		.4byte	.LVL0
+ 1494 0004 2A000000 		.4byte	.LVL7
+ 1495 0008 0100     		.2byte	0x1
+ 1496 000a 50       		.byte	0x50
+ 1497 000b 2A000000 		.4byte	.LVL7
+ 1498 000f 38000000 		.4byte	.LVL10
+ 1499 0013 0400     		.2byte	0x4
+ 1500 0015 F3       		.byte	0xf3
+ 1501 0016 01       		.uleb128 0x1
+ 1502 0017 50       		.byte	0x50
+ 1503 0018 9F       		.byte	0x9f
+ 1504 0019 38000000 		.4byte	.LVL10
+ 1505 001d 3A000000 		.4byte	.LVL11
+ 1506 0021 0100     		.2byte	0x1
+ 1507 0023 50       		.byte	0x50
+ 1508 0024 3A000000 		.4byte	.LVL11
+ 1509 0028 60000000 		.4byte	.LFE154
+ 1510 002c 0400     		.2byte	0x4
+ 1511 002e F3       		.byte	0xf3
+ 1512 002f 01       		.uleb128 0x1
+ 1513 0030 50       		.byte	0x50
+ 1514 0031 9F       		.byte	0x9f
+ 1515 0032 00000000 		.4byte	0
+ 1516 0036 00000000 		.4byte	0
+ 1517              	.LLST1:
+ 1518 003a 16000000 		.4byte	.LVL4
+ 1519 003e 1A000000 		.4byte	.LVL5
+ 1520 0042 0100     		.2byte	0x1
+ 1521 0044 51       		.byte	0x51
+ 1522 0045 00000000 		.4byte	0
+ 1523 0049 00000000 		.4byte	0
+ 1524              	.LLST2:
+ 1525 004d 12000000 		.4byte	.LVL3
+ 1526 0051 2A000000 		.4byte	.LVL7
+ 1527 0055 0200     		.2byte	0x2
+ 1528 0057 30       		.byte	0x30
+ 1529 0058 9F       		.byte	0x9f
+ 1530 0059 2A000000 		.4byte	.LVL7
+ 1531 005d 38000000 		.4byte	.LVL10
+ 1532 0061 0100     		.2byte	0x1
+ 1533 0063 54       		.byte	0x54
+ 1534 0064 38000000 		.4byte	.LVL10
+ 1535 0068 3A000000 		.4byte	.LVL11
+ 1536 006c 0200     		.2byte	0x2
+ 1537 006e 30       		.byte	0x30
+ 1538 006f 9F       		.byte	0x9f
+ 1539 0070 3A000000 		.4byte	.LVL11
+ 1540 0074 44000000 		.4byte	.LVL12
+ 1541 0078 0100     		.2byte	0x1
+ 1542 007a 54       		.byte	0x54
+ 1543 007b 00000000 		.4byte	0
+ 1544 007f 00000000 		.4byte	0
+ 1545              	.LLST3:
+ 1546 0083 22000000 		.4byte	.LVL6
+ 1547 0087 44000000 		.4byte	.LVL12
+ 1548 008b 0100     		.2byte	0x1
+ 1549 008d 55       		.byte	0x55
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 36
 
 
- 1537 019b 3A       		.uleb128 0x3a
- 1538 019c 0B       		.uleb128 0xb
- 1539 019d 3B       		.uleb128 0x3b
- 1540 019e 0B       		.uleb128 0xb
- 1541 019f 49       		.uleb128 0x49
- 1542 01a0 13       		.uleb128 0x13
- 1543 01a1 3F       		.uleb128 0x3f
- 1544 01a2 19       		.uleb128 0x19
- 1545 01a3 3C       		.uleb128 0x3c
- 1546 01a4 19       		.uleb128 0x19
- 1547 01a5 00       		.byte	0
- 1548 01a6 00       		.byte	0
- 1549 01a7 23       		.uleb128 0x23
- 1550 01a8 34       		.uleb128 0x34
- 1551 01a9 00       		.byte	0
- 1552 01aa 03       		.uleb128 0x3
- 1553 01ab 0E       		.uleb128 0xe
- 1554 01ac 3A       		.uleb128 0x3a
- 1555 01ad 0B       		.uleb128 0xb
- 1556 01ae 3B       		.uleb128 0x3b
- 1557 01af 05       		.uleb128 0x5
- 1558 01b0 49       		.uleb128 0x49
- 1559 01b1 13       		.uleb128 0x13
- 1560 01b2 3F       		.uleb128 0x3f
- 1561 01b3 19       		.uleb128 0x19
- 1562 01b4 3C       		.uleb128 0x3c
- 1563 01b5 19       		.uleb128 0x19
- 1564 01b6 00       		.byte	0
- 1565 01b7 00       		.byte	0
- 1566 01b8 24       		.uleb128 0x24
- 1567 01b9 35       		.uleb128 0x35
- 1568 01ba 00       		.byte	0
- 1569 01bb 49       		.uleb128 0x49
- 1570 01bc 13       		.uleb128 0x13
- 1571 01bd 00       		.byte	0
- 1572 01be 00       		.byte	0
- 1573 01bf 25       		.uleb128 0x25
- 1574 01c0 2E       		.uleb128 0x2e
- 1575 01c1 00       		.byte	0
- 1576 01c2 3F       		.uleb128 0x3f
- 1577 01c3 19       		.uleb128 0x19
- 1578 01c4 3C       		.uleb128 0x3c
- 1579 01c5 19       		.uleb128 0x19
- 1580 01c6 6E       		.uleb128 0x6e
- 1581 01c7 0E       		.uleb128 0xe
- 1582 01c8 03       		.uleb128 0x3
- 1583 01c9 0E       		.uleb128 0xe
- 1584 01ca 3A       		.uleb128 0x3a
- 1585 01cb 0B       		.uleb128 0xb
- 1586 01cc 3B       		.uleb128 0x3b
- 1587 01cd 05       		.uleb128 0x5
- 1588 01ce 00       		.byte	0
- 1589 01cf 00       		.byte	0
- 1590 01d0 00       		.byte	0
- 1591              		.section	.debug_loc,"",%progbits
- 1592              	.Ldebug_loc0:
- 1593              	.LLST0:
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 37
+ 1550 008e 00000000 		.4byte	0
+ 1551 0092 00000000 		.4byte	0
+ 1552              	.LLST4:
+ 1553 0096 2A000000 		.4byte	.LVL7
+ 1554 009a 33000000 		.4byte	.LVL8-1
+ 1555 009e 0700     		.2byte	0x7
+ 1556 00a0 74       		.byte	0x74
+ 1557 00a1 00       		.sleb128 0
+ 1558 00a2 32       		.byte	0x32
+ 1559 00a3 24       		.byte	0x24
+ 1560 00a4 75       		.byte	0x75
+ 1561 00a5 00       		.sleb128 0
+ 1562 00a6 22       		.byte	0x22
+ 1563 00a7 00000000 		.4byte	0
+ 1564 00ab 00000000 		.4byte	0
+ 1565              	.LLST5:
+ 1566 00af 44000000 		.4byte	.LVL12
+ 1567 00b3 54000000 		.4byte	.LVL13
+ 1568 00b7 0300     		.2byte	0x3
+ 1569 00b9 09       		.byte	0x9
+ 1570 00ba FF       		.byte	0xff
+ 1571 00bb 9F       		.byte	0x9f
+ 1572 00bc 00000000 		.4byte	0
+ 1573 00c0 00000000 		.4byte	0
+ 1574              		.section	.debug_aranges,"",%progbits
+ 1575 0000 1C000000 		.4byte	0x1c
+ 1576 0004 0200     		.2byte	0x2
+ 1577 0006 00000000 		.4byte	.Ldebug_info0
+ 1578 000a 04       		.byte	0x4
+ 1579 000b 00       		.byte	0
+ 1580 000c 0000     		.2byte	0
+ 1581 000e 0000     		.2byte	0
+ 1582 0010 00000000 		.4byte	.LFB154
+ 1583 0014 60000000 		.4byte	.LFE154-.LFB154
+ 1584 0018 00000000 		.4byte	0
+ 1585 001c 00000000 		.4byte	0
+ 1586              		.section	.debug_ranges,"",%progbits
+ 1587              	.Ldebug_ranges0:
+ 1588 0000 00000000 		.4byte	.LFB154
+ 1589 0004 60000000 		.4byte	.LFE154
+ 1590 0008 00000000 		.4byte	0
+ 1591 000c 00000000 		.4byte	0
+ 1592              		.section	.debug_line,"",%progbits
+ 1593              	.Ldebug_line0:
+ 1594 0000 84030000 		.section	.debug_str,"MS",%progbits,1
+ 1594      02005903 
+ 1594      00000201 
+ 1594      FB0E0D00 
+ 1594      01010101 
+ 1595              	.LASF108:
+ 1596 0000 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1596      43313120 
+ 1596      352E342E 
+ 1596      31203230 
+ 1596      31363036 
+ 1597 0033 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 1597      20726576 
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 37
 
 
- 1594 0000 00000000 		.4byte	.LVL0
- 1595 0004 22000000 		.4byte	.LVL4
- 1596 0008 0100     		.2byte	0x1
- 1597 000a 50       		.byte	0x50
- 1598 000b 22000000 		.4byte	.LVL4
- 1599 000f 30000000 		.4byte	.LVL7
- 1600 0013 0400     		.2byte	0x4
- 1601 0015 F3       		.byte	0xf3
- 1602 0016 01       		.uleb128 0x1
- 1603 0017 50       		.byte	0x50
- 1604 0018 9F       		.byte	0x9f
- 1605 0019 30000000 		.4byte	.LVL7
- 1606 001d 32000000 		.4byte	.LVL8
- 1607 0021 0100     		.2byte	0x1
- 1608 0023 50       		.byte	0x50
- 1609 0024 32000000 		.4byte	.LVL8
- 1610 0028 4E000000 		.4byte	.LVL11
- 1611 002c 0400     		.2byte	0x4
- 1612 002e F3       		.byte	0xf3
- 1613 002f 01       		.uleb128 0x1
- 1614 0030 50       		.byte	0x50
- 1615 0031 9F       		.byte	0x9f
- 1616 0032 4E000000 		.4byte	.LVL11
- 1617 0036 66000000 		.4byte	.LVL14
- 1618 003a 0100     		.2byte	0x1
- 1619 003c 50       		.byte	0x50
- 1620 003d 66000000 		.4byte	.LVL14
- 1621 0041 74000000 		.4byte	.LVL17
- 1622 0045 0400     		.2byte	0x4
- 1623 0047 F3       		.byte	0xf3
- 1624 0048 01       		.uleb128 0x1
- 1625 0049 50       		.byte	0x50
- 1626 004a 9F       		.byte	0x9f
- 1627 004b 74000000 		.4byte	.LVL17
- 1628 004f 76000000 		.4byte	.LVL18
- 1629 0053 0100     		.2byte	0x1
- 1630 0055 50       		.byte	0x50
- 1631 0056 76000000 		.4byte	.LVL18
- 1632 005a 9C000000 		.4byte	.LFE154
- 1633 005e 0400     		.2byte	0x4
- 1634 0060 F3       		.byte	0xf3
- 1635 0061 01       		.uleb128 0x1
- 1636 0062 50       		.byte	0x50
- 1637 0063 9F       		.byte	0x9f
- 1638 0064 00000000 		.4byte	0
- 1639 0068 00000000 		.4byte	0
- 1640              	.LLST1:
- 1641 006c 08000000 		.4byte	.LVL2
- 1642 0070 4E000000 		.4byte	.LVL11
- 1643 0074 0200     		.2byte	0x2
- 1644 0076 30       		.byte	0x30
- 1645 0077 9F       		.byte	0x9f
- 1646 0078 00000000 		.4byte	0
- 1647 007c 00000000 		.4byte	0
- 1648              	.LLST2:
- 1649 0080 08000000 		.4byte	.LVL2
- 1650 0084 22000000 		.4byte	.LVL4
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 38
+ 1597      6973696F 
+ 1597      6E203233 
+ 1597      37373135 
+ 1598 0066 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1598      66756E63 
+ 1598      74696F6E 
+ 1598      2D736563 
+ 1598      74696F6E 
+ 1599              	.LASF107:
+ 1600 008e 534F5F42 		.ascii	"SO_BRAKE_signal\000"
+ 1600      52414B45 
+ 1600      5F736967 
+ 1600      6E616C00 
+ 1601              	.LASF26:
+ 1602 009e 4576656E 		.ascii	"EventMaskType\000"
+ 1602      744D6173 
+ 1602      6B547970 
+ 1602      6500
+ 1603              	.LASF37:
+ 1604 00ac 52435F45 		.ascii	"RC_ERROR_BUFFER_FULL\000"
+ 1604      52524F52 
+ 1604      5F425546 
+ 1604      4645525F 
+ 1604      46554C4C 
+ 1605              	.LASF74:
+ 1606 00c1 6F6E4572 		.ascii	"onErrorTaskCount\000"
+ 1606      726F7254 
+ 1606      61736B43 
+ 1606      6F756E74 
+ 1606      00
+ 1607              	.LASF43:
+ 1608 00d2 52435F45 		.ascii	"RC_ERROR_READ_ONLY\000"
+ 1608      52524F52 
+ 1608      5F524541 
+ 1608      445F4F4E 
+ 1608      4C5900
+ 1609              	.LASF29:
+ 1610 00e5 52435F53 		.ascii	"RC_SUCCESS\000"
+ 1610      55434345 
+ 1610      535300
+ 1611              	.LASF66:
+ 1612 00f0 53435F53 		.ascii	"SC_SPEED_driverOut_t\000"
+ 1612      50454544 
+ 1612      5F647269 
+ 1612      7665724F 
+ 1612      75745F74 
+ 1613              	.LASF71:
+ 1614 0105 65764F6E 		.ascii	"evOnError\000"
+ 1614      4572726F 
+ 1614      7200
+ 1615              	.LASF7:
+ 1616 010f 5F5F7569 		.ascii	"__uint32_t\000"
+ 1616      6E743332 
+ 1616      5F7400
+ 1617              	.LASF112:
+ 1618 011a 6272616B 		.ascii	"brakeSig\000"
+ 1618      65536967 
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 38
 
 
- 1651 0088 0200     		.2byte	0x2
- 1652 008a 30       		.byte	0x30
- 1653 008b 9F       		.byte	0x9f
- 1654 008c 22000000 		.4byte	.LVL4
- 1655 0090 30000000 		.4byte	.LVL7
- 1656 0094 0100     		.2byte	0x1
- 1657 0096 54       		.byte	0x54
- 1658 0097 30000000 		.4byte	.LVL7
- 1659 009b 32000000 		.4byte	.LVL8
- 1660 009f 0200     		.2byte	0x2
- 1661 00a1 30       		.byte	0x30
- 1662 00a2 9F       		.byte	0x9f
- 1663 00a3 32000000 		.4byte	.LVL8
- 1664 00a7 3C000000 		.4byte	.LVL9
- 1665 00ab 0100     		.2byte	0x1
- 1666 00ad 54       		.byte	0x54
- 1667 00ae 00000000 		.4byte	0
- 1668 00b2 00000000 		.4byte	0
- 1669              	.LLST3:
- 1670 00b6 1A000000 		.4byte	.LVL3
- 1671 00ba 3C000000 		.4byte	.LVL9
- 1672 00be 0100     		.2byte	0x1
- 1673 00c0 55       		.byte	0x55
- 1674 00c1 00000000 		.4byte	0
- 1675 00c5 00000000 		.4byte	0
- 1676              	.LLST4:
- 1677 00c9 22000000 		.4byte	.LVL4
- 1678 00cd 2B000000 		.4byte	.LVL5-1
- 1679 00d1 0700     		.2byte	0x7
- 1680 00d3 74       		.byte	0x74
- 1681 00d4 00       		.sleb128 0
- 1682 00d5 32       		.byte	0x32
- 1683 00d6 24       		.byte	0x24
- 1684 00d7 75       		.byte	0x75
- 1685 00d8 00       		.sleb128 0
- 1686 00d9 22       		.byte	0x22
- 1687 00da 00000000 		.4byte	0
- 1688 00de 00000000 		.4byte	0
- 1689              	.LLST5:
- 1690 00e2 3C000000 		.4byte	.LVL9
- 1691 00e6 4C000000 		.4byte	.LVL10
- 1692 00ea 0300     		.2byte	0x3
- 1693 00ec 09       		.byte	0x9
- 1694 00ed FF       		.byte	0xff
- 1695 00ee 9F       		.byte	0x9f
- 1696 00ef 00000000 		.4byte	0
- 1697 00f3 00000000 		.4byte	0
- 1698              	.LLST6:
- 1699 00f7 50000000 		.4byte	.LVL12
- 1700 00fb 90000000 		.4byte	.LVL20
- 1701 00ff 0200     		.2byte	0x2
- 1702 0101 30       		.byte	0x30
- 1703 0102 9F       		.byte	0x9f
- 1704 0103 00000000 		.4byte	0
- 1705 0107 00000000 		.4byte	0
- 1706              	.LLST7:
- 1707 010b 50000000 		.4byte	.LVL12
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 39
+ 1618      00
+ 1619              	.LASF44:
+ 1620 0123 52435F45 		.ascii	"RC_ERROR_WRITE_ONLY\000"
+ 1620      52524F52 
+ 1620      5F575249 
+ 1620      54455F4F 
+ 1620      4E4C5900 
+ 1621              	.LASF2:
+ 1622 0137 73686F72 		.ascii	"short int\000"
+ 1622      7420696E 
+ 1622      7400
+ 1623              	.LASF18:
+ 1624 0141 73697A65 		.ascii	"size_t\000"
+ 1624      5F7400
+ 1625              	.LASF96:
+ 1626 0148 5254455F 		.ascii	"RTE_SC_BRAKELIGHT_set\000"
+ 1626      53435F42 
+ 1626      52414B45 
+ 1626      4C494748 
+ 1626      545F7365 
+ 1627              	.LASF27:
+ 1628 015e 73697A65 		.ascii	"sizetype\000"
+ 1628      74797065 
+ 1628      00
+ 1629              	.LASF111:
+ 1630 0167 4252414B 		.ascii	"BRAKELIGHT_setBrakeLight_run\000"
+ 1630      454C4947 
+ 1630      48545F73 
+ 1630      65744272 
+ 1630      616B654C 
+ 1631              	.LASF99:
+ 1632 0184 7461736B 		.ascii	"task\000"
+ 1632      00
+ 1633              	.LASF93:
+ 1634 0189 5254455F 		.ascii	"RTE_SC_SPEED_get\000"
+ 1634      53435F53 
+ 1634      50454544 
+ 1634      5F676574 
+ 1634      00
+ 1635              	.LASF32:
+ 1636 019a 52435F45 		.ascii	"RC_ERROR_ZERO\000"
+ 1636      52524F52 
+ 1636      5F5A4552 
+ 1636      4F00
+ 1637              	.LASF23:
+ 1638 01a8 45455F46 		.ascii	"EE_FREG\000"
+ 1638      52454700 
+ 1639              	.LASF46:
+ 1640 01b0 52435F45 		.ascii	"RC_ERROR_READ_FAILS\000"
+ 1640      52524F52 
+ 1640      5F524541 
+ 1640      445F4641 
+ 1640      494C5300 
+ 1641              	.LASF109:
+ 1642 01c4 736F7572 		.ascii	"source\\asw\\swc_brakelight.c\000"
+ 1642      63655C61 
+ 1642      73775C73 
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 39
 
 
- 1708 010f 66000000 		.4byte	.LVL14
- 1709 0113 0200     		.2byte	0x2
- 1710 0115 30       		.byte	0x30
- 1711 0116 9F       		.byte	0x9f
- 1712 0117 66000000 		.4byte	.LVL14
- 1713 011b 74000000 		.4byte	.LVL17
- 1714 011f 0100     		.2byte	0x1
- 1715 0121 54       		.byte	0x54
- 1716 0122 74000000 		.4byte	.LVL17
- 1717 0126 76000000 		.4byte	.LVL18
- 1718 012a 0200     		.2byte	0x2
- 1719 012c 30       		.byte	0x30
- 1720 012d 9F       		.byte	0x9f
- 1721 012e 76000000 		.4byte	.LVL18
- 1722 0132 80000000 		.4byte	.LVL19
- 1723 0136 0100     		.2byte	0x1
- 1724 0138 54       		.byte	0x54
- 1725 0139 00000000 		.4byte	0
- 1726 013d 00000000 		.4byte	0
- 1727              	.LLST8:
- 1728 0141 5E000000 		.4byte	.LVL13
- 1729 0145 80000000 		.4byte	.LVL19
- 1730 0149 0100     		.2byte	0x1
- 1731 014b 55       		.byte	0x55
- 1732 014c 00000000 		.4byte	0
- 1733 0150 00000000 		.4byte	0
- 1734              	.LLST9:
- 1735 0154 66000000 		.4byte	.LVL14
- 1736 0158 6F000000 		.4byte	.LVL15-1
- 1737 015c 0700     		.2byte	0x7
- 1738 015e 74       		.byte	0x74
- 1739 015f 00       		.sleb128 0
- 1740 0160 32       		.byte	0x32
- 1741 0161 24       		.byte	0x24
- 1742 0162 75       		.byte	0x75
- 1743 0163 00       		.sleb128 0
- 1744 0164 22       		.byte	0x22
- 1745 0165 00000000 		.4byte	0
- 1746 0169 00000000 		.4byte	0
- 1747              	.LLST10:
- 1748 016d 80000000 		.4byte	.LVL19
- 1749 0171 90000000 		.4byte	.LVL20
- 1750 0175 0300     		.2byte	0x3
- 1751 0177 09       		.byte	0x9
- 1752 0178 FF       		.byte	0xff
- 1753 0179 9F       		.byte	0x9f
- 1754 017a 00000000 		.4byte	0
- 1755 017e 00000000 		.4byte	0
- 1756              		.section	.debug_aranges,"",%progbits
- 1757 0000 1C000000 		.4byte	0x1c
- 1758 0004 0200     		.2byte	0x2
- 1759 0006 00000000 		.4byte	.Ldebug_info0
- 1760 000a 04       		.byte	0x4
- 1761 000b 00       		.byte	0
- 1762 000c 0000     		.2byte	0
- 1763 000e 0000     		.2byte	0
- 1764 0010 00000000 		.4byte	.LFB154
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 40
+ 1642      77635F62 
+ 1642      72616B65 
+ 1643              	.LASF89:
+ 1644 01e0 53435F42 		.ascii	"SC_BRAKELIGHT_cfg_s\000"
+ 1644      52414B45 
+ 1644      4C494748 
+ 1644      545F6366 
+ 1644      675F7300 
+ 1645              	.LASF21:
+ 1646 01f4 45455F55 		.ascii	"EE_UINT32\000"
+ 1646      494E5433 
+ 1646      3200
+ 1647              	.LASF90:
+ 1648 01fe 53435F42 		.ascii	"SC_BRAKELIGHT_cfg_t\000"
+ 1648      52414B45 
+ 1648      4C494748 
+ 1648      545F6366 
+ 1648      675F7400 
+ 1649              	.LASF24:
+ 1650 0212 45455F54 		.ascii	"EE_TID\000"
+ 1650      494400
+ 1651              	.LASF81:
+ 1652 0219 76616C75 		.ascii	"value\000"
+ 1652      6500
+ 1653              	.LASF64:
+ 1654 021f 53435F53 		.ascii	"SC_SPEED_data_t\000"
+ 1654      50454544 
+ 1654      5F646174 
+ 1654      615F7400 
+ 1655              	.LASF52:
+ 1656 022f 52435F45 		.ascii	"RC_ERROR_INVALID_STATE\000"
+ 1656      52524F52 
+ 1656      5F494E56 
+ 1656      414C4944 
+ 1656      5F535441 
+ 1657              	.LASF79:
+ 1658 0246 53435F53 		.ascii	"SC_SPEED_cfg_s\000"
+ 1658      50454544 
+ 1658      5F636667 
+ 1658      5F7300
+ 1659              	.LASF78:
+ 1660 0255 53435F53 		.ascii	"SC_SPEED_cfg_t\000"
+ 1660      50454544 
+ 1660      5F636667 
+ 1660      5F7400
+ 1661              	.LASF77:
+ 1662 0264 7265736F 		.ascii	"resource\000"
+ 1662      75726365 
+ 1662      00
+ 1663              	.LASF104:
+ 1664 026d 45455F49 		.ascii	"EE_IRQ_nesting_level\000"
+ 1664      52515F6E 
+ 1664      65737469 
+ 1664      6E675F6C 
+ 1664      6576656C 
+ 1665              	.LASF91:
+ 1666 0282 53435F42 		.ascii	"SC_BRAKELIGHT_s\000"
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 40
 
 
- 1765 0014 9C000000 		.4byte	.LFE154-.LFB154
- 1766 0018 00000000 		.4byte	0
- 1767 001c 00000000 		.4byte	0
- 1768              		.section	.debug_ranges,"",%progbits
- 1769              	.Ldebug_ranges0:
- 1770 0000 00000000 		.4byte	.LFB154
- 1771 0004 9C000000 		.4byte	.LFE154
- 1772 0008 00000000 		.4byte	0
- 1773 000c 00000000 		.4byte	0
- 1774              		.section	.debug_line,"",%progbits
- 1775              	.Ldebug_line0:
- 1776 0000 9B030000 		.section	.debug_str,"MS",%progbits,1
- 1776      02005903 
- 1776      00000201 
- 1776      FB0E0D00 
- 1776      01010101 
- 1777              	.LASF109:
- 1778 0000 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 1778      43313120 
- 1778      352E342E 
- 1778      31203230 
- 1778      31363036 
- 1779 0033 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 1779      20726576 
- 1779      6973696F 
- 1779      6E203233 
- 1779      37373135 
- 1780 0066 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 1780      66756E63 
- 1780      74696F6E 
- 1780      2D736563 
- 1780      74696F6E 
- 1781              	.LASF108:
- 1782 008e 534F5F42 		.ascii	"SO_BRAKE_signal\000"
- 1782      52414B45 
- 1782      5F736967 
- 1782      6E616C00 
- 1783              	.LASF26:
- 1784 009e 4576656E 		.ascii	"EventMaskType\000"
- 1784      744D6173 
- 1784      6B547970 
- 1784      6500
- 1785              	.LASF37:
- 1786 00ac 52435F45 		.ascii	"RC_ERROR_BUFFER_FULL\000"
- 1786      52524F52 
- 1786      5F425546 
- 1786      4645525F 
- 1786      46554C4C 
- 1787              	.LASF74:
- 1788 00c1 6F6E4572 		.ascii	"onErrorTaskCount\000"
- 1788      726F7254 
- 1788      61736B43 
- 1788      6F756E74 
- 1788      00
- 1789              	.LASF43:
- 1790 00d2 52435F45 		.ascii	"RC_ERROR_READ_ONLY\000"
- 1790      52524F52 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 41
+ 1666      52414B45 
+ 1666      4C494748 
+ 1666      545F7300 
+ 1667              	.LASF92:
+ 1668 0292 53435F42 		.ascii	"SC_BRAKELIGHT_t\000"
+ 1668      52414B45 
+ 1668      4C494748 
+ 1668      545F7400 
+ 1669              	.LASF34:
+ 1670 02a2 52435F45 		.ascii	"RC_ERROR_RANGE\000"
+ 1670      52524F52 
+ 1670      5F52414E 
+ 1670      474500
+ 1671              	.LASF15:
+ 1672 02b1 666C6F61 		.ascii	"float\000"
+ 1672      7400
+ 1673              	.LASF88:
+ 1674 02b7 53435F42 		.ascii	"SC_BRAKELIGHT_driverOut_t\000"
+ 1674      52414B45 
+ 1674      4C494748 
+ 1674      545F6472 
+ 1674      69766572 
+ 1675              	.LASF106:
+ 1676 02d1 534F5F53 		.ascii	"SO_SPEED_signal\000"
+ 1676      50454544 
+ 1676      5F736967 
+ 1676      6E616C00 
+ 1677              	.LASF54:
+ 1678 02e1 52435F45 		.ascii	"RC_ERROR_NOT_IMPLEMENTED\000"
+ 1678      52524F52 
+ 1678      5F4E4F54 
+ 1678      5F494D50 
+ 1678      4C454D45 
+ 1679              	.LASF9:
+ 1680 02fa 6C6F6E67 		.ascii	"long long int\000"
+ 1680      206C6F6E 
+ 1680      6720696E 
+ 1680      7400
+ 1681              	.LASF101:
+ 1682 0308 45455F6F 		.ascii	"EE_oo_IRQ_suspend_status\000"
+ 1682      6F5F4952 
+ 1682      515F7375 
+ 1682      7370656E 
+ 1682      645F7374 
+ 1683              	.LASF48:
+ 1684 0321 52435F45 		.ascii	"RC_ERROR_NOT_MATCH\000"
+ 1684      52524F52 
+ 1684      5F4E4F54 
+ 1684      5F4D4154 
+ 1684      434800
+ 1685              	.LASF53:
+ 1686 0334 52435F45 		.ascii	"RC_ERROR_UNKNOWN\000"
+ 1686      52524F52 
+ 1686      5F554E4B 
+ 1686      4E4F574E 
+ 1686      00
+ 1687              	.LASF63:
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 41
 
 
- 1790      5F524541 
- 1790      445F4F4E 
- 1790      4C5900
- 1791              	.LASF29:
- 1792 00e5 52435F53 		.ascii	"RC_SUCCESS\000"
- 1792      55434345 
- 1792      535300
- 1793              	.LASF66:
- 1794 00f0 53435F53 		.ascii	"SC_SPEED_driverOut_t\000"
+ 1688 0345 5254455F 		.ascii	"RTE_signalStatus_t\000"
+ 1688      7369676E 
+ 1688      616C5374 
+ 1688      61747573 
+ 1688      5F7400
+ 1689              	.LASF6:
+ 1690 0358 6C6F6E67 		.ascii	"long int\000"
+ 1690      20696E74 
+ 1690      00
+ 1691              	.LASF36:
+ 1692 0361 52435F45 		.ascii	"RC_ERROR_UNDERRUN\000"
+ 1692      52524F52 
+ 1692      5F554E44 
+ 1692      45525255 
+ 1692      4E00
+ 1693              	.LASF39:
+ 1694 0373 52435F45 		.ascii	"RC_ERROR_BUSY\000"
+ 1694      52524F52 
+ 1694      5F425553 
+ 1694      5900
+ 1695              	.LASF59:
+ 1696 0381 5254455F 		.ascii	"RTE_SIGNALSTATUS_STARTUP\000"
+ 1696      5349474E 
+ 1696      414C5354 
+ 1696      41545553 
+ 1696      5F535441 
+ 1697              	.LASF4:
+ 1698 039a 5F5F7569 		.ascii	"__uint8_t\000"
+ 1698      6E74385F 
+ 1698      7400
+ 1699              	.LASF45:
+ 1700 03a4 52435F45 		.ascii	"RC_ERROR_INVALID\000"
+ 1700      52524F52 
+ 1700      5F494E56 
+ 1700      414C4944 
+ 1700      00
+ 1701              	.LASF103:
+ 1702 03b5 45455F73 		.ascii	"EE_std_endcycle_next_tid\000"
+ 1702      74645F65 
+ 1702      6E646379 
+ 1702      636C655F 
+ 1702      6E657874 
+ 1703              	.LASF50:
+ 1704 03ce 52435F45 		.ascii	"RC_ERROR_BAD_DATA\000"
+ 1704      52524F52 
+ 1704      5F424144 
+ 1704      5F444154 
+ 1704      4100
+ 1705              	.LASF28:
+ 1706 03e0 626F6F6C 		.ascii	"boolean_t\000"
+ 1706      65616E5F 
+ 1706      7400
+ 1707              	.LASF69:
+ 1708 03ea 6F757444 		.ascii	"outDriver\000"
+ 1708      72697665 
+ 1708      7200
+ 1709              	.LASF98:
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 42
+
+
+ 1710 03f4 70546173 		.ascii	"pTaskArray\000"
+ 1710      6B417272 
+ 1710      617900
+ 1711              	.LASF19:
+ 1712 03ff 6C6F6E67 		.ascii	"long double\000"
+ 1712      20646F75 
+ 1712      626C6500 
+ 1713              	.LASF97:
+ 1714 040b 7461736B 		.ascii	"taskNum\000"
+ 1714      4E756D00 
+ 1715              	.LASF25:
+ 1716 0413 5461736B 		.ascii	"TaskType\000"
+ 1716      54797065 
+ 1716      00
+ 1717              	.LASF1:
+ 1718 041c 756E7369 		.ascii	"unsigned char\000"
+ 1718      676E6564 
+ 1718      20636861 
+ 1718      7200
+ 1719              	.LASF87:
+ 1720 042a 53435F42 		.ascii	"SC_BRAKELIGHT_driverIn_t\000"
+ 1720      52414B45 
+ 1720      4C494748 
+ 1720      545F6472 
+ 1720      69766572 
+ 1721              	.LASF67:
+ 1722 0443 73706565 		.ascii	"speed_val\000"
+ 1722      645F7661 
+ 1722      6C00
+ 1723              	.LASF17:
+ 1724 044d 63686172 		.ascii	"char\000"
+ 1724      00
+ 1725              	.LASF0:
+ 1726 0452 7369676E 		.ascii	"signed char\000"
+ 1726      65642063 
+ 1726      68617200 
+ 1727              	.LASF10:
+ 1728 045e 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1728      206C6F6E 
+ 1728      6720756E 
+ 1728      7369676E 
+ 1728      65642069 
+ 1729              	.LASF14:
+ 1730 0475 75696E74 		.ascii	"uint32_t\000"
+ 1730      33325F74 
+ 1730      00
+ 1731              	.LASF11:
+ 1732 047e 756E7369 		.ascii	"unsigned int\000"
+ 1732      676E6564 
+ 1732      20696E74 
+ 1732      00
+ 1733              	.LASF41:
+ 1734 048b 52435F45 		.ascii	"RC_ERROR_OPEN\000"
+ 1734      52524F52 
+ 1734      5F4F5045 
+ 1734      4E00
+ 1735              	.LASF85:
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 43
+
+
+ 1736 0499 6272616B 		.ascii	"brakeLight\000"
+ 1736      654C6967 
+ 1736      687400
+ 1737              	.LASF31:
+ 1738 04a4 52435F45 		.ascii	"RC_ERROR_NULL\000"
+ 1738      52524F52 
+ 1738      5F4E554C 
+ 1738      4C00
+ 1739              	.LASF38:
+ 1740 04b2 52435F45 		.ascii	"RC_ERROR_BUFFER_EMTPY\000"
+ 1740      52524F52 
+ 1740      5F425546 
+ 1740      4645525F 
+ 1740      454D5450 
+ 1741              	.LASF20:
+ 1742 04c8 45455F49 		.ascii	"EE_INT32\000"
+ 1742      4E543332 
+ 1742      00
+ 1743              	.LASF83:
+ 1744 04d1 70536967 		.ascii	"pSigCfg\000"
+ 1744      43666700 
+ 1745              	.LASF86:
+ 1746 04d9 53435F42 		.ascii	"SC_BRAKELIGHT_data_t\000"
+ 1746      52414B45 
+ 1746      4C494748 
+ 1746      545F6461 
+ 1746      74615F74 
+ 1747              	.LASF70:
+ 1748 04ee 65764F6E 		.ascii	"evOnUpdate\000"
+ 1748      55706461 
+ 1748      746500
+ 1749              	.LASF82:
+ 1750 04f9 73746174 		.ascii	"status\000"
+ 1750      757300
+ 1751              	.LASF84:
+ 1752 0500 53435F53 		.ascii	"SC_SPEED_t\000"
+ 1752      50454544 
+ 1752      5F7400
+ 1753              	.LASF76:
+ 1754 050b 7265736F 		.ascii	"resourceActive\000"
+ 1754      75726365 
+ 1754      41637469 
+ 1754      766500
+ 1755              	.LASF95:
+ 1756 051a 7369676E 		.ascii	"signal\000"
+ 1756      616C00
+ 1757              	.LASF62:
+ 1758 0521 5254455F 		.ascii	"RTE_SIGNALSTATUS_INVALID\000"
+ 1758      5349474E 
+ 1758      414C5354 
+ 1758      41545553 
+ 1758      5F494E56 
+ 1759              	.LASF47:
+ 1760 053a 52435F45 		.ascii	"RC_ERROR_WRITE_FAILS\000"
+ 1760      52524F52 
+ 1760      5F575249 
+ 1760      54455F46 
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 44
+
+
+ 1760      41494C53 
+ 1761              	.LASF13:
+ 1762 054f 696E7433 		.ascii	"int32_t\000"
+ 1762      325F7400 
+ 1763              	.LASF3:
+ 1764 0557 73686F72 		.ascii	"short unsigned int\000"
+ 1764      7420756E 
+ 1764      7369676E 
+ 1764      65642069 
+ 1764      6E7400
+ 1765              	.LASF49:
+ 1766 056a 52435F45 		.ascii	"RC_ERROR_BAD_PARAM\000"
+ 1766      52524F52 
+ 1766      5F424144 
+ 1766      5F504152 
+ 1766      414D00
+ 1767              	.LASF75:
+ 1768 057d 6F6E4572 		.ascii	"onErrorTasks\000"
+ 1768      726F7254 
+ 1768      61736B73 
+ 1768      00
+ 1769              	.LASF72:
+ 1770 058a 6F6E5570 		.ascii	"onUpdateTaskCount\000"
+ 1770      64617465 
+ 1770      5461736B 
+ 1770      436F756E 
+ 1770      7400
+ 1771              	.LASF94:
+ 1772 059c 5254455F 		.ascii	"RTE_SC_BRAKELIGHT_pushPort\000"
+ 1772      53435F42 
+ 1772      52414B45 
+ 1772      4C494748 
+ 1772      545F7075 
+ 1773              	.LASF102:
+ 1774 05b7 45455F41 		.ascii	"EE_ApplicationMode\000"
+ 1774      70706C69 
+ 1774      63617469 
+ 1774      6F6E4D6F 
+ 1774      646500
+ 1775              	.LASF8:
+ 1776 05ca 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1776      20756E73 
+ 1776      69676E65 
+ 1776      6420696E 
+ 1776      7400
+ 1777              	.LASF73:
+ 1778 05dc 6F6E5570 		.ascii	"onUpdateTasks\000"
+ 1778      64617465 
+ 1778      5461736B 
+ 1778      7300
+ 1779              	.LASF42:
+ 1780 05ea 52435F45 		.ascii	"RC_ERROR_CHECKSUM\000"
+ 1780      52524F52 
+ 1780      5F434845 
+ 1780      434B5355 
+ 1780      4D00
+ 1781              	.LASF22:
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 45
+
+
+ 1782 05fc 45455F55 		.ascii	"EE_UREG\000"
+ 1782      52454700 
+ 1783              	.LASF35:
+ 1784 0604 52435F45 		.ascii	"RC_ERROR_OVERRUN\000"
+ 1784      52524F52 
+ 1784      5F4F5645 
+ 1784      5252554E 
+ 1784      00
+ 1785              	.LASF5:
+ 1786 0615 5F5F696E 		.ascii	"__int32_t\000"
+ 1786      7433325F 
+ 1786      7400
+ 1787              	.LASF12:
+ 1788 061f 75696E74 		.ascii	"uint8_t\000"
+ 1788      385F7400 
+ 1789              	.LASF57:
+ 1790 0627 5254455F 		.ascii	"RTE_event\000"
+ 1790      6576656E 
+ 1790      7400
+ 1791              	.LASF65:
+ 1792 0631 53435F53 		.ascii	"SC_SPEED_driverIn_t\000"
+ 1792      50454544 
+ 1792      5F647269 
+ 1792      76657249 
+ 1792      6E5F7400 
+ 1793              	.LASF80:
+ 1794 0645 53435F53 		.ascii	"SC_SPEED_s\000"
  1794      50454544 
- 1794      5F647269 
- 1794      7665724F 
- 1794      75745F74 
- 1795              	.LASF71:
- 1796 0105 65764F6E 		.ascii	"evOnError\000"
- 1796      4572726F 
- 1796      7200
- 1797              	.LASF7:
- 1798 010f 5F5F7569 		.ascii	"__uint32_t\000"
- 1798      6E743332 
- 1798      5F7400
- 1799              	.LASF100:
- 1800 011a 6272616B 		.ascii	"brakeSig\000"
- 1800      65536967 
- 1800      00
- 1801              	.LASF44:
- 1802 0123 52435F45 		.ascii	"RC_ERROR_WRITE_ONLY\000"
- 1802      52524F52 
- 1802      5F575249 
- 1802      54455F4F 
- 1802      4E4C5900 
- 1803              	.LASF2:
- 1804 0137 73686F72 		.ascii	"short int\000"
- 1804      7420696E 
- 1804      7400
- 1805              	.LASF18:
- 1806 0141 73697A65 		.ascii	"size_t\000"
- 1806      5F7400
- 1807              	.LASF96:
- 1808 0148 5254455F 		.ascii	"RTE_SC_BRAKELIGHT_set\000"
- 1808      53435F42 
- 1808      52414B45 
- 1808      4C494748 
- 1808      545F7365 
- 1809              	.LASF27:
- 1810 015e 73697A65 		.ascii	"sizetype\000"
- 1810      74797065 
- 1810      00
- 1811              	.LASF112:
- 1812 0167 4252414B 		.ascii	"BRAKELIGHT_setBrakeLight_run\000"
- 1812      454C4947 
- 1812      48545F73 
- 1812      65744272 
- 1812      616B654C 
- 1813              	.LASF99:
- 1814 0184 7461736B 		.ascii	"task\000"
- 1814      00
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 42
+ 1794      5F7300
+ 1795              	.LASF51:
+ 1796 0650 52435F45 		.ascii	"RC_ERROR_CANCELED\000"
+ 1796      52524F52 
+ 1796      5F43414E 
+ 1796      43454C45 
+ 1796      4400
+ 1797              	.LASF110:
+ 1798 0662 433A5C53 		.ascii	"C:\\Sandbox\\Sem2\\EAA\\Lab\\Lab01\\Lab01EAA\\EGasP"
+ 1798      616E6462 
+ 1798      6F785C53 
+ 1798      656D325C 
+ 1798      4541415C 
+ 1799 068e 6564616C 		.ascii	"edal\\EGasPedal.cydsn\000"
+ 1799      5C454761 
+ 1799      73506564 
+ 1799      616C2E63 
+ 1799      7964736E 
+ 1800              	.LASF58:
+ 1801 06a3 5265736F 		.ascii	"ResourceType\000"
+ 1801      75726365 
+ 1801      54797065 
+ 1801      00
+ 1802              	.LASF16:
+ 1803 06b0 646F7562 		.ascii	"double\000"
+ 1803      6C6500
+ 1804              	.LASF61:
+ 1805 06b7 5254455F 		.ascii	"RTE_SIGNALSTATUS_VALID\000"
+ 1805      5349474E 
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccjFWufw.s 			page 46
 
 
- 1815              	.LASF93:
- 1816 0189 5254455F 		.ascii	"RTE_SC_SPEED_get\000"
- 1816      53435F53 
- 1816      50454544 
- 1816      5F676574 
- 1816      00
- 1817              	.LASF32:
- 1818 019a 52435F45 		.ascii	"RC_ERROR_ZERO\000"
- 1818      52524F52 
- 1818      5F5A4552 
- 1818      4F00
- 1819              	.LASF23:
- 1820 01a8 45455F46 		.ascii	"EE_FREG\000"
- 1820      52454700 
- 1821              	.LASF46:
- 1822 01b0 52435F45 		.ascii	"RC_ERROR_READ_FAILS\000"
- 1822      52524F52 
- 1822      5F524541 
- 1822      445F4641 
- 1822      494C5300 
- 1823              	.LASF110:
- 1824 01c4 736F7572 		.ascii	"source\\asw\\swc_brakelight.c\000"
- 1824      63655C61 
- 1824      73775C73 
- 1824      77635F62 
- 1824      72616B65 
- 1825              	.LASF89:
- 1826 01e0 53435F42 		.ascii	"SC_BRAKELIGHT_cfg_s\000"
- 1826      52414B45 
- 1826      4C494748 
- 1826      545F6366 
- 1826      675F7300 
- 1827              	.LASF21:
- 1828 01f4 45455F55 		.ascii	"EE_UINT32\000"
- 1828      494E5433 
- 1828      3200
- 1829              	.LASF90:
- 1830 01fe 53435F42 		.ascii	"SC_BRAKELIGHT_cfg_t\000"
- 1830      52414B45 
- 1830      4C494748 
- 1830      545F6366 
- 1830      675F7400 
- 1831              	.LASF24:
- 1832 0212 45455F54 		.ascii	"EE_TID\000"
- 1832      494400
- 1833              	.LASF81:
- 1834 0219 76616C75 		.ascii	"value\000"
- 1834      6500
- 1835              	.LASF64:
- 1836 021f 53435F53 		.ascii	"SC_SPEED_data_t\000"
- 1836      50454544 
- 1836      5F646174 
- 1836      615F7400 
- 1837              	.LASF52:
- 1838 022f 52435F45 		.ascii	"RC_ERROR_INVALID_STATE\000"
- 1838      52524F52 
- 1838      5F494E56 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 43
-
-
- 1838      414C4944 
- 1838      5F535441 
- 1839              	.LASF79:
- 1840 0246 53435F53 		.ascii	"SC_SPEED_cfg_s\000"
- 1840      50454544 
- 1840      5F636667 
- 1840      5F7300
- 1841              	.LASF78:
- 1842 0255 53435F53 		.ascii	"SC_SPEED_cfg_t\000"
- 1842      50454544 
- 1842      5F636667 
- 1842      5F7400
- 1843              	.LASF77:
- 1844 0264 7265736F 		.ascii	"resource\000"
- 1844      75726365 
- 1844      00
- 1845              	.LASF105:
- 1846 026d 45455F49 		.ascii	"EE_IRQ_nesting_level\000"
- 1846      52515F6E 
- 1846      65737469 
- 1846      6E675F6C 
- 1846      6576656C 
- 1847              	.LASF91:
- 1848 0282 53435F42 		.ascii	"SC_BRAKELIGHT_s\000"
- 1848      52414B45 
- 1848      4C494748 
- 1848      545F7300 
- 1849              	.LASF92:
- 1850 0292 53435F42 		.ascii	"SC_BRAKELIGHT_t\000"
- 1850      52414B45 
- 1850      4C494748 
- 1850      545F7400 
- 1851              	.LASF34:
- 1852 02a2 52435F45 		.ascii	"RC_ERROR_RANGE\000"
- 1852      52524F52 
- 1852      5F52414E 
- 1852      474500
- 1853              	.LASF15:
- 1854 02b1 666C6F61 		.ascii	"float\000"
- 1854      7400
- 1855              	.LASF88:
- 1856 02b7 53435F42 		.ascii	"SC_BRAKELIGHT_driverOut_t\000"
- 1856      52414B45 
- 1856      4C494748 
- 1856      545F6472 
- 1856      69766572 
- 1857              	.LASF107:
- 1858 02d1 534F5F53 		.ascii	"SO_SPEED_signal\000"
- 1858      50454544 
- 1858      5F736967 
- 1858      6E616C00 
- 1859              	.LASF54:
- 1860 02e1 52435F45 		.ascii	"RC_ERROR_NOT_IMPLEMENTED\000"
- 1860      52524F52 
- 1860      5F4E4F54 
- 1860      5F494D50 
- 1860      4C454D45 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 44
-
-
- 1861              	.LASF9:
- 1862 02fa 6C6F6E67 		.ascii	"long long int\000"
- 1862      206C6F6E 
- 1862      6720696E 
- 1862      7400
- 1863              	.LASF102:
- 1864 0308 45455F6F 		.ascii	"EE_oo_IRQ_suspend_status\000"
- 1864      6F5F4952 
- 1864      515F7375 
- 1864      7370656E 
- 1864      645F7374 
- 1865              	.LASF48:
- 1866 0321 52435F45 		.ascii	"RC_ERROR_NOT_MATCH\000"
- 1866      52524F52 
- 1866      5F4E4F54 
- 1866      5F4D4154 
- 1866      434800
- 1867              	.LASF53:
- 1868 0334 52435F45 		.ascii	"RC_ERROR_UNKNOWN\000"
- 1868      52524F52 
- 1868      5F554E4B 
- 1868      4E4F574E 
- 1868      00
- 1869              	.LASF63:
- 1870 0345 5254455F 		.ascii	"RTE_signalStatus_t\000"
- 1870      7369676E 
- 1870      616C5374 
- 1870      61747573 
- 1870      5F7400
- 1871              	.LASF6:
- 1872 0358 6C6F6E67 		.ascii	"long int\000"
- 1872      20696E74 
- 1872      00
- 1873              	.LASF36:
- 1874 0361 52435F45 		.ascii	"RC_ERROR_UNDERRUN\000"
- 1874      52524F52 
- 1874      5F554E44 
- 1874      45525255 
- 1874      4E00
- 1875              	.LASF39:
- 1876 0373 52435F45 		.ascii	"RC_ERROR_BUSY\000"
- 1876      52524F52 
- 1876      5F425553 
- 1876      5900
- 1877              	.LASF59:
- 1878 0381 5254455F 		.ascii	"RTE_SIGNALSTATUS_STARTUP\000"
- 1878      5349474E 
- 1878      414C5354 
- 1878      41545553 
- 1878      5F535441 
- 1879              	.LASF4:
- 1880 039a 5F5F7569 		.ascii	"__uint8_t\000"
- 1880      6E74385F 
- 1880      7400
- 1881              	.LASF45:
- 1882 03a4 52435F45 		.ascii	"RC_ERROR_INVALID\000"
- 1882      52524F52 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 45
-
-
- 1882      5F494E56 
- 1882      414C4944 
- 1882      00
- 1883              	.LASF104:
- 1884 03b5 45455F73 		.ascii	"EE_std_endcycle_next_tid\000"
- 1884      74645F65 
- 1884      6E646379 
- 1884      636C655F 
- 1884      6E657874 
- 1885              	.LASF50:
- 1886 03ce 52435F45 		.ascii	"RC_ERROR_BAD_DATA\000"
- 1886      52524F52 
- 1886      5F424144 
- 1886      5F444154 
- 1886      4100
- 1887              	.LASF28:
- 1888 03e0 626F6F6C 		.ascii	"boolean_t\000"
- 1888      65616E5F 
- 1888      7400
- 1889              	.LASF69:
- 1890 03ea 6F757444 		.ascii	"outDriver\000"
- 1890      72697665 
- 1890      7200
- 1891              	.LASF98:
- 1892 03f4 70546173 		.ascii	"pTaskArray\000"
- 1892      6B417272 
- 1892      617900
- 1893              	.LASF19:
- 1894 03ff 6C6F6E67 		.ascii	"long double\000"
- 1894      20646F75 
- 1894      626C6500 
- 1895              	.LASF97:
- 1896 040b 7461736B 		.ascii	"taskNum\000"
- 1896      4E756D00 
- 1897              	.LASF25:
- 1898 0413 5461736B 		.ascii	"TaskType\000"
- 1898      54797065 
- 1898      00
- 1899              	.LASF1:
- 1900 041c 756E7369 		.ascii	"unsigned char\000"
- 1900      676E6564 
- 1900      20636861 
- 1900      7200
- 1901              	.LASF87:
- 1902 042a 53435F42 		.ascii	"SC_BRAKELIGHT_driverIn_t\000"
- 1902      52414B45 
- 1902      4C494748 
- 1902      545F6472 
- 1902      69766572 
- 1903              	.LASF67:
- 1904 0443 73706565 		.ascii	"speed_val\000"
- 1904      645F7661 
- 1904      6C00
- 1905              	.LASF17:
- 1906 044d 63686172 		.ascii	"char\000"
- 1906      00
- 1907              	.LASF0:
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 46
-
-
- 1908 0452 7369676E 		.ascii	"signed char\000"
- 1908      65642063 
- 1908      68617200 
- 1909              	.LASF10:
- 1910 045e 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1910      206C6F6E 
- 1910      6720756E 
- 1910      7369676E 
- 1910      65642069 
- 1911              	.LASF14:
- 1912 0475 75696E74 		.ascii	"uint32_t\000"
- 1912      33325F74 
- 1912      00
- 1913              	.LASF11:
- 1914 047e 756E7369 		.ascii	"unsigned int\000"
- 1914      676E6564 
- 1914      20696E74 
- 1914      00
- 1915              	.LASF41:
- 1916 048b 52435F45 		.ascii	"RC_ERROR_OPEN\000"
- 1916      52524F52 
- 1916      5F4F5045 
- 1916      4E00
- 1917              	.LASF85:
- 1918 0499 6272616B 		.ascii	"brakeLight\000"
- 1918      654C6967 
- 1918      687400
- 1919              	.LASF31:
- 1920 04a4 52435F45 		.ascii	"RC_ERROR_NULL\000"
- 1920      52524F52 
- 1920      5F4E554C 
- 1920      4C00
- 1921              	.LASF38:
- 1922 04b2 52435F45 		.ascii	"RC_ERROR_BUFFER_EMTPY\000"
- 1922      52524F52 
- 1922      5F425546 
- 1922      4645525F 
- 1922      454D5450 
- 1923              	.LASF20:
- 1924 04c8 45455F49 		.ascii	"EE_INT32\000"
- 1924      4E543332 
- 1924      00
- 1925              	.LASF83:
- 1926 04d1 70536967 		.ascii	"pSigCfg\000"
- 1926      43666700 
- 1927              	.LASF86:
- 1928 04d9 53435F42 		.ascii	"SC_BRAKELIGHT_data_t\000"
- 1928      52414B45 
- 1928      4C494748 
- 1928      545F6461 
- 1928      74615F74 
- 1929              	.LASF70:
- 1930 04ee 65764F6E 		.ascii	"evOnUpdate\000"
- 1930      55706461 
- 1930      746500
- 1931              	.LASF82:
- 1932 04f9 73746174 		.ascii	"status\000"
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 47
-
-
- 1932      757300
- 1933              	.LASF84:
- 1934 0500 53435F53 		.ascii	"SC_SPEED_t\000"
- 1934      50454544 
- 1934      5F7400
- 1935              	.LASF76:
- 1936 050b 7265736F 		.ascii	"resourceActive\000"
- 1936      75726365 
- 1936      41637469 
- 1936      766500
- 1937              	.LASF95:
- 1938 051a 7369676E 		.ascii	"signal\000"
- 1938      616C00
- 1939              	.LASF62:
- 1940 0521 5254455F 		.ascii	"RTE_SIGNALSTATUS_INVALID\000"
- 1940      5349474E 
- 1940      414C5354 
- 1940      41545553 
- 1940      5F494E56 
- 1941              	.LASF47:
- 1942 053a 52435F45 		.ascii	"RC_ERROR_WRITE_FAILS\000"
- 1942      52524F52 
- 1942      5F575249 
- 1942      54455F46 
- 1942      41494C53 
- 1943              	.LASF13:
- 1944 054f 696E7433 		.ascii	"int32_t\000"
- 1944      325F7400 
- 1945              	.LASF3:
- 1946 0557 73686F72 		.ascii	"short unsigned int\000"
- 1946      7420756E 
- 1946      7369676E 
- 1946      65642069 
- 1946      6E7400
- 1947              	.LASF49:
- 1948 056a 52435F45 		.ascii	"RC_ERROR_BAD_PARAM\000"
- 1948      52524F52 
- 1948      5F424144 
- 1948      5F504152 
- 1948      414D00
- 1949              	.LASF75:
- 1950 057d 6F6E4572 		.ascii	"onErrorTasks\000"
- 1950      726F7254 
- 1950      61736B73 
- 1950      00
- 1951              	.LASF72:
- 1952 058a 6F6E5570 		.ascii	"onUpdateTaskCount\000"
- 1952      64617465 
- 1952      5461736B 
- 1952      436F756E 
- 1952      7400
- 1953              	.LASF94:
- 1954 059c 5254455F 		.ascii	"RTE_SC_BRAKELIGHT_pushPort\000"
- 1954      53435F42 
- 1954      52414B45 
- 1954      4C494748 
- 1954      545F7075 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 48
-
-
- 1955              	.LASF103:
- 1956 05b7 45455F41 		.ascii	"EE_ApplicationMode\000"
- 1956      70706C69 
- 1956      63617469 
- 1956      6F6E4D6F 
- 1956      646500
- 1957              	.LASF8:
- 1958 05ca 6C6F6E67 		.ascii	"long unsigned int\000"
- 1958      20756E73 
- 1958      69676E65 
- 1958      6420696E 
- 1958      7400
- 1959              	.LASF73:
- 1960 05dc 6F6E5570 		.ascii	"onUpdateTasks\000"
- 1960      64617465 
- 1960      5461736B 
- 1960      7300
- 1961              	.LASF42:
- 1962 05ea 52435F45 		.ascii	"RC_ERROR_CHECKSUM\000"
- 1962      52524F52 
- 1962      5F434845 
- 1962      434B5355 
- 1962      4D00
- 1963              	.LASF22:
- 1964 05fc 45455F55 		.ascii	"EE_UREG\000"
- 1964      52454700 
- 1965              	.LASF35:
- 1966 0604 52435F45 		.ascii	"RC_ERROR_OVERRUN\000"
- 1966      52524F52 
- 1966      5F4F5645 
- 1966      5252554E 
- 1966      00
- 1967              	.LASF5:
- 1968 0615 5F5F696E 		.ascii	"__int32_t\000"
- 1968      7433325F 
- 1968      7400
- 1969              	.LASF12:
- 1970 061f 75696E74 		.ascii	"uint8_t\000"
- 1970      385F7400 
- 1971              	.LASF57:
- 1972 0627 5254455F 		.ascii	"RTE_event\000"
- 1972      6576656E 
- 1972      7400
- 1973              	.LASF65:
- 1974 0631 53435F53 		.ascii	"SC_SPEED_driverIn_t\000"
- 1974      50454544 
- 1974      5F647269 
- 1974      76657249 
- 1974      6E5F7400 
- 1975              	.LASF80:
- 1976 0645 53435F53 		.ascii	"SC_SPEED_s\000"
- 1976      50454544 
- 1976      5F7300
- 1977              	.LASF51:
- 1978 0650 52435F45 		.ascii	"RC_ERROR_CANCELED\000"
- 1978      52524F52 
- 1978      5F43414E 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 49
-
-
- 1978      43454C45 
- 1978      4400
- 1979              	.LASF111:
- 1980 0662 433A5C53 		.ascii	"C:\\Sandbox\\Sem2\\EAA\\Lab\\Lab01\\Lab01EAA\\EGasP"
- 1980      616E6462 
- 1980      6F785C53 
- 1980      656D325C 
- 1980      4541415C 
- 1981 068e 6564616C 		.ascii	"edal\\EGasPedal.cydsn\000"
- 1981      5C454761 
- 1981      73506564 
- 1981      616C2E63 
- 1981      7964736E 
- 1982              	.LASF58:
- 1983 06a3 5265736F 		.ascii	"ResourceType\000"
- 1983      75726365 
- 1983      54797065 
- 1983      00
- 1984              	.LASF16:
- 1985 06b0 646F7562 		.ascii	"double\000"
- 1985      6C6500
- 1986              	.LASF61:
- 1987 06b7 5254455F 		.ascii	"RTE_SIGNALSTATUS_VALID\000"
- 1987      5349474E 
- 1987      414C5354 
- 1987      41545553 
- 1987      5F56414C 
- 1988              	.LASF113:
- 1989 06ce 45455F6F 		.ascii	"EE_oo_SetEvent\000"
- 1989      6F5F5365 
- 1989      74457665 
- 1989      6E7400
- 1990              	.LASF68:
- 1991 06dd 696E4472 		.ascii	"inDriver\000"
- 1991      69766572 
- 1991      00
- 1992              	.LASF106:
- 1993 06e6 49544D5F 		.ascii	"ITM_RxBuffer\000"
- 1993      52784275 
- 1993      66666572 
- 1993      00
- 1994              	.LASF30:
- 1995 06f3 52435F45 		.ascii	"RC_ERROR\000"
- 1995      52524F52 
- 1995      00
- 1996              	.LASF33:
- 1997 06fc 52435F45 		.ascii	"RC_ERROR_MEMORY\000"
- 1997      52524F52 
- 1997      5F4D454D 
- 1997      4F525900 
- 1998              	.LASF101:
- 1999 070c 45455F6F 		.ascii	"EE_oo_IRQ_disable_count\000"
- 1999      6F5F4952 
- 1999      515F6469 
- 1999      7361626C 
- 1999      655F636F 
- 2000              	.LASF56:
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccQlfj74.s 			page 50
-
-
- 2001 0724 5461736B 		.ascii	"TaskTypeArray\000"
- 2001      54797065 
- 2001      41727261 
- 2001      7900
- 2002              	.LASF55:
- 2003 0732 52435F74 		.ascii	"RC_t\000"
- 2003      00
- 2004              	.LASF60:
- 2005 0737 5254455F 		.ascii	"RTE_SIGNALSTATUS_INITIALIZED\000"
- 2005      5349474E 
- 2005      414C5354 
- 2005      41545553 
- 2005      5F494E49 
- 2006              	.LASF40:
- 2007 0754 52435F45 		.ascii	"RC_ERROR_TIME_OUT\000"
- 2007      52524F52 
- 2007      5F54494D 
- 2007      455F4F55 
- 2007      5400
- 2008              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 1805      414C5354 
+ 1805      41545553 
+ 1805      5F56414C 
+ 1806              	.LASF113:
+ 1807 06ce 45455F6F 		.ascii	"EE_oo_SetEvent\000"
+ 1807      6F5F5365 
+ 1807      74457665 
+ 1807      6E7400
+ 1808              	.LASF68:
+ 1809 06dd 696E4472 		.ascii	"inDriver\000"
+ 1809      69766572 
+ 1809      00
+ 1810              	.LASF105:
+ 1811 06e6 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 1811      52784275 
+ 1811      66666572 
+ 1811      00
+ 1812              	.LASF30:
+ 1813 06f3 52435F45 		.ascii	"RC_ERROR\000"
+ 1813      52524F52 
+ 1813      00
+ 1814              	.LASF33:
+ 1815 06fc 52435F45 		.ascii	"RC_ERROR_MEMORY\000"
+ 1815      52524F52 
+ 1815      5F4D454D 
+ 1815      4F525900 
+ 1816              	.LASF100:
+ 1817 070c 45455F6F 		.ascii	"EE_oo_IRQ_disable_count\000"
+ 1817      6F5F4952 
+ 1817      515F6469 
+ 1817      7361626C 
+ 1817      655F636F 
+ 1818              	.LASF56:
+ 1819 0724 5461736B 		.ascii	"TaskTypeArray\000"
+ 1819      54797065 
+ 1819      41727261 
+ 1819      7900
+ 1820              	.LASF55:
+ 1821 0732 52435F74 		.ascii	"RC_t\000"
+ 1821      00
+ 1822              	.LASF60:
+ 1823 0737 5254455F 		.ascii	"RTE_SIGNALSTATUS_INITIALIZED\000"
+ 1823      5349474E 
+ 1823      414C5354 
+ 1823      41545553 
+ 1823      5F494E49 
+ 1824              	.LASF40:
+ 1825 0754 52435F45 		.ascii	"RC_ERROR_TIME_OUT\000"
+ 1825      52524F52 
+ 1825      5F54494D 
+ 1825      455F4F55 
+ 1825      5400
+ 1826              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

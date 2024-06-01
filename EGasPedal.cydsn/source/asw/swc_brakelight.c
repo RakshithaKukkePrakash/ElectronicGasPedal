@@ -49,19 +49,14 @@ void BRAKELIGHT_setBrakeLight_run(RTE_event ev){
     if(spd.speed_val == 0)
     {
         brakeSig.brakeLight = TRUE;
-        RTE_SC_BRAKELIGHT_set(&SO_BRAKE_signal, brakeSig);
-        RTE_SC_BRAKELIGHT_pushPort(&SO_BRAKE_signal);
     }
     else
     {
         brakeSig.brakeLight = FALSE;
-        RTE_SC_BRAKELIGHT_set(&SO_BRAKE_signal, brakeSig);
-        RTE_SC_BRAKELIGHT_pushPort(&SO_BRAKE_signal);
     }
-    
-   
-    
 
+    RTE_SC_BRAKELIGHT_set(&SO_BRAKE_signal, brakeSig);
+    RTE_SC_BRAKELIGHT_pushPort(&SO_BRAKE_signal);
     /* USER CODE END BRAKELIGHT_setBrakeLight_run */
 }
 

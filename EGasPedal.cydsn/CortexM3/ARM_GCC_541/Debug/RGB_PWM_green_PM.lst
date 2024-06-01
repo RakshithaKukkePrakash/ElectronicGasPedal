@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 1
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc5EJPqB.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 1
   28:Generated_Source\PSoC5/RGB_PWM_green_PM.c **** *  Saves the current user configuration of the component.
   29:Generated_Source\PSoC5/RGB_PWM_green_PM.c **** *
   30:Generated_Source\PSoC5/RGB_PWM_green_PM.c **** * Parameters:
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 2
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc5EJPqB.s 			page 2
 
 
   31:Generated_Source\PSoC5/RGB_PWM_green_PM.c **** *  None
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 1
   48 0014 E070     		strb	r0, [r4, #3]
   49 0016 10BD     		pop	{r4, pc}
   50              	.L4:
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 3
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc5EJPqB.s 			page 3
 
 
   51              		.align	2
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 1
   77              	.LVL3:
   93:Generated_Source\PSoC5/RGB_PWM_green_PM.c ****             #endif /* (!RGB_PWM_green_PWMModeIsCenterAligned) */
   94:Generated_Source\PSoC5/RGB_PWM_green_PM.c **** 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 4
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc5EJPqB.s 			page 4
 
 
   95:Generated_Source\PSoC5/RGB_PWM_green_PM.c ****             RGB_PWM_green_WriteCounter(RGB_PWM_green_backup.PWMUdb);
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 1
  125:Generated_Source\PSoC5/RGB_PWM_green_PM.c **** * Parameters:
  126:Generated_Source\PSoC5/RGB_PWM_green_PM.c **** *  None
  127:Generated_Source\PSoC5/RGB_PWM_green_PM.c **** *
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 5
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc5EJPqB.s 			page 5
 
 
  128:Generated_Source\PSoC5/RGB_PWM_green_PM.c **** * Return:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 1
  155:Generated_Source\PSoC5/RGB_PWM_green_PM.c ****     RGB_PWM_green_SaveConfig();
  129              		.loc 1 155 0
  130 001e FFF7FEFF 		bl	RGB_PWM_green_SaveConfig
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 6
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc5EJPqB.s 			page 6
 
 
  131              	.LVL7:
@@ -306,7 +306,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 1
  133              	.L14:
  134              		.align	2
  135              	.L13:
- 136 0024 7B640040 		.word	1073767547
+ 136 0024 7E640040 		.word	1073767550
  137 0028 00000000 		.word	.LANCHOR0
  138              		.cfi_endproc
  139              	.LFE2:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 1
  159              	.LVL8:
  182:Generated_Source\PSoC5/RGB_PWM_green_PM.c **** 
  183:Generated_Source\PSoC5/RGB_PWM_green_PM.c ****     if(RGB_PWM_green_backup.PWMEnableState != 0u)
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 7
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc5EJPqB.s 			page 7
 
 
  160              		.loc 1 183 0
@@ -401,14 +401,14 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 1
  194 000c B1000000 		.4byte	.LASF33
  195 0010 0C       		.byte	0xc
  196 0011 60010000 		.4byte	.LASF34
- 197 0015 EF020000 		.4byte	.LASF35
+ 197 0015 15020000 		.4byte	.LASF35
  198 0019 00000000 		.4byte	.Ldebug_ranges0+0
  199 001d 00000000 		.4byte	0
  200 0021 00000000 		.4byte	.Ldebug_line0
  201 0025 02       		.uleb128 0x2
  202 0026 01       		.byte	0x1
  203 0027 06       		.byte	0x6
- 204 0028 E3020000 		.4byte	.LASF0
+ 204 0028 24030000 		.4byte	.LASF0
  205 002c 02       		.uleb128 0x2
  206 002d 01       		.byte	0x1
  207 002e 08       		.byte	0x8
@@ -416,9 +416,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 1
  209 0033 02       		.uleb128 0x2
  210 0034 02       		.byte	0x2
  211 0035 05       		.byte	0x5
- 212 0036 94020000 		.4byte	.LASF2
+ 212 0036 D5020000 		.4byte	.LASF2
  213 003a 02       		.uleb128 0x2
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 8
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc5EJPqB.s 			page 8
 
 
  214 003b 02       		.byte	0x2
@@ -427,7 +427,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 1
  217 0041 02       		.uleb128 0x2
  218 0042 04       		.byte	0x4
  219 0043 05       		.byte	0x5
- 220 0044 C0020000 		.4byte	.LASF4
+ 220 0044 01030000 		.4byte	.LASF4
  221 0048 02       		.uleb128 0x2
  222 0049 04       		.byte	0x4
  223 004a 07       		.byte	0x7
@@ -435,7 +435,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 1
  225 004f 02       		.uleb128 0x2
  226 0050 08       		.byte	0x8
  227 0051 05       		.byte	0x5
- 228 0052 81020000 		.4byte	.LASF6
+ 228 0052 C2020000 		.4byte	.LASF6
  229 0056 02       		.uleb128 0x2
  230 0057 08       		.byte	0x8
  231 0058 07       		.byte	0x7
@@ -464,9 +464,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 1
  254 0085 02       		.uleb128 0x2
  255 0086 01       		.byte	0x1
  256 0087 08       		.byte	0x8
- 257 0088 8F020000 		.4byte	.LASF11
+ 257 0088 D0020000 		.4byte	.LASF11
  258 008c 04       		.uleb128 0x4
- 259 008d 2A020000 		.4byte	.LASF13
+ 259 008d 6B020000 		.4byte	.LASF13
  260 0091 02       		.byte	0x2
  261 0092 9202     		.2byte	0x292
  262 0094 98000000 		.4byte	0x98
@@ -475,14 +475,14 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 1
  265 009d 02       		.uleb128 0x2
  266 009e 08       		.byte	0x8
  267 009f 04       		.byte	0x4
- 268 00a0 2F020000 		.4byte	.LASF14
+ 268 00a0 70020000 		.4byte	.LASF14
  269 00a4 02       		.uleb128 0x2
  270 00a5 04       		.byte	0x4
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 9
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc5EJPqB.s 			page 9
 
 
  271 00a6 07       		.byte	0x7
- 272 00a7 3B020000 		.4byte	.LASF15
+ 272 00a7 7C020000 		.4byte	.LASF15
  273 00ab 06       		.uleb128 0x6
  274 00ac 04       		.byte	0x4
  275 00ad 03       		.byte	0x3
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 1
  325 011b C8010000 		.4byte	0x1c8
  326 011f 00       		.byte	0
  327 0120 09       		.uleb128 0x9
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 10
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc5EJPqB.s 			page 10
 
 
  328 0121 00000000 		.4byte	.LASF22
@@ -592,13 +592,13 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 1
  376 019c FF010000 		.4byte	0x1ff
  377 01a0 00       		.byte	0
  378 01a1 0B       		.uleb128 0xb
- 379 01a2 26030000 		.4byte	.LASF36
+ 379 01a2 30030000 		.4byte	.LASF36
  380 01a6 01       		.byte	0x1
  381 01a7 14       		.byte	0x14
  382 01a8 E4000000 		.4byte	0xe4
  383 01ac 05       		.uleb128 0x5
  384 01ad 03       		.byte	0x3
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 11
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc5EJPqB.s 			page 11
 
 
  385 01ae 00000000 		.4byte	RGB_PWM_green_backup
@@ -608,18 +608,18 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 1
  389 01bb 03       		.byte	0x3
  390 01bc C0       		.byte	0xc0
  391 01bd 0C       		.uleb128 0xc
- 392 01be 67020000 		.4byte	.LASF26
- 393 01c2 67020000 		.4byte	.LASF26
+ 392 01be A8020000 		.4byte	.LASF26
+ 393 01c2 A8020000 		.4byte	.LASF26
  394 01c6 03       		.byte	0x3
  395 01c7 B3       		.byte	0xb3
  396 01c8 0C       		.uleb128 0xc
- 397 01c9 9E020000 		.4byte	.LASF27
- 398 01cd 9E020000 		.4byte	.LASF27
+ 397 01c9 DF020000 		.4byte	.LASF27
+ 398 01cd DF020000 		.4byte	.LASF27
  399 01d1 03       		.byte	0x3
  400 01d2 9D       		.byte	0x9d
  401 01d3 0C       		.uleb128 0xc
- 402 01d4 C9020000 		.4byte	.LASF28
- 403 01d8 C9020000 		.4byte	.LASF28
+ 402 01d4 0A030000 		.4byte	.LASF28
+ 403 01d8 0A030000 		.4byte	.LASF28
  404 01dc 03       		.byte	0x3
  405 01dd BE       		.byte	0xbe
  406 01de 0C       		.uleb128 0xc
@@ -628,8 +628,8 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 1
  409 01e7 03       		.byte	0x3
  410 01e8 BA       		.byte	0xba
  411 01e9 0C       		.uleb128 0xc
- 412 01ea 44020000 		.4byte	.LASF30
- 413 01ee 44020000 		.4byte	.LASF30
+ 412 01ea 85020000 		.4byte	.LASF30
+ 413 01ee 85020000 		.4byte	.LASF30
  414 01f2 03       		.byte	0x3
  415 01f3 9E       		.byte	0x9e
  416 01f4 0C       		.uleb128 0xc
@@ -638,8 +638,8 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 1
  419 01fd 03       		.byte	0x3
  420 01fe 93       		.byte	0x93
  421 01ff 0C       		.uleb128 0xc
- 422 0200 15020000 		.4byte	.LASF32
- 423 0204 15020000 		.4byte	.LASF32
+ 422 0200 56020000 		.4byte	.LASF32
+ 423 0204 56020000 		.4byte	.LASF32
  424 0208 03       		.byte	0x3
  425 0209 DB       		.byte	0xdb
  426 020a 00       		.byte	0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 1
  439 000a 0E       		.uleb128 0xe
  440 000b 55       		.uleb128 0x55
  441 000c 17       		.uleb128 0x17
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 12
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc5EJPqB.s 			page 12
 
 
  442 000d 11       		.uleb128 0x11
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 1
  496 0043 0B       		.uleb128 0xb
  497 0044 3B       		.uleb128 0x3b
  498 0045 0B       		.uleb128 0xb
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 13
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc5EJPqB.s 			page 13
 
 
  499 0046 01       		.uleb128 0x1
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 1
  553 007d 13       		.uleb128 0x13
  554 007e 00       		.byte	0
  555 007f 00       		.byte	0
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 14
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc5EJPqB.s 			page 14
 
 
  556 0080 0A       		.uleb128 0xa
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 1
  610 0020 00000000 		.4byte	.LFB2
  611 0024 2C000000 		.4byte	.LFE2-.LFB2
  612 0028 00000000 		.4byte	.LFB3
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 15
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc5EJPqB.s 			page 15
 
 
  613 002c 18000000 		.4byte	.LFE3-.LFB3
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 1
  642      6E5F5761 
  642      6B657570 
  643              	.LASF20:
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 16
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc5EJPqB.s 			page 16
 
 
  644 007b 5247425F 		.ascii	"RGB_PWM_green_backupStruct\000"
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 1
  664      6F6E7472 
  664      6F6C5265 
  664      67697374 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 17
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc5EJPqB.s 			page 17
 
 
  664      657200
@@ -994,81 +994,83 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 1
  676      6720756E 
  676      7369676E 
  676      65642069 
- 677              	.LASF32:
- 678 0215 5247425F 		.ascii	"RGB_PWM_green_Enable\000"
- 678      50574D5F 
- 678      67726565 
- 678      6E5F456E 
- 678      61626C65 
- 679              	.LASF13:
- 680 022a 72656738 		.ascii	"reg8\000"
- 680      00
- 681              	.LASF14:
- 682 022f 6C6F6E67 		.ascii	"long double\000"
- 682      20646F75 
- 682      626C6500 
- 683              	.LASF15:
- 684 023b 73697A65 		.ascii	"sizetype\000"
- 684      74797065 
- 684      00
- 685              	.LASF30:
- 686 0244 5247425F 		.ascii	"RGB_PWM_green_WriteControlRegister\000"
- 686      50574D5F 
- 686      67726565 
- 686      6E5F5772 
- 686      69746543 
- 687              	.LASF26:
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccNuvuUx.s 			page 18
+ 677              	.LASF35:
+ 678 0215 433A5C53 		.ascii	"C:\\Sandbox\\Sem2\\EAA\\Lab\\Lab01\\Lab01EAA\\EGasP"
+ 678      616E6462 
+ 678      6F785C53 
+ 678      656D325C 
+ 678      4541415C 
+ 679 0241 6564616C 		.ascii	"edal\\EGasPedal.cydsn\000"
+ 679      5C454761 
+ 679      73506564 
+ 679      616C2E63 
+ 679      7964736E 
+ 680              	.LASF32:
+ 681 0256 5247425F 		.ascii	"RGB_PWM_green_Enable\000"
+ 681      50574D5F 
+ 681      67726565 
+ 681      6E5F456E 
+ 681      61626C65 
+ 682              	.LASF13:
+ 683 026b 72656738 		.ascii	"reg8\000"
+ 683      00
+ 684              	.LASF14:
+ 685 0270 6C6F6E67 		.ascii	"long double\000"
+ 685      20646F75 
+ 685      626C6500 
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc5EJPqB.s 			page 18
 
 
- 688 0267 5247425F 		.ascii	"RGB_PWM_green_ReadCounter\000"
- 688      50574D5F 
- 688      67726565 
- 688      6E5F5265 
- 688      6164436F 
- 689              	.LASF6:
- 690 0281 6C6F6E67 		.ascii	"long long int\000"
- 690      206C6F6E 
- 690      6720696E 
- 690      7400
- 691              	.LASF11:
- 692 028f 63686172 		.ascii	"char\000"
- 692      00
- 693              	.LASF2:
- 694 0294 73686F72 		.ascii	"short int\000"
- 694      7420696E 
- 694      7400
- 695              	.LASF27:
- 696 029e 5247425F 		.ascii	"RGB_PWM_green_ReadControlRegister\000"
- 696      50574D5F 
- 696      67726565 
- 696      6E5F5265 
- 696      6164436F 
- 697              	.LASF4:
- 698 02c0 6C6F6E67 		.ascii	"long int\000"
- 698      20696E74 
- 698      00
- 699              	.LASF28:
- 700 02c9 5247425F 		.ascii	"RGB_PWM_green_WritePeriod\000"
- 700      50574D5F 
- 700      67726565 
- 700      6E5F5772 
- 700      69746550 
- 701              	.LASF0:
- 702 02e3 7369676E 		.ascii	"signed char\000"
- 702      65642063 
- 702      68617200 
- 703              	.LASF35:
- 704 02ef 433A5C53 		.ascii	"C:\\Sandbox\\Sem2\\EAA\\Lab\\Lab01\\Lab01EAA\\EGasP"
- 704      616E6462 
- 704      6F785C53 
- 704      656D325C 
- 704      4541415C 
- 705 031b 6564616C 		.ascii	"edal.cydsn\000"
- 705      2E637964 
- 705      736E00
+ 686              	.LASF15:
+ 687 027c 73697A65 		.ascii	"sizetype\000"
+ 687      74797065 
+ 687      00
+ 688              	.LASF30:
+ 689 0285 5247425F 		.ascii	"RGB_PWM_green_WriteControlRegister\000"
+ 689      50574D5F 
+ 689      67726565 
+ 689      6E5F5772 
+ 689      69746543 
+ 690              	.LASF26:
+ 691 02a8 5247425F 		.ascii	"RGB_PWM_green_ReadCounter\000"
+ 691      50574D5F 
+ 691      67726565 
+ 691      6E5F5265 
+ 691      6164436F 
+ 692              	.LASF6:
+ 693 02c2 6C6F6E67 		.ascii	"long long int\000"
+ 693      206C6F6E 
+ 693      6720696E 
+ 693      7400
+ 694              	.LASF11:
+ 695 02d0 63686172 		.ascii	"char\000"
+ 695      00
+ 696              	.LASF2:
+ 697 02d5 73686F72 		.ascii	"short int\000"
+ 697      7420696E 
+ 697      7400
+ 698              	.LASF27:
+ 699 02df 5247425F 		.ascii	"RGB_PWM_green_ReadControlRegister\000"
+ 699      50574D5F 
+ 699      67726565 
+ 699      6E5F5265 
+ 699      6164436F 
+ 700              	.LASF4:
+ 701 0301 6C6F6E67 		.ascii	"long int\000"
+ 701      20696E74 
+ 701      00
+ 702              	.LASF28:
+ 703 030a 5247425F 		.ascii	"RGB_PWM_green_WritePeriod\000"
+ 703      50574D5F 
+ 703      67726565 
+ 703      6E5F5772 
+ 703      69746550 
+ 704              	.LASF0:
+ 705 0324 7369676E 		.ascii	"signed char\000"
+ 705      65642063 
+ 705      68617200 
  706              	.LASF36:
- 707 0326 5247425F 		.ascii	"RGB_PWM_green_backup\000"
+ 707 0330 5247425F 		.ascii	"RGB_PWM_green_backup\000"
  707      50574D5F 
  707      67726565 
  707      6E5F6261 

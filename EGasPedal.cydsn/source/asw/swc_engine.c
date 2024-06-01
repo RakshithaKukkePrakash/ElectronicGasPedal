@@ -48,39 +48,44 @@ void ENGINE_setEngine_run(RTE_event ev){
     // UART Log fro verification
    
     UART_LOG_PutString("\n");
-    char log[20];
-    itoa(RTE_SC_ENGINE_getAge(&SO_ENGINE_signal), log, 10);
-    UART_LOG_PutString(log);
+    char log[200];
     
     SC_ENGINE_data_t engineSpd;
-    
-    if(RTE_SC_ENGINE_getAge(&SO_ENGINE_signal) < 1000)
+    SC_SPEED_data_t speed;
+    static uint32_t age = 0;
+    if(RTE_SC_SPEED_getStatus(&SO_SPEED_signal) == RTE_SIGNALSTATUS_VALID)
     {
+        speed = RTE_SC_SPEED_get(&SO_SPEED_signal);
+        age = RTE_SC_SPEED_getAge(&SO_SPEED_signal);
+        if(age < 1000)
+        {
+            engineSpd.engine = speed.speed_val;
 
-        SC_SPEED_data_t speed = RTE_SC_SPEED_get(&SO_SPEED_signal);
-
-        engineSpd.engine = speed.speed_val;
-        RTE_SC_ENGINE_set(&SO_ENGINE_signal, engineSpd);
-        
-        //UART log for verification 
-        
-        UART_LOG_PutString("Engine speed pos\n");
-        itoa(engineSpd.engine, log, 10);
-        UART_LOG_PutString(log);
-        
+            //UART log for verification 
+            itoa(age, log, 10);
+            //UART_LOG_PutString("Engine speed pos\n");
+            //itoa(engineSpd.engine, log, 10);
+            UART_LOG_PutString(log);            
+        }
+        else
+        {
+            engineSpd.engine = 0;
+            
+            //UART log for verification  
+            UART_LOG_PutString("Engine speed zero\n");
+            itoa(engineSpd.engine, log, 10);
+            UART_LOG_PutString(log); 
+        }
     }
     else
     {
         engineSpd.engine = 0;
-        RTE_SC_ENGINE_set(&SO_ENGINE_signal, engineSpd);
-        /*
-        //UART log for verification  
-        UART_LOG_PutString("Engine speed zero\n");
-        itoa(engineSpd.engine, log, 10);
-        UART_LOG_PutString(log);
-        */
     }
+    RTE_SC_ENGINE_set(&SO_ENGINE_signal, engineSpd);
     RTE_SC_ENGINE_pushPort(&SO_ENGINE_signal);
+    
+    //WD_Alive(2);
+    
     /* USER CODE END ENGINE_setEngine_run */
 }
 

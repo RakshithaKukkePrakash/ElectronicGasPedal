@@ -114,21 +114,9 @@
   <file name="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\RGB_PWM_green.c" value="SOURCE_C;CortexM3;;;;RGB_PWM_green" />
   <file name="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\RGB_PWM_green.h" value="HEADER;;;;;RGB_PWM_green" />
   <file name="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\RGB_PWM_green_PM.c" value="SOURCE_C;CortexM3;;;;RGB_PWM_green" />
-  <file name="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\RGB_PWM_blue.c" value="SOURCE_C;CortexM3;;;;RGB_PWM_blue" />
-  <file name="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\RGB_PWM_blue.h" value="HEADER;;;;;RGB_PWM_blue" />
-  <file name="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\RGB_PWM_blue_PM.c" value="SOURCE_C;CortexM3;;;;RGB_PWM_blue" />
-  <file name="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\RGB_R_aliases.h" value="HEADER;;;;;RGB_R" />
-  <file name="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\RGB_R.c" value="SOURCE_C;CortexM3;;;;RGB_R" />
-  <file name="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\RGB_R.h" value="HEADER;;;;;RGB_R" />
   <file name="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\RGB_G_aliases.h" value="HEADER;;;;;RGB_G" />
   <file name="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\RGB_G.c" value="SOURCE_C;CortexM3;;;;RGB_G" />
   <file name="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\RGB_G.h" value="HEADER;;;;;RGB_G" />
-  <file name="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\RGB_B_aliases.h" value="HEADER;;;;;RGB_B" />
-  <file name="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\RGB_B.c" value="SOURCE_C;CortexM3;;;;RGB_B" />
-  <file name="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\RGB_B.h" value="HEADER;;;;;RGB_B" />
-  <file name="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\RGB_PWM_red.c" value="SOURCE_C;CortexM3;;;;RGB_PWM_red" />
-  <file name="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\RGB_PWM_red.h" value="HEADER;;;;;RGB_PWM_red" />
-  <file name="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\RGB_PWM_red_PM.c" value="SOURCE_C;CortexM3;;;;RGB_PWM_red" />
   <file name="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\LED_red_aliases.h" value="HEADER;;;;;LED_red" />
   <file name="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\LED_red.c" value="SOURCE_C;CortexM3;;;;LED_red" />
   <file name="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\LED_red.h" value="HEADER;;;;;LED_red" />

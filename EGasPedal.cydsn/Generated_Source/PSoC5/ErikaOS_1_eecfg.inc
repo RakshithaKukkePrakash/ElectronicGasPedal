@@ -243,7 +243,7 @@ extern void systick_handler(void);
 #endif
 
 #if EE_MAX_ISR_ID > 0
-extern void ISR_1(void);
+extern void isr_button_reset(void);
 #endif
 #if EE_MAX_ISR_ID > 1
 extern void ISR_2(void);
