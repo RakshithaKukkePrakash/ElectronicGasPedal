@@ -1,4 +1,4 @@
-C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal.cydsn\EGasPedal.cyprj|e2d941b1-ad50-4837-b7d6-442ff2e315fd
+C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\EGasPedal.cyprj|b28f8f9f-8d94-41ea-878e-e089fcaf65a4
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|934d2317-6da4-466c-bd63-eb7573953cf9
 C:\Users\acer\OneDrive\文档\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|6b6f012f-4d7f-4cc0-beea-c39daf2008a2
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|db388ddf-1aaf-4297-ae8f-7418a3b0d713

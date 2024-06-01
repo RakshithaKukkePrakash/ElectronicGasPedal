@@ -1,5 +1,5 @@
--- Project:   C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal.cydsn\EGasPedal.cyprj
--- Generated: 06/01/2024 21:20:02
+-- Project:   C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\EGasPedal.cyprj
+-- Generated: 06/01/2024 21:36:21
 -- PSoC Creator  4.4
 
 ENTITY EGasPedal IS

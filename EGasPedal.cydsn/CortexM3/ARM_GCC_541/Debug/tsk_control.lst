@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 1
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccR9qM11.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 1
   28:source\asw/tsk_control.c **** /* USER CODE END TSK_CONTROL_INCLUDE */
   29:source\asw/tsk_control.c **** 
   30:source\asw/tsk_control.c **** #include "swc_control.h"
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 2
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccR9qM11.s 			page 2
 
 
   31:source\asw/tsk_control.c **** #include "swc_brakelight.h"
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 1
   72:source\asw/tsk_control.c **** 	/* USER CODE END TSK_CONTROL_INIT */
   73:source\asw/tsk_control.c **** 	
   74:source\asw/tsk_control.c ****     while(1)
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 3
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccR9qM11.s 			page 3
 
 
   75:source\asw/tsk_control.c ****     {
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 1
   82              	RTE_eventActivation_tsk_control_size:
   83 0010 0200     		.short	2
   84              		.text
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 4
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccR9qM11.s 			page 4
 
 
   85              	.Letext0:
@@ -203,15 +203,15 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 1
  104 000b 01       		.uleb128 0x1
  105 000c CE000000 		.4byte	.LASF40
  106 0010 0C       		.byte	0xc
- 107 0011 A7020000 		.4byte	.LASF41
- 108 0015 FE020000 		.4byte	.LASF42
+ 107 0011 E8020000 		.4byte	.LASF41
+ 108 0015 2A020000 		.4byte	.LASF42
  109 0019 00000000 		.4byte	.Ldebug_ranges0+0
  110 001d 00000000 		.4byte	0
  111 0021 00000000 		.4byte	.Ldebug_line0
  112 0025 02       		.uleb128 0x2
  113 0026 01       		.byte	0x1
  114 0027 06       		.byte	0x6
- 115 0028 D5020000 		.4byte	.LASF0
+ 115 0028 16030000 		.4byte	.LASF0
  116 002c 02       		.uleb128 0x2
  117 002d 01       		.byte	0x1
  118 002e 08       		.byte	0x8
@@ -219,7 +219,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 1
  120 0033 02       		.uleb128 0x2
  121 0034 02       		.byte	0x2
  122 0035 05       		.byte	0x5
- 123 0036 94020000 		.4byte	.LASF2
+ 123 0036 D5020000 		.4byte	.LASF2
  124 003a 03       		.uleb128 0x3
  125 003b AF010000 		.4byte	.LASF4
  126 003f 02       		.byte	0x2
@@ -237,8 +237,8 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 1
  138 0057 02       		.uleb128 0x2
  139 0058 04       		.byte	0x4
  140 0059 05       		.byte	0x5
- 141 005a C0020000 		.4byte	.LASF6
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 5
+ 141 005a 01030000 		.4byte	.LASF6
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccR9qM11.s 			page 5
 
 
  142 005e 02       		.uleb128 0x2
@@ -248,7 +248,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 1
  146 0065 02       		.uleb128 0x2
  147 0066 08       		.byte	0x8
  148 0067 05       		.byte	0x5
- 149 0068 64020000 		.4byte	.LASF8
+ 149 0068 A5020000 		.4byte	.LASF8
  150 006c 02       		.uleb128 0x2
  151 006d 08       		.byte	0x8
  152 006e 07       		.byte	0x7
@@ -262,12 +262,12 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 1
  160 007c 07       		.byte	0x7
  161 007d F4010000 		.4byte	.LASF10
  162 0081 03       		.uleb128 0x3
- 163 0082 9E020000 		.4byte	.LASF11
+ 163 0082 DF020000 		.4byte	.LASF11
  164 0086 03       		.byte	0x3
  165 0087 24       		.byte	0x24
  166 0088 3A000000 		.4byte	0x3a
  167 008c 03       		.uleb128 0x3
- 168 008d 53020000 		.4byte	.LASF12
+ 168 008d 94020000 		.4byte	.LASF12
  169 0091 03       		.byte	0x3
  170 0092 2C       		.byte	0x2c
  171 0093 4C000000 		.4byte	0x4c
@@ -282,11 +282,11 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 1
  180 00a5 02       		.uleb128 0x2
  181 00a6 01       		.byte	0x1
  182 00a7 08       		.byte	0x8
- 183 00a8 72020000 		.4byte	.LASF15
+ 183 00a8 B3020000 		.4byte	.LASF15
  184 00ac 02       		.uleb128 0x2
  185 00ad 08       		.byte	0x8
  186 00ae 04       		.byte	0x4
- 187 00af C9020000 		.4byte	.LASF16
+ 187 00af 0A030000 		.4byte	.LASF16
  188 00b3 03       		.uleb128 0x3
  189 00b4 5C010000 		.4byte	.LASF17
  190 00b8 04       		.byte	0x4
@@ -298,10 +298,10 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 1
  196 00c4 54       		.byte	0x54
  197 00c5 7A000000 		.4byte	0x7a
  198 00c9 03       		.uleb128 0x3
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 6
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccR9qM11.s 			page 6
 
 
- 199 00ca 77020000 		.4byte	.LASF19
+ 199 00ca B8020000 		.4byte	.LASF19
  200 00ce 05       		.byte	0x5
  201 00cf 4D       		.byte	0x4d
  202 00d0 BE000000 		.4byte	0xbe
@@ -323,14 +323,14 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 1
  218 00f6 02       		.uleb128 0x2
  219 00f7 04       		.byte	0x4
  220 00f8 07       		.byte	0x7
- 221 00f9 5B020000 		.4byte	.LASF23
+ 221 00f9 9C020000 		.4byte	.LASF23
  222 00fd 03       		.uleb128 0x3
  223 00fe BA010000 		.4byte	.LASF24
  224 0102 07       		.byte	0x7
  225 0103 21       		.byte	0x21
  226 0104 EA000000 		.4byte	0xea
  227 0108 03       		.uleb128 0x3
- 228 0109 E1020000 		.4byte	.LASF25
+ 228 0109 22030000 		.4byte	.LASF25
  229 010d 08       		.byte	0x8
  230 010e 66       		.byte	0x66
  231 010f 13010000 		.4byte	0x113
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 1
  253 013d 08       		.byte	0x8
  254 013e 77       		.byte	0x77
  255 013f EA000000 		.4byte	0xea
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 7
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccR9qM11.s 			page 7
 
 
  256 0143 04       		.byte	0x4
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 1
  310 01a8 26000000 		.4byte	.LVL3
  311 01ac 6D020000 		.4byte	0x26d
  312 01b0 0F       		.uleb128 0xf
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 8
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccR9qM11.s 			page 8
 
 
  313 01b1 01       		.uleb128 0x1
@@ -444,7 +444,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 1
  333 01d1 47       		.byte	0x47
  334 01d2 D4000000 		.4byte	0xd4
  335 01d6 12       		.uleb128 0x12
- 336 01d7 2A020000 		.4byte	.LASF30
+ 336 01d7 6B020000 		.4byte	.LASF30
  337 01db 09       		.byte	0x9
  338 01dc 4A       		.byte	0x4a
  339 01dd C9000000 		.4byte	0xc9
@@ -454,7 +454,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 1
  343 01e7 48       		.byte	0x48
  344 01e8 DF000000 		.4byte	0xdf
  345 01ec 12       		.uleb128 0x12
- 346 01ed 7F020000 		.4byte	.LASF32
+ 346 01ed C0020000 		.4byte	.LASF32
  347 01f1 0B       		.byte	0xb
  348 01f2 44       		.byte	0x44
  349 01f3 C9000000 		.4byte	0xc9
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 1
  367 021e 9B000000 		.4byte	.LASF34
  368 0222 01       		.byte	0x1
  369 0223 2C       		.byte	0x2c
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 9
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccR9qM11.s 			page 9
 
 
  370 0224 2E020000 		.4byte	0x22e
@@ -503,8 +503,8 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 1
  389 0252 0D       		.byte	0xd
  390 0253 5901     		.2byte	0x159
  391 0255 19       		.uleb128 0x19
- 392 0256 EF020000 		.4byte	.LASF37
- 393 025a EF020000 		.4byte	.LASF37
+ 392 0256 30030000 		.4byte	.LASF37
+ 393 025a 30030000 		.4byte	.LASF37
  394 025e 0D       		.byte	0xd
  395 025f 5401     		.2byte	0x154
  396 0261 19       		.uleb128 0x19
@@ -513,8 +513,8 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 1
  399 026a 0D       		.byte	0xd
  400 026b 4F01     		.2byte	0x14f
  401 026d 1A       		.uleb128 0x1a
- 402 026e 3D020000 		.4byte	.LASF39
- 403 0272 3D020000 		.4byte	.LASF39
+ 402 026e 7E020000 		.4byte	.LASF39
+ 403 0272 7E020000 		.4byte	.LASF39
  404 0276 08       		.byte	0x8
  405 0277 97       		.byte	0x97
  406 0278 00       		.byte	0
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 1
  424 000f 10       		.uleb128 0x10
  425 0010 17       		.uleb128 0x17
  426 0011 00       		.byte	0
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 10
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccR9qM11.s 			page 10
 
 
  427 0012 00       		.byte	0
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 1
  481 0048 49       		.uleb128 0x49
  482 0049 13       		.uleb128 0x13
  483 004a 00       		.byte	0
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 11
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccR9qM11.s 			page 11
 
 
  484 004b 00       		.byte	0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 1
  538 0081 49       		.uleb128 0x49
  539 0082 13       		.uleb128 0x13
  540 0083 38       		.uleb128 0x38
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 12
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccR9qM11.s 			page 12
 
 
  541 0084 0B       		.uleb128 0xb
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 1
  595 00be 00       		.byte	0
  596 00bf 00       		.byte	0
  597 00c0 0F       		.uleb128 0xf
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 13
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccR9qM11.s 			page 13
 
 
  598 00c1 8A8201   		.uleb128 0x410a
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 1
  652 00fe 3F       		.uleb128 0x3f
  653 00ff 19       		.uleb128 0x19
  654 0100 3C       		.uleb128 0x3c
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 14
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccR9qM11.s 			page 14
 
 
  655 0101 19       		.uleb128 0x19
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 1
  709 0137 00       		.byte	0
  710 0138 3F       		.uleb128 0x3f
  711 0139 19       		.uleb128 0x19
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 15
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccR9qM11.s 			page 15
 
 
  712 013a 3C       		.uleb128 0x3c
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 1
  762      01010101 
  763              	.LASF43:
  764 0000 46756E63 		.ascii	"Functsk_control\000"
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 16
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccR9qM11.s 			page 16
 
 
  764      74736B5F 
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 1
  786      7200
  787              	.LASF40:
  788 00ce 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 17
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccR9qM11.s 			page 17
 
 
  788      43313120 
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 1
  806      00
  807              	.LASF26:
  808 01d5 6576656E 		.ascii	"event\000"
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 18
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccR9qM11.s 			page 18
 
 
  808      7400
@@ -1046,88 +1046,90 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 1
  818      6720756E 
  818      7369676E 
  818      65642069 
- 819              	.LASF30:
- 820 022a 45455F41 		.ascii	"EE_ApplicationMode\000"
- 820      70706C69 
- 820      63617469 
- 820      6F6E4D6F 
- 820      646500
- 821              	.LASF39:
- 822 023d 5254455F 		.ascii	"RTE_ProcessEventTable\000"
- 822      50726F63 
- 822      65737345 
- 822      76656E74 
- 822      5461626C 
- 823              	.LASF12:
- 824 0253 696E7433 		.ascii	"int32_t\000"
- 824      325F7400 
- 825              	.LASF23:
- 826 025b 73697A65 		.ascii	"sizetype\000"
- 826      74797065 
- 826      00
- 827              	.LASF8:
- 828 0264 6C6F6E67 		.ascii	"long long int\000"
- 828      206C6F6E 
- 828      6720696E 
- 828      7400
- 829              	.LASF15:
- 830 0272 63686172 		.ascii	"char\000"
- 830      00
- 831              	.LASF19:
- 832 0277 45455F55 		.ascii	"EE_UREG\000"
- 832      52454700 
- 833              	.LASF32:
- 834 027f 45455F49 		.ascii	"EE_IRQ_nesting_level\000"
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccJipnIo.s 			page 19
+ 819              	.LASF42:
+ 820 022a 433A5C53 		.ascii	"C:\\Sandbox\\Sem2\\EAA\\Lab\\Lab01\\Lab01EAA\\EGasP"
+ 820      616E6462 
+ 820      6F785C53 
+ 820      656D325C 
+ 820      4541415C 
+ 821 0256 6564616C 		.ascii	"edal\\EGasPedal.cydsn\000"
+ 821      5C454761 
+ 821      73506564 
+ 821      616C2E63 
+ 821      7964736E 
+ 822              	.LASF30:
+ 823 026b 45455F41 		.ascii	"EE_ApplicationMode\000"
+ 823      70706C69 
+ 823      63617469 
+ 823      6F6E4D6F 
+ 823      646500
+ 824              	.LASF39:
+ 825 027e 5254455F 		.ascii	"RTE_ProcessEventTable\000"
+ 825      50726F63 
+ 825      65737345 
+ 825      76656E74 
+ 825      5461626C 
+ 826              	.LASF12:
+ 827 0294 696E7433 		.ascii	"int32_t\000"
+ 827      325F7400 
+ 828              	.LASF23:
+ 829 029c 73697A65 		.ascii	"sizetype\000"
+ 829      74797065 
+ 829      00
+ 830              	.LASF8:
+ 831 02a5 6C6F6E67 		.ascii	"long long int\000"
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccR9qM11.s 			page 19
 
 
- 834      52515F6E 
- 834      65737469 
- 834      6E675F6C 
- 834      6576656C 
- 835              	.LASF2:
- 836 0294 73686F72 		.ascii	"short int\000"
- 836      7420696E 
- 836      7400
- 837              	.LASF11:
- 838 029e 75696E74 		.ascii	"uint16_t\000"
- 838      31365F74 
- 838      00
- 839              	.LASF41:
- 840 02a7 736F7572 		.ascii	"source\\asw\\tsk_control.c\000"
- 840      63655C61 
- 840      73775C74 
- 840      736B5F63 
- 840      6F6E7472 
- 841              	.LASF6:
- 842 02c0 6C6F6E67 		.ascii	"long int\000"
- 842      20696E74 
- 842      00
- 843              	.LASF16:
- 844 02c9 6C6F6E67 		.ascii	"long double\000"
- 844      20646F75 
- 844      626C6500 
- 845              	.LASF0:
- 846 02d5 7369676E 		.ascii	"signed char\000"
- 846      65642063 
- 846      68617200 
- 847              	.LASF25:
- 848 02e1 5254455F 		.ascii	"RTE_pRunnable\000"
- 848      7052756E 
- 848      6E61626C 
- 848      6500
- 849              	.LASF37:
- 850 02ef 45455F6F 		.ascii	"EE_oo_GetEvent\000"
- 850      6F5F4765 
- 850      74457665 
- 850      6E7400
- 851              	.LASF42:
- 852 02fe 433A5C53 		.ascii	"C:\\Sandbox\\Sem2\\EAA\\Lab\\Lab01\\Lab01EAA\\EGasP"
- 852      616E6462 
- 852      6F785C53 
- 852      656D325C 
- 852      4541415C 
- 853 032a 6564616C 		.ascii	"edal.cydsn\000"
- 853      2E637964 
- 853      736E00
+ 831      206C6F6E 
+ 831      6720696E 
+ 831      7400
+ 832              	.LASF15:
+ 833 02b3 63686172 		.ascii	"char\000"
+ 833      00
+ 834              	.LASF19:
+ 835 02b8 45455F55 		.ascii	"EE_UREG\000"
+ 835      52454700 
+ 836              	.LASF32:
+ 837 02c0 45455F49 		.ascii	"EE_IRQ_nesting_level\000"
+ 837      52515F6E 
+ 837      65737469 
+ 837      6E675F6C 
+ 837      6576656C 
+ 838              	.LASF2:
+ 839 02d5 73686F72 		.ascii	"short int\000"
+ 839      7420696E 
+ 839      7400
+ 840              	.LASF11:
+ 841 02df 75696E74 		.ascii	"uint16_t\000"
+ 841      31365F74 
+ 841      00
+ 842              	.LASF41:
+ 843 02e8 736F7572 		.ascii	"source\\asw\\tsk_control.c\000"
+ 843      63655C61 
+ 843      73775C74 
+ 843      736B5F63 
+ 843      6F6E7472 
+ 844              	.LASF6:
+ 845 0301 6C6F6E67 		.ascii	"long int\000"
+ 845      20696E74 
+ 845      00
+ 846              	.LASF16:
+ 847 030a 6C6F6E67 		.ascii	"long double\000"
+ 847      20646F75 
+ 847      626C6500 
+ 848              	.LASF0:
+ 849 0316 7369676E 		.ascii	"signed char\000"
+ 849      65642063 
+ 849      68617200 
+ 850              	.LASF25:
+ 851 0322 5254455F 		.ascii	"RTE_pRunnable\000"
+ 851      7052756E 
+ 851      6E61626C 
+ 851      6500
+ 852              	.LASF37:
+ 853 0330 45455F6F 		.ascii	"EE_oo_GetEvent\000"
+ 853      6F5F4765 
+ 853      74457665 
+ 853      6E7400
  854              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

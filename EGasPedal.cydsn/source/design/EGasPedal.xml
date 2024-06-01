@@ -34,7 +34,7 @@
  </signalpools>
  <tasks>
   <task description="Task for IO operations, joystick, engine" events="" mode="Cyclic" name="tsk_io" shortname="io" signalpoolsRO="sp_common" signalpoolsRW="sp_common" tickEvent="0" timertickperiod="1"/>
-  <task description="Task for age increments" events="" mode="Cyclic" name="tsk_system" shortname="system" signalpoolsRO="sp_common" signalpoolsRW="sp_common" tickEvent="0" timertickperiod="1"/>
+  <task description="Task for age increments" events="" mode="System" name="tsk_system" shortname="system" signalpoolsRO="sp_common" signalpoolsRW="sp_common" tickEvent="0" timertickperiod="1"/>
   <task description="Task for control calculation and brake" events="ev_joystick_onData" mode="Event" name="tsk_control" shortname="control" signalpoolsRO="sp_common" signalpoolsRW="sp_common" tickEvent="0" timertickperiod="1"/>
  </tasks>
  <signalclasses>
@@ -54,14 +54,12 @@
   <swc description="Software component" name="swc_control" shortname="control"/>
   <swc description="Software component" name="swc_engine" shortname="engine"/>
   <swc description="Software component" name="swc_joystick" shortname="joystick"/>
-  <swc description="Software component" name="swc_age" shortname="age"/>
  </swcs>
  <runnables>
   <runnable component="swc_joystick" cycletime="10" description="Runnable" events="" name="JOYSTICK_readJoystick_run" shortname="readJoystick" signalIN="" signalOUT="so_joystick" task="tsk_io"/>
   <runnable component="swc_control" cycletime="0" description="Runnable for joystick" events="ev_joystick_onData" name="CONTROL_calcControl_run" shortname="calcControl" signalIN="so_joystick" signalOUT="so_speed" task="tsk_control"/>
   <runnable component="swc_engine" cycletime="100" description="Runnable" events="" name="ENGINE_setEngine_run" shortname="setEngine" signalIN="so_speed" signalOUT="so_engine" task="tsk_io"/>
   <runnable component="swc_brakelight" cycletime="0" description="Runnable" events="ev_speed_onData" name="BRAKELIGHT_setBrakeLight_run" shortname="setBrakeLight" signalIN="so_speed" signalOUT="so_brake" task="tsk_control"/>
-  <runnable component="swc_age" cycletime="1" description="Runnable" events="" name="AGE_ageMeas_run" shortname="ageMeas" signalIN="" signalOUT="" task="tsk_system"/>
  </runnables>
  <events>
   <event description="gjghj" name="ev_joystick_onData" shortname="joystick_onData"/>

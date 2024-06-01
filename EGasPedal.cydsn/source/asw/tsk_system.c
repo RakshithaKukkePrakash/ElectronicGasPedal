@@ -5,7 +5,7 @@
  *
  * description: Task for age increments
  * events: 
- * mode: Cyclic
+ * mode: System
  * name: tsk_system
  * shortname: system
  * signalpoolsRO: sp_common
@@ -24,10 +24,9 @@
 
 
 /* USER CODE START TSK_SYSTEM_INCLUDE */
-
+#include "sp_common.h"
 /* USER CODE END TSK_SYSTEM_INCLUDE */
 
-#include "swc_age.h"
 
 
 
@@ -39,13 +38,6 @@
  * Runnable Tables from Activation Engine
  *******************************************************************************/
 
-/* Cyclic Table */
-
-const RTE_cyclicTable_t RTE_cyclicActivationTable_tsk_system[] = {
-	{ AGE_ageMeas_run, 1 },	//Runnable
-};
-const uint16_t RTE_cyclicActivation_tsk_system_size = sizeof (RTE_cyclicActivationTable_tsk_system) / sizeof(RTE_cyclicTable_t); 
-
 
 /*******************************************************************************
  * Task Body
@@ -55,7 +47,7 @@ const uint16_t RTE_cyclicActivation_tsk_system_size = sizeof (RTE_cyclicActivati
 /*
  * description: Task for age increments
  * events: 
- * mode: Cyclic
+ * mode: System
  * name: tsk_system
  * shortname: system
  * signalpoolsRO: sp_common
@@ -65,27 +57,22 @@ const uint16_t RTE_cyclicActivation_tsk_system_size = sizeof (RTE_cyclicActivati
  */
 TASK(tsk_system)
 {
-	/* ticktime of the task */
-	static uint32_t ticktime = 0;
-
+	//Increment the age of all signals
+	//Ticktime of the task: 1 ms
+    
 	/* USER CODE START TSK_SYSTEM_TASKBOBY_PRE */
 
 	/* USER CODE END TSK_SYSTEM_TASKBODY_PRE */
-    
-    //Process all cyclic runnables which are due
-    RTE_ProcessCyclicTable(RTE_cyclicActivationTable_tsk_system, RTE_cyclicActivation_tsk_system_size, ticktime);
 	
-	/* USER CODE START TSK_SYSTEM_TASKBODY_POST */
+    // tick for signalpool sp_common
+    RTE_timertick_sp_common_tick(1);
+    
+    /* USER CODE START TSK_SYSTEM_TASKBODY_POST */
 
 		/* USER CODE END TSK_SYSTEM_TASKBODY_POST */
-
-	ticktime += 1;
-	if (ticktime > 0xFFFFFF00) ticktime = 0;
 	
 	TerminateTask();
-    
 }
-
 
 /*******************************************************************************
  * Interrupt Service Routines

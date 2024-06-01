@@ -23,7 +23,7 @@
 /*
  * description: Task for age increments
  * events: 
- * mode: Cyclic
+ * mode: System
  * name: tsk_system
  * shortname: system
  * signalpoolsRO: sp_common

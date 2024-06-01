@@ -1,6 +1,6 @@
-Loading plugins phase: Elapsed time ==> 0s.151ms
+Loading plugins phase: Elapsed time ==> 0s.148ms
 <CYPRESSTAG name="CyDsfit arguments...">
-cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal.cydsn\EGasPedal.cyprj -d CY8C5888LTI-LP097 -s C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal.cydsn\Generated_Source\PSoC5 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\EGasPedal.cyprj -d CY8C5888LTI-LP097 -s C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\Generated_Source\PSoC5 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
 </CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 ADD: sdb.M0065: information: Analog terminal "vdac_ref" on ADC_SAR_SEQ_v2_10 is unconnected.
@@ -9,10 +9,10 @@ ADD: sdb.M0065: information: Analog terminal "vdac_ref" on ADC_SAR_SEQ_v2_10 is 
  * C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\ADC_SAR_SEQ_v2_10\PSoC5\ADC_SAR_SEQ_v2_10.cysch (Shape_885)
 
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 1s.687ms
+Elaboration phase: Elapsed time ==> 1s.818ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.046ms
+HDL generation phase: Elapsed time ==> 0s.043ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -30,23 +30,23 @@ HDL generation phase: Elapsed time ==> 0s.046ms
 ======================================================================
 Compiling:  EGasPedal.v
 Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\bin\warp.exe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal.cydsn\EGasPedal.cyprj -dcpsoc3 EGasPedal.v -verilog
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\EGasPedal.cyprj -dcpsoc3 EGasPedal.v -verilog
 ======================================================================
 
 ======================================================================
 Compiling:  EGasPedal.v
 Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\bin\warp.exe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal.cydsn\EGasPedal.cyprj -dcpsoc3 EGasPedal.v -verilog
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\EGasPedal.cyprj -dcpsoc3 EGasPedal.v -verilog
 ======================================================================
 
 ======================================================================
 Compiling:  EGasPedal.v
 Program  :   vlogfe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal.cydsn\EGasPedal.cyprj -dcpsoc3 -verilog EGasPedal.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\EGasPedal.cyprj -dcpsoc3 -verilog EGasPedal.v
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Sat Jun 01 21:19:53 2024
+Sat Jun 01 21:36:10 2024
 
 
 ======================================================================
@@ -56,7 +56,7 @@ Options  :    -yv2 -q10 EGasPedal.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Sat Jun 01 21:19:53 2024
+Sat Jun 01 21:36:10 2024
 
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\ADC_AMUX_v2_0\ADC_AMUX_v2_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\cypress.v'
@@ -112,11 +112,11 @@ vlogfe:  No errors.
 ======================================================================
 Compiling:  EGasPedal.v
 Program  :   tovif
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal.cydsn\EGasPedal.cyprj -dcpsoc3 -verilog EGasPedal.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\EGasPedal.cyprj -dcpsoc3 -verilog EGasPedal.v
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Sat Jun 01 21:19:53 2024
+Sat Jun 01 21:36:10 2024
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -127,11 +127,11 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Linking 'C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal.cydsn\codegentemp\EGasPedal.ctl'.
+Linking 'C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\EGasPedal.ctl'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\ADC_AMUX_v2_0\ADC_AMUX_v2_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\cypress.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\cy_psoc3_inc.v'.
-Linking 'C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal.cydsn\codegentemp\EGasPedal.v'.
+Linking 'C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\EGasPedal.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_analog_virtualmux_v1_0\cy_analog_virtualmux_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
@@ -154,11 +154,11 @@ tovif:  No errors.
 ======================================================================
 Compiling:  EGasPedal.v
 Program  :   topld
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal.cydsn\EGasPedal.cyprj -dcpsoc3 -verilog EGasPedal.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\EGasPedal.cyprj -dcpsoc3 -verilog EGasPedal.v
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Sat Jun 01 21:19:54 2024
+Sat Jun 01 21:36:11 2024
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -169,11 +169,11 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Linking 'C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal.cydsn\codegentemp\EGasPedal.ctl'.
+Linking 'C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\EGasPedal.ctl'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\ADC_AMUX_v2_0\ADC_AMUX_v2_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\cypress.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\cy_psoc3_inc.v'.
-Linking 'C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal.cydsn\codegentemp\EGasPedal.v'.
+Linking 'C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\EGasPedal.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_analog_virtualmux_v1_0\cy_analog_virtualmux_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
@@ -2098,16 +2098,16 @@ topld:  No errors.
 
 CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\bin\warp.exe
-Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal.cydsn\EGasPedal.cyprj -dcpsoc3 EGasPedal.v -verilog
+Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\EGasPedal.cyprj -dcpsoc3 EGasPedal.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 1s.423ms
+Warp synthesis phase: Elapsed time ==> 1s.585ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V4.4.0.80, Family: PSoC3, Started at: Saturday, 01 June 2024 21:19:54
-Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal.cydsn\EGasPedal.cyprj -d CY8C5888LTI-LP097 EGasPedal.v -verilog
+cyp3fit: V4.4.0.80, Family: PSoC3, Started at: Saturday, 01 June 2024 21:36:12
+Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\EGasPedal.cyprj -d CY8C5888LTI-LP097 EGasPedal.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 0s.025ms
+Design parsing phase: Elapsed time ==> 0s.022ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech Mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
@@ -4924,8 +4924,8 @@ Analog (SC/CT) Blocks         :    0 :    4 :    4 :  0.00 %
 DAC                           :      :      :      :        
   VIDAC                       :    0 :    4 :    4 :  0.00 %
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 0s.234ms
-Tech Mapping phase: Elapsed time ==> 0s.289ms
+Technology Mapping: Elapsed time ==> 0s.243ms
+Tech Mapping phase: Elapsed time ==> 0s.295ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 Info: apr.M0002: Analog signal "Net_136" is connected to one terminal only. (App=cydsfit)
@@ -5015,10 +5015,10 @@ IO_7@[IOP=(12)][IoId=(7)] : Tx_port(0) (fixed)
 SAR[0]@[FFB(SAR,0)] : \Joystick_ADC:SAR:ADC_SAR\
 Vref[13]@[FFB(Vref,13)] : \Joystick_ADC:SAR:vRef_Vdda_1\
 
-Analog Placement phase: Elapsed time ==> 1s.499ms
+Analog Placement phase: Elapsed time ==> 2s.055ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
-Analog Routing phase: Elapsed time ==> 0s.001ms
+Analog Routing phase: Elapsed time ==> 0s.006ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Code Generation">
 ============ Analog Final Answer Routes ============
@@ -5673,11 +5673,11 @@ Dump of CyP35AnalogRoutingResultsDB
 IsVddaHalfUsedForComp = False
 IsVddaHalfUsedForSar0 = True
 IsVddaHalfUsedForSar1 = False
-Analog Code Generation phase: Elapsed time ==> 0s.200ms
+Analog Code Generation phase: Elapsed time ==> 0s.330ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
-I2076: Total run-time: 2.6 sec.
+I2076: Total run-time: 2.7 sec.
 
 </CYPRESSTAG>
 <CYPRESSTAG name="PLD Packing">
@@ -5701,14 +5701,14 @@ PLD Packing Summary
 <CYPRESSTAG name="Packed PLD Contents">
 Packed PLD Contents not displayed at this verbose level.</CYPRESSTAG>
 </CYPRESSTAG>
-PLD Packing: Elapsed time ==> 0s.002ms
+PLD Packing: Elapsed time ==> 0s.003ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Partitioning">
 <CYPRESSTAG name="Initial Partitioning Summary">
 Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <CYPRESSTAG name="Final Partitioning Summary">
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
-Partitioning: Elapsed time ==> 0s.055ms
+Partitioning: Elapsed time ==> 0s.064ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Final Placement Summary">
 
@@ -8999,33 +8999,33 @@ Port | Pin | Fixed |      Type |       Drive Mode |             Name | Connectio
 </CYPRESSTAG>
 </CYPRESSTAG>
 </CYPRESSTAG>
-Digital component placer commit/Report: Elapsed time ==> 0s.146ms
-Digital Placement phase: Elapsed time ==> 3s.056ms
+Digital component placer commit/Report: Elapsed time ==> 0s.147ms
+Digital Placement phase: Elapsed time ==> 3s.272ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\bin/sjrouter.exe" --xml-path "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc5/psoc5lp/route_arch-rrg.cydata" --vh2-path "EGasPedal_r.vh2" --pcf-path "EGasPedal.pco" --des-name "EGasPedal" --dsf-path "EGasPedal.dsf" --sdc-path "EGasPedal.sdc" --lib-path "EGasPedal_r.lib"
 Routing successful.
-Digital Routing phase: Elapsed time ==> 2s.764ms
+Digital Routing phase: Elapsed time ==> 2s.992ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Generation">
-Bitstream Generation phase: Elapsed time ==> 0s.135ms
+Bitstream Generation phase: Elapsed time ==> 0s.131ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Verification">
 Bitstream Verification phase: Elapsed time ==> 0s.025ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
 Timing report is in EGasPedal_timing.html.
-Static timing analysis phase: Elapsed time ==> 0s.376ms
+Static timing analysis phase: Elapsed time ==> 0s.436ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
 Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.283ms
+Design database save phase: Elapsed time ==> 0s.277ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 8s.791ms
+cydsfit: Elapsed time ==> 9s.984ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 8s.791ms
-API generation phase: Elapsed time ==> 1s.569ms
-Dependency generation phase: Elapsed time ==> 0s.018ms
-Cleanup phase: Elapsed time ==> 0s.002ms
+Fitter phase: Elapsed time ==> 9s.985ms
+API generation phase: Elapsed time ==> 1s.864ms
+Dependency generation phase: Elapsed time ==> 0s.016ms
+Cleanup phase: Elapsed time ==> 0s.001ms

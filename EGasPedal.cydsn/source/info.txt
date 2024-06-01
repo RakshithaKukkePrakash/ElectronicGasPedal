@@ -70,18 +70,11 @@ tasks:
             
     tsk_system:
         timertickperiod: 1
-        mode: Cyclic
+        mode: System
         signalpoolsRO: sp_common
         signalpoolsRW: sp_common
         events: 
         runnables:
-                AGE_ageMeas_run:
-                    task: tsk_system
-                    cycletime: 1
-                    events: 
-                    signalIN: 
-                    signalOUT: 
-            
     tsk_control:
         timertickperiod: 1
         mode: Event
@@ -139,13 +132,4 @@ swc:
                     events: 
                     signalIN: 
                     signalOUT: so_joystick
-            
-    swc_age:
-        runnables:
-                AGE_ageMeas_run:
-                    task: tsk_system
-                    cycletime: 1
-                    events: 
-                    signalIN: 
-                    signalOUT:
 

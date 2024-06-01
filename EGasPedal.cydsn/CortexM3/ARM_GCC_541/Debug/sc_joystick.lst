@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccBqXE8Z.s 			page 1
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cccOcOAo.s 			page 1
 
 
    1              		.syntax unified
@@ -45,11 +45,13 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccBqXE8Z.s 			page 1
   28      6F785C53 
   28      656D325C 
   28      4541415C 
-  29 00ba 6564616C 		.ascii	"edal.cydsn\000"
-  29      2E637964 
-  29      736E00
+  29 00ba 6564616C 		.ascii	"edal\\EGasPedal.cydsn\000"
+  29      5C454761 
+  29      73506564 
+  29      616C2E63 
+  29      7964736E 
   30              	.LASF2:
-  31 00c5 736F7572 		.ascii	"source\\rte\\sc_joystick.c\000"
+  31 00cf 736F7572 		.ascii	"source\\rte\\sc_joystick.c\000"
   31      63655C72 
   31      74655C73 
   31      635F6A6F 

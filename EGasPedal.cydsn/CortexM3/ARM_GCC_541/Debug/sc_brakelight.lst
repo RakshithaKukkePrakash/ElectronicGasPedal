@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\acer\AppData\Local\Temp\cc76kCDy.s 			page 1
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccBtAC5a.s 			page 1
 
 
    1              		.syntax unified
@@ -51,7 +51,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\cc76kCDy.s 			page 1
   30      6F785C53 
   30      656D325C 
   30      4541415C 
-  31 00d5 6564616C 		.ascii	"edal.cydsn\000"
-  31      2E637964 
-  31      736E00
+  31 00d5 6564616C 		.ascii	"edal\\EGasPedal.cydsn\000"
+  31      5C454761 
+  31      73506564 
+  31      616C2E63 
+  31      7964736E 
   32              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
