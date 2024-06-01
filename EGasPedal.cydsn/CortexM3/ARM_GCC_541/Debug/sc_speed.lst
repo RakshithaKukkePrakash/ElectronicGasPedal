@@ -1,0 +1,57 @@
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccDV3v0g.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"sc_speed.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              	.Letext0:
+  20              		.section	.debug_line,"",%progbits
+  21              	.Ldebug_line0:
+  22              		.section	.debug_str,"MS",%progbits,1
+  23              	.LASF0:
+  24 0000 736F7572 		.ascii	"source\\rte\\sc_speed.c\000"
+  24      63655C72 
+  24      74655C73 
+  24      635F7370 
+  24      6565642E 
+  25              	.LASF1:
+  26 0016 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+  26      43313120 
+  26      352E342E 
+  26      31203230 
+  26      31363036 
+  27 0049 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+  27      20726576 
+  27      6973696F 
+  27      6E203233 
+  27      37373135 
+  28 007c 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+  28      66756E63 
+  28      74696F6E 
+  28      2D736563 
+  28      74696F6E 
+  29              	.LASF2:
+  30 00a4 433A5C53 		.ascii	"C:\\Sandbox\\Sem2\\EAA\\Lab\\Lab01\\Lab01EAA\\EGasP"
+  30      616E6462 
+  30      6F785C53 
+  30      656D325C 
+  30      4541415C 
+  31 00d0 6564616C 		.ascii	"edal.cydsn\000"
+  31      2E637964 
+  31      736E00
+  32              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
