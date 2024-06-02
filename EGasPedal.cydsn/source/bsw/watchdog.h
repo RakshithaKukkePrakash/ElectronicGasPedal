@@ -86,7 +86,7 @@
 // Wrapper to allow representing the file in Together as class
 #ifdef TOGETHER
 
-class PWM
+class watchdog
 {
 public:
 #endif /* Together */
@@ -94,7 +94,10 @@ public:
 /*****************************************************************************/
 /* Extern global variables                                                   */
 /*****************************************************************************/
-
+typedef enum{
+    CYWDT_1024_TICKS,
+    
+}WDT_TimeOut_t;
 
 
 /*****************************************************************************/
@@ -105,7 +108,7 @@ public:
 * \param WDT_TimeOut_t timeout - [IN] Timeout Period
 * @return RC_SUCCESS
 */
-//RC_t WD_Start(WDT_TimeOut_t timeout);
+RC_t WD_Start(WDT_TimeOut_t timeout);
 
 /**
 * Service the Watchdog Trigger
@@ -118,6 +121,12 @@ RC_t WD_Trigger();
 * @return TRUE if watchdog reset bit was set
 */
 boolean_t WD_CheckResetBit();
+
+/**
+* Sets the bit at the corresponding position
+* @return RC_SUCCESS
+*/
+RC_t WD_Alive(uint8_t myBitPosition);
 /*****************************************************************************/
 /* Private stuff, only visible for Together, declared static in cpp - File   */
 /*****************************************************************************/

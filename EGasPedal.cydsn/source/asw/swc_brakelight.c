@@ -57,6 +57,8 @@ void BRAKELIGHT_setBrakeLight_run(RTE_event ev){
 
     RTE_SC_BRAKELIGHT_set(&SO_BRAKE_signal, brakeSig);
     RTE_SC_BRAKELIGHT_pushPort(&SO_BRAKE_signal);
+    
+    //WD_Alive(3);
     /* USER CODE END BRAKELIGHT_setBrakeLight_run */
 }
 

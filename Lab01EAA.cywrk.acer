@@ -18,7 +18,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Lab01EAA\EGasPedal\asw\tsk_system.c">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Lab01EAA\EGasPedal\asw\swc_brakelight.c">
 <ExpandedNodeIds>
 <v>Lab01EAA</v>
 <v>Lab01EAA\EGasPedal</v>
@@ -86,10 +86,6 @@
 <v>Lab01EAA\EGasPedal\Generated_Source\PSoC5\UART_LOG</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
-<v>Lab01EAA\EGasPedal\EGasPedal.cydwr\Clocks</v>
-<v>Lab01EAA\EGasPedal\EGasPedal.cydwr\Interrupts</v>
-<v>Lab01EAA\EGasPedal\EGasPedal.cydwr\DMA</v>
-<v>Lab01EAA\EGasPedal\EGasPedal.cydwr\System</v>
 <v>Lab01EAA\EGasPedal\EGasPedal.cydwr\Directives</v>
 <v>Lab01EAA\EGasPedal\EGasPedal.cydwr\Flash Security</v>
 <v>Lab01EAA\EGasPedal\EGasPedal.cydwr\EEPROM</v>
@@ -121,6 +117,10 @@
 <v>Lab01EAA\EGasPedal\bsw\watchdog.h</v>
 <v>Lab01EAA\EGasPedal\rte</v>
 <v>Lab01EAA\EGasPedal\rte\rte.c</v>
+<v>Lab01EAA\EGasPedal\rte\rte.h</v>
+<v>Lab01EAA\EGasPedal\rte\rte_types.h</v>
+<v>Lab01EAA\EGasPedal\rte\sc_brakelight.c</v>
+<v>Lab01EAA\EGasPedal\rte\sc_brakelight.h</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Lab01EAA\EGasPedal">

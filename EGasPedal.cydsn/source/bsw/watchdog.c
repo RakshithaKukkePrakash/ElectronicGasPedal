@@ -58,17 +58,36 @@
 * \param WDT_TimeOut_t timeout - [IN] Timeout Period
 * @return RC_SUCCESS
 */
-//RC_t WD_Start(WDT_TimeOut_t timeout);
+RC_t WD_Start(WDT_TimeOut_t timeout)
+{
+    
+    CyWdtStart(timeout, 0);
+}
 
 /**
 * Service the Watchdog Trigger
 * @return RC_SUCCESS
 */
-RC_t WD_Trigger();
+RC_t WD_Trigger()
+{
+    CyWdtClear();
+    return RC_SUCCESS;
+}
+
 
 /**
 * Checks the watchdog bit
 * @return TRUE if watchdog reset bit was set
 */
-boolean_t WD_CheckResetBit();
+boolean_t WD_CheckResetBit()
+{
+    return TRUE;
+}
 
+/**
+* Sets the bit at the corresponding position
+* @return RC_SUCCESS
+*/
+RC_t WD_Alive(uint8_t myBitPosition)
+{
+}
