@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
   28:source\asw/swc_control.c **** 
   29:source\asw/swc_control.c **** /* USER CODE END SWC_CONTROL_USERDEFINITIONS */
   30:source\asw/swc_control.c **** 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 2
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 2
 
 
   31:source\asw/swc_control.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
   33:.\source\rte/sc_joystick.h ****                                                                                                    
   34:.\source\rte/sc_joystick.h **** /**
   35:.\source\rte/sc_joystick.h ****  *  Definition of function types for driver interfaces.
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 3
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 3
 
 
   36:.\source\rte/sc_joystick.h ****  *  I-Port
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
   90:.\source\rte/sc_joystick.h ****     size_t const onErrorTaskCount;
   91:.\source\rte/sc_joystick.h **** 
   92:.\source\rte/sc_joystick.h ****     /**
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 4
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 4
 
 
   93:.\source\rte/sc_joystick.h ****      * Task List onError
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  147:.\source\rte/sc_joystick.h **** /**************************************************************************************************
  148:.\source\rte/sc_joystick.h **** /* Signal initialisation   																							*/
  149:.\source\rte/sc_joystick.h **** /**************************************************************************************************
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 5
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 5
 
 
  150:.\source\rte/sc_joystick.h **** 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
   45              		.loc 1 44 0
   46 0008 30B5     		push	{r4, r5, lr}
   47              		.cfi_def_cfa_offset 12
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 6
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 6
 
 
   48              		.cfi_offset 4, -12
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  232:.\source\rte/sc_joystick.h **** 
  233:.\source\rte/sc_joystick.h **** /**
  234:.\source\rte/sc_joystick.h ****  * Should be called by application or driver if no new value can be provided.
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 7
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 7
 
 
  235:.\source\rte/sc_joystick.h ****  * @param  SC_JOYSTICK_t * const signal: Pointer to the signal object
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
   65              		.loc 1 54 0
   66 0018 5BB2     		sxtb	r3, r3
   67              	.LVL4:
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 8
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 8
 
 
   55:source\asw/swc_control.c ****         if (joystickValue <= 0) {
@@ -471,14 +471,14 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
   26:.\source\rte/sc_speed.h **** 
   27:.\source\rte/sc_speed.h **** #include "sc_speed_type.h"
   28:.\source\rte/sc_speed.h **** 
-  29:.\source\rte/sc_speed.h **** 
+  29:.\source\rte/sc_speed.h **** #include "stdlib.h"
   30:.\source\rte/sc_speed.h **** /**************************************************************************************************
   31:.\source\rte/sc_speed.h **** /* The driver API block																						*/
   32:.\source\rte/sc_speed.h **** /**************************************************************************************************
   33:.\source\rte/sc_speed.h ****                                                                                                    
   34:.\source\rte/sc_speed.h **** /**
   35:.\source\rte/sc_speed.h ****  *  Definition of function types for driver interfaces.
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 9
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 9
 
 
   36:.\source\rte/sc_speed.h ****  *  I-Port
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
   90:.\source\rte/sc_speed.h ****     size_t const onErrorTaskCount;
   91:.\source\rte/sc_speed.h **** 
   92:.\source\rte/sc_speed.h ****     /**
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 10
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 10
 
 
   93:.\source\rte/sc_speed.h ****      * Task List onError
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  147:.\source\rte/sc_speed.h **** /**************************************************************************************************
  148:.\source\rte/sc_speed.h **** /* Signal initialisation   																							*/
  149:.\source\rte/sc_speed.h **** /**************************************************************************************************
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 11
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 11
 
 
  150:.\source\rte/sc_speed.h **** 
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  204:.\source\rte/sc_speed.h ****    if (signal->status == RTE_SIGNALSTATUS_INVALID)
  205:.\source\rte/sc_speed.h ****    {
  206:.\source\rte/sc_speed.h **** 	    //Pointer to the Taskarray, containing the tasks receiving the onUpdate events
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 12
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 12
 
 
  207:.\source\rte/sc_speed.h **** 		TaskTypeArray* pTaskArray = signal->pSigCfg->onErrorTasks;
@@ -695,114 +695,126 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  238:.\source\rte/sc_speed.h ****  */
  239:.\source\rte/sc_speed.h **** inline void RTE_SC_SPEED_incAge(  SC_SPEED_t * const signal , uint32_t increment)
  240:.\source\rte/sc_speed.h **** {
- 241:.\source\rte/sc_speed.h **** 	   //Hack....
- 242:.\source\rte/sc_speed.h **** 	   if ( 0xFFFF0000 > (signal->age + increment) )
- 243:.\source\rte/sc_speed.h **** 	   {
- 244:.\source\rte/sc_speed.h **** 	      signal->age += increment;
- 245:.\source\rte/sc_speed.h **** 	   }
- 246:.\source\rte/sc_speed.h **** }
- 247:.\source\rte/sc_speed.h **** 
- 248:.\source\rte/sc_speed.h **** 
- 249:.\source\rte/sc_speed.h **** /**************************************************************************************************
- 250:.\source\rte/sc_speed.h **** /* Application Data read/write Interface																			*/
- 251:.\source\rte/sc_speed.h **** /**************************************************************************************************
- 252:.\source\rte/sc_speed.h **** 
- 253:.\source\rte/sc_speed.h **** /**
- 254:.\source\rte/sc_speed.h ****  * Returns the current application value as pointer to the signal payload.
- 255:.\source\rte/sc_speed.h ****  * Careful: This is not threadsafe!!!
- 256:.\source\rte/sc_speed.h ****  *
- 257:.\source\rte/sc_speed.h ****  * @param  SC_SPEED_t * const signal: Pointer to the signal object
- 258:.\source\rte/sc_speed.h ****  * @return sc_speed_data_t*: pointer to the current value of the application data buffer
- 259:.\source\rte/sc_speed.h ****  *
- 260:.\source\rte/sc_speed.h ****  **/
- 261:.\source\rte/sc_speed.h **** inline SC_SPEED_data_t* RTE_SC_SPEED_getPtr( SC_SPEED_t * const signal )
- 262:.\source\rte/sc_speed.h **** {               
- 263:.\source\rte/sc_speed.h ****    //Todo: Critical region cannot be protected using return values																						
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 13
+ 241:.\source\rte/sc_speed.h ****     UART_LOG_PutString("\n");
+ 242:.\source\rte/sc_speed.h ****     char log[200];
+ 243:.\source\rte/sc_speed.h ****                 itoa(signal->age, log, 10);
+ 244:.\source\rte/sc_speed.h ****             //UART_LOG_PutString("Engine speed pos\n");
+ 245:.\source\rte/sc_speed.h ****             //itoa(engineSpd.engine, log, 10);
+ 246:.\source\rte/sc_speed.h ****             UART_LOG_PutString(log); 
+ 247:.\source\rte/sc_speed.h **** 	   //Hack....
+ 248:.\source\rte/sc_speed.h **** 	   if ( 0xFFFF0000 > (signal->age + increment) )
+ 249:.\source\rte/sc_speed.h **** 	   {
+ 250:.\source\rte/sc_speed.h **** 	      signal->age += increment;
+ 251:.\source\rte/sc_speed.h **** 	   }
+ 252:.\source\rte/sc_speed.h ****         char log2[200];
+ 253:.\source\rte/sc_speed.h ****         UART_LOG_PutString("\n");
+ 254:.\source\rte/sc_speed.h ****                 itoa(signal->age, log2, 10);
+ 255:.\source\rte/sc_speed.h ****             //UART_LOG_PutString("Engine speed pos\n");
+ 256:.\source\rte/sc_speed.h ****             //itoa(engineSpd.engine, log, 10);
+ 257:.\source\rte/sc_speed.h ****             UART_LOG_PutString(log2); 
+ 258:.\source\rte/sc_speed.h **** }
+ 259:.\source\rte/sc_speed.h **** 
+ 260:.\source\rte/sc_speed.h **** 
+ 261:.\source\rte/sc_speed.h **** /**************************************************************************************************
+ 262:.\source\rte/sc_speed.h **** /* Application Data read/write Interface																			*/
+ 263:.\source\rte/sc_speed.h **** /**************************************************************************************************
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 13
 
 
- 264:.\source\rte/sc_speed.h ****    return &(signal->value);                                                                        
- 265:.\source\rte/sc_speed.h **** }
- 266:.\source\rte/sc_speed.h **** 
- 267:.\source\rte/sc_speed.h **** /**
- 268:.\source\rte/sc_speed.h ****  * Returns the current application value of the passed signal instance.
- 269:.\source\rte/sc_speed.h ****  *
- 270:.\source\rte/sc_speed.h ****  * @param  SC_SPEED_t * const signal: Pointer to the signal object
- 271:.\source\rte/sc_speed.h ****  * @return sc_speed_data_t: current value of the application data buffer
- 272:.\source\rte/sc_speed.h ****  *
- 273:.\source\rte/sc_speed.h ****  **/
- 274:.\source\rte/sc_speed.h **** inline SC_SPEED_data_t RTE_SC_SPEED_get( const SC_SPEED_t * const signal )
- 275:.\source\rte/sc_speed.h **** {               
- 276:.\source\rte/sc_speed.h ****    //Todo: Critical region cannot be protected using return values																						
- 277:.\source\rte/sc_speed.h ****    return signal->value;                                                                           
- 278:.\source\rte/sc_speed.h **** }                                                                                                  
- 279:.\source\rte/sc_speed.h ****                                                                                                    
- 280:.\source\rte/sc_speed.h **** /**
- 281:.\source\rte/sc_speed.h ****  * Returns the current application value of the passed signal instance threadsafe.
- 282:.\source\rte/sc_speed.h ****  *
- 283:.\source\rte/sc_speed.h ****  * @param  SC_SPEED_t * const signal: Pointer to the signal object
- 284:.\source\rte/sc_speed.h ****  * @param  SC_SPEED_data_t* data: Pointer to the return data Pointer to the signal object
- 285:.\source\rte/sc_speed.h ****  * @return RC_SUCCESS
- 286:.\source\rte/sc_speed.h ****  *
- 287:.\source\rte/sc_speed.h ****  **/
- 288:.\source\rte/sc_speed.h **** inline RC_t RTE_SC_SPEED_getThreadSafe( const SC_SPEED_t * const signal, SC_SPEED_data_t * const da
- 289:.\source\rte/sc_speed.h **** {    
- 290:.\source\rte/sc_speed.h ****    if (TRUE == signal->pSigCfg->resourceActive) GetResource(signal->pSigCfg->resource);
- 291:.\source\rte/sc_speed.h ****    *data = signal->value;
- 292:.\source\rte/sc_speed.h ****    if (TRUE == signal->pSigCfg->resourceActive) ReleaseResource(signal->pSigCfg->resource);        
- 293:.\source\rte/sc_speed.h **** 
- 294:.\source\rte/sc_speed.h ****    return RC_SUCCESS;                                                                   
- 295:.\source\rte/sc_speed.h ****    
- 296:.\source\rte/sc_speed.h **** }                                                                                                  
- 297:.\source\rte/sc_speed.h ****                                                                                                    
- 298:.\source\rte/sc_speed.h **** /**
- 299:.\source\rte/sc_speed.h ****  * Sets a new application value to the passed signal instance by passing the new value.
- 300:.\source\rte/sc_speed.h ****  * The corresponding driver raw value will be calculated immediately by using the default conversio
- 301:.\source\rte/sc_speed.h ****  * signal specific scaling function.
- 302:.\source\rte/sc_speed.h ****  * The signal age will be set to 0 and the new status will be 'RTE_SIGNALSTATUS_VALID'.
- 303:.\source\rte/sc_speed.h ****  *
- 304:.\source\rte/sc_speed.h ****  * @param  SC_SPEED_t * const signal: Pointer to the signal object
- 305:.\source\rte/sc_speed.h ****  * @param  sc_speed_data_t const value: value for the application data buffer
- 306:.\source\rte/sc_speed.h ****  * @return RC_t: standard return code, currently only RC_SUCCESS
- 307:.\source\rte/sc_speed.h ****  *
- 308:.\source\rte/sc_speed.h ****  **/
- 309:.\source\rte/sc_speed.h **** inline RC_t RTE_SC_SPEED_set(SC_SPEED_t * const signal, const SC_SPEED_data_t value  )
- 310:.\source\rte/sc_speed.h **** {
- 311:.\source\rte/sc_speed.h **** 
- 312:.\source\rte/sc_speed.h ****    RC_t ret = RC_SUCCESS;
- 313:.\source\rte/sc_speed.h ****    size_t taskNum=0;
- 314:.\source\rte/sc_speed.h **** 
- 315:.\source\rte/sc_speed.h **** 
- 316:.\source\rte/sc_speed.h ****    if (TRUE == signal->pSigCfg->resourceActive) GetResource(signal->pSigCfg->resource);
-  84              		.loc 3 316 0
+ 264:.\source\rte/sc_speed.h **** 
+ 265:.\source\rte/sc_speed.h **** /**
+ 266:.\source\rte/sc_speed.h ****  * Returns the current application value as pointer to the signal payload.
+ 267:.\source\rte/sc_speed.h ****  * Careful: This is not threadsafe!!!
+ 268:.\source\rte/sc_speed.h ****  *
+ 269:.\source\rte/sc_speed.h ****  * @param  SC_SPEED_t * const signal: Pointer to the signal object
+ 270:.\source\rte/sc_speed.h ****  * @return sc_speed_data_t*: pointer to the current value of the application data buffer
+ 271:.\source\rte/sc_speed.h ****  *
+ 272:.\source\rte/sc_speed.h ****  **/
+ 273:.\source\rte/sc_speed.h **** inline SC_SPEED_data_t* RTE_SC_SPEED_getPtr( SC_SPEED_t * const signal )
+ 274:.\source\rte/sc_speed.h **** {               
+ 275:.\source\rte/sc_speed.h ****    //Todo: Critical region cannot be protected using return values																						
+ 276:.\source\rte/sc_speed.h ****    return &(signal->value);                                                                        
+ 277:.\source\rte/sc_speed.h **** }
+ 278:.\source\rte/sc_speed.h **** 
+ 279:.\source\rte/sc_speed.h **** /**
+ 280:.\source\rte/sc_speed.h ****  * Returns the current application value of the passed signal instance.
+ 281:.\source\rte/sc_speed.h ****  *
+ 282:.\source\rte/sc_speed.h ****  * @param  SC_SPEED_t * const signal: Pointer to the signal object
+ 283:.\source\rte/sc_speed.h ****  * @return sc_speed_data_t: current value of the application data buffer
+ 284:.\source\rte/sc_speed.h ****  *
+ 285:.\source\rte/sc_speed.h ****  **/
+ 286:.\source\rte/sc_speed.h **** inline SC_SPEED_data_t RTE_SC_SPEED_get( const SC_SPEED_t * const signal )
+ 287:.\source\rte/sc_speed.h **** {               
+ 288:.\source\rte/sc_speed.h ****    //Todo: Critical region cannot be protected using return values																						
+ 289:.\source\rte/sc_speed.h ****    return signal->value;                                                                           
+ 290:.\source\rte/sc_speed.h **** }                                                                                                  
+ 291:.\source\rte/sc_speed.h ****                                                                                                    
+ 292:.\source\rte/sc_speed.h **** /**
+ 293:.\source\rte/sc_speed.h ****  * Returns the current application value of the passed signal instance threadsafe.
+ 294:.\source\rte/sc_speed.h ****  *
+ 295:.\source\rte/sc_speed.h ****  * @param  SC_SPEED_t * const signal: Pointer to the signal object
+ 296:.\source\rte/sc_speed.h ****  * @param  SC_SPEED_data_t* data: Pointer to the return data Pointer to the signal object
+ 297:.\source\rte/sc_speed.h ****  * @return RC_SUCCESS
+ 298:.\source\rte/sc_speed.h ****  *
+ 299:.\source\rte/sc_speed.h ****  **/
+ 300:.\source\rte/sc_speed.h **** inline RC_t RTE_SC_SPEED_getThreadSafe( const SC_SPEED_t * const signal, SC_SPEED_data_t * const da
+ 301:.\source\rte/sc_speed.h **** {    
+ 302:.\source\rte/sc_speed.h ****    if (TRUE == signal->pSigCfg->resourceActive) GetResource(signal->pSigCfg->resource);
+ 303:.\source\rte/sc_speed.h ****    *data = signal->value;
+ 304:.\source\rte/sc_speed.h ****    if (TRUE == signal->pSigCfg->resourceActive) ReleaseResource(signal->pSigCfg->resource);        
+ 305:.\source\rte/sc_speed.h **** 
+ 306:.\source\rte/sc_speed.h ****    return RC_SUCCESS;                                                                   
+ 307:.\source\rte/sc_speed.h ****    
+ 308:.\source\rte/sc_speed.h **** }                                                                                                  
+ 309:.\source\rte/sc_speed.h ****                                                                                                    
+ 310:.\source\rte/sc_speed.h **** /**
+ 311:.\source\rte/sc_speed.h ****  * Sets a new application value to the passed signal instance by passing the new value.
+ 312:.\source\rte/sc_speed.h ****  * The corresponding driver raw value will be calculated immediately by using the default conversio
+ 313:.\source\rte/sc_speed.h ****  * signal specific scaling function.
+ 314:.\source\rte/sc_speed.h ****  * The signal age will be set to 0 and the new status will be 'RTE_SIGNALSTATUS_VALID'.
+ 315:.\source\rte/sc_speed.h ****  *
+ 316:.\source\rte/sc_speed.h ****  * @param  SC_SPEED_t * const signal: Pointer to the signal object
+ 317:.\source\rte/sc_speed.h ****  * @param  sc_speed_data_t const value: value for the application data buffer
+ 318:.\source\rte/sc_speed.h ****  * @return RC_t: standard return code, currently only RC_SUCCESS
+ 319:.\source\rte/sc_speed.h ****  *
+ 320:.\source\rte/sc_speed.h ****  **/
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 14
+
+
+ 321:.\source\rte/sc_speed.h **** inline RC_t RTE_SC_SPEED_set(SC_SPEED_t * const signal, const SC_SPEED_data_t value  )
+ 322:.\source\rte/sc_speed.h **** {
+ 323:.\source\rte/sc_speed.h **** 
+ 324:.\source\rte/sc_speed.h ****    RC_t ret = RC_SUCCESS;
+ 325:.\source\rte/sc_speed.h ****    size_t taskNum=0;
+ 326:.\source\rte/sc_speed.h **** 
+ 327:.\source\rte/sc_speed.h **** 
+ 328:.\source\rte/sc_speed.h ****    if (TRUE == signal->pSigCfg->resourceActive) GetResource(signal->pSigCfg->resource);
+  84              		.loc 3 328 0
   85 0026 0F4A     		ldr	r2, .L11+4
   86 0028 9168     		ldr	r1, [r2, #8]
   87              	.LVL8:
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 14
-
-
- 317:.\source\rte/sc_speed.h ****    signal->value  = value;
-  88              		.loc 3 317 0
+ 329:.\source\rte/sc_speed.h ****    signal->value  = value;
+  88              		.loc 3 329 0
   89 002a 1370     		strb	r3, [r2]
- 318:.\source\rte/sc_speed.h ****    signal->age    = 0;
-  90              		.loc 3 318 0
+ 330:.\source\rte/sc_speed.h ****    signal->age    = 0;
+  90              		.loc 3 330 0
   91 002c 0023     		movs	r3, #0
   92              	.LVL9:
   93 002e 5360     		str	r3, [r2, #4]
- 319:.\source\rte/sc_speed.h ****    signal->status = RTE_SIGNALSTATUS_VALID;
-  94              		.loc 3 319 0
+ 331:.\source\rte/sc_speed.h ****    signal->status = RTE_SIGNALSTATUS_VALID;
+  94              		.loc 3 331 0
   95 0030 0223     		movs	r3, #2
   96 0032 5370     		strb	r3, [r2, #1]
- 320:.\source\rte/sc_speed.h ****    if (TRUE == signal->pSigCfg->resourceActive) ReleaseResource(signal->pSigCfg->resource);
- 321:.\source\rte/sc_speed.h **** 
- 322:.\source\rte/sc_speed.h ****    //Pointer to the Taskarray, containing the tasks receiving the onUpdate events
- 323:.\source\rte/sc_speed.h ****    TaskTypeArray* pTaskArray = signal->pSigCfg->onUpdateTasks;
-  97              		.loc 3 323 0
+ 332:.\source\rte/sc_speed.h ****    if (TRUE == signal->pSigCfg->resourceActive) ReleaseResource(signal->pSigCfg->resource);
+ 333:.\source\rte/sc_speed.h **** 
+ 334:.\source\rte/sc_speed.h ****    //Pointer to the Taskarray, containing the tasks receiving the onUpdate events
+ 335:.\source\rte/sc_speed.h ****    TaskTypeArray* pTaskArray = signal->pSigCfg->onUpdateTasks;
+  97              		.loc 3 335 0
   98 0034 4D69     		ldr	r5, [r1, #20]
   99              	.LVL10:
- 324:.\source\rte/sc_speed.h **** 
- 325:.\source\rte/sc_speed.h ****    if (0 != signal->pSigCfg->evOnUpdate && NULL != pTaskArray){
- 100              		.loc 3 325 0
+ 336:.\source\rte/sc_speed.h **** 
+ 337:.\source\rte/sc_speed.h ****    if (0 != signal->pSigCfg->evOnUpdate && NULL != pTaskArray){
+ 100              		.loc 3 337 0
  101 0036 8B68     		ldr	r3, [r1, #8]
  102 0038 73B1     		cbz	r3, .L1
  103 003a 3DB9     		cbnz	r5, .L8
@@ -810,37 +822,37 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  105              	.LVL11:
  106              	.L7:
  107              	.LBB17:
- 326:.\source\rte/sc_speed.h ****       for( taskNum=0 ; taskNum < signal->pSigCfg->onUpdateTaskCount ;taskNum++){
- 327:.\source\rte/sc_speed.h **** 		  
- 328:.\source\rte/sc_speed.h ****           TaskType task = (*pTaskArray)[taskNum];
- 329:.\source\rte/sc_speed.h **** 	      SetEvent( task, signal->pSigCfg->evOnUpdate);
- 108              		.loc 3 329 0
+ 338:.\source\rte/sc_speed.h ****       for( taskNum=0 ; taskNum < signal->pSigCfg->onUpdateTaskCount ;taskNum++){
+ 339:.\source\rte/sc_speed.h **** 		  
+ 340:.\source\rte/sc_speed.h ****           TaskType task = (*pTaskArray)[taskNum];
+ 341:.\source\rte/sc_speed.h **** 	      SetEvent( task, signal->pSigCfg->evOnUpdate);
+ 108              		.loc 3 341 0
  109 003e 9968     		ldr	r1, [r3, #8]
  110 0040 55F82400 		ldr	r0, [r5, r4, lsl #2]
  111 0044 FFF7FEFF 		bl	EE_oo_SetEvent
  112              	.LVL12:
  113              	.LBE17:
- 326:.\source\rte/sc_speed.h ****       for( taskNum=0 ; taskNum < signal->pSigCfg->onUpdateTaskCount ;taskNum++){
- 114              		.loc 3 326 0
+ 338:.\source\rte/sc_speed.h ****       for( taskNum=0 ; taskNum < signal->pSigCfg->onUpdateTaskCount ;taskNum++){
+ 114              		.loc 3 338 0
  115 0048 0134     		adds	r4, r4, #1
  116              	.LVL13:
  117 004a 00E0     		b	.L6
  118              	.LVL14:
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 15
+
+
  119              	.L8:
- 325:.\source\rte/sc_speed.h ****       for( taskNum=0 ; taskNum < signal->pSigCfg->onUpdateTaskCount ;taskNum++){
- 120              		.loc 3 325 0
+ 337:.\source\rte/sc_speed.h ****       for( taskNum=0 ; taskNum < signal->pSigCfg->onUpdateTaskCount ;taskNum++){
+ 120              		.loc 3 337 0
  121 004c 0024     		movs	r4, #0
  122              	.LVL15:
  123              	.L6:
- 326:.\source\rte/sc_speed.h ****       for( taskNum=0 ; taskNum < signal->pSigCfg->onUpdateTaskCount ;taskNum++){
- 124              		.loc 3 326 0
+ 338:.\source\rte/sc_speed.h ****       for( taskNum=0 ; taskNum < signal->pSigCfg->onUpdateTaskCount ;taskNum++){
+ 124              		.loc 3 338 0
  125 004e 054B     		ldr	r3, .L11+4
  126 0050 9B68     		ldr	r3, [r3, #8]
  127 0052 1A69     		ldr	r2, [r3, #16]
  128 0054 9442     		cmp	r4, r2
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 15
-
-
  129 0056 F2D3     		bcc	.L7
  130              	.LVL16:
  131              	.L1:
@@ -886,6 +898,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  161              		.file 7 "Generated_Source\\PSoC5/ErikaOS_1_common_ee_types.inc"
  162              		.file 8 "Generated_Source\\PSoC5/ErikaOS_1_cortex_mx_ee_cpu.inc"
  163              		.file 9 "Generated_Source\\PSoC5/ErikaOS_1_ee_oo_common.inc"
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 16
+
+
  164              		.file 10 ".\\source\\bsw/global.h"
  165              		.file 11 ".\\source\\rte/rte_types.h"
  166              		.file 12 ".\\source\\rte/rte.h"
@@ -898,9 +913,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  173              		.file 19 ".\\source\\rte/sp_common.h"
  174              		.file 20 "Generated_Source\\PSoC5/ErikaOS_1_ee_oo_kernel.inc"
  175              		.section	.debug_info,"",%progbits
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 16
-
-
  176              	.Ldebug_info0:
  177 0000 54070000 		.4byte	0x754
  178 0004 0400     		.2byte	0x4
@@ -946,6 +958,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  218 005a 48030000 		.4byte	.LASF6
  219 005e 03       		.uleb128 0x3
  220 005f 07010000 		.4byte	.LASF7
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 17
+
+
  221 0063 04       		.byte	0x4
  222 0064 41       		.byte	0x41
  223 0065 69000000 		.4byte	0x69
@@ -958,9 +973,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  230 0072 05       		.byte	0x5
  231 0073 CB020000 		.4byte	.LASF9
  232 0077 02       		.uleb128 0x2
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 17
-
-
  233 0078 08       		.byte	0x8
  234 0079 07       		.byte	0x7
  235 007a 49040000 		.4byte	.LASF10
@@ -1006,6 +1018,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  275 00c9 85000000 		.4byte	0x85
  276 00cd 02       		.uleb128 0x2
  277 00ce 08       		.byte	0x8
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 18
+
+
  278 00cf 04       		.byte	0x4
  279 00d0 EF030000 		.4byte	.LASF19
  280 00d4 03       		.uleb128 0x3
@@ -1018,9 +1033,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  287 00e4 07       		.byte	0x7
  288 00e5 54       		.byte	0x54
  289 00e6 85000000 		.4byte	0x85
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 18
-
-
  290 00ea 03       		.uleb128 0x3
  291 00eb D6050000 		.4byte	.LASF22
  292 00ef 08       		.byte	0x8
@@ -1066,6 +1078,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  332 0146 0A       		.byte	0xa
  333 0147 CF       		.byte	0xcf
  334 0148 E9010000 		.4byte	0x1e9
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 19
+
+
  335 014c 07       		.uleb128 0x7
  336 014d DD000000 		.4byte	.LASF30
  337 0151 00       		.byte	0
@@ -1078,9 +1093,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  344 015e 08       		.uleb128 0x8
  345 015f 3A030000 		.4byte	.LASF33
  346 0163 7D       		.sleb128 -3
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 19
-
-
  347 0164 08       		.uleb128 0x8
  348 0165 15070000 		.4byte	.LASF34
  349 0169 7C       		.sleb128 -4
@@ -1126,6 +1138,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  389 01b8 08       		.uleb128 0x8
  390 01b9 50010000 		.4byte	.LASF48
  391 01bd 6E       		.sleb128 -18
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 20
+
+
  392 01be 08       		.uleb128 0x8
  393 01bf 16030000 		.4byte	.LASF49
  394 01c3 6D       		.sleb128 -19
@@ -1138,9 +1153,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  401 01d0 08       		.uleb128 0x8
  402 01d1 51060000 		.4byte	.LASF52
  403 01d5 6A       		.sleb128 -22
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 20
-
-
  404 01d6 08       		.uleb128 0x8
  405 01d7 09020000 		.4byte	.LASF53
  406 01db 69       		.sleb128 -23
@@ -1186,6 +1198,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  446 022d 8A030000 		.4byte	.LASF60
  447 0231 00       		.byte	0
  448 0232 07       		.uleb128 0x7
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 21
+
+
  449 0233 8E000000 		.4byte	.LASF61
  450 0237 01       		.byte	0x1
  451 0238 07       		.uleb128 0x7
@@ -1198,9 +1213,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  458 0245 03       		.uleb128 0x3
  459 0246 8A010000 		.4byte	.LASF64
  460 024a 0C       		.byte	0xc
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 21
-
-
  461 024b 5E       		.byte	0x5e
  462 024c 20020000 		.4byte	0x220
  463 0250 0B       		.uleb128 0xb
@@ -1246,6 +1258,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  503 02a2 10       		.uleb128 0x10
  504 02a3 9C020000 		.4byte	0x29c
  505 02a7 03       		.uleb128 0x3
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 22
+
+
  506 02a8 CF060000 		.4byte	.LASF69
  507 02ac 02       		.byte	0x2
  508 02ad 2C       		.byte	0x2c
@@ -1258,9 +1273,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  515 02bd C7020000 		.4byte	0x2c7
  516 02c1 0F       		.uleb128 0xf
  517 02c2 D2020000 		.4byte	0x2d2
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 22
-
-
  518 02c6 00       		.byte	0
  519 02c7 0D       		.uleb128 0xd
  520 02c8 04       		.byte	0x4
@@ -1306,6 +1318,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  560 031a 6B030000 		.4byte	0x36b
  561 031e 10       		.byte	0x10
  562 031f 0C       		.uleb128 0xc
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 23
+
+
  563 0320 B6050000 		.4byte	.LASF75
  564 0324 02       		.byte	0x2
  565 0325 55       		.byte	0x55
@@ -1318,9 +1333,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  572 0332 6B030000 		.4byte	0x36b
  573 0336 18       		.byte	0x18
  574 0337 0C       		.uleb128 0xc
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 23
-
-
  575 0338 73050000 		.4byte	.LASF77
  576 033c 02       		.byte	0x2
  577 033d 5F       		.byte	0x5f
@@ -1366,6 +1378,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  617 0395 11       		.uleb128 0x11
  618 0396 6E010000 		.4byte	.LASF82
  619 039a 0C       		.byte	0xc
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 24
+
+
  620 039b 02       		.byte	0x2
  621 039c 79       		.byte	0x79
  622 039d D2030000 		.4byte	0x3d2
@@ -1378,9 +1393,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  629 03ad 0C       		.uleb128 0xc
  630 03ae EF040000 		.4byte	.LASF84
  631 03b2 02       		.byte	0x2
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 24
-
-
  632 03b3 84       		.byte	0x84
  633 03b4 45020000 		.4byte	0x245
  634 03b8 02       		.byte	0x2
@@ -1426,6 +1438,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  674 0404 E8030000 		.4byte	0x3e8
  675 0408 03       		.uleb128 0x3
  676 0409 2A060000 		.4byte	.LASF89
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 25
+
+
  677 040d 03       		.byte	0x3
  678 040e 26       		.byte	0x26
  679 040f 13040000 		.4byte	0x413
@@ -1438,9 +1453,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  686 0422 0F       		.uleb128 0xf
  687 0423 2E040000 		.4byte	0x42e
  688 0427 00       		.byte	0
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 25
-
-
  689 0428 0D       		.uleb128 0xd
  690 0429 04       		.byte	0x4
  691 042a FD030000 		.4byte	0x3fd
@@ -1486,6 +1498,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  731 0482 ED040000 		.4byte	0x4ed
  732 0486 04       		.byte	0x4
  733 0487 0C       		.uleb128 0xc
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 26
+
+
  734 0488 D9040000 		.4byte	.LASF72
  735 048c 03       		.byte	0x3
  736 048d 45       		.byte	0x45
@@ -1498,9 +1513,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  743 049a 66030000 		.4byte	0x366
  744 049e 0C       		.byte	0xc
  745 049f 0C       		.uleb128 0xc
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 26
-
-
  746 04a0 80050000 		.4byte	.LASF74
  747 04a4 03       		.byte	0x3
  748 04a5 50       		.byte	0x50
@@ -1546,6 +1558,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  788 04f7 03       		.byte	0x3
  789 04f8 6D       		.byte	0x6d
  790 04f9 FD040000 		.4byte	0x4fd
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 27
+
+
  791 04fd 10       		.uleb128 0x10
  792 04fe 63040000 		.4byte	0x463
  793 0502 11       		.uleb128 0x11
@@ -1558,9 +1573,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  800 050f F3010000 		.4byte	.LASF83
  801 0513 03       		.byte	0x3
  802 0514 7F       		.byte	0x7f
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 27
-
-
  803 0515 FD030000 		.4byte	0x3fd
  804 0519 00       		.byte	0
  805 051a 0C       		.uleb128 0xc
@@ -1606,6 +1618,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  845 056c 7C050000 		.4byte	0x57c
  846 0570 00       		.byte	0
  847 0571 0D       		.uleb128 0xd
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 28
+
+
  848 0572 04       		.byte	0x4
  849 0573 77050000 		.4byte	0x577
  850 0577 10       		.uleb128 0x10
@@ -1618,9 +1633,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  857 0587 1201     		.2byte	0x112
  858 0589 71020000 		.4byte	0x271
  859 058d 03       		.byte	0x3
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 28
-
-
  860 058e 9F050000 		.4byte	0x59f
  861 0592 16       		.uleb128 0x16
  862 0593 10050000 		.4byte	.LASF97
@@ -1631,41 +1643,44 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  867 059f 15       		.uleb128 0x15
  868 05a0 A5050000 		.4byte	.LASF98
  869 05a4 03       		.byte	0x3
- 870 05a5 3501     		.2byte	0x135
+ 870 05a5 4101     		.2byte	0x141
  871 05a7 E9010000 		.4byte	0x1e9
  872 05ab 03       		.byte	0x3
  873 05ac FB050000 		.4byte	0x5fb
  874 05b0 16       		.uleb128 0x16
  875 05b1 10050000 		.4byte	.LASF97
  876 05b5 03       		.byte	0x3
- 877 05b6 3501     		.2byte	0x135
+ 877 05b6 4101     		.2byte	0x141
  878 05b8 01060000 		.4byte	0x601
  879 05bc 16       		.uleb128 0x16
  880 05bd F3010000 		.4byte	.LASF83
  881 05c1 03       		.byte	0x3
- 882 05c2 3501     		.2byte	0x135
+ 882 05c2 4101     		.2byte	0x141
  883 05c4 59040000 		.4byte	0x459
  884 05c8 17       		.uleb128 0x17
  885 05c9 72657400 		.ascii	"ret\000"
  886 05cd 03       		.byte	0x3
- 887 05ce 3801     		.2byte	0x138
+ 887 05ce 4401     		.2byte	0x144
  888 05d0 E9010000 		.4byte	0x1e9
  889 05d4 18       		.uleb128 0x18
  890 05d5 FB030000 		.4byte	.LASF99
  891 05d9 03       		.byte	0x3
- 892 05da 3901     		.2byte	0x139
+ 892 05da 4501     		.2byte	0x145
  893 05dc C2000000 		.4byte	0xc2
  894 05e0 18       		.uleb128 0x18
  895 05e1 E4030000 		.4byte	.LASF100
  896 05e5 03       		.byte	0x3
- 897 05e6 4301     		.2byte	0x143
+ 897 05e6 4F01     		.2byte	0x14f
  898 05e8 70030000 		.4byte	0x370
  899 05ec 19       		.uleb128 0x19
  900 05ed 18       		.uleb128 0x18
  901 05ee 1B060000 		.4byte	.LASF101
  902 05f2 03       		.byte	0x3
- 903 05f3 4801     		.2byte	0x148
+ 903 05f3 5401     		.2byte	0x154
  904 05f5 0B010000 		.4byte	0x10b
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 29
+
+
  905 05f9 00       		.byte	0
  906 05fa 00       		.byte	0
  907 05fb 0D       		.uleb128 0xd
@@ -1678,9 +1693,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  914 060b 01       		.byte	0x1
  915 060c 2C       		.byte	0x2c
  916 060d 00000000 		.4byte	.LFB154
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 29
-
-
  917 0611 68000000 		.4byte	.LFE154-.LFB154
  918 0615 01       		.uleb128 0x1
  919 0616 9C       		.byte	0x9c
@@ -1726,6 +1738,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  959 0676 68       		.sleb128 -24
  960 0677 1D       		.uleb128 0x1d
  961 0678 81050000 		.4byte	0x581
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 30
+
+
  962 067c 0C000000 		.4byte	.LBB13
  963 0680 0C000000 		.4byte	.LBE13-.LBB13
  964 0684 01       		.byte	0x1
@@ -1738,9 +1753,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  971 0691 9F050000 		.4byte	0x59f
  972 0695 26000000 		.4byte	.LBB15
  973 0699 32000000 		.4byte	.LBE15-.LBB15
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 30
-
-
  974 069d 01       		.byte	0x1
  975 069e 3E       		.byte	0x3e
  976 069f 1E       		.uleb128 0x1e
@@ -1786,6 +1798,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1016 0703 24       		.uleb128 0x24
  1017 0704 92050000 		.4byte	.LASF107
  1018 0708 0F       		.byte	0xf
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 31
+
+
  1019 0709 4A       		.byte	0x4a
  1020 070a EA000000 		.4byte	0xea
  1021 070e 24       		.uleb128 0x24
@@ -1798,9 +1813,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1028 071e 11       		.byte	0x11
  1029 071f 44       		.byte	0x44
  1030 0720 EA000000 		.4byte	0xea
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 31
-
-
  1031 0724 25       		.uleb128 0x25
  1032 0725 FF060000 		.4byte	.LASF110
  1033 0729 12       		.byte	0x12
@@ -1846,6 +1858,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1073 0011 00       		.byte	0
  1074 0012 00       		.byte	0
  1075 0013 02       		.uleb128 0x2
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 32
+
+
  1076 0014 24       		.uleb128 0x24
  1077 0015 00       		.byte	0
  1078 0016 0B       		.uleb128 0xb
@@ -1858,9 +1873,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1085 001d 00       		.byte	0
  1086 001e 03       		.uleb128 0x3
  1087 001f 16       		.uleb128 0x16
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 32
-
-
  1088 0020 00       		.byte	0
  1089 0021 03       		.uleb128 0x3
  1090 0022 0E       		.uleb128 0xe
@@ -1906,6 +1918,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1130 004a 3A       		.uleb128 0x3a
  1131 004b 0B       		.uleb128 0xb
  1132 004c 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 33
+
+
  1133 004d 0B       		.uleb128 0xb
  1134 004e 01       		.uleb128 0x1
  1135 004f 13       		.uleb128 0x13
@@ -1918,9 +1933,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1142 0056 0E       		.uleb128 0xe
  1143 0057 1C       		.uleb128 0x1c
  1144 0058 0B       		.uleb128 0xb
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 33
-
-
  1145 0059 00       		.byte	0
  1146 005a 00       		.byte	0
  1147 005b 08       		.uleb128 0x8
@@ -1966,6 +1978,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1187 0083 0E       		.uleb128 0xe
  1188 0084 3A       		.uleb128 0x3a
  1189 0085 0B       		.uleb128 0xb
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 34
+
+
  1190 0086 3B       		.uleb128 0x3b
  1191 0087 0B       		.uleb128 0xb
  1192 0088 49       		.uleb128 0x49
@@ -1978,9 +1993,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1199 008f 0F       		.uleb128 0xf
  1200 0090 00       		.byte	0
  1201 0091 0B       		.uleb128 0xb
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 34
-
-
  1202 0092 0B       		.uleb128 0xb
  1203 0093 49       		.uleb128 0x49
  1204 0094 13       		.uleb128 0x13
@@ -2026,6 +2038,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1244 00bc 13       		.uleb128 0x13
  1245 00bd 00       		.byte	0
  1246 00be 00       		.byte	0
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 35
+
+
  1247 00bf 12       		.uleb128 0x12
  1248 00c0 0D       		.uleb128 0xd
  1249 00c1 00       		.byte	0
@@ -2038,9 +2053,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1256 00c8 49       		.uleb128 0x49
  1257 00c9 13       		.uleb128 0x13
  1258 00ca 38       		.uleb128 0x38
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 35
-
-
  1259 00cb 0B       		.uleb128 0xb
  1260 00cc 00       		.byte	0
  1261 00cd 00       		.byte	0
@@ -2086,6 +2098,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1301 00f5 03       		.uleb128 0x3
  1302 00f6 0E       		.uleb128 0xe
  1303 00f7 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 36
+
+
  1304 00f8 0B       		.uleb128 0xb
  1305 00f9 3B       		.uleb128 0x3b
  1306 00fa 05       		.uleb128 0x5
@@ -2098,9 +2113,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1313 0101 01       		.uleb128 0x1
  1314 0102 13       		.uleb128 0x13
  1315 0103 00       		.byte	0
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 36
-
-
  1316 0104 00       		.byte	0
  1317 0105 16       		.uleb128 0x16
  1318 0106 05       		.uleb128 0x5
@@ -2146,6 +2158,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1358 012e 01       		.byte	0x1
  1359 012f 00       		.byte	0
  1360 0130 00       		.byte	0
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 37
+
+
  1361 0131 1A       		.uleb128 0x1a
  1362 0132 2E       		.uleb128 0x2e
  1363 0133 01       		.byte	0x1
@@ -2158,9 +2173,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1370 013a 3B       		.uleb128 0x3b
  1371 013b 0B       		.uleb128 0xb
  1372 013c 27       		.uleb128 0x27
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 37
-
-
  1373 013d 19       		.uleb128 0x19
  1374 013e 11       		.uleb128 0x11
  1375 013f 01       		.uleb128 0x1
@@ -2206,6 +2218,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1415 0168 00       		.byte	0
  1416 0169 1D       		.uleb128 0x1d
  1417 016a 1D       		.uleb128 0x1d
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 38
+
+
  1418 016b 01       		.byte	0x1
  1419 016c 31       		.uleb128 0x31
  1420 016d 13       		.uleb128 0x13
@@ -2218,9 +2233,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1427 0174 59       		.uleb128 0x59
  1428 0175 0B       		.uleb128 0xb
  1429 0176 01       		.uleb128 0x1
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 38
-
-
  1430 0177 13       		.uleb128 0x13
  1431 0178 00       		.byte	0
  1432 0179 00       		.byte	0
@@ -2266,6 +2278,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1472 01a1 06       		.uleb128 0x6
  1473 01a2 58       		.uleb128 0x58
  1474 01a3 0B       		.uleb128 0xb
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 39
+
+
  1475 01a4 59       		.uleb128 0x59
  1476 01a5 0B       		.uleb128 0xb
  1477 01a6 00       		.byte	0
@@ -2278,9 +2293,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1484 01ad 02       		.uleb128 0x2
  1485 01ae 17       		.uleb128 0x17
  1486 01af 00       		.byte	0
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 39
-
-
  1487 01b0 00       		.byte	0
  1488 01b1 23       		.uleb128 0x23
  1489 01b2 898201   		.uleb128 0x4109
@@ -2326,6 +2338,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1529 01dc 00       		.byte	0
  1530 01dd 00       		.byte	0
  1531 01de 26       		.uleb128 0x26
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 40
+
+
  1532 01df 35       		.uleb128 0x35
  1533 01e0 00       		.byte	0
  1534 01e1 49       		.uleb128 0x49
@@ -2338,9 +2353,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1541 01e8 3F       		.uleb128 0x3f
  1542 01e9 19       		.uleb128 0x19
  1543 01ea 3C       		.uleb128 0x3c
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 40
-
-
  1544 01eb 19       		.uleb128 0x19
  1545 01ec 6E       		.uleb128 0x6e
  1546 01ed 0E       		.uleb128 0xe
@@ -2386,6 +2398,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1586 0041 00000000 		.4byte	0
  1587              	.LLST1:
  1588 0045 2A000000 		.4byte	.LVL8
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 41
+
+
  1589 0049 2E000000 		.4byte	.LVL9
  1590 004d 0100     		.2byte	0x1
  1591 004f 53       		.byte	0x53
@@ -2398,9 +2413,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1598 0062 30       		.byte	0x30
  1599 0063 9F       		.byte	0x9f
  1600 0064 1A000000 		.4byte	.LVL4
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 41
-
-
  1601 0068 22000000 		.4byte	.LVL5
  1602 006c 0100     		.2byte	0x1
  1603 006e 53       		.byte	0x53
@@ -2446,6 +2458,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1643 00d1 9F       		.byte	0x9f
  1644 00d2 3E000000 		.4byte	.LVL11
  1645 00d6 4C000000 		.4byte	.LVL14
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 42
+
+
  1646 00da 0100     		.2byte	0x1
  1647 00dc 54       		.byte	0x54
  1648 00dd 4C000000 		.4byte	.LVL14
@@ -2458,9 +2473,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1655 00f1 0100     		.2byte	0x1
  1656 00f3 54       		.byte	0x54
  1657 00f4 00000000 		.4byte	0
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 42
-
-
  1658 00f8 00000000 		.4byte	0
  1659              	.LLST5:
  1660 00fc 36000000 		.4byte	.LVL10
@@ -2506,6 +2518,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1699      02005203 
  1699      00000201 
  1699      FB0E0D00 
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 43
+
+
  1699      01010101 
  1700              	.LASF113:
  1701 0000 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
@@ -2518,9 +2533,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1702      6973696F 
  1702      6E203233 
  1702      37373135 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 43
-
-
  1703 0066 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
  1703      66756E63 
  1703      74696F6E 
@@ -2566,6 +2578,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1718              	.LASF7:
  1719 0107 5F5F7569 		.ascii	"__uint32_t\000"
  1719      6E743332 
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 44
+
+
  1719      5F7400
  1720              	.LASF17:
  1721 0112 63686172 		.ascii	"char\000"
@@ -2578,9 +2593,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1723      4E4C5900 
  1724              	.LASF96:
  1725 012b 5254455F 		.ascii	"RTE_SC_JOYSTICK_get\000"
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 44
-
-
  1725      53435F4A 
  1725      4F595354 
  1725      49434B5F 
@@ -2626,6 +2638,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1743 01a9 45455F46 		.ascii	"EE_FREG\000"
  1743      52454700 
  1744              	.LASF47:
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 45
+
+
  1745 01b1 52435F45 		.ascii	"RC_ERROR_READ_FAILS\000"
  1745      52524F52 
  1745      5F524541 
@@ -2638,9 +2653,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1747      64726976 
  1747      6572496E 
  1748              	.LASF65:
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 45
-
-
  1749 01dc 785F6469 		.ascii	"x_dir\000"
  1749      7200
  1750              	.LASF21:
@@ -2686,6 +2698,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1767      6576656C 
  1768              	.LASF116:
  1769 025c 434F4E54 		.ascii	"CONTROL_calcControl_run\000"
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 46
+
+
  1769      524F4C5F 
  1769      63616C63 
  1769      436F6E74 
@@ -2698,9 +2713,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1771      6E657874 
  1772              	.LASF35:
  1773 028d 52435F45 		.ascii	"RC_ERROR_RANGE\000"
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 46
-
-
  1773      52524F52 
  1773      5F52414E 
  1773      474500
@@ -2746,6 +2758,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1789      52524F52 
  1789      5F4E4F54 
  1789      5F4D4154 
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 47
+
+
  1789      434800
  1790              	.LASF54:
  1791 0329 52435F45 		.ascii	"RC_ERROR_UNKNOWN\000"
@@ -2758,9 +2773,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1793      52524F52 
  1793      5F5A4552 
  1793      4F00
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 47
-
-
  1794              	.LASF6:
  1795 0348 6C6F6E67 		.ascii	"long int\000"
  1795      20696E74 
@@ -2806,6 +2818,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1809      4100
  1810              	.LASF29:
  1811 03d0 626F6F6C 		.ascii	"boolean_t\000"
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 48
+
+
  1811      65616E5F 
  1811      7400
  1812              	.LASF71:
@@ -2818,9 +2833,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1815      617900
  1816              	.LASF19:
  1817 03ef 6C6F6E67 		.ascii	"long double\000"
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 48
-
-
  1817      20646F75 
  1817      626C6500 
  1818              	.LASF99:
@@ -2866,6 +2878,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1837 0469 6A6F7973 		.ascii	"joystickValue\000"
  1837      7469636B 
  1837      56616C75 
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 49
+
+
  1837      6500
  1838              	.LASF11:
  1839 0477 756E7369 		.ascii	"unsigned int\000"
@@ -2878,9 +2893,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1841      5F4F5045 
  1841      4E00
  1842              	.LASF8:
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 49
-
-
  1843 0492 6C6F6E67 		.ascii	"long unsigned int\000"
  1843      20756E73 
  1843      69676E65 
@@ -2926,6 +2938,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1861      766500
  1862              	.LASF97:
  1863 0510 7369676E 		.ascii	"signal\000"
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 50
+
+
  1863      616C00
  1864              	.LASF63:
  1865 0517 5254455F 		.ascii	"RTE_SIGNALSTATUS_INVALID\000"
@@ -2938,9 +2953,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1867      52524F52 
  1867      5F425546 
  1867      4645525F 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 50
-
-
  1867      46554C4C 
  1868              	.LASF13:
  1869 0545 696E7433 		.ascii	"int32_t\000"
@@ -2986,6 +2998,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1883      5461736B 
  1883      7300
  1884              	.LASF43:
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 51
+
+
  1885 05c4 52435F45 		.ascii	"RC_ERROR_CHECKSUM\000"
  1885      52524F52 
  1885      5F434845 
@@ -2998,9 +3013,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1889 05de 52435F45 		.ascii	"RC_ERROR_OVERRUN\000"
  1889      52524F52 
  1889      5F4F5645 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 51
-
-
  1889      5252554E 
  1889      00
  1890              	.LASF5:
@@ -3046,6 +3058,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1907      616E6462 
  1907      6F785C53 
  1907      656D325C 
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 52
+
+
  1907      4541415C 
  1908 068f 6564616C 		.ascii	"edal\\EGasPedal.cydsn\000"
  1908      5C454761 
@@ -3058,9 +3073,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1910      54797065 
  1910      00
  1911              	.LASF16:
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 52
-
-
  1912 06b1 646F7562 		.ascii	"double\000"
  1912      6C6500
  1913              	.LASF62:
@@ -3106,6 +3118,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1928      655F636F 
  1929              	.LASF57:
  1930 073d 5461736B 		.ascii	"TaskTypeArray\000"
+ARM GAS  C:\Users\acer\AppData\Local\Temp\cc67Eoyn.s 			page 53
+
+
  1930      54797065 
  1930      41727261 
  1930      7900
@@ -3118,9 +3133,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 1
  1934      44617461 
  1934      00
  1935              	.LASF28:
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccxxV39c.s 			page 53
-
-
  1936 075d 73696E74 		.ascii	"sint8_t\000"
  1936      385F7400 
  1937              	.LASF41:

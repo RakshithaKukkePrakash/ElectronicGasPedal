@@ -46,10 +46,10 @@ void ENGINE_setEngine_run(RTE_event ev){
 	/* USER CODE START ENGINE_setEngine_run */
     
     // UART Log fro verification
-   
+   /*
     UART_LOG_PutString("\n");
     char log[200];
-    
+    */
     SC_ENGINE_data_t engineSpd;
     SC_SPEED_data_t speed;
     static uint32_t age = 0;
@@ -62,19 +62,20 @@ void ENGINE_setEngine_run(RTE_event ev){
             engineSpd.engine = speed.speed_val;
 
             //UART log for verification 
-            itoa(age, log, 10);
+            //itoa(age, log, 10);
             //UART_LOG_PutString("Engine speed pos\n");
             //itoa(engineSpd.engine, log, 10);
-            UART_LOG_PutString(log);            
+            //UART_LOG_PutString(log);            
         }
         else
         {
             engineSpd.engine = 0;
             
+            //itoa(age, log, 10);
             //UART log for verification  
-            UART_LOG_PutString("Engine speed zero\n");
-            itoa(engineSpd.engine, log, 10);
-            UART_LOG_PutString(log); 
+            //UART_LOG_PutString("Engine speed zero\n");
+            //itoa(engineSpd.engine, log, 10);
+            //UART_LOG_PutString(log); 
         }
     }
     else
