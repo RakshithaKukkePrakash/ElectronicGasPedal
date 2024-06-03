@@ -1,6 +1,6 @@
 // ======================================================================
 // EGasPedal.v generated from TopDesign.cysch
-// 06/02/2024 at 00:28
+// 06/03/2024 at 00:25
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -1281,6 +1281,7 @@ module top ;
     electrical  Net_113;
     electrical  Net_112;
           wire  Net_111;
+          wire  Net_2257;
           wire  Net_2252;
           wire  Net_2248;
           wire  Net_2605;
@@ -1896,6 +1897,87 @@ module top ;
     defparam UART_LOG.ParityType = 0;
     defparam UART_LOG.RXEnable = 1;
     defparam UART_LOG.TXEnable = 1;
+
+
+	cy_isr_v1_0
+		#(.int_type(2'b10))
+		isr_button_reset
+		 (.int_signal(Net_2257));
+
+
+	wire [0:0] tmpOE__WD_ResetButton_net;
+	wire [0:0] tmpIO_0__WD_ResetButton_net;
+	wire [0:0] tmpINTERRUPT_0__WD_ResetButton_net;
+	electrical [0:0] tmpSIOVREF__WD_ResetButton_net;
+
+	cy_psoc3_pins_v1_10
+		#(.id("c7fb2adc-9092-4287-8519-2e1d6d4f114f"),
+		  .drive_mode(3'b001),
+		  .ibuf_enabled(1'b1),
+		  .init_dr_st(1'b0),
+		  .input_clk_en(0),
+		  .input_sync(1'b0),
+		  .input_sync_mode(1'b0),
+		  .intr_mode(2'b00),
+		  .invert_in_clock(0),
+		  .invert_in_clock_en(0),
+		  .invert_in_reset(0),
+		  .invert_out_clock(0),
+		  .invert_out_clock_en(0),
+		  .invert_out_reset(0),
+		  .io_voltage(""),
+		  .layout_mode("CONTIGUOUS"),
+		  .oe_conn(1'b0),
+		  .oe_reset(0),
+		  .oe_sync(1'b0),
+		  .output_clk_en(0),
+		  .output_clock_mode(1'b0),
+		  .output_conn(1'b0),
+		  .output_mode(1'b0),
+		  .output_reset(0),
+		  .output_sync(1'b0),
+		  .pa_in_clock(-1),
+		  .pa_in_clock_en(-1),
+		  .pa_in_reset(-1),
+		  .pa_out_clock(-1),
+		  .pa_out_clock_en(-1),
+		  .pa_out_reset(-1),
+		  .pin_aliases(""),
+		  .pin_mode("I"),
+		  .por_state(4),
+		  .sio_group_cnt(0),
+		  .sio_hyst(1'b1),
+		  .sio_ibuf(""),
+		  .sio_info(2'b00),
+		  .sio_obuf(""),
+		  .sio_refsel(""),
+		  .sio_vtrip(""),
+		  .sio_hifreq(""),
+		  .sio_vohsel(""),
+		  .slew_rate(1'b0),
+		  .spanning(0),
+		  .use_annotation(1'b0),
+		  .vtrip(2'b00),
+		  .width(1),
+		  .ovt_hyst_trim(1'b0),
+		  .ovt_needed(1'b0),
+		  .ovt_slew_control(2'b00),
+		  .input_buffer_sel(2'b00))
+		WD_ResetButton
+		 (.oe(tmpOE__WD_ResetButton_net),
+		  .y({1'b0}),
+		  .fb({Net_2257}),
+		  .io({tmpIO_0__WD_ResetButton_net[0:0]}),
+		  .siovref(tmpSIOVREF__WD_ResetButton_net),
+		  .interrupt({tmpINTERRUPT_0__WD_ResetButton_net[0:0]}),
+		  .in_clock({1'b0}),
+		  .in_clock_en({1'b1}),
+		  .in_reset({1'b0}),
+		  .out_clock({1'b0}),
+		  .out_clock_en({1'b1}),
+		  .out_reset({1'b0}));
+
+	assign tmpOE__WD_ResetButton_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
 
 

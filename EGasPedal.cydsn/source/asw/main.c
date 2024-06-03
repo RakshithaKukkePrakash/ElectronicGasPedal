@@ -12,6 +12,7 @@
 #include "project.h"
 #include "global.h"
 
+#include "stdlib.h"
 #include "tsk_io.h"
 #include "tsk_control.h"
 #include "tsk_system.h"
@@ -32,7 +33,8 @@ int main()
     //Set systick period to 1 ms. Enable the INT and start it.
 	EE_systick_set_period(MILLISECONDS_TO_TICKS(1, BCLK__BUS_CLK__HZ));
 	EE_systick_enable_int();
-   
+    WD_Start(CYWD_1024_TICKS);
+    
     // Start Operating System
     for(;;)	    
     	StartOS(OSDEFAULTAPPMODE);
@@ -64,6 +66,18 @@ TASK(tsk_init)
 	//Must be done here, because otherwise the isr vector is not overwritten yet
     EE_systick_start();  
 	
+    //Upon startup, showing (via the UART_LOG), if the system was rebooted after 
+    //a power on reset (POR) or after a watchdog reset
+    if(WD_CheckResetBit())
+    {
+        UART_LOG_PutString("System was reebooted after a watchdog reset");
+    }
+    else
+    {
+        UART_LOG_PutString("System was reebooted after a power on reset (POR)");
+    }
+    
+    
     //Start the alarm callback every 1ms
     SetRelAlarm(alrm_callback,1,1);
     
@@ -86,8 +100,13 @@ TASK(tsk_background)
     while(1)
     {
         //do something with low prioroty
-        __asm("nop");
-        //WD_Trigger();
+        //__asm("nop");
+        while(WDbitfields == 15)
+        {
+            //All runnables are alive
+            WD_Trigger();
+            WDbitfields = 0;
+        }
     }
 }
 
@@ -95,15 +114,14 @@ TASK(tsk_background)
 /********************************************************************************
  * ISR Definitions
  ********************************************************************************/
-/*
+
 ISR2(isr_button_reset)
 {
     
-    if(WD_Button_Reset() == 1)
+    if(WD_ResetButton_Read() == 1)
     {
         ShutdownOS(0);
     }
     
 }
-*/
 /* [] END OF FILE */

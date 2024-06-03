@@ -18,7 +18,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Lab01EAA\EGasPedal\asw\swc_brakelight.c">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Lab01EAA\EGasPedal\rte\sc_joystick.h">
 <ExpandedNodeIds>
 <v>Lab01EAA</v>
 <v>Lab01EAA\EGasPedal</v>
@@ -86,28 +86,6 @@
 <v>Lab01EAA\EGasPedal\Generated_Source\PSoC5\UART_LOG</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
-<v>Lab01EAA\EGasPedal\EGasPedal.cydwr\Directives</v>
-<v>Lab01EAA\EGasPedal\EGasPedal.cydwr\Flash Security</v>
-<v>Lab01EAA\EGasPedal\EGasPedal.cydwr\EEPROM</v>
-<v>Lab01EAA\EGasPedal\asw</v>
-<v>Lab01EAA\EGasPedal\asw\cyapicallbacks.h</v>
-<v>Lab01EAA\EGasPedal\asw\main.c</v>
-<v>Lab01EAA\EGasPedal\asw\swc_brakelight.c</v>
-<v>Lab01EAA\EGasPedal\asw\swc_brakelight.h</v>
-<v>Lab01EAA\EGasPedal\asw\swc_control.c</v>
-<v>Lab01EAA\EGasPedal\asw\swc_control.h</v>
-<v>Lab01EAA\EGasPedal\asw\swc_engine.c</v>
-<v>Lab01EAA\EGasPedal\asw\swc_engine.h</v>
-<v>Lab01EAA\EGasPedal\asw\swc_joystick.c</v>
-<v>Lab01EAA\EGasPedal\asw\swc_joystick.h</v>
-<v>Lab01EAA\EGasPedal\asw\tsk_control.c</v>
-<v>Lab01EAA\EGasPedal\asw\tsk_control.h</v>
-<v>Lab01EAA\EGasPedal\asw\tsk_io.c</v>
-<v>Lab01EAA\EGasPedal\asw\tsk_io.h</v>
-<v>Lab01EAA\EGasPedal\asw\tsk_system.c</v>
-<v>Lab01EAA\EGasPedal\asw\tsk_system.h</v>
-<v>Lab01EAA\EGasPedal\bsw</v>
-<v>Lab01EAA\EGasPedal\bsw\derivate.h</v>
 <v>Lab01EAA\EGasPedal\bsw\global.h</v>
 <v>Lab01EAA\EGasPedal\bsw\joystick.c</v>
 <v>Lab01EAA\EGasPedal\bsw\joystick.h</v>
@@ -121,6 +99,28 @@
 <v>Lab01EAA\EGasPedal\rte\rte_types.h</v>
 <v>Lab01EAA\EGasPedal\rte\sc_brakelight.c</v>
 <v>Lab01EAA\EGasPedal\rte\sc_brakelight.h</v>
+<v>Lab01EAA\EGasPedal\rte\sc_brakelight_type.c</v>
+<v>Lab01EAA\EGasPedal\rte\sc_brakelight_type.h</v>
+<v>Lab01EAA\EGasPedal\rte\sc_engine.c</v>
+<v>Lab01EAA\EGasPedal\rte\sc_engine.h</v>
+<v>Lab01EAA\EGasPedal\rte\sc_engine_type.c</v>
+<v>Lab01EAA\EGasPedal\rte\sc_engine_type.h</v>
+<v>Lab01EAA\EGasPedal\rte\sc_joystick.c</v>
+<v>Lab01EAA\EGasPedal\rte\sc_joystick.h</v>
+<v>Lab01EAA\EGasPedal\rte\sc_joystick_type.c</v>
+<v>Lab01EAA\EGasPedal\rte\sc_joystick_type.h</v>
+<v>Lab01EAA\EGasPedal\rte\sc_speed.c</v>
+<v>Lab01EAA\EGasPedal\rte\sc_speed.h</v>
+<v>Lab01EAA\EGasPedal\rte\sc_speed_type.h</v>
+<v>Lab01EAA\EGasPedal\rte\sp_common.c</v>
+<v>Lab01EAA\EGasPedal\rte\sp_common.h</v>
+<v>Lab01EAA\EGasPedal\Generated_Source</v>
+<v>Lab01EAA\EGasPedal\Generated_Source\PSoC5</v>
+<v>Lab01EAA\EGasPedal\Generated_Source\PSoC5\cy_boot</v>
+<v>Lab01EAA\EGasPedal\Generated_Source\PSoC5\Em_EEPROM_Dynamic</v>
+<v>Lab01EAA\EGasPedal\Generated_Source\PSoC5\ErikaOS_1</v>
+<v>Lab01EAA\EGasPedal\Generated_Source\PSoC5\isr_button_reset</v>
+<v>Lab01EAA\EGasPedal\Generated_Source\PSoC5\Joystick_ADC</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Lab01EAA\EGasPedal">
@@ -336,6 +336,7 @@
 <v>Lab01EAA\EGasPedal\CortexM3\ARM_GCC_541\Debug\Listing Files\ErikaOS_1_ee_ulockallres.lst</v>
 <v>Lab01EAA\EGasPedal\CortexM3\ARM_GCC_541\Debug\Listing Files\ErikaOS_1_ee_ulockres.lst</v>
 <v>Lab01EAA\EGasPedal\CortexM3\ARM_GCC_541\Debug\Listing Files\ErikaOS_1_eecfg.lst</v>
+<v>Lab01EAA\EGasPedal\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_button_reset.lst</v>
 <v>Lab01EAA\EGasPedal\CortexM3\ARM_GCC_541\Debug\Listing Files\joystick.lst</v>
 <v>Lab01EAA\EGasPedal\CortexM3\ARM_GCC_541\Debug\Listing Files\Joystick_ADC.lst</v>
 <v>Lab01EAA\EGasPedal\CortexM3\ARM_GCC_541\Debug\Listing Files\Joystick_ADC_FinalBuf_dma.lst</v>
@@ -378,6 +379,7 @@
 <v>Lab01EAA\EGasPedal\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_LOG_IntClock.lst</v>
 <v>Lab01EAA\EGasPedal\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_LOG_PM.lst</v>
 <v>Lab01EAA\EGasPedal\CortexM3\ARM_GCC_541\Debug\Listing Files\watchdog.lst</v>
+<v>Lab01EAA\EGasPedal\CortexM3\ARM_GCC_541\Debug\Listing Files\WD_ResetButton.lst</v>
 <v>Lab01EAA\EGasPedal\CortexM3\ARM_GCC_541\Debug\EGasPedal.elf</v>
 <v>Lab01EAA\EGasPedal\CortexM3\ARM_GCC_541\Debug\EGasPedal.hex</v>
 <v>Lab01EAA\EGasPedal\CortexM3\ARM_GCC_541\Debug\EGasPedal.map</v>
@@ -438,6 +440,7 @@
 <v>Lab01EAA\EGasPedal\System Reference Guides\cy_boot_v6_0</v>
 <v>Lab01EAA\EGasPedal\ADC_SAR_SEQ_v2_10.pdf</v>
 <v>Lab01EAA\EGasPedal\cy_clock_v2_20.pdf</v>
+<v>Lab01EAA\EGasPedal\cy_isr_v1_70.pdf</v>
 <v>Lab01EAA\EGasPedal\cy_pins_v2_20</v>
 <v>Lab01EAA\EGasPedal\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>Lab01EAA\EGasPedal\ErikaOS_v2_5_3.pdf</v>
@@ -453,6 +456,7 @@
 <v>Lab01EAA\EGasPedal\System Reference Guides\cy_boot_v6_0</v>
 <v>Lab01EAA\EGasPedal\ADC_SAR_SEQ_v2_10.pdf</v>
 <v>Lab01EAA\EGasPedal\cy_clock_v2_20.pdf</v>
+<v>Lab01EAA\EGasPedal\cy_isr_v1_70.pdf</v>
 <v>Lab01EAA\EGasPedal\cy_pins_v2_20</v>
 <v>Lab01EAA\EGasPedal\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>Lab01EAA\EGasPedal\ErikaOS_v2_5_3.pdf</v>
@@ -467,13 +471,13 @@
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
 <OpenDocs>
-<name v=".\EGasPedal.cydsn\source\rte\sc_speed.h" />
-<name v=".\EGasPedal.cydsn\source\asw\swc_control.c" />
-<name v=".\EGasPedal.cydsn\source\asw\swc_engine.c" />
-<name v=".\EGasPedal.cydsn\source\asw\tsk_io.c" />
 <name v=".\EGasPedal.cydsn\source\asw\main.c" />
-<name v=".\EGasPedal.cydsn\source\rte\sc_speed.c" />
-<name v=".\EGasPedal.cydsn\source\asw\tsk_system.c" />
+<name v=".\EGasPedal.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\EGasPedal.cydsn\Generated_Source\PSoC5\CyLib.h" />
+<name v=".\EGasPedal.cydsn\source\bsw\watchdog.c" />
+<name v=".\EGasPedal.cydsn\source\bsw\watchdog.h" />
+<name v=".\EGasPedal.cydsn\source\rte\sc_speed_type.h" />
+<name v=".\EGasPedal.cydsn\source\rte\sc_speed.h" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -481,7 +485,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="986, 493" SelectedTabbedMdiWindow="c0a5443b-266e-48e8-a55b-007fcb6ecd68"><DocumentWindow Key="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\source\rte\sc_speed.h" Guid="a3c2b27a-f301-4788-b541-98d5ebf53400" /><DocumentWindow Key="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\source\asw\swc_control.c" Guid="79761972-ab08-473d-a725-9fb44cdc6215" /><DocumentWindow Key="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\source\asw\swc_engine.c" Guid="83e29660-eb44-4429-9f2f-fd0b798f927d" /><DocumentWindow Key="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\source\asw\tsk_io.c" Guid="87267a0a-681e-4a84-a40a-93ed252c35ac" /><DocumentWindow Key="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\source\asw\main.c" Guid="b2e01abd-ec80-4574-830d-205911a7762e" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="be389097-de6b-4648-a141-810654c7ce70" /><DocumentWindow Key="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\source\rte\sc_speed.c" Guid="1bbad518-29e7-4fb2-84a7-12b6ac688397" /><DocumentWindow Key="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\source\asw\tsk_system.c" Guid="c0a5443b-266e-48e8-a55b-007fcb6ecd68" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="902, 493" SelectedTabbedMdiWindow="d27bc763-cb2a-49c4-822e-7afafc97c87b"><DocumentWindow Key="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\source\asw\main.c" Guid="48bafdb1-6c7e-497a-ba47-633ff075ff00" /><DocumentWindow Key="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\TopDesign\TopDesign.cysch" Guid="c0d65ed2-0cdf-43d8-9037-814e25912881" /><DocumentWindow Key="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\Generated_Source\PSoC5\CyLib.h" Guid="d27bc763-cb2a-49c4-822e-7afafc97c87b" /><DocumentWindow Key="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\source\bsw\watchdog.c" Guid="fba626e7-fc73-4d01-826b-918e07d1b86c" /><DocumentWindow Key="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\source\bsw\watchdog.h" Guid="a0320d38-ff30-484a-a8f6-e8cc8cd9360f" /><DocumentWindow Key="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\source\rte\sc_speed_type.h" Guid="cd4f5c3d-45a7-4230-b352-72734b065422" /><DocumentWindow Key="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\source\rte\sc_speed.h" Guid="f6bb29ae-602d-476e-9d9c-1c2556adf128" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="be389097-de6b-4648-a141-810654c7ce70" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

@@ -125,6 +125,11 @@
   <file name="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\UART_LOG_PM.c" value="SOURCE_C;CortexM3;;;;UART_LOG" />
   <file name="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\UART_LOG_INT.c" value="SOURCE_C;CortexM3;;;;UART_LOG" />
   <file name="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\UART_LOG_BOOT.c" value="SOURCE_C;CortexM3;;;;UART_LOG" />
+  <file name="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\isr_button_reset.c" value="SOURCE_C;CortexM3;;;;isr_button_reset" />
+  <file name="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\isr_button_reset.h" value="HEADER;;;;;isr_button_reset" />
+  <file name="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\WD_ResetButton_aliases.h" value="HEADER;;;;;WD_ResetButton" />
+  <file name="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\WD_ResetButton.c" value="SOURCE_C;CortexM3;;;;WD_ResetButton" />
+  <file name="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\WD_ResetButton.h" value="HEADER;;;;;WD_ResetButton" />
   <file name="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\Joystick_ADC_SAR.c" value="SOURCE_C;CortexM3;;;;Joystick_ADC_SAR" />
   <file name="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\Joystick_ADC_SAR.h" value="HEADER;;;;;Joystick_ADC_SAR" />
   <file name="C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\codegentemp\Joystick_ADC_SAR_INT.c" value="SOURCE_C;CortexM3;;;;Joystick_ADC_SAR" />

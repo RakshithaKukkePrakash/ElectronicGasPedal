@@ -15,7 +15,7 @@
 #include "rte_types.h"
 
 /* USER CODE START SWC_CONTROL_INCLUDES */
-
+#include "watchdog.h"
 /* USER CODE END SWC_CONTROL_INCLUDES */
 
 

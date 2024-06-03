@@ -75,7 +75,7 @@
 #define WATCHDOG_H
 
 #include "global.h"
-
+#include "derivate.h"
     
 /*****************************************************************************/
 /* Global pre-processor symbols/macros and type declarations                 */
@@ -95,11 +95,13 @@ public:
 /* Extern global variables                                                   */
 /*****************************************************************************/
 typedef enum{
-    CYWDT_1024_TICKS,
-    
+    CYWD_1024_TICKS,    /* 2048 - 3072 ms */
+    CYWD_128_TICKS,     /*  256 -  384 ms */
+    CYWD_16_TICKS,      /*   32 -   48 ms */
+    CYWD_2_TICKS,       /*    4 -    6 ms */  
 }WDT_TimeOut_t;
 
-
+extern uint8_t WDbitfields;
 /*****************************************************************************/
 /* API functions                                                             */
 /*****************************************************************************/

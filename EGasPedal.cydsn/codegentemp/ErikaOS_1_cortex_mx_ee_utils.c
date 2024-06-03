@@ -68,7 +68,7 @@
 //i.e. the value can be takes as it is
 #define ISR_SCALE(prio) (prio)
 
-#define Number_of_ISRs  0
+#define Number_of_ISRs  1
 
 extern void EE_set_switch_context_pri(void);
 

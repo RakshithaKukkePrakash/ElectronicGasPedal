@@ -65,7 +65,7 @@ void CONTROL_calcControl_run(RTE_event ev){
     {
         engineSpeed.speed_val = joystickValue;
     }
-    //WD_Alive(1);
+    WD_Alive(1);
     /* USER CODE END CONTROL_calcControl_run */
 }
 

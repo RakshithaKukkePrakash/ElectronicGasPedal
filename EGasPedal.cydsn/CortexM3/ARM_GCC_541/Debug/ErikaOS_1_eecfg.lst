@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
   55              		.global	EE_cortex_mx_IRQ_tos
   56              		.global	EE_cortex_mx_active_tos
   57              		.global	EE_cortex_mx_system_tos
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 2
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 2
 
 
   58              		.global	EE_std_thread_tos
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  110 0054 01000000 		.word	1
  111 0058 01000000 		.word	1
  112 005c 01000000 		.word	1
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 3
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 3
 
 
  113 0060 01000000 		.word	1
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  167 0000 00000000 		.word	.LC0
  168              		.type	EE_counter_RAM, %object
  169              		.size	EE_counter_RAM, 8
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 4
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 4
 
 
  170              	EE_counter_RAM:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  224              		.type	EE_rq_queues_head, %object
  225              		.size	EE_rq_queues_head, 64
  226              	EE_rq_queues_head:
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 5
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 5
 
 
  227 009c FFFFFFFF 		.word	-1
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  281              		.type	EE_cortex_mx_system_tos, %object
  282              		.size	EE_cortex_mx_system_tos, 8
  283              	EE_cortex_mx_system_tos:
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 6
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 6
 
 
  284 012c 00000000 		.word	0
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  317              	EE_th_waswaiting:
  318 0000 00000000 		.space	20
  318      00000000 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 7
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 7
 
 
  318      00000000 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  362 0010 0C       		.byte	0xc
  363 0011 3A070000 		.4byte	.LASF113
  364 0015 6A060000 		.4byte	.LASF114
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 8
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 8
 
 
  365 0019 00000000 		.4byte	.Ldebug_line0
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  419 007c 55000000 		.4byte	0x55
  420 0080 04       		.uleb128 0x4
  421 0081 15070000 		.4byte	.LASF12
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 9
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 9
 
 
  422 0085 01       		.byte	0x1
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  476 00f4 05010000 		.4byte	0x105
  477 00f8 09       		.uleb128 0x9
  478 00f9 7F070000 		.4byte	.LASF28
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 10
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 10
 
 
  479 00fd 04       		.byte	0x4
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  533 0175 7402     		.2byte	0x274
  534 0177 29010000 		.4byte	0x129
  535 017b 04       		.byte	0x4
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 11
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 11
 
 
  536 017c 0C       		.uleb128 0xc
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  590 01ed CA020000 		.4byte	.LASF39
  591 01f1 03       		.byte	0x3
  592 01f2 9002     		.2byte	0x290
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 12
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 12
 
 
  593 01f4 E0010000 		.4byte	0x1e0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  647 0264 00000000 		.4byte	.LASF46
  648 0268 03       		.byte	0x3
  649 0269 A302     		.2byte	0x2a3
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 13
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 13
 
 
  650 026b 35010000 		.4byte	0x135
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  704 02de 0C       		.uleb128 0xc
  705 02df 63050000 		.4byte	.LASF56
  706 02e3 03       		.byte	0x3
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 14
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 14
 
 
  707 02e4 B602     		.2byte	0x2b6
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  761 0354 6A030000 		.4byte	0x36a
  762 0358 04       		.byte	0x4
  763 0359 00       		.byte	0
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 15
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 15
 
 
  764 035a 11       		.uleb128 0x11
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  818 03d3 80030000 		.4byte	0x380
  819 03d7 05       		.byte	0x5
  820 03d8 00       		.byte	0
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 16
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 16
 
 
  821 03d9 13       		.uleb128 0x13
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  875 0451 05       		.byte	0x5
  876 0452 A9       		.byte	0xa9
  877 0453 B5000000 		.4byte	0xb5
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 17
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 17
 
 
  878 0457 05       		.uleb128 0x5
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  932 04cf 13       		.uleb128 0x13
  933 04d0 C8040000 		.4byte	0x4c8
  934 04d4 17       		.uleb128 0x17
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 18
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 18
 
 
  935 04d5 B1040000 		.4byte	.LASF75
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  989 0551 13       		.uleb128 0x13
  990 0552 2A050000 		.4byte	0x52a
  991 0556 11       		.uleb128 0x11
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 19
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 19
 
 
  992 0557 3A050000 		.4byte	0x53a
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  1046 05d3 17       		.uleb128 0x17
  1047 05d4 05000000 		.4byte	.LASF83
  1048 05d8 05       		.byte	0x5
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 20
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 20
 
 
  1049 05d9 7703     		.2byte	0x377
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  1103 0654 5F060000 		.4byte	0x65f
  1104 0658 14       		.uleb128 0x14
  1105 0659 80030000 		.4byte	0x380
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 21
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 21
 
 
  1106 065d 04       		.byte	0x4
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  1160 06d5 80030000 		.4byte	0x380
  1161 06d9 04       		.byte	0x4
  1162 06da 00       		.byte	0
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 22
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 22
 
 
  1163 06db 17       		.uleb128 0x17
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  1217 0757 13       		.uleb128 0x13
  1218 0758 30070000 		.4byte	0x730
  1219 075c 11       		.uleb128 0x11
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 23
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 23
 
 
  1220 075d 6C070000 		.4byte	0x76c
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  1274 07db E6070000 		.4byte	0x7e6
  1275 07df 14       		.uleb128 0x14
  1276 07e0 80030000 		.4byte	0x380
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 24
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 24
 
 
  1277 07e4 00       		.byte	0
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  1331 085c 08       		.byte	0x8
  1332 085d 44       		.byte	0x44
  1333 085e B5000000 		.4byte	0xb5
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 25
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 25
 
 
  1334 0862 16       		.uleb128 0x16
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  1388 000d 00       		.byte	0
  1389 000e 00       		.byte	0
  1390 000f 02       		.uleb128 0x2
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 26
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 26
 
 
  1391 0010 24       		.uleb128 0x24
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  1445 0046 19       		.uleb128 0x19
  1446 0047 00       		.byte	0
  1447 0048 00       		.byte	0
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 27
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 27
 
 
  1448 0049 08       		.uleb128 0x8
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  1502 007f 00       		.byte	0
  1503 0080 00       		.byte	0
  1504 0081 0C       		.uleb128 0xc
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 28
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 28
 
 
  1505 0082 0D       		.uleb128 0xd
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  1559 00b8 13       		.uleb128 0x13
  1560 00b9 01       		.byte	0x1
  1561 00ba 03       		.uleb128 0x3
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 29
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 29
 
 
  1562 00bb 0E       		.uleb128 0xe
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  1616 00f1 00       		.byte	0
  1617 00f2 00       		.byte	0
  1618 00f3 16       		.uleb128 0x16
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 30
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 30
 
 
  1619 00f4 34       		.uleb128 0x34
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  1673 012a 13       		.uleb128 0x13
  1674 012b 2F       		.uleb128 0x2f
  1675 012c 05       		.uleb128 0x5
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 31
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 31
 
 
  1676 012d 00       		.byte	0
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  1707      6720756E 
  1707      7369676E 
  1707      65642069 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 32
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 32
 
 
  1708              	.LASF45:
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  1731      744D6173 
  1731      6B547970 
  1731      6500
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 33
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 33
 
 
  1732              	.LASF76:
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  1753      494400
  1754              	.LASF33:
  1755 01f3 76616C75 		.ascii	"value\000"
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 34
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 34
 
 
  1755      6500
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  1777 029e 45455F6F 		.ascii	"EE_oo_counter_object_kind_type\000"
  1777      6F5F636F 
  1777      756E7465 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 35
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 35
 
 
  1777      725F6F62 
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  1797      63617469 
  1797      6F6E4D6F 
  1797      646500
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 36
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 36
 
 
  1798              	.LASF99:
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  1821      5F747970 
  1822              	.LASF10:
  1823 041a 45455F55 		.ascii	"EE_UINT16\000"
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 37
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 37
 
 
  1823      494E5431 
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  1845      6F5F636F 
  1845      756E7465 
  1845      725F524F 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 38
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 38
 
 
  1845      4D5F7479 
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  1865      7465724F 
  1865      626A6563 
  1865      74547970 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 39
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 39
 
 
  1865      6500
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  1889      6F785C53 
  1889      656D325C 
  1889      4541415C 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 40
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 40
 
 
  1890 0696 6564616C 		.ascii	"edal\\EGasPedal.cydsn\000"
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 1
  1910      645F536F 
  1910      75726365 
  1910      5C50536F 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwARcaW.s 			page 41
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccZlA18u.s 			page 41
 
 
  1911              	.LASF93:

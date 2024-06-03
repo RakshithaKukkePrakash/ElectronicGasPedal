@@ -85,7 +85,7 @@ void ENGINE_setEngine_run(RTE_event ev){
     RTE_SC_ENGINE_set(&SO_ENGINE_signal, engineSpd);
     RTE_SC_ENGINE_pushPort(&SO_ENGINE_signal);
     
-    //WD_Alive(2);
+    WD_Alive(2);
     
     /* USER CODE END ENGINE_setEngine_run */
 }

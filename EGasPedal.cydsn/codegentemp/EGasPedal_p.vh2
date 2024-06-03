@@ -1,5 +1,5 @@
 -- Project:   EGasPedal
--- Generated: 06/02/2024 00:28:18
+-- Generated: 06/03/2024 00:25:56
 -- PSoC Creator  4.4
 
 ENTITY EGasPedal IS
@@ -7,7 +7,8 @@ ENTITY EGasPedal IS
         RGB_G(0)_PAD : OUT std_ulogic;
         LED_red(0)_PAD : OUT std_ulogic;
         Tx_port(0)_PAD : OUT std_ulogic;
-        Rx_port(0)_PAD : IN std_ulogic);
+        Rx_port(0)_PAD : IN std_ulogic;
+        WD_ResetButton(0)_PAD : IN std_ulogic);
     ATTRIBUTE voltage_VDDABUF OF __DEFAULT__ : ENTITY IS 5e0;
     ATTRIBUTE voltage_VDDA OF __DEFAULT__ : ENTITY IS 5e0;
     ATTRIBUTE voltage_VUSB OF __DEFAULT__ : ENTITY IS 5e0;
@@ -38,6 +39,7 @@ ARCHITECTURE __DEFAULT__ OF EGasPedal IS
     SIGNAL Net_208 : bit;
     SIGNAL Net_2248 : bit;
     SIGNAL Net_2252 : bit;
+    SIGNAL Net_2257 : bit;
     SIGNAL Net_2605 : bit;
     ATTRIBUTE udbclken_assigned OF Net_2605 : SIGNAL IS "True";
     ATTRIBUTE global_signal OF Net_2605 : SIGNAL IS true;
@@ -46,6 +48,7 @@ ARCHITECTURE __DEFAULT__ OF EGasPedal IS
     SIGNAL RGB_G(0)__PA : bit;
     SIGNAL Rx_port(0)__PA : bit;
     SIGNAL Tx_port(0)__PA : bit;
+    SIGNAL WD_ResetButton(0)__PA : bit;
     SIGNAL \Joystick_ADC:AMuxHw_2_Decoder_is_active\ : bit;
     ATTRIBUTE soft OF \Joystick_ADC:AMuxHw_2_Decoder_is_active\ : SIGNAL IS 1;
     SIGNAL \Joystick_ADC:AMuxHw_2_Decoder_is_active_split\ : bit;
@@ -1327,6 +1330,97 @@ BEGIN
             out_clock_en => '1',
             out_reset => '0');
 
+    WD_ResetButton:logicalport
+        GENERIC MAP(
+            drive_mode => "001",
+            ibuf_enabled => "1",
+            id => "c7fb2adc-9092-4287-8519-2e1d6d4f114f",
+            init_dr_st => "0",
+            input_buffer_sel => "00",
+            input_clk_en => 0,
+            input_sync => "0",
+            input_sync_mode => "0",
+            intr_mode => "00",
+            invert_in_clock => 0,
+            invert_in_clock_en => 0,
+            invert_in_reset => 0,
+            invert_out_clock => 0,
+            invert_out_clock_en => 0,
+            invert_out_reset => 0,
+            io_voltage => "",
+            layout_mode => "CONTIGUOUS",
+            oe_conn => "0",
+            oe_reset => 0,
+            oe_sync => "0",
+            output_clk_en => 0,
+            output_clock_mode => "0",
+            output_conn => "0",
+            output_mode => "0",
+            output_reset => 0,
+            output_sync => "0",
+            ovt_hyst_trim => "0",
+            ovt_needed => "0",
+            ovt_slew_control => "00",
+            pa_in_clock => -1,
+            pa_in_clock_en => -1,
+            pa_in_reset => -1,
+            pa_out_clock => -1,
+            pa_out_clock_en => -1,
+            pa_out_reset => -1,
+            pin_aliases => "",
+            pin_mode => "I",
+            por_state => 4,
+            port_alias_group => "",
+            port_alias_required => 0,
+            sio_group_cnt => 0,
+            sio_hifreq => "00000000",
+            sio_hyst => "1",
+            sio_ibuf => "00000000",
+            sio_info => "00",
+            sio_obuf => "00000000",
+            sio_refsel => "00000000",
+            sio_vohsel => "00000000",
+            sio_vtrip => "00000000",
+            slew_rate => "0",
+            spanning => 0,
+            sw_only => 0,
+            use_annotation => "0",
+            vtrip => "00",
+            width => 1,
+            in_clk_inv => 0,
+            in_clken_inv => 0,
+            in_clken_mode => 1,
+            in_rst_inv => 0,
+            out_clk_inv => 0,
+            out_clken_inv => 0,
+            out_clken_mode => 1,
+            out_rst_inv => 0)
+        PORT MAP(
+            in_clock_en => open,
+            in_reset => open,
+            out_clock_en => open,
+            out_reset => open);
+
+    WD_ResetButton(0):iocell
+        GENERIC MAP(
+            in_sync_mode => 0,
+            out_sync_mode => 0,
+            oe_sync_mode => 0,
+            logicalport => "WD_ResetButton",
+            logicalport_pin_id => 0,
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
+        PORT MAP(
+            pa_out => WD_ResetButton(0)__PA,
+            oe => open,
+            fb => Net_2257,
+            pad_in => WD_ResetButton(0)_PAD,
+            in_clock => open,
+            in_clock_en => '1',
+            in_reset => '0',
+            out_clock => open,
+            out_clock_en => '1',
+            out_reset => '0');
+
     \Joystick_ADC:AMuxHw_2_Decoder_is_active\:macrocell
         GENERIC MAP(
             soft => 1,
@@ -1798,6 +1892,14 @@ BEGIN
             status_2 => open,
             status_1 => open,
             status_0 => open);
+
+    isr_button_reset:interrupt
+        GENERIC MAP(
+            int_type => "10",
+            is_nmi => 0)
+        PORT MAP(
+            interrupt => Net_2257,
+            clock => ClockBlock_BUS_CLK);
 
     \Joystick_ADC:AMuxHw_2_Decoder_old_id_5\:macrocell
         GENERIC MAP(

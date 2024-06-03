@@ -33,7 +33,7 @@
 /*****************************************************************************/
 /* Global variable definitions (declared in header file with 'extern')       */
 /*****************************************************************************/
-
+uint8_t WDbitfields = 0;
 /*****************************************************************************/
 /* Local type definitions ('typedef')                                        */
 /*****************************************************************************/
@@ -61,7 +61,8 @@
 RC_t WD_Start(WDT_TimeOut_t timeout)
 {
     
-    CyWdtStart(timeout, 0);
+    CyWdtStart(timeout, CYWDT_LPMODE_NOCHANGE);
+    return RC_SUCCESS;
 }
 
 /**
@@ -81,7 +82,8 @@ RC_t WD_Trigger()
 */
 boolean_t WD_CheckResetBit()
 {
-    return TRUE;
+    if(CY_RESET_WD == CyResetStatus) return TRUE;
+    else return FALSE;
 }
 
 /**
@@ -90,4 +92,6 @@ boolean_t WD_CheckResetBit()
 */
 RC_t WD_Alive(uint8_t myBitPosition)
 {
+    WDbitfields = WDbitfields | 1<<myBitPosition;
+    return RC_SUCCESS;
 }
