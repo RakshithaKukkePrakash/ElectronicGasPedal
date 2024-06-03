@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
   28:source\asw/swc_engine.c **** 
   29:source\asw/swc_engine.c **** /* USER CODE END SWC_ENGINE_USERDEFINITIONS */
   30:source\asw/swc_engine.c **** 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 2
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 2
 
 
   31:source\asw/swc_engine.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
   26:.\source\rte/sc_speed.h **** 
   27:.\source\rte/sc_speed.h **** #include "sc_speed_type.h"
   28:.\source\rte/sc_speed.h **** 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 3
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 3
 
 
   29:.\source\rte/sc_speed.h **** #include "stdlib.h"
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
   83:.\source\rte/sc_speed.h ****      * Task List onUpdate
   84:.\source\rte/sc_speed.h ****      */
   85:.\source\rte/sc_speed.h ****     TaskTypeArray* const onUpdateTasks;
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 4
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 4
 
 
   86:.\source\rte/sc_speed.h ****     
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  140:.\source\rte/sc_speed.h ****      * Pointer to the signal configuration
  141:.\source\rte/sc_speed.h ****      */
  142:.\source\rte/sc_speed.h **** 	const SC_SPEED_cfg_t * const    pSigCfg;
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 5
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 5
 
 
  143:.\source\rte/sc_speed.h **** 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
   49:source\asw/swc_engine.c ****    /*
   50:source\asw/swc_engine.c ****     UART_LOG_PutString("\n");
   51:source\asw/swc_engine.c ****     char log[200];
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 6
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 6
 
 
   52:source\asw/swc_engine.c ****     */
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  230:.\source\rte/sc_speed.h ****    return signal->age;
  231:.\source\rte/sc_speed.h **** }
  232:.\source\rte/sc_speed.h **** 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 7
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 7
 
 
  233:.\source\rte/sc_speed.h **** /**
@@ -369,59 +369,45 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  238:.\source\rte/sc_speed.h ****  */
  239:.\source\rte/sc_speed.h **** inline void RTE_SC_SPEED_incAge(  SC_SPEED_t * const signal , uint32_t increment)
  240:.\source\rte/sc_speed.h **** {
- 241:.\source\rte/sc_speed.h ****     UART_LOG_PutString("\n");
- 242:.\source\rte/sc_speed.h ****     char log[200];
- 243:.\source\rte/sc_speed.h ****                 itoa(signal->age, log, 10);
- 244:.\source\rte/sc_speed.h ****             //UART_LOG_PutString("Engine speed pos\n");
- 245:.\source\rte/sc_speed.h ****             //itoa(engineSpd.engine, log, 10);
- 246:.\source\rte/sc_speed.h ****             UART_LOG_PutString(log); 
- 247:.\source\rte/sc_speed.h **** 	   //Hack....
- 248:.\source\rte/sc_speed.h **** 	   if ( 0xFFFF0000 > (signal->age + increment) )
- 249:.\source\rte/sc_speed.h **** 	   {
- 250:.\source\rte/sc_speed.h **** 	      signal->age += increment;
- 251:.\source\rte/sc_speed.h **** 	   }
- 252:.\source\rte/sc_speed.h ****         char log2[200];
- 253:.\source\rte/sc_speed.h ****         UART_LOG_PutString("\n");
- 254:.\source\rte/sc_speed.h ****                 itoa(signal->age, log2, 10);
- 255:.\source\rte/sc_speed.h ****             //UART_LOG_PutString("Engine speed pos\n");
- 256:.\source\rte/sc_speed.h ****             //itoa(engineSpd.engine, log, 10);
- 257:.\source\rte/sc_speed.h ****             UART_LOG_PutString(log2); 
- 258:.\source\rte/sc_speed.h **** }
- 259:.\source\rte/sc_speed.h **** 
- 260:.\source\rte/sc_speed.h **** 
- 261:.\source\rte/sc_speed.h **** /**************************************************************************************************
- 262:.\source\rte/sc_speed.h **** /* Application Data read/write Interface																			*/
- 263:.\source\rte/sc_speed.h **** /**************************************************************************************************
- 264:.\source\rte/sc_speed.h **** 
- 265:.\source\rte/sc_speed.h **** /**
- 266:.\source\rte/sc_speed.h ****  * Returns the current application value as pointer to the signal payload.
- 267:.\source\rte/sc_speed.h ****  * Careful: This is not threadsafe!!!
- 268:.\source\rte/sc_speed.h ****  *
- 269:.\source\rte/sc_speed.h ****  * @param  SC_SPEED_t * const signal: Pointer to the signal object
- 270:.\source\rte/sc_speed.h ****  * @return sc_speed_data_t*: pointer to the current value of the application data buffer
- 271:.\source\rte/sc_speed.h ****  *
- 272:.\source\rte/sc_speed.h ****  **/
- 273:.\source\rte/sc_speed.h **** inline SC_SPEED_data_t* RTE_SC_SPEED_getPtr( SC_SPEED_t * const signal )
- 274:.\source\rte/sc_speed.h **** {               
- 275:.\source\rte/sc_speed.h ****    //Todo: Critical region cannot be protected using return values																						
- 276:.\source\rte/sc_speed.h ****    return &(signal->value);                                                                        
- 277:.\source\rte/sc_speed.h **** }
- 278:.\source\rte/sc_speed.h **** 
- 279:.\source\rte/sc_speed.h **** /**
- 280:.\source\rte/sc_speed.h ****  * Returns the current application value of the passed signal instance.
- 281:.\source\rte/sc_speed.h ****  *
- 282:.\source\rte/sc_speed.h ****  * @param  SC_SPEED_t * const signal: Pointer to the signal object
- 283:.\source\rte/sc_speed.h ****  * @return sc_speed_data_t: current value of the application data buffer
- 284:.\source\rte/sc_speed.h ****  *
- 285:.\source\rte/sc_speed.h ****  **/
- 286:.\source\rte/sc_speed.h **** inline SC_SPEED_data_t RTE_SC_SPEED_get( const SC_SPEED_t * const signal )
- 287:.\source\rte/sc_speed.h **** {               
- 288:.\source\rte/sc_speed.h ****    //Todo: Critical region cannot be protected using return values																						
- 289:.\source\rte/sc_speed.h ****    return signal->value;                                                                           
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 8
-
-
-  55              		.loc 2 289 0
+ 241:.\source\rte/sc_speed.h **** 	   //Hack....
+ 242:.\source\rte/sc_speed.h **** 	   if ( 0xFFFF0000 > (signal->age + increment) )
+ 243:.\source\rte/sc_speed.h **** 	   {
+ 244:.\source\rte/sc_speed.h **** 	      signal->age += increment;
+ 245:.\source\rte/sc_speed.h **** 	   }
+ 246:.\source\rte/sc_speed.h **** 
+ 247:.\source\rte/sc_speed.h **** }
+ 248:.\source\rte/sc_speed.h **** 
+ 249:.\source\rte/sc_speed.h **** 
+ 250:.\source\rte/sc_speed.h **** /**************************************************************************************************
+ 251:.\source\rte/sc_speed.h **** /* Application Data read/write Interface																			*/
+ 252:.\source\rte/sc_speed.h **** /**************************************************************************************************
+ 253:.\source\rte/sc_speed.h **** 
+ 254:.\source\rte/sc_speed.h **** /**
+ 255:.\source\rte/sc_speed.h ****  * Returns the current application value as pointer to the signal payload.
+ 256:.\source\rte/sc_speed.h ****  * Careful: This is not threadsafe!!!
+ 257:.\source\rte/sc_speed.h ****  *
+ 258:.\source\rte/sc_speed.h ****  * @param  SC_SPEED_t * const signal: Pointer to the signal object
+ 259:.\source\rte/sc_speed.h ****  * @return sc_speed_data_t*: pointer to the current value of the application data buffer
+ 260:.\source\rte/sc_speed.h ****  *
+ 261:.\source\rte/sc_speed.h ****  **/
+ 262:.\source\rte/sc_speed.h **** inline SC_SPEED_data_t* RTE_SC_SPEED_getPtr( SC_SPEED_t * const signal )
+ 263:.\source\rte/sc_speed.h **** {               
+ 264:.\source\rte/sc_speed.h ****    //Todo: Critical region cannot be protected using return values																						
+ 265:.\source\rte/sc_speed.h ****    return &(signal->value);                                                                        
+ 266:.\source\rte/sc_speed.h **** }
+ 267:.\source\rte/sc_speed.h **** 
+ 268:.\source\rte/sc_speed.h **** /**
+ 269:.\source\rte/sc_speed.h ****  * Returns the current application value of the passed signal instance.
+ 270:.\source\rte/sc_speed.h ****  *
+ 271:.\source\rte/sc_speed.h ****  * @param  SC_SPEED_t * const signal: Pointer to the signal object
+ 272:.\source\rte/sc_speed.h ****  * @return sc_speed_data_t: current value of the application data buffer
+ 273:.\source\rte/sc_speed.h ****  *
+ 274:.\source\rte/sc_speed.h ****  **/
+ 275:.\source\rte/sc_speed.h **** inline SC_SPEED_data_t RTE_SC_SPEED_get( const SC_SPEED_t * const signal )
+ 276:.\source\rte/sc_speed.h **** {               
+ 277:.\source\rte/sc_speed.h ****    //Todo: Critical region cannot be protected using return values																						
+ 278:.\source\rte/sc_speed.h ****    return signal->value;                                                                           
+  55              		.loc 2 278 0
   56 000a 184B     		ldr	r3, .L11
   57 000c 1978     		ldrb	r1, [r3]	@ zero_extendqisi2
   58              	.LVL4:
@@ -432,6 +418,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  230:.\source\rte/sc_speed.h **** }
   63              		.loc 2 230 0
   64 000e 5B68     		ldr	r3, [r3, #4]
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 8
+
+
   65              	.LVL5:
   66              	.LBE18:
   67              	.LBE17:
@@ -478,9 +467,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
   81              	.LBB20:
   82              		.file 3 ".\\source\\rte/sc_engine.h"
    1:.\source\rte/sc_engine.h **** 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 9
-
-
    2:.\source\rte/sc_engine.h **** 
    3:.\source\rte/sc_engine.h **** /**
    4:.\source\rte/sc_engine.h ****  *  file    SC_ENGINE_signal.h
@@ -492,6 +478,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
   10:.\source\rte/sc_engine.h ****  * description: Signalclass
   11:.\source\rte/sc_engine.h ****  * name: sc_engine
   12:.\source\rte/sc_engine.h ****  * shortname: engine
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 9
+
+
   13:.\source\rte/sc_engine.h ****  *
   14:.\source\rte/sc_engine.h ****  */
   15:.\source\rte/sc_engine.h **** 
@@ -538,9 +527,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
   56:.\source\rte/sc_engine.h ****     /**
   57:.\source\rte/sc_engine.h ****      * Function pointer to the input driver
   58:.\source\rte/sc_engine.h ****      */
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 10
-
-
   59:.\source\rte/sc_engine.h ****     SC_ENGINE_driverIn_t const inDriver;
   60:.\source\rte/sc_engine.h **** 
   61:.\source\rte/sc_engine.h ****     /**
@@ -552,6 +538,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
   67:.\source\rte/sc_engine.h ****      * Event onUpdate
   68:.\source\rte/sc_engine.h ****      */
   69:.\source\rte/sc_engine.h ****     EventMaskType const evOnUpdate;
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 10
+
+
   70:.\source\rte/sc_engine.h ****     
   71:.\source\rte/sc_engine.h ****     
   72:.\source\rte/sc_engine.h ****     /**
@@ -598,9 +587,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  113:.\source\rte/sc_engine.h **** /**************************************************************************************************
  114:.\source\rte/sc_engine.h **** 
  115:.\source\rte/sc_engine.h ****                                                                                                    
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 11
-
-
  116:.\source\rte/sc_engine.h **** 							  
  117:.\source\rte/sc_engine.h **** /**
  118:.\source\rte/sc_engine.h ****  * Instances of the struct SC_ENGINE_t represent the signal objects.
@@ -612,6 +598,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  124:.\source\rte/sc_engine.h **** 	/**
  125:.\source\rte/sc_engine.h **** 	 * Data buffer for the application value
  126:.\source\rte/sc_engine.h **** 	 */
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 11
+
+
  127:.\source\rte/sc_engine.h ****     SC_ENGINE_data_t value;
  128:.\source\rte/sc_engine.h **** 
  129:.\source\rte/sc_engine.h ****     /**
@@ -658,9 +647,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  170:.\source\rte/sc_engine.h ****    return ret;
  171:.\source\rte/sc_engine.h **** }
  172:.\source\rte/sc_engine.h **** 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 12
-
-
  173:.\source\rte/sc_engine.h **** /**************************************************************************************************
  174:.\source\rte/sc_engine.h **** /* Status and timeout control																						*/
  175:.\source\rte/sc_engine.h **** /**************************************************************************************************
@@ -672,6 +658,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  181:.\source\rte/sc_engine.h ****  * @return  sig_status_t: The current signal status
  182:.\source\rte/sc_engine.h ****  *
  183:.\source\rte/sc_engine.h ****  **/
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 12
+
+
  184:.\source\rte/sc_engine.h **** inline RTE_signalStatus_t RTE_SC_ENGINE_getStatus( const SC_ENGINE_t * const signal )
  185:.\source\rte/sc_engine.h **** {
  186:.\source\rte/sc_engine.h ****    return signal->status;
@@ -718,9 +707,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  227:.\source\rte/sc_engine.h ****  */
  228:.\source\rte/sc_engine.h **** inline uint32_t RTE_SC_ENGINE_getAge( const SC_ENGINE_t * const signal )
  229:.\source\rte/sc_engine.h **** {
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 13
-
-
  230:.\source\rte/sc_engine.h ****    return signal->age;
  231:.\source\rte/sc_engine.h **** }
  232:.\source\rte/sc_engine.h **** 
@@ -732,6 +718,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  238:.\source\rte/sc_engine.h ****  */
  239:.\source\rte/sc_engine.h **** inline void RTE_SC_ENGINE_incAge(  SC_ENGINE_t * const signal , uint32_t increment)
  240:.\source\rte/sc_engine.h **** {
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 13
+
+
  241:.\source\rte/sc_engine.h **** 	   //Hack....
  242:.\source\rte/sc_engine.h **** 	   if ( 0xFFFF0000 > (signal->age + increment) )
  243:.\source\rte/sc_engine.h **** 	   {
@@ -778,9 +767,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  284:.\source\rte/sc_engine.h ****  * @param  SC_ENGINE_data_t* data: Pointer to the return data Pointer to the signal object
  285:.\source\rte/sc_engine.h ****  * @return RC_SUCCESS
  286:.\source\rte/sc_engine.h ****  *
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 14
-
-
  287:.\source\rte/sc_engine.h ****  **/
  288:.\source\rte/sc_engine.h **** inline RC_t RTE_SC_ENGINE_getThreadSafe( const SC_ENGINE_t * const signal, SC_ENGINE_data_t * const
  289:.\source\rte/sc_engine.h **** {    
@@ -792,6 +778,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  295:.\source\rte/sc_engine.h ****    
  296:.\source\rte/sc_engine.h **** }                                                                                                  
  297:.\source\rte/sc_engine.h ****                                                                                                    
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 14
+
+
  298:.\source\rte/sc_engine.h **** /**
  299:.\source\rte/sc_engine.h ****  * Sets a new application value to the passed signal instance by passing the new value.
  300:.\source\rte/sc_engine.h ****  * The corresponding driver raw value will be calculated immediately by using the default conversio
@@ -838,9 +827,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  325:.\source\rte/sc_engine.h ****    if (0 != signal->pSigCfg->evOnUpdate && NULL != pTaskArray){
   99              		.loc 3 325 0
  100 0030 9368     		ldr	r3, [r2, #8]
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 15
-
-
  101 0032 73B1     		cbz	r3, .L5
  102 0034 3DB9     		cbnz	r5, .L9
  103 0036 0CE0     		b	.L5
@@ -852,6 +838,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  328:.\source\rte/sc_engine.h ****           TaskType task = (*pTaskArray)[taskNum];
  329:.\source\rte/sc_engine.h **** 	      SetEvent( task, signal->pSigCfg->evOnUpdate);
  107              		.loc 3 329 0
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 15
+
+
  108 0038 9968     		ldr	r1, [r3, #8]
  109 003a 55F82400 		ldr	r0, [r5, r4, lsl #2]
  110 003e FFF7FEFF 		bl	EE_oo_SetEvent
@@ -898,9 +887,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  343:.\source\rte/sc_engine.h ****  *  Calls the connected driver interface to get a new value.
  344:.\source\rte/sc_engine.h ****  *
  345:.\source\rte/sc_engine.h ****  * @param SC_ENGINE_t * const signal: Pointer to the signal object
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 16
-
-
  346:.\source\rte/sc_engine.h ****  * @return  RC_t: Return value of the driver call
  347:.\source\rte/sc_engine.h ****  *
  348:.\source\rte/sc_engine.h ****  */
@@ -912,6 +898,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  354:.\source\rte/sc_engine.h ****    if ( NULL != signal->pSigCfg->inDriver )
  355:.\source\rte/sc_engine.h ****    {
  356:.\source\rte/sc_engine.h **** 	  SC_ENGINE_data_t value = signal->value;
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 16
+
+
  357:.\source\rte/sc_engine.h ****       ret = signal->pSigCfg->inDriver(&value);
  358:.\source\rte/sc_engine.h ****                                                                                                    
  359:.\source\rte/sc_engine.h ****       if ( ret == RC_SUCCESS )                                                                     
@@ -958,9 +947,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  146              	.L8:
  147              	.LBE23:
  148              	.LBE22:
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 17
-
-
   84:source\asw/swc_engine.c ****     }
   85:source\asw/swc_engine.c ****     RTE_SC_ENGINE_set(&SO_ENGINE_signal, engineSpd);
   86:source\asw/swc_engine.c ****     RTE_SC_ENGINE_pushPort(&SO_ENGINE_signal);
@@ -972,6 +958,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  152              	.LVL18:
  153 0068 38BD     		pop	{r3, r4, r5, pc}
  154              	.L12:
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 17
+
+
  155 006a 00BF     		.align	2
  156              	.L11:
  157 006c 00000000 		.word	SO_SPEED_signal
@@ -1018,9 +1007,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  198 0027 06       		.byte	0x6
  199 0028 12040000 		.4byte	.LASF0
  200 002c 03       		.uleb128 0x3
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 18
-
-
  201 002d 35070000 		.4byte	.LASF4
  202 0031 04       		.byte	0x4
  203 0032 1D       		.byte	0x1d
@@ -1032,6 +1018,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  209 003e 02       		.uleb128 0x2
  210 003f 02       		.byte	0x2
  211 0040 05       		.byte	0x5
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 18
+
+
  212 0041 18010000 		.4byte	.LASF2
  213 0045 02       		.uleb128 0x2
  214 0046 02       		.byte	0x2
@@ -1078,9 +1067,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  255 0093 2C000000 		.4byte	0x2c
  256 0097 03       		.uleb128 0x3
  257 0098 FD040000 		.4byte	.LASF13
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 19
-
-
  258 009c 05       		.byte	0x5
  259 009d 2C       		.byte	0x2c
  260 009e 4C000000 		.4byte	0x4c
@@ -1092,6 +1078,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  266 00ad 02       		.uleb128 0x2
  267 00ae 04       		.byte	0x4
  268 00af 04       		.byte	0x4
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 19
+
+
  269 00b0 61020000 		.4byte	.LASF15
  270 00b4 02       		.uleb128 0x2
  271 00b5 08       		.byte	0x8
@@ -1138,9 +1127,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  312 010b 05       		.uleb128 0x5
  313 010c EA030000 		.4byte	.LASF25
  314 0110 09       		.byte	0x9
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 20
-
-
  315 0111 F701     		.2byte	0x1f7
  316 0113 00010000 		.4byte	0x100
  317 0117 05       		.uleb128 0x5
@@ -1152,6 +1138,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  323 0124 04       		.byte	0x4
  324 0125 07       		.byte	0x7
  325 0126 3E010000 		.4byte	.LASF27
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 20
+
+
  326 012a 03       		.uleb128 0x3
  327 012b B7030000 		.4byte	.LASF28
  328 012f 0A       		.byte	0xa
@@ -1198,9 +1187,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  369 0182 76       		.sleb128 -10
  370 0183 08       		.uleb128 0x8
  371 0184 5C070000 		.4byte	.LASF40
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 21
-
-
  372 0188 75       		.sleb128 -11
  373 0189 08       		.uleb128 0x8
  374 018a 4B040000 		.4byte	.LASF41
@@ -1212,6 +1198,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  380 0196 C2000000 		.4byte	.LASF43
  381 019a 72       		.sleb128 -14
  382 019b 08       		.uleb128 0x8
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 21
+
+
  383 019c 04010000 		.4byte	.LASF44
  384 01a0 71       		.sleb128 -15
  385 01a1 08       		.uleb128 0x8
@@ -1258,9 +1247,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  426 01f4 09       		.uleb128 0x9
  427 01f5 0B010000 		.4byte	0x10b
  428 01f9 FF010000 		.4byte	0x1ff
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 22
-
-
  429 01fd 0A       		.uleb128 0xa
  430 01fe 00       		.byte	0
  431 01ff 03       		.uleb128 0x3
@@ -1272,6 +1258,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  437 020b 88060000 		.4byte	.LASF58
  438 020f 0B       		.byte	0xb
  439 0210 2D       		.byte	0x2d
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 22
+
+
  440 0211 A2000000 		.4byte	0xa2
  441 0215 06       		.uleb128 0x6
  442 0216 01       		.byte	0x1
@@ -1318,9 +1307,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  483 026c 0E       		.uleb128 0xe
  484 026d 01040000 		.4byte	.LASF67
  485 0271 0D       		.byte	0xd
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 23
-
-
  486 0272 23       		.byte	0x23
  487 0273 8C000000 		.4byte	0x8c
  488 0277 00       		.byte	0
@@ -1332,6 +1318,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  494 0280 64020000 		.4byte	0x264
  495 0284 03       		.uleb128 0x3
  496 0285 16060000 		.4byte	.LASF65
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 23
+
+
  497 0289 02       		.byte	0x2
  498 028a 26       		.byte	0x26
  499 028b 8F020000 		.4byte	0x28f
@@ -1378,9 +1367,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  540 02e7 64030000 		.4byte	0x364
  541 02eb 0E       		.uleb128 0xe
  542 02ec D7060000 		.4byte	.LASF68
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 24
-
-
  543 02f0 02       		.byte	0x2
  544 02f1 3B       		.byte	0x3b
  545 02f2 64030000 		.4byte	0x364
@@ -1392,6 +1378,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  551 02fe 69030000 		.4byte	0x369
  552 0302 04       		.byte	0x4
  553 0303 0E       		.uleb128 0xe
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 24
+
+
  554 0304 94040000 		.4byte	.LASF70
  555 0308 02       		.byte	0x2
  556 0309 45       		.byte	0x45
@@ -1438,9 +1427,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  597 035c 02       		.byte	0x2
  598 035d 6A       		.byte	0x6a
  599 035e 5F020000 		.4byte	0x25f
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 25
-
-
  600 0362 24       		.byte	0x24
  601 0363 00       		.byte	0
  602 0364 0B       		.uleb128 0xb
@@ -1452,6 +1438,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  608 0373 02       		.byte	0x2
  609 0374 6D       		.byte	0x6d
  610 0375 79030000 		.4byte	0x379
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 25
+
+
  611 0379 0B       		.uleb128 0xb
  612 037a DF020000 		.4byte	0x2df
  613 037e 11       		.uleb128 0x11
@@ -1498,9 +1487,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  654 03d1 0D       		.uleb128 0xd
  655 03d2 01       		.byte	0x1
  656 03d3 0E       		.byte	0xe
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 26
-
-
  657 03d4 21       		.byte	0x21
  658 03d5 E6030000 		.4byte	0x3e6
  659 03d9 0E       		.uleb128 0xe
@@ -1512,6 +1498,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  665 03e5 00       		.byte	0
  666 03e6 03       		.uleb128 0x3
  667 03e7 EC040000 		.4byte	.LASF86
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 26
+
+
  668 03eb 0E       		.byte	0xe
  669 03ec 26       		.byte	0x26
  670 03ed D1030000 		.4byte	0x3d1
@@ -1558,9 +1547,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  711 044c 11       		.uleb128 0x11
  712 044d 85030000 		.4byte	.LASF89
  713 0451 28       		.byte	0x28
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 27
-
-
  714 0452 03       		.byte	0x3
  715 0453 36       		.byte	0x36
  716 0454 D1040000 		.4byte	0x4d1
@@ -1572,6 +1558,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  722 0463 00       		.byte	0
  723 0464 0E       		.uleb128 0xe
  724 0465 C1030000 		.4byte	.LASF69
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 27
+
+
  725 0469 03       		.byte	0x3
  726 046a 40       		.byte	0x40
  727 046b D6040000 		.4byte	0x4d6
@@ -1618,9 +1607,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  768 04be 65       		.byte	0x65
  769 04bf 5A020000 		.4byte	0x25a
  770 04c3 20       		.byte	0x20
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 28
-
-
  771 04c4 0E       		.uleb128 0xe
  772 04c5 1E020000 		.4byte	.LASF77
  773 04c9 03       		.byte	0x3
@@ -1632,6 +1618,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  779 04d2 F1030000 		.4byte	0x3f1
  780 04d6 0B       		.uleb128 0xb
  781 04d7 1C040000 		.4byte	0x41c
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 28
+
+
  782 04db 03       		.uleb128 0x3
  783 04dc 95030000 		.4byte	.LASF90
  784 04e0 03       		.byte	0x3
@@ -1678,9 +1667,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  825 0533 03       		.uleb128 0x3
  826 0534 C7040000 		.4byte	.LASF92
  827 0538 03       		.byte	0x3
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 29
-
-
  828 0539 91       		.byte	0x91
  829 053a EB040000 		.4byte	0x4eb
  830 053e 13       		.uleb128 0x13
@@ -1692,6 +1678,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  836 054a 5A050000 		.4byte	0x55a
  837 054e 14       		.uleb128 0x14
  838 054f C0040000 		.4byte	.LASF95
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 29
+
+
  839 0553 02       		.byte	0x2
  840 0554 B8       		.byte	0xb8
  841 0555 65050000 		.4byte	0x565
@@ -1719,14 +1708,14 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  863 0586 15       		.uleb128 0x15
  864 0587 66010000 		.4byte	.LASF96
  865 058b 02       		.byte	0x2
- 866 058c 1E01     		.2byte	0x11e
+ 866 058c 1301     		.2byte	0x113
  867 058e 79020000 		.4byte	0x279
  868 0592 03       		.byte	0x3
  869 0593 A4050000 		.4byte	0x5a4
  870 0597 16       		.uleb128 0x16
  871 0598 C0040000 		.4byte	.LASF95
  872 059c 02       		.byte	0x2
- 873 059d 1E01     		.2byte	0x11e
+ 873 059d 1301     		.2byte	0x113
  874 059f 65050000 		.4byte	0x565
  875 05a3 00       		.byte	0
  876 05a4 15       		.uleb128 0x15
@@ -1738,9 +1727,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  882 05b1 CE050000 		.4byte	0x5ce
  883 05b5 16       		.uleb128 0x16
  884 05b6 C0040000 		.4byte	.LASF95
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 30
-
-
  885 05ba 03       		.byte	0x3
  886 05bb 7E01     		.2byte	0x17e
  887 05bd D9050000 		.4byte	0x5d9
@@ -1752,6 +1738,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  893 05cd 00       		.byte	0
  894 05ce 0C       		.uleb128 0xc
  895 05cf 04       		.byte	0x4
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 30
+
+
  896 05d0 D4050000 		.4byte	0x5d4
  897 05d4 0B       		.uleb128 0xb
  898 05d5 33050000 		.4byte	0x533
@@ -1798,9 +1787,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  939 0638 00       		.byte	0
  940 0639 00       		.byte	0
  941 063a 0C       		.uleb128 0xc
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 31
-
-
  942 063b 04       		.byte	0x4
  943 063c 33050000 		.4byte	0x533
  944 0640 0B       		.uleb128 0xb
@@ -1812,6 +1798,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  950 064c 00000000 		.4byte	.LFB154
  951 0650 74000000 		.4byte	.LFE154-.LFB154
  952 0654 01       		.uleb128 0x1
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 31
+
+
  953 0655 9C       		.byte	0x9c
  954 0656 70070000 		.4byte	0x770
  955 065a 1B       		.uleb128 0x1b
@@ -1858,9 +1847,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  996 06be 00       		.byte	0
  997 06bf 1F       		.uleb128 0x1f
  998 06c0 6A050000 		.4byte	0x56a
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 32
-
-
  999 06c4 0E000000 		.4byte	.LBB17
  1000 06c8 02000000 		.4byte	.LBE17-.LBB17
  1001 06cc 01       		.byte	0x1
@@ -1872,6 +1858,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1007 06d8 1F       		.uleb128 0x1f
  1008 06d9 DE050000 		.4byte	0x5de
  1009 06dd 20000000 		.4byte	.LBB19
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 32
+
+
  1010 06e1 32000000 		.4byte	.LBE19-.LBB19
  1011 06e5 01       		.byte	0x1
  1012 06e6 55       		.byte	0x55
@@ -1918,9 +1907,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1053 0751 10000000 		.4byte	.LBE23-.LBB23
  1054 0755 23       		.uleb128 0x23
  1055 0756 C1050000 		.4byte	0x5c1
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 33
-
-
  1056 075a AF000000 		.4byte	.LLST5
  1057 075e 00       		.byte	0
  1058 075f 00       		.byte	0
@@ -1932,6 +1918,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1064 076b 50       		.byte	0x50
  1065 076c 01       		.uleb128 0x1
  1066 076d 32       		.byte	0x32
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 33
+
+
  1067 076e 00       		.byte	0
  1068 076f 00       		.byte	0
  1069 0770 27       		.uleb128 0x27
@@ -1978,9 +1967,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1110 07ca 33050000 		.4byte	0x533
  1111 07ce 2A       		.uleb128 0x2a
  1112 07cf C8060000 		.4byte	.LASF111
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 34
-
-
  1113 07d3 C8060000 		.4byte	.LASF111
  1114 07d7 14       		.byte	0x14
  1115 07d8 4A01     		.2byte	0x14a
@@ -1992,6 +1978,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1121 07e5 00       		.byte	0
  1122              		.section	.debug_abbrev,"",%progbits
  1123              	.Ldebug_abbrev0:
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 34
+
+
  1124 0000 01       		.uleb128 0x1
  1125 0001 11       		.uleb128 0x11
  1126 0002 01       		.byte	0x1
@@ -2038,9 +2027,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1167 002b 04       		.uleb128 0x4
  1168 002c 24       		.uleb128 0x24
  1169 002d 00       		.byte	0
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 35
-
-
  1170 002e 0B       		.uleb128 0xb
  1171 002f 0B       		.uleb128 0xb
  1172 0030 3E       		.uleb128 0x3e
@@ -2052,6 +2038,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1178 0036 05       		.uleb128 0x5
  1179 0037 16       		.uleb128 0x16
  1180 0038 00       		.byte	0
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 35
+
+
  1181 0039 03       		.uleb128 0x3
  1182 003a 0E       		.uleb128 0xe
  1183 003b 3A       		.uleb128 0x3a
@@ -2098,9 +2087,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1224 0064 09       		.uleb128 0x9
  1225 0065 01       		.uleb128 0x1
  1226 0066 01       		.byte	0x1
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 36
-
-
  1227 0067 49       		.uleb128 0x49
  1228 0068 13       		.uleb128 0x13
  1229 0069 01       		.uleb128 0x1
@@ -2112,6 +2098,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1235 006f 00       		.byte	0
  1236 0070 00       		.byte	0
  1237 0071 00       		.byte	0
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 36
+
+
  1238 0072 0B       		.uleb128 0xb
  1239 0073 26       		.uleb128 0x26
  1240 0074 00       		.byte	0
@@ -2158,9 +2147,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1281 009d 00       		.byte	0
  1282 009e 0F       		.uleb128 0xf
  1283 009f 15       		.uleb128 0x15
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 37
-
-
  1284 00a0 01       		.byte	0x1
  1285 00a1 27       		.uleb128 0x27
  1286 00a2 19       		.uleb128 0x19
@@ -2172,6 +2158,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1292 00a8 00       		.byte	0
  1293 00a9 10       		.uleb128 0x10
  1294 00aa 05       		.uleb128 0x5
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 37
+
+
  1295 00ab 00       		.byte	0
  1296 00ac 49       		.uleb128 0x49
  1297 00ad 13       		.uleb128 0x13
@@ -2218,9 +2207,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1338 00d6 0B       		.uleb128 0xb
  1339 00d7 3B       		.uleb128 0x3b
  1340 00d8 0B       		.uleb128 0xb
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 38
-
-
  1341 00d9 27       		.uleb128 0x27
  1342 00da 19       		.uleb128 0x19
  1343 00db 49       		.uleb128 0x49
@@ -2232,6 +2218,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1349 00e1 00       		.byte	0
  1350 00e2 00       		.byte	0
  1351 00e3 14       		.uleb128 0x14
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 38
+
+
  1352 00e4 05       		.uleb128 0x5
  1353 00e5 00       		.byte	0
  1354 00e6 03       		.uleb128 0x3
@@ -2278,9 +2267,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1395 010f 13       		.uleb128 0x13
  1396 0110 00       		.byte	0
  1397 0111 00       		.byte	0
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 39
-
-
  1398 0112 17       		.uleb128 0x17
  1399 0113 34       		.uleb128 0x34
  1400 0114 00       		.byte	0
@@ -2292,6 +2278,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1406 011a 05       		.uleb128 0x5
  1407 011b 49       		.uleb128 0x49
  1408 011c 13       		.uleb128 0x13
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 39
+
+
  1409 011d 00       		.byte	0
  1410 011e 00       		.byte	0
  1411 011f 18       		.uleb128 0x18
@@ -2338,9 +2327,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1452 0149 00       		.byte	0
  1453 014a 00       		.byte	0
  1454 014b 1B       		.uleb128 0x1b
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 40
-
-
  1455 014c 05       		.uleb128 0x5
  1456 014d 00       		.byte	0
  1457 014e 03       		.uleb128 0x3
@@ -2352,6 +2338,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1463 0154 49       		.uleb128 0x49
  1464 0155 13       		.uleb128 0x13
  1465 0156 02       		.uleb128 0x2
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 40
+
+
  1466 0157 17       		.uleb128 0x17
  1467 0158 00       		.byte	0
  1468 0159 00       		.byte	0
@@ -2398,9 +2387,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1509 0182 00       		.byte	0
  1510 0183 1F       		.uleb128 0x1f
  1511 0184 1D       		.uleb128 0x1d
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 41
-
-
  1512 0185 01       		.byte	0x1
  1513 0186 31       		.uleb128 0x31
  1514 0187 13       		.uleb128 0x13
@@ -2412,6 +2398,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1520 018d 0B       		.uleb128 0xb
  1521 018e 59       		.uleb128 0x59
  1522 018f 0B       		.uleb128 0xb
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 41
+
+
  1523 0190 01       		.uleb128 0x1
  1524 0191 13       		.uleb128 0x13
  1525 0192 00       		.byte	0
@@ -2458,9 +2447,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1566 01bd 31       		.uleb128 0x31
  1567 01be 13       		.uleb128 0x13
  1568 01bf 00       		.byte	0
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 42
-
-
  1569 01c0 00       		.byte	0
  1570 01c1 25       		.uleb128 0x25
  1571 01c2 898201   		.uleb128 0x4109
@@ -2472,6 +2458,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1577 01ca 00       		.byte	0
  1578 01cb 00       		.byte	0
  1579 01cc 26       		.uleb128 0x26
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 42
+
+
  1580 01cd 8A8201   		.uleb128 0x410a
  1581 01d0 00       		.byte	0
  1582 01d1 02       		.uleb128 0x2
@@ -2518,9 +2507,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1623 01fb 35       		.uleb128 0x35
  1624 01fc 00       		.byte	0
  1625 01fd 49       		.uleb128 0x49
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 43
-
-
  1626 01fe 13       		.uleb128 0x13
  1627 01ff 00       		.byte	0
  1628 0200 00       		.byte	0
@@ -2532,6 +2518,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1634 0206 3C       		.uleb128 0x3c
  1635 0207 19       		.uleb128 0x19
  1636 0208 6E       		.uleb128 0x6e
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 43
+
+
  1637 0209 0E       		.uleb128 0xe
  1638 020a 03       		.uleb128 0x3
  1639 020b 0E       		.uleb128 0xe
@@ -2578,9 +2567,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1680 0021 0100     		.2byte	0x1
  1681 0023 50       		.byte	0x50
  1682 0024 48000000 		.4byte	.LVL15
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 44
-
-
  1683 0028 74000000 		.4byte	.LFE154
  1684 002c 0400     		.2byte	0x4
  1685 002e F3       		.byte	0xf3
@@ -2592,6 +2578,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1691              	.LLST1:
  1692 003a 24000000 		.4byte	.LVL8
  1693 003e 28000000 		.4byte	.LVL9
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 44
+
+
  1694 0042 0100     		.2byte	0x1
  1695 0044 51       		.byte	0x51
  1696 0045 00000000 		.4byte	0
@@ -2638,9 +2627,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1737 00a7 00000000 		.4byte	0
  1738 00ab 00000000 		.4byte	0
  1739              	.LLST5:
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 45
-
-
  1740 00af 52000000 		.4byte	.LVL16
  1741 00b3 62000000 		.4byte	.LVL17
  1742 00b7 0300     		.2byte	0x3
@@ -2652,6 +2638,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1748              		.section	.debug_aranges,"",%progbits
  1749 0000 1C000000 		.4byte	0x1c
  1750 0004 0200     		.2byte	0x2
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 45
+
+
  1751 0006 00000000 		.4byte	.Ldebug_info0
  1752 000a 04       		.byte	0x4
  1753 000b 00       		.byte	0
@@ -2698,9 +2687,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1775              	.LASF37:
  1776 009c 52435F45 		.ascii	"RC_ERROR_BUFFER_FULL\000"
  1776      52524F52 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 46
-
-
  1776      5F425546 
  1776      4645525F 
  1776      46554C4C 
@@ -2712,6 +2698,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1778      00
  1779              	.LASF43:
  1780 00c2 52435F45 		.ascii	"RC_ERROR_READ_ONLY\000"
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 46
+
+
  1780      52524F52 
  1780      5F524541 
  1780      445F4F4E 
@@ -2758,9 +2747,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1798      00
  1799              	.LASF55:
  1800 0147 52435F74 		.ascii	"RC_t\000"
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 47
-
-
  1800      00
  1801              	.LASF107:
  1802 014c 45455F49 		.ascii	"EE_IRQ_nesting_level\000"
@@ -2772,6 +2758,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1804 0161 7461736B 		.ascii	"task\000"
  1804      00
  1805              	.LASF96:
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 47
+
+
  1806 0166 5254455F 		.ascii	"RTE_SC_SPEED_get\000"
  1806      53435F53 
  1806      50454544 
@@ -2818,9 +2807,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1826      50454544 
  1826      5F646174 
  1826      615F7400 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 48
-
-
  1827              	.LASF52:
  1828 01e9 52435F45 		.ascii	"RC_ERROR_INVALID_STATE\000"
  1828      52524F52 
@@ -2832,6 +2818,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1830      50454544 
  1830      5F636667 
  1830      5F7300
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 48
+
+
  1831              	.LASF78:
  1832 020f 53435F53 		.ascii	"SC_SPEED_cfg_t\000"
  1832      50454544 
@@ -2878,9 +2867,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1848      6720696E 
  1848      7400
  1849              	.LASF104:
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 49
-
-
  1850 029e 45455F6F 		.ascii	"EE_oo_IRQ_suspend_status\000"
  1850      6F5F4952 
  1850      515F7375 
@@ -2892,6 +2878,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1852      5F4E4F54 
  1852      5F4D4154 
  1852      434800
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 49
+
+
  1853              	.LASF53:
  1854 02ca 52435F45 		.ascii	"RC_ERROR_UNKNOWN\000"
  1854      52524F52 
@@ -2938,9 +2927,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1868      41545553 
  1868      5F535441 
  1869              	.LASF116:
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 50
-
-
  1870 035f 454E4749 		.ascii	"ENGINE_setEngine_run\000"
  1870      4E455F73 
  1870      6574456E 
@@ -2952,6 +2938,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1872      5F494E56 
  1872      414C4944 
  1872      00
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 50
+
+
  1873              	.LASF89:
  1874 0385 53435F45 		.ascii	"SC_ENGINE_cfg_s\000"
  1874      4E47494E 
@@ -2998,9 +2987,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1892      7200
  1893              	.LASF67:
  1894 0401 73706565 		.ascii	"speed_val\000"
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 51
-
-
  1894      645F7661 
  1894      6C00
  1895              	.LASF85:
@@ -3012,6 +2998,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1898      68617200 
  1899              	.LASF10:
  1900 041e 6C6F6E67 		.ascii	"long long unsigned int\000"
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 51
+
+
  1900      206C6F6E 
  1900      6720756E 
  1900      7369676E 
@@ -3058,9 +3047,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1919              	.LASF82:
  1920 049f 73746174 		.ascii	"status\000"
  1920      757300
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 52
-
-
  1921              	.LASF84:
  1922 04a6 53435F53 		.ascii	"SC_SPEED_t\000"
  1922      50454544 
@@ -3072,6 +3058,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1924      766500
  1925              	.LASF95:
  1926 04c0 7369676E 		.ascii	"signal\000"
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 52
+
+
  1926      616C00
  1927              	.LASF92:
  1928 04c7 53435F45 		.ascii	"SC_ENGINE_t\000"
@@ -3118,9 +3107,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1943              	.LASF72:
  1944 054f 6F6E5570 		.ascii	"onUpdateTaskCount\000"
  1944      64617465 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 53
-
-
  1944      5461736B 
  1944      436F756E 
  1944      7400
@@ -3132,6 +3118,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1946      646500
  1947              	.LASF8:
  1948 0574 6C6F6E67 		.ascii	"long unsigned int\000"
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 53
+
+
  1948      20756E73 
  1948      69676E65 
  1948      6420696E 
@@ -3178,9 +3167,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1965              	.LASF57:
  1966 05f8 5254455F 		.ascii	"RTE_event\000"
  1966      6576656E 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 54
-
-
  1966      7400
  1967              	.LASF94:
  1968 0602 5254455F 		.ascii	"RTE_SC_SPEED_getAge\000"
@@ -3192,6 +3178,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1970 0616 53435F53 		.ascii	"SC_SPEED_driverIn_t\000"
  1970      50454544 
  1970      5F647269 
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 54
+
+
  1970      76657249 
  1970      6E5F7400 
  1971              	.LASF80:
@@ -3238,9 +3227,6 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1986              	.LASF111:
  1987 06c8 45455F6F 		.ascii	"EE_oo_SetEvent\000"
  1987      6F5F5365 
-ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 55
-
-
  1987      74457665 
  1987      6E7400
  1988              	.LASF68:
@@ -3252,6 +3238,9 @@ ARM GAS  C:\Users\acer\AppData\Local\Temp\ccTRkl0Q.s 			page 1
  1991      52784275 
  1991      66666572 
  1991      00
+ARM GAS  C:\Users\acer\AppData\Local\Temp\ccwZDnUI.s 			page 55
+
+
  1992              	.LASF30:
  1993 06ed 52435F45 		.ascii	"RC_ERROR\000"
  1993      52524F52 

@@ -238,23 +238,12 @@ inline uint32_t RTE_SC_SPEED_getAge( const SC_SPEED_t * const signal )
  */
 inline void RTE_SC_SPEED_incAge(  SC_SPEED_t * const signal , uint32_t increment)
 {
-    UART_LOG_PutString("\n");
-    char log[200];
-                itoa(signal->age, log, 10);
-            //UART_LOG_PutString("Engine speed pos\n");
-            //itoa(engineSpd.engine, log, 10);
-            UART_LOG_PutString(log); 
 	   //Hack....
 	   if ( 0xFFFF0000 > (signal->age + increment) )
 	   {
 	      signal->age += increment;
 	   }
-        char log2[200];
-        UART_LOG_PutString("\n");
-                itoa(signal->age, log2, 10);
-            //UART_LOG_PutString("Engine speed pos\n");
-            //itoa(engineSpd.engine, log, 10);
-            UART_LOG_PutString(log2); 
+
 }
 
 

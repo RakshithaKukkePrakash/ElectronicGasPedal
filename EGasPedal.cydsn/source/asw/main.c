@@ -101,11 +101,11 @@ TASK(tsk_background)
     {
         //do something with low prioroty
         //__asm("nop");
-        while(WDbitfields == 15)
+        if(WDbitfields == 15)
         {
             //All runnables are alive
             WD_Trigger();
-            WDbitfields = 0;
+            //WDbitfields = 0;      //Causing WD resets
         }
     }
 }
