@@ -8,7 +8,7 @@
  * mode: Cyclic
  * name: tsk_io
  * shortname: io
- * signalpoolsRO: sp_common
+ * signalpoolsRO: 
  * signalpoolsRW: sp_common
  * tickEvent: 0
  * timertickperiod: 1
@@ -60,7 +60,7 @@ const uint16_t RTE_cyclicActivation_tsk_io_size = sizeof (RTE_cyclicActivationTa
  * mode: Cyclic
  * name: tsk_io
  * shortname: io
- * signalpoolsRO: sp_common
+ * signalpoolsRO: 
  * signalpoolsRW: sp_common
  * tickEvent: 0
  * timertickperiod: 1

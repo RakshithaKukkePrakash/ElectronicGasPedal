@@ -23,7 +23,7 @@
 
 #include "project.h"
 #include "watchdog.h"
-
+#include "stdlib.h"
 
 
 /*****************************************************************************/
@@ -72,6 +72,10 @@ RC_t WD_Start(WDT_TimeOut_t timeout)
 RC_t WD_Trigger()
 {
     CyWdtClear();
+    if(WDbitfields == 15)
+    {
+        WDbitfields = 0;      //Causing WD resets
+    }
     return RC_SUCCESS;
 }
 
@@ -93,5 +97,10 @@ boolean_t WD_CheckResetBit()
 RC_t WD_Alive(uint8_t myBitPosition)
 {
     WDbitfields = WDbitfields | 1<<myBitPosition;
+    
+    /*
+                char log[20];
+            itoa(WDbitfields, log, 10);
+            UART_LOG_PutString(log);*/
     return RC_SUCCESS;
 }

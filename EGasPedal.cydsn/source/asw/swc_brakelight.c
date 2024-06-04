@@ -44,21 +44,28 @@
 void BRAKELIGHT_setBrakeLight_run(RTE_event ev){
 	
 	/* USER CODE START BRAKELIGHT_setBrakeLight_run */
-    SC_SPEED_data_t spd = RTE_SC_SPEED_get(&SO_SPEED_signal);
+    WD_Alive(3);
     SC_BRAKELIGHT_data_t brakeSig;
-    if(spd.speed_val == 0)
+    if(RTE_SC_SPEED_getStatus(&SO_SPEED_signal) == RTE_SIGNALSTATUS_VALID)
     {
-        brakeSig.brakeLight = TRUE;
+        SC_SPEED_data_t spd = RTE_SC_SPEED_get(&SO_SPEED_signal);  
+        if(spd.speed_val == 0)
+        {
+            brakeSig.brakeLight = TRUE;
+        }
+        else
+        {
+            brakeSig.brakeLight = FALSE;
+        }
     }
     else
     {
         brakeSig.brakeLight = FALSE;
     }
-
     RTE_SC_BRAKELIGHT_set(&SO_BRAKE_signal, brakeSig);
     RTE_SC_BRAKELIGHT_pushPort(&SO_BRAKE_signal);
     
-    WD_Alive(3);
+    
     /* USER CODE END BRAKELIGHT_setBrakeLight_run */
 }
 

@@ -8,7 +8,7 @@
  * mode: Event
  * name: tsk_control
  * shortname: control
- * signalpoolsRO: sp_common
+ * signalpoolsRO: 
  * signalpoolsRW: sp_common
  * tickEvent: 0
  * timertickperiod: 1
@@ -58,7 +58,7 @@ const uint16_t RTE_eventActivation_tsk_control_size = sizeof (RTE_eventActivatio
  * mode: Event
  * name: tsk_control
  * shortname: control
- * signalpoolsRO: sp_common
+ * signalpoolsRO: 
  * signalpoolsRW: sp_common
  * tickEvent: 0
  * timertickperiod: 1

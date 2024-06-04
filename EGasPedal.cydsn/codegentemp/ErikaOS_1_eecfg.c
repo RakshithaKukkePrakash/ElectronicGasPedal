@@ -16,8 +16,8 @@
     #define TASK_1_STACK_SIZE 0/4 // size = 0 bytes
     int EE_cortex_mx_stack_1[TASK_1_STACK_SIZE];	/* Task 1 (tsk_init) */
     #endif
-    #if ((1 == 2) && (EE_MAX_TASK > 1))
-    #define TASK_2_STACK_SIZE 0/4 // size = 0 bytes
+    #if ((2 == 2) && (EE_MAX_TASK > 1))
+    #define TASK_2_STACK_SIZE 1000/4 // size = 1000 bytes
     int EE_cortex_mx_stack_2[TASK_2_STACK_SIZE];	/* Task 2 (tsk_background) */
     #endif
     #if ((1 == 2) && (EE_MAX_TASK > 2))

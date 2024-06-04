@@ -101,7 +101,7 @@ typedef enum{
     CYWD_2_TICKS,       /*    4 -    6 ms */  
 }WDT_TimeOut_t;
 
-extern uint8_t WDbitfields;
+extern uint8_t WDbitfields; 
 /*****************************************************************************/
 /* API functions                                                             */
 /*****************************************************************************/

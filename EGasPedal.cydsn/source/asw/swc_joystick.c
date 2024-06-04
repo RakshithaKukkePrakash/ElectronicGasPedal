@@ -44,9 +44,10 @@
 void JOYSTICK_readJoystick_run(RTE_event ev){
 	
 	/* USER CODE START JOYSTICK_readJoystick_run */
+    WD_Alive(0);
     RTE_SC_JOYSTICK_pullPort(&SO_JOYSTICK_signal);
     
-    WD_Alive(0);
+    
     /*
     // UART Log for verification
     SC_JOYSTICK_data_t joystickPos = RTE_SC_JOYSTICK_get(&SO_JOYSTICK_signal);

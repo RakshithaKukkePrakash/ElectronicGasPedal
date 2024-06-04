@@ -26,7 +26,7 @@
  * mode: Event
  * name: tsk_control
  * shortname: control
- * signalpoolsRO: sp_common
+ * signalpoolsRO: 
  * signalpoolsRW: sp_common
  * tickEvent: 0
  * timertickperiod: 1

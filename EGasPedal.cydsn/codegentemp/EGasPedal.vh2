@@ -2,7 +2,7 @@
 --	Conversion of EGasPedal.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Mon Jun 03 00:25:54 2024
+--	Mon Jun 03 14:23:09 2024
 --
 
 USE cypress.cypress.all;

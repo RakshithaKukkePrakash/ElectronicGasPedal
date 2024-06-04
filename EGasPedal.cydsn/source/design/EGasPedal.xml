@@ -33,9 +33,9 @@
   <signalpool description="Common signal pool for all signals" endaddr="ADR_SP_COMMON_END" name="sp_common" shortname="common" startaddr="ADR_SP_COMMON_START"/>
  </signalpools>
  <tasks>
-  <task description="Task for IO operations, joystick, engine" events="" mode="Cyclic" name="tsk_io" shortname="io" signalpoolsRO="sp_common" signalpoolsRW="sp_common" tickEvent="0" timertickperiod="1"/>
-  <task description="Task for age increments" events="" mode="System" name="tsk_system" shortname="system" signalpoolsRO="sp_common" signalpoolsRW="sp_common" tickEvent="0" timertickperiod="1"/>
-  <task description="Task for control calculation and brake" events="ev_joystick_onData" mode="Event" name="tsk_control" shortname="control" signalpoolsRO="sp_common" signalpoolsRW="sp_common" tickEvent="0" timertickperiod="1"/>
+  <task description="Task for IO operations, joystick, engine" events="" mode="Cyclic" name="tsk_io" shortname="io" signalpoolsRO="" signalpoolsRW="sp_common" tickEvent="0" timertickperiod="1"/>
+  <task description="Task for age increments" events="" mode="System" name="tsk_system" shortname="system" signalpoolsRO="" signalpoolsRW="sp_common" tickEvent="0" timertickperiod="1"/>
+  <task description="Task for control calculation and brake" events="ev_joystick_onData|ev_speed_onData" mode="Event" name="tsk_control" shortname="control" signalpoolsRO="" signalpoolsRW="sp_common" tickEvent="0" timertickperiod="1"/>
  </tasks>
  <signalclasses>
   <signalclass description="Signalclass" name="sc_joystick" shortname="joystick"/>

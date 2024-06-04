@@ -44,6 +44,7 @@
 void CONTROL_calcControl_run(RTE_event ev){
 	
 	/* USER CODE START CONTROL_calcControl_run */
+    WD_Alive(1);
     SC_SPEED_data_t engineSpeed;
 
     sint8_t joystickValue = 0;
@@ -60,13 +61,13 @@ void CONTROL_calcControl_run(RTE_event ev){
             engineSpeed.speed_val = 2 * (joystickValue);   
         }
          RTE_SC_SPEED_set(&SO_SPEED_signal, engineSpeed);
-        WD_Alive(1);
+        
     }
     else
     {
         engineSpeed.speed_val = joystickValue;
     }
-    
+
     /* USER CODE END CONTROL_calcControl_run */
 }
 

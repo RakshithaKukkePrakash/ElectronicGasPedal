@@ -1,6 +1,6 @@
-C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\EGasPedal.cyprj|043e66ed-0d57-41a4-92f2-be69aeb73eae
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|9315f945-e769-4660-bc85-ac39301fd94a
-C:\Users\acer\OneDrive\文档\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|354e2b3f-5c03-4203-a8b5-9fddb8faaf5b
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|f805217e-1e36-424a-8877-beb3e9de6923
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|10519693-27b1-4663-8bc3-0fa94e896431
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|3f8e15b4-0625-4e61-a97b-fef7c5299192
+C:\Sandbox\Sem2\EAA\Lab\Lab01\Lab01EAA\EGasPedal\EGasPedal.cydsn\EGasPedal.cyprj|f0136168-c103-4fc1-8def-ac7f4805e539
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|8fe45fee-cb3e-46f9-9722-695c1b4cc54d
+C:\Users\acer\OneDrive\文档\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|10de4fc3-cb79-4695-8191-607ec64d360f
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|5748ae8f-670b-4b0d-940b-755b03810350
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|f31b68f6-3be0-43ee-95a6-9b79f7e89e2c
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|4c5db77d-d7f4-4750-9250-2007dd67300d

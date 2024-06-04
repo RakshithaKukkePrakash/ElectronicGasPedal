@@ -8,7 +8,7 @@
  * mode: System
  * name: tsk_system
  * shortname: system
- * signalpoolsRO: sp_common
+ * signalpoolsRO: 
  * signalpoolsRW: sp_common
  * tickEvent: 0
  * timertickperiod: 1
@@ -50,7 +50,7 @@
  * mode: System
  * name: tsk_system
  * shortname: system
- * signalpoolsRO: sp_common
+ * signalpoolsRO: 
  * signalpoolsRW: sp_common
  * tickEvent: 0
  * timertickperiod: 1

@@ -331,7 +331,7 @@ extern void ISR_16(void);
     #else
         #define TSK1_STCK 0
     #endif
-    #if (1 == 2) && (EE_MAX_TASK > 1)
+    #if (2 == 2) && (EE_MAX_TASK > 1)
         #define TSK2_STCK 1
     #else
         #define TSK2_STCK 0

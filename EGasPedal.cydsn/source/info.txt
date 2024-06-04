@@ -50,7 +50,7 @@ tasks:
     tsk_io:
         timertickperiod: 1
         mode: Cyclic
-        signalpoolsRO: sp_common
+        signalpoolsRO: 
         signalpoolsRW: sp_common
         events: 
         runnables:
@@ -71,14 +71,14 @@ tasks:
     tsk_system:
         timertickperiod: 1
         mode: System
-        signalpoolsRO: sp_common
+        signalpoolsRO: 
         signalpoolsRW: sp_common
         events: 
         runnables:
     tsk_control:
         timertickperiod: 1
         mode: Event
-        signalpoolsRO: sp_common
+        signalpoolsRO: 
         signalpoolsRW: sp_common
         events: ev_joystick_onData|ev_speed_onData
         runnables:

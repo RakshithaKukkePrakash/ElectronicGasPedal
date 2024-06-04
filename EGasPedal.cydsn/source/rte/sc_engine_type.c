@@ -40,7 +40,6 @@
 inline RC_t SC_ENGINE_driverOut(const SC_ENGINE_data_t  *const data)
 {
 	/* USER CODE START driverOutSC_ENGINE */
-    PWM_Init();
     PWM_RGB_SET(data->engine);
 
 	//Scale application data to drive format
